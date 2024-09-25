@@ -1,4 +1,9 @@
+"""
+Program to extract the non empty reviews from each file
+"""
+
 import os
+
 
 def extractReviews(sourceDirectoryName, destinationDirectoryName, fileName):
     

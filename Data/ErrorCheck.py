@@ -2,6 +2,7 @@
 Program to check if any of the downloaded data from Google Maps has any error (not a csv format)
 """
 
+import os
 
 def checkErrorOnFile(fileName, errorFileName):
     
@@ -37,7 +38,7 @@ def checkErrorOnFile(fileName, errorFileName):
 stationNamesFile = open("Estaciones.txt", "r", encoding="utf-8")
 
 for line in stationNamesFile:
-    checkErrorOnFile(line.strip() + ".csv", "Errores.txt")
+    checkErrorOnFile("Google Maps Original" +  os.sep + line.strip() + ".csv", "Errores.txt")
         
 stationNamesFile.close()
         
