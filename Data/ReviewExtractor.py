@@ -36,8 +36,8 @@ def extractReviews(sourceDirectoryName, destinationDirectoryName, fileName):
             
             #Danis files
             elif fileName >= "La Moraleja" and fileName <= "Prado del Espino":
-                #The first three elements are information that is not desired, the rest is the review
-                review = ",".join(textList[3:])
+                #The first four elements are information that is not desired, the rest is the review
+                review = ",".join(textList[4:])
             
             #Chemas files
             else:
