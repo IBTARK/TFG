@@ -30,9 +30,15 @@ Google Maps Original\Aluche.csv
 	Correct
 Google Maps Original\Alvarado.csv
 	Correct
+Google Maps Original\Álvarez de Villaamil.csv
+	Correct
 Google Maps Original\Antón Martín.csv
 	Correct
 Google Maps Original\Antonio Machado.csv
+	Correct
+Google Maps Original\Antonio Saura.csv
+	Correct
+Google Maps Original\Aravaca.csv
 	Correct
 Google Maps Original\Arganda del Rey.csv
 	Correct
@@ -82,7 +88,15 @@ Google Maps Original\Baunatal.csv
 	Correct
 Google Maps Original\Begoña.csv
 	Correct
+Google Maps Original\Bélgica.csv
+	Correct
+Google Maps Original\Berna.csv
+	Correct
 Google Maps Original\Bilbao.csv
+	Correct
+Google Maps Original\Blasco Ibáñez.csv
+	Correct
+Google Maps Original\Boadilla Centro.csv
 	Correct
 Google Maps Original\Buenos Aires.csv
 	Correct
@@ -90,11 +104,15 @@ Google Maps Original\Callao.csv
 	Correct
 Google Maps Original\Campamento.csv
 	Correct
+Google Maps Original\Campus de Somosaguas.csv
+	Correct
 Google Maps Original\Canal.csv
 	Correct
 Google Maps Original\Canillas.csv
 	Correct
 Google Maps Original\Canillejas.csv
+	Correct
+Google Maps Original\Cantabria.csv
 	Correct
 Google Maps Original\Carabanchel.csv
 	Correct
@@ -112,11 +130,17 @@ Google Maps Original\Chamartín.csv
 	Correct
 Google Maps Original\Chueca.csv
 	Correct
+Google Maps Original\Ciudad de la Imagen.csv
+	Correct
 Google Maps Original\Ciudad de los Ángeles.csv
+	Correct
+Google Maps Original\Ciudad del Cine.csv
 	Correct
 Google Maps Original\Ciudad Lineal.csv
 	Correct
 Google Maps Original\Ciudad Universitaria.csv
+	Correct
+Google Maps Original\Cocheras.csv
 	Correct
 Google Maps Original\Colombia.csv
 	Correct

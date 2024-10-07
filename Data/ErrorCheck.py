@@ -35,7 +35,7 @@ def checkErrorOnFile(fileName, errorFileName):
     file.close()
     errorFile.close()
     
-stationNamesFile = open("Estaciones.txt", "r", encoding="utf-8")
+stationNamesFile = open("NombreEstacionesMetroMadrid.txt", "r", encoding="utf-8")
 
 for line in stationNamesFile:
     checkErrorOnFile("Google Maps Original" +  os.sep + line.strip() + ".csv", "Errores.txt")

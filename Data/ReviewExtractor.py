@@ -60,7 +60,7 @@ def extractReviews(sourceDirectoryName, destinationDirectoryName, fileName):
 
 
 
-stationNamesFile = open("Estaciones.txt", "r", encoding="utf-8")
+stationNamesFile = open("NombreEstacionesMetroMadrid.txt", "r", encoding="utf-8")
 
 for line in stationNamesFile:
     extractReviews("Google Maps Original" , "Google Maps Reviews", line.strip() + ".csv")
