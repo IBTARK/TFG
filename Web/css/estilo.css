@@ -1,0 +1,13 @@
+body { /* Fondo de la página web */
+	background-color: #110a2c;
+	text-align: center;
+}
+
+div#contenedor { /* Contenedor que tiene la vista de la web*/
+	height : 100vh;
+	display : grid;
+	grid-template-rows: 30% 70%;
+
+	margin : 0 auto;
+	border: 1px solid black;
+}
