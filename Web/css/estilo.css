@@ -1,5 +1,5 @@
 body { /* Fondo de la página web */
-	background-color: #110a2c;
+	background-color: #ffffff;
 	text-align: center;
 }
 
@@ -10,4 +10,14 @@ div#contenedor { /* Contenedor que tiene la vista de la web*/
 
 	margin : 0 auto;
 	border: 1px solid black;
+}
+
+.logo-container{
+	flex: 0 0 auto; /* Ajusta el tamaño del contenedor del logo para que no crezca */
+}
+
+#LogoMetro {
+	width: 125px;
+	height: auto;
+	margin-right: 25px;
 }

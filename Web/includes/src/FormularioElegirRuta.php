@@ -2,7 +2,7 @@
 
 namespace tfg\src;
 
-class FormularioElegirRuta {
+class FormularioElegirRuta extends Formulario{
     public function __construct(){
         parent::__construct('formelegirruta', ['urlRedireccion' => 'rutasRecomendadas.php', 'enctype' => 'multipart/form-data']);        	
     }

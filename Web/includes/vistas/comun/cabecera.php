@@ -1,5 +1,5 @@
 <header>
-    <div class="logo-container">
+<div class="logo-container">
 	<img src="<?= RUTA_IMGS; ?>/MetroMadridLogo.png" alt="LogoMetro" id ="LogoMetro">
 	</div>  
 
