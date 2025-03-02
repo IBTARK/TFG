@@ -1,0 +1,72 @@
+body { /* Fondo de la página web */
+	background-color: rgb(255, 255, 255);
+	text-align: center;
+}
+
+div#contenedor { /* Contenedor que tiene la vista de la web*/
+	height : 100vh;
+	display : grid;
+	grid-template-rows: 30% 70%;
+
+	margin : 0 auto;
+}
+
+.logo-container{
+	flex: 0 0 auto; /* Ajusta el tamaño del contenedor del logo para que no crezca */
+}
+
+#LogoMetro {
+	width: 125px;
+	height: auto;
+	margin-right: 25px;
+}
+
+.header {
+    background-color: lightblue;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+}
+
+/* GOOD STATIONS */
+.titulo{
+	position: absolute;
+	width: 812px;
+	height: 77px;
+
+	font-family: 'Krub';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 96px;
+	line-height: 125px;
+
+	color: #000000;
+}
+
+#botonEntrar{
+	position: absolute;
+	width: 237px;
+	height: 42px;
+
+	font-family: 'Krub';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 21px;
+	text-align: center;
+
+	color: #000000;
+}
+
+.logo-index{
+	position: absolute;
+	width: 492px;
+	height: 306px;
+}
+
+.logo-cam-index{
+	position: absolute;
+	width: 107px;
+	height: 109px;
+}
