@@ -11,8 +11,12 @@ div#contenedor { /* Contenedor que tiene la vista de la web*/
 	margin : 0 auto;
 }
 
-.logo-container{
-	flex: 0 0 auto; /* Ajusta el tamaño del contenedor del logo para que no crezca */
+.logo-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 #LogoMetro {
@@ -31,42 +35,43 @@ div#contenedor { /* Contenedor que tiene la vista de la web*/
 
 /* GOOD STATIONS */
 .titulo{
-	position: absolute;
+	position: center;
 	width: 812px;
 	height: 77px;
 
 	font-family: 'Krub';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 96px;
+	font-size: 3rem;
 	line-height: 125px;
 
 	color: #000000;
 }
 
+#logoIndex {
+    max-width: 500px; /* Tamaño controlado */
+    height: auto;
+}
+
+#LogoCamIndex {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 200px; /* Tamaño pequeño */
+    height: auto;
+}
+
 #botonEntrar{
-	position: absolute;
+	position: center;
 	width: 237px;
 	height: 42px;
 
 	font-family: 'Krub';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 2rem;
 	line-height: 21px;
 	text-align: center;
 
 	color: #000000;
-}
-
-.logo-index{
-	position: absolute;
-	width: 492px;
-	height: 306px;
-}
-
-.logo-cam-index{
-	position: absolute;
-	width: 107px;
-	height: 109px;
 }
