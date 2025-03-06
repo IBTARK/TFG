@@ -1,6 +1,14 @@
 body { /* Fondo de la página web */
-	background-color: rgb(255, 255, 255);
-	text-align: center;
+	background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+
+    font-family: 'Krub';
+    font-style: normal;
 }
 
 div#contenedor { /* Contenedor que tiene la vista de la web*/
@@ -31,6 +39,10 @@ div#contenedor { /* Contenedor que tiene la vista de la web*/
     text-align: center;
     position: relative;
     clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+}
+
+nav ul li {
+    display: inline;
 }
 
 /* GOOD STATIONS */

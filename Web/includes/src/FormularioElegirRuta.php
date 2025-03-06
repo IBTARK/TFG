@@ -2,7 +2,7 @@
 
 namespace tfg\src;
 
-class FormularioElegirRuta extends Formulario{
+class FormularioElegirRuta extends Formulario {
     public function __construct(){
         parent::__construct('formelegirruta', ['urlRedireccion' => 'rutasRecomendadas.php', 'enctype' => 'multipart/form-data']);        	
     }
@@ -19,7 +19,7 @@ class FormularioElegirRuta extends Formulario{
         $htmlErroresGlobales
         <form action="procesar_formulario.php" method="POST">
         <fieldset>
-            <legend>Seleccione su viaje</legend>
+            <legend>Calcula tu trayecto</legend>
 
             <label for="origen">Origen:</label>
             <select id="origen" name="origen">
