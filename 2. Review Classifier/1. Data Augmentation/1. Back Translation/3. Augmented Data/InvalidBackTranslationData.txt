@@ -1,5 +1,6 @@
 “Vivo en esta zona desde hace 35 años y reconozco que el metro nos ha revitalizado y mejorado la zona. Lamentablemente, la zona que conocía prácticamente ha desaparecido. ...Los jóvenes se fueron a vivir a otras zonas”.
 "Ubicación con muchos bares interesantes"
+"…"
 "Es una comida muy deliciosa".
 "Estación de metro"
 "Jajajaja"
@@ -98,10 +99,12 @@
 "Es un aeropuerto moderno y limpio, pero es grande y difícil entrar y salir".
 "Es fácil dejar tus cosas e irte".
 "Es una terminal muy nueva y tiene excelentes instalaciones".
+"…"
 "Es una zona muy tranquila donde vive gente corriente y de todos los ámbitos de la vida".
 “Un lugar acogedor para pasear en un hermoso parque, muy tranquilo y seguro.”
 “El centro de Alcorcón está muy bien comunicado... está justo en la salida de Abad, por lo que tienes acceso a todos los autobuses que van a Madrid y los que dan la vuelta a Alcorcón.”
 "Una preciosa película de estilo clásico. Una de las mejores películas de España"
+"…"
 “Muy rápido y excelente trato por parte de Iván. Muy atentos durante todo el tratamiento de 5 días. Definitivamente lo repetiré."
 “Bonita calle”
 “Zona tradicional de Madrid, genial para tomar unas copas”
@@ -115,6 +118,7 @@
 "Porque es una zona comercial en mi zona".
 "Esta es un área en el área de La Latina, con una gran combinación de espacio residencial, comercial y de oficinas".
 "Zona con varios parques y buen acceso a metro, cercanías y autobuses."
+"…"
 "Es un lugar de encuentro famoso".
 “La mejor zona de la ciudad”
 “Oh, sí, fui allí y encontré que había mucha ropa para mascotas, camas de tela, pieles... No tenía energía para usar ropa... dijeron que costaba $8 por 18 kg. Pienso: "Lo recuerdo". "
@@ -183,6 +187,7 @@
 "Bar El Trocadero, Metro, España. Cumple con todos los requisitos de seguridad. Desinfecta mesas y sillas después de cada turno de cliente y mantiene un distanciamiento seguro (distancia a la silla, no distancia a la mesa). Pero la distancia es tal que se preserva el espacio real (distancia 2 metros). ).
 "Estoy igual, pero me bajé aquí... y es cierto en España, pero no veo un avión. Ojo, tal vez sea mi glaucoma, pero se siente como un avión". a nosotros. "Iré a la OCU y me informaré para estar seguro (ya he estado 327.211 veces, soy como los locales)"
 "Es la calle principal de mi barrio".
+"…"
 "Estación de metro"
 "Fue un gran concierto."
 “El espectacular edificio de la sede del Banco de España, situado entre la plaza de Cibeles y la calle Curiocidade, en enero de 2021, la tormenta Filomena paró los relojes del Banco de España por primera vez en 130 años. En concreto, el sábado 9 de enero a las 11:35 horas. "
@@ -320,6 +325,7 @@ Colón es una estación de la cuarta línea del metro de Madrid, ubicada en la P
 “El estacionamiento es una gran preocupación, pero se llena rápidamente. El Ayuntamiento debería considerar ampliar el estacionamiento”.
 "¿Podría decirme si puedo estacionar fácilmente alrededor de las 8:30 de la mañana? Gracias".
 "El aparcamiento siempre está lleno."
+"…"
 "Ocho"
 “Es un lugar muy concurrido. A veces puede ser caótico, pero eso es normal".
 “Súbete al autobús y visita El Risco de las Cuevas en Perales de Tajunha.”
@@ -375,6 +381,7 @@ Colón es una estación de la cuarta línea del metro de Madrid, ubicada en la P
 "La ubicación es perfecta para acceder al popular barrio de Lavapiés y al Centro de Arte Reina Sofía."
 “En el mercadillo de Madrid se puede encontrar casi de todo”
 “Paramédico Línea S-1 sin mascarilla”
+"…"
 "Muy"
 "Desde aquí se puede coger el tren y llegar rápidamente a otras zonas de la ciudad."
 "estación de metro"
@@ -435,6 +442,7 @@ Colón es una estación de la cuarta línea del metro de Madrid, ubicada en la P
 “Lugar muy cómodo para vivir”
 “Vivo en Getafe, pero es genial conectarnos con Madrid. Esta es una gran idea. Me gusta ella. Estoy muy feliz."
 "no llega muy lejos c3"
+"…"
 " Un medio de transporte rápido y relativamente cómodo en Madrid. Ventajas: Amplia red, alta frecuencia de trenes en horas punta, máximos estándares de limpieza y seguridad. Desventajas: Los precios son un poco elevados teniendo en cuenta el poder adquisitivo de los españoles. Muy fragmentado 3 metros y metro en el aeropuerto Ninguno Sólo están disponibles bonos de metro mensuales o anuales.
 “Es la forma más rápida de moverse por Madrid. Tenemos una de las mejores redes de metro del mundo en limpieza, comodidad, rapidez, etc. Puedes viajar por toda la zona y sus alrededores, accediendo a casi todos los puntos y conectando. con autobuses y Renfe.
 "Ventajas: Amplia red Desventajas: Si mal no recuerdo, la empresa sigue siendo una empresa pública, pertenece a la comunidad de Madrid y es cara, no, muy cara. Los billetes son confusos, los precios son elevados. A veces, sí, me gustaría Prefiero coger el coche que el metro...es lo peor que se puede decir del transporte público.
@@ -497,6 +505,7 @@ Está basado en la famosa expresión: “Todos los caminos llevan a Goya”. Sol
 "Estación de metro de la línea 7, conectada con la línea 10 del metro de Madrid."
 "Los semáforos toman tiempo".
 "El buen Guzmán de día, el malvado Guzmán de noche".
+"…"
 “La frontera entre los distritos madrileños de Pilar y Mira Sierra. Una zona residencial hermosa y vibrante.”
 "Herrera Oria es una estación de la línea 9 del Metro de Madrid en el distrito de Mira Sierra de Madrid, España."
 "La soledad de madrugar."
@@ -582,6 +591,7 @@ Está basado en la famosa expresión: “Todos los caminos llevan a Goya”. Sol
 “Pude ver el desfile de Alcorcón desde la estación. Era muy colorido, pero debo admitir que me sorprendió porque era muy corto. Hubo muy pocas carrozas acompañando a las Majestades Orientales y caramelos temáticos… aunque esto es una tradición. , No me gusta cuando los adultos acaparan los dulces que les tiran especialmente a los niños, tenían mucha curiosidad y el tanque de bomberos también estaba muy animado.
 “El 4 de agosto, el jefe de policía, Joaquín Virumbrales, que se negó a decirme su nombre, me obligó a aportar documentos para presentar una denuncia alegando que no vivo en Madrid. Esta es la forma más humillante de tratarme. mi tarjeta de transporte, no estoy acostumbrado a pasar entre 7 y 10 minutos esperando a alguien y usando las máquinas expendedoras de billetes del metro. Pero cuando fui allí, no sabía que necesitaba una tarifa adicional o una extensión. a él como puedo entrar, me volvió a decir. Después de al menos 4 veces le dije que esto es lo que quería. Por supuesto, fui a casa y le dije que necesitaba comprar esto y que quería que me ayudara a comprar suplementos. y él dijo: "Oh, eso es lo que le dije". ¿Debería ayudarte a comprarlo? Él vivía aquí y no sabía cómo hacerlo, pero no le hizo caso y me dijo: "¿Tienes otra factura?", acéptala, acéptala", y lo hizo solo, muy mal y sin mucha educación. . Le dije: "¿Es así como ayudamos a la gente?" Porque me parece que esas no son formas de ayudar. Le dije que si no te gusta tu trabajo, no deberías hacerlo y que la mayoría de la gente quiere ayudar a los demás. Nunca me pidió disculpas, siempre fue grosero y arrogante, siempre se negó a dar su nombre, solo dijo que era el jefe de la estación (unos 55 años, un hombre de la misma complexión) y cabello gris). Finalmente, cuando me acerqué a tomarle una foto a la hoja, me dijo que no era necesario porque ya había hecho una copia, así que cuando le pregunté si podía presentar una denuncia formal de manera virtual, dijo: "Sí". Faltaban las palabras "puedes hacer lo que quieras" y al final demostraron que no tenía modales. “No quiero que gente así manche la imagen de Madrid”, dijo mientras hablaba al público, especialmente durante esta pandemia en la que todos necesitamos comprensión y amabilidad.
 “Recorrimos estos barrios para conocer la región y encontramos paisajes urbanos bien diseñados a lo largo de gran parte del recorrido, con edificios de gran altura y jardines bien cuidados. Aunque el clima era cada vez más frío y se acercaba la noche, quedé impresionado. las instalaciones sociales que encontré.
+"…"
 "Esta estación conecta con Juan de la Cierva, zona importante de Getafe. También hay un plano decorativo que representa la zona militar de Juan de la Cierva. Cerca de la estación hay varios bares, tiendas de informática, colegios, etc.
 “La estación de metro Juan de la Cierva Sud fue inaugurada el 11 de abril de 2003. Es atendido por la línea 12 (verde oscuro). Está situado en el cruce de la Calle Espanya y la Plaza de Barcelona de Getafe. La estación está decorada con un gran motivo de libélula en honor a Juan de la Cierva, el inventor de la aurología. Aquí se encuentra el campus de la Universidad Carlos III.
 “La estación de metro todavía funciona y las decoraciones dedicadas al inventor español del autogiro son absolutamente impresionantes, comparando el autogiro con una libélula”.
@@ -595,6 +605,7 @@ Está basado en la famosa expresión: “Todos los caminos llevan a Goya”. Sol
 "Mmm. La mañana es tranquila y luminosa... todos tienen la misma rutina. Voy a trabajar".
 "Pueblo"
 "El sistema de metro es bueno"
+"…"
 "Uno de los mejores distritos de Madrid... ¿o es de Leganés? Simplemente no tenemos unidad, no lo sé".
 “Hay muchos camellos en esta calle. Se ganan la vida con valentía en los atascos de tráfico. ¿A qué esperan para detenerlos? Los vecinos están preocupados por esta situación y Posicia no hace nada. Bueno, pagamos impuestos. como todo lo demás en el mundo."
 “Gran lugar para practicar parkour, gimnasia y búlder gratis”
@@ -659,6 +670,7 @@ Está basado en la famosa expresión: “Todos los caminos llevan a Goya”. Sol
 "Estación más cercana al centro comercial La Gavia."
 “La mujer de la recepción, especialmente la mujer de cabello negro y rizado, fue bastante grosera en sus explicaciones. Ojalá hablara más educadamente. Algunas personas no salen de la Zona A, señora, y tampoco lo hacen. Ya no diremos: "Sé cómo funciona el cambio..."
 "El espacio es bueno y no hay mucha gente caminando. Puedes dar un paseo tranquilo o hacer ejercicio."
+"…"
 "Lo puse"
 "El centro mismo de Madrid"
 "El barrio más tradicional y cosmopolita de Madrid. En medio de edificios y calles empedradas encontrarás bares vascos y asturianos, restaurantes indios y mexicanos, este es un Madrid único."
@@ -674,6 +686,7 @@ Está basado en la famosa expresión: “Todos los caminos llevan a Goya”. Sol
 “Una zona maravillosa que no te puedes perder en Madrid”
 "Diversidad y mestizaje cultural, teatro y asociacionismo cultural. Complementado con ""el huella""."
 "Distrito multicultural"
+"…"
 "Me encanta el metro de Madrid. Llegar del punto A al punto B muchas veces es una misión diferente))))"
 "Almuerzo muy delicioso..."
 "X pelusa"
@@ -682,6 +695,7 @@ Está basado en la famosa expresión: “Todos los caminos llevan a Goya”. Sol
 "Estación de Renfe Cercanías de Madrid. Línea C5"
 "Se tarda una eternidad en conseguir una cita y todos los policías que están en la puerta son groseros".
 "Aquí es donde crecí".
+"…"
 "Es un lugar tranquilo y cómodo para vivir."
 “Los madrileños hemos pasado de una zona marginal y estigmatizada a una zona de lento desarrollo. Muchos incidentes se están reanudando a pesar de que las viviendas siguen siendo insalubres”.
 "Plaza central del antiguo matadero de Madrid"
@@ -811,6 +825,7 @@ Está basado en la famosa expresión: “Todos los caminos llevan a Goya”. Sol
 "Es una calle muy bien señalizada."
 "Paisaje urbano divertido"
 “La estación se abrió al público el 7 de mayo de 1981 con el nombre de Elbaz, por el nombre de una de las calles aledañas a la estación de metro, pero el 27 de junio de 1981 se cambió el nombre a petición de los vecinos. La llamaron Opaniel. en 1984. Se reparó la plataforma y se sustituyeron los muros de piedra por Vitrex amarillo.
+"…"
 “La plaza y sus alrededores están muy bien cuidados, limpios y luminosos, por lo que te recomendamos que vayas allí, sientas su encanto y retrocedas en el tiempo.”
 “Si te gusta la ópera, definitivamente deberías ir a ver una función al Teatro Real (en la estación de metro Ópera) porque es de los pocos lugares donde puedes verla en versión original (se puede ver en Madrid en Gran Vía, y muchas versiones están dobladas al español). Si la ópera no es lo tuyo pero aun así quieres disfrutar del teatro interior, hay días de entrada gratuita, normalmente en julio. Échale un vistazo. 16. Verifique los espectáculos con anticipación ya que las entradas generalmente se pueden comprar en el último minuto. Además, si lo deseas, podrás disfrutar de una suntuosa comida en el restaurante… una experiencia maravillosa. »
 "Es una plaza realmente bonita con un gran teatro, y recomiendo caminar con el Palacio Real al fondo al final de la Calle Arenal. Es una gran obra de arte, así que todo es increíble".
@@ -959,6 +974,7 @@ Está basado en la famosa expresión: “Todos los caminos llevan a Goya”. Sol
 "Deberíamos poder pagar unos centavos pase lo que pase".
 "Estación de Metro de Madrid, Línea 1"
 “Ubicación al lado de una de las paradas de autobús más importantes.”
+"…"
 "Información útil sobre traslados en autobús"
 "Un lugar público muy conocido con muchos eventos, ideal para caminar, ir de compras y cenar".
 "En pleno centro de Madrid, con espacios verdes para el relax y las famosas fuentes de la Plaza de España, a un paso del Palacio Real."
@@ -1009,6 +1025,7 @@ Está basado en la famosa expresión: “Todos los caminos llevan a Goya”. Sol
 «Este es un centro comercial muy singular, bien restaurado y muy limpio por dentro, aunque el exterior no es tan bonito. Estas son las características de un centro comercial céntrico y con buenas conexiones de transporte.»
 "Centro de Transportes de Madrid"
 “Fue mortal. Hoy necesitaba tomar el 518 a las 11:19, pero el autobús salió a las 11:20. Aunque ya estaba allí, la puerta no se abrió”.
+"…"
 “Es una zona muy bonita, pero la plaza está llena de vagabundos y sucia. Ojalá al menos quitaran la entrada al metro. También hay un supermercado, una tienda de bricolaje, un banco y un bar muy bonito.»
 “Séptima línea de metro. Es puntual por la mañana y no hay mucha gente”.
 “Hay muchas tiendas diferentes allí”
@@ -1238,7 +1255,8 @@ Está basado en la famosa expresión: “Todos los caminos llevan a Goya”. Sol
 "Es un barrio tradicional. Se han mejorado muchas cosas y los precios son mucho más altos".
 "Un barrio bonito"
 "Gris"
-"Te gustaría venir aquí para el mercado del domingo".
+"Te gustaría venir aquí para el mercado del domingo."
+"…"
 "Restaurante Los Segovianos, Ventro del Caño"
 “Esta es la parada más inútil de la historia. La parada de Plaza Esp está a 5 minutos a pie y la parada de Argüelles está a 5 minutos a pie. Probablemente lo hicieron por el perro de Esperanza Aguirre. Allí vivió Aguirre. Ella lo atacó. como Gargantua, que fue muy ineficaz para mí.
 "Es una zona muy animada y con todo tipo de servicios. Cuidado con los carteristas."
@@ -1250,6 +1268,7 @@ Está basado en la famosa expresión: “Todos los caminos llevan a Goya”. Sol
 "metro"
 "Las estaciones de la Línea 6 del metro de Madrid no están conectadas".
 "Jajaja"
+"…"
 “Se eligió la estatua madrileña “El Oso y el Madroño”. Actualmente el taller está creando 40 réplicas del emblemático monumento de la Puerta del Sol. En diciembre se presentará “Cultura de Matadero” en el marco de una exposición en el centro. .”Y en 2022 ocupará temporalmente los lugares más emblemáticos de Madrid para el entretenimiento de sus ciudadanos, y la nueva expresión se presentará de una forma más colorida. Esto se ha convertido en una realidad. Uno de ellos está dedicado al Metro de Madrid, que está realizando una importante labor en primera línea de la pandemia. Uno representa a un vecino esperando en un balcón, otro refleja un cielo azul de esperanza y todos transmiten el mismo sentimiento. Esta iniciativa surgió como respuesta a un concurso de diseño amateur y queremos agradecer al concurso de Madrid por invitar a la gente a volver a dibujar sus ositos de peluche. El concurso, organizado por EL PAÍS y la SER en colaboración con el Ayuntamiento de Madrid, recogió aproximadamente 500 premios. Este miércoles, el jurado seleccionó a la ganadora de las obras, así como 39 piezas que serán exhibidas en sus exposiciones por la ciudad.
 “Otra bonita zona histórica de Madrid”
 "gente cálida y un lindo vecindario."
