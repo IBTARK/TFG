@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
     <title><?= $tituloPagina ?></title>
-    <link rel="stylesheet" type="text/css" href="<?= RUTA_CSS ?>/estilo.css?1.0" media="all" >
-	<link rel="icon" type="image/x-icon" href="<?= RUTA_IMGS ?>/MetroMadridLogo.png" />
+    <link rel="stylesheet" type="text/css" href="<?= RUTA_CSS ?>/borrador.css" media="all"/>
+	<link rel="icon" type="image/x-icon" href="<?= RUTA_IMGS ?>/MetroMadridLogo.png"/>
 </head>
 <body>
     <div id="contenedor">

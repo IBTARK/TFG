@@ -33,6 +33,14 @@ class FormularioElegirRuta extends Formulario {
                 <option value="aeropuerto-t4">Aeropuerto-T4</option>
             </select>
 
+            <div class="opciones-extra">
+                <h3>Opciones Extra</h3>
+                <input type="checkbox" id="trasbordo" name="trasbordo" value="trasbordo">
+                <label for="Trasbordo">Trasbordo</label>
+                <input type="checkbox" id="movReducida" name="movReducida" value="movReducida">
+                <label for="movReducida">Movilidad Reducida</label>
+            </div>
+
             <button type="submit">Buscar</button>
         </fieldset>
         </form>

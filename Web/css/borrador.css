@@ -11,9 +11,12 @@ header{
     
 }
 
-.metro-logo {
-    width: 160px;
-    height: auto;
+.logo-metro{
+    display: flex;
+}
+
+.logo-metro img{
+    height: 100px;
 }
 
 .menu {
@@ -34,9 +37,4 @@ header{
 
 .menu a:hover {
     font-weight: bold;
-}
-
-.main {
-    background-color: lightblue;
-    padding: 20px;
 }

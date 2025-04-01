@@ -3,26 +3,18 @@ $pagina = basename($_SERVER['PHP_SELF']);
 $ocultaMenu = ["index.php"]; 
 ?>
 <header>
-    <?php if (!in_array($pagina, $ocultaMenu)): ?>
-
-    <div class="logo-container">
-    <img src="<?= RUTA_IMGS; ?>/MetroMadridLogo.png" alt="LogoMetro" id ="LogoMetro">
-    </div>  
-
-    <div class="logo-cam">
-    <img src="<?= RUTA_IMGS; ?>/EmblemaCAM.png" alt="LogoCam" id ="LogoCam">
+    <?php if (!in_array($pagina, $ocultaMenu)): ?> 
+    <div class = "logo-metro">
+        <img src="./images/MetroMadridLogo.png" alt="LogoMetro" id="logoMetro">
     </div>
-
-    <nav class="menu">
-        <ul>
-            <li><a href="./index.php">Inicio</a></li>
-            <li><a href="./lineasMetro.php">Estaciones</a></li>
-            <li><a href="./acerca.php">Acerca</a></li>
-        </ul>
-    </nav>
+    <h1 class = "titulo">Good Stations</h1>
+    <div class = "menu">
+        <img src="./images/EmblemaCAM.png" alt="LogoMetro" id="logoMetro">
+        <nav>
+            <a href="./index.php">Inicio</a>
+            <a href="./lineasMetro.php">Estaciones</a>
+            <a href="./acerca.php">Acerca</a>
+        </nav>
+    </div>
     <?php endif; ?>
-
-    <div class="titulo">
-        <h1>Good Stations</h1>
-    </div>
 </header>

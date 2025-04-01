@@ -4,8 +4,8 @@ require_once __DIR__.'/includes/config.php';
 
 $tituloPagina = 'Elegir Ruta';
 
-$formRuta=new FormularioElegirRuta();
-$htmlForm=$formRuta->gestiona();
+$rutas=new RecomendacionesRutas();
+$htmlForm=$rutas->generarRecomendacion();
 
 $contenidoPrincipal = <<<EOS
     $htmlForm

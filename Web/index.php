@@ -12,14 +12,14 @@ require_once __DIR__.'/includes/config.php';
 </head>
 <body>
     <header>
-        <div class="logo-cam-index">
-            <img src="./images/EmblemaCAM.png" alt="LogoCam" id="LogoCamIndex">
+        <div class="header-container">
+            <img src="./images/EmblemaCAM.png" alt="LogoCam" id="logo-cam-index">
+            <h1>Good Stations</h1>
         </div>
-        <h1>Good Stations</h1>
     </header>
-    <div class="logo-index">
-            <img src="./images/MetroMadridLogo.png" alt="LogoMetro" id="logoIndex">
-    </div>
+    
+    <img src="./images/MetroMadridLogo.png" alt="LogoMetro" id="logo-index">
+    
     <form id="botonEntrar" action="elegirRuta.php" method="POST">
         <button type="submit">Entrar</button>
     </form>
