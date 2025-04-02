@@ -29,6 +29,7 @@ h1 {
 #logo-index {
     margin-top: 50px;
     width: 400px;
+    height: auto;
 }
 
 #Logo-cam-index {
@@ -36,6 +37,7 @@ h1 {
     right: 20px;
     top: 20px;
     width: 60px;
+    height: auto;
 }
 
 button {
