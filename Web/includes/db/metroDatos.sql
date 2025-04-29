@@ -326,7 +326,7 @@ TRUNCATE TABLE `transbordos`;
 
 -- Transbordos para estaciones de la Línea 1
 INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
-('1', '1', '4,ML1'),         -- Pinar de Chamartín
+('1', '1', '4,14'),         -- Pinar de Chamartín
 ('2', '3', '10'),           -- Chamartín (solo metro)
 ('3', '4', '9,10'),         -- Plaza de Castilla
 ('4', '9', '2,6'),          -- Cuatro Caminos
@@ -341,7 +341,7 @@ INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
 ('10', '2', '1,6'),          -- Cuatro Caminos (ya insertada previamente)
 ('11', '35', '7'),           -- Canal
 ('12', '37', '4'),           -- San Bernardo
-('13', '40', '5,R'),         -- Ópera (Ramal incluido como 'R')
+('13', '40', '5,13'),         -- Ópera (Ramal incluido como 'R')
 ('14', '16', '1,3'),         -- Sol (transbordo con Línea 1 y 3)
 ('15', '44', '9'),           -- Príncipe de Vergara
 ('16', '45', '4'),           -- Goya
@@ -369,7 +369,7 @@ INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
 ('32', '77', '4,5,6'),     -- Diego de León
 ('33', '78', '4,6,7,9'),   -- Avenida de América
 ('34', '85', '4,8'),       -- Mar de Cristal
-('35', '1', '1,4,ML1');    -- Pinar de Chamartín
+('35', '1', '1,4,14');    -- Pinar de Chamartín
 
 -- Transbordos para estaciones de la Línea 5
 INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
@@ -379,7 +379,7 @@ INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
 ('39', '99', '9'),         -- Núñez de Balboa (transbordo con L9)
 ('40', '15', '1'),         -- Gran Vía (transbordo con L1)
 ('41', '57', '3'),         -- Callao (transbordo con L3)
-('42', '40', '2,R'),       -- Ópera (transbordo con L2 y Ramal)
+('42', '40', '2,13'),       -- Ópera (transbordo con L2 y Ramal)
 ('43', '60', '3'),         -- Embajadores (transbordo con L3)
 ('44', '106', '6'),       -- Oporto (transbordo con L6)
 ('45', '114', '10');       -- Casa de Campo (transbordo con L10)
@@ -399,4 +399,22 @@ INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
 ('57', '125', '7'),          -- Guzmán El Bueno (transbordo con L7)
 ('55', '68', '3'),           -- Moncloa
 ('56', '67', '3,4'),         -- Argüelles
-('57', '128', '10,R');       -- Principe Pio (transbordo con L10 y Ramal)
+('57', '128', '10,13');       -- Principe Pio (transbordo con L10 y Ramal)
+
+INSERT INTO lineas (id, nombre) VALUES 
+(1, 'Línea 1', 'L1'),
+(2, 'Línea 2', 'L2'),
+(3, 'Línea 3', 'L3'),
+(4, 'Línea 4', 'L4'),
+(5, 'Línea 5', 'L5'),
+(6, 'Línea 6', 'L6'),
+(7, 'Línea 7', 'L7'),
+(8, 'Línea 8', 'L8'),
+(9, 'Línea 9', 'L9'),
+(10, 'Línea 10', 'L10'),
+(11, 'Línea 11', 'L11'),
+(12, 'Línea 12', 'L12'),
+(13, 'Ramal', 'R'),
+(14, 'Metro Ligero 1', 'ML1'),
+(15, 'Metro Ligero 2', 'ML2'),
+(16, 'Metro Ligero 3', 'ML3');
