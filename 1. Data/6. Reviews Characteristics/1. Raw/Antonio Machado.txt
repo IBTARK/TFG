@@ -1,0 +1,8 @@
+estacion: (moderno, 1)(relativamente nuevo, 1)(limpio, 2)(rápido, 1)(más limpio, 1)(más moderno, 1)(mucho necesario, 1)(amplio, 1)(mejor, 1)(mucho limpio, 1)
+acceso: (fácil, 1)(buen, 1)
+movilidad: (reducido, 1)
+limpio: (rápido, 1)
+linea: (más nuevo, 1)
+servicio: (buen, 2)
+estado: (buen, 1)
+condicion: (buena, 1)

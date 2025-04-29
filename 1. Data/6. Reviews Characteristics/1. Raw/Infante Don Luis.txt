@@ -1,0 +1,5 @@
+estacion: (metro, 1)(ok, 1)(mucho buen, 1)
+metro: (ligero, 1)
+limpio: (seguro, 1)
+paso: (ridículo, 1)
+frecuencia: (lentísimo, 1)(más caro, 1)

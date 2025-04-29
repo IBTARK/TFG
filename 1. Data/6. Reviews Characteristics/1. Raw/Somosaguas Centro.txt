@@ -1,0 +1,4 @@
+estacion: (tranvía, 1)(bastante cómodo, 1)
+tranvia: (frecuente, 1)
+comodo: (line, 1)
+metro: (ligero, 1)

@@ -1,0 +1,3 @@
+metro: (subterráneo, 1)(normal, 1)(ligero, 1)(mucho pequeño, 1)
+comida: (bebido, 1)
+estacion: (mucho bonito, 1)(útil, 1)

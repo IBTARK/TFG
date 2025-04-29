@@ -1,0 +1,2 @@
+lugar: (tranquilo, 1)
+estacion: (buen, 1)
