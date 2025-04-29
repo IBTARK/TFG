@@ -401,7 +401,7 @@ INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
 ('56', '67', '3,4'),         -- Argüelles
 ('57', '128', '10,13');       -- Principe Pio (transbordo con L10 y Ramal)
 
-INSERT INTO lineas (id, nombre) VALUES 
+INSERT INTO lineas (id, nombre, siglas) VALUES 
 (1, 'Línea 1', 'L1'),
 (2, 'Línea 2', 'L2'),
 (3, 'Línea 3', 'L3'),
