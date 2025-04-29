@@ -55,7 +55,8 @@ CREATE TABLE `estaciones_lineas` (
 
 CREATE TABLE `lineas` (
   `id` int(11) NOT NULL,
-  `nombre` varchar(50) NOT NULL
+  `nombre` varchar(50) NOT NULL,
+  `siglas` varchar(10) NOT NULL,
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
