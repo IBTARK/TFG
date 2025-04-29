@@ -1,0 +1,2 @@
+parada: (funcional, 1)
+metro: (ligero, 1)

@@ -1,0 +1,8 @@
+estacion: (mucho recomendable, 1)(buen, 1)(difícil, 1)(funcional, 1)(amplio, 1)
+nivel: (personal, 1)
+parada: (importante, 1)
+metro: (simple, 1)
+personal: (mucho amable, 1)(amable, 1)(correcto, 1)
+salida: (nuevo, 1)(fácil, 1)(pequeño, 1)
+lugar: (buen, 1)
+visibilidad: (bien climatizado, 1)

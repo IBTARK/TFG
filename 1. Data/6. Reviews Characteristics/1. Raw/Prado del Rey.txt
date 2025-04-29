@@ -1,0 +1,2 @@
+estacion: (bien comunicado, 1)(estudios, 1)
+metro: (ligero, 1)

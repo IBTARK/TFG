@@ -1,0 +1,5 @@
+parada: (no mucho aquí solo andar, 1)
+anden: (lleno, 1)
+estacion: (ordenado, 1)(wifi, 1)(enorme, 1)(falta, 1)(divertido, 1)(exelente, 1)(buena, 1)(pequeño, 1)
+escalera: (averiada, 1)
+falta: (ascensor, 1)

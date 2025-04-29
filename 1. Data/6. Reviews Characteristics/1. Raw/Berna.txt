@@ -1,0 +1,4 @@
+estacion: (limpio, 1)(solitario, 1)(bueno, 1)
+frecuencia: (buena, 1)
+tren: (no suficiente, 1)
+metro: (ligero, 1)(mucho básico, 1)

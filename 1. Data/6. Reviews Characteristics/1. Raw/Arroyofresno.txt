@@ -1,0 +1,8 @@
+estacion: (mucho bueno, 1)(dotado, 1)(moderno, 2)(amplio, 3)(limpio, 2)(mucho recomendable, 1)(mas bonito, 1)(tecnológico, 1)(mas tranquilo, 1)(nuevo, 1)(totalmente accesible, 1)(mucho limpio, 1)
+linea: (solo, 1)
+escalera: (mecánico, 1)
+acceso: (reducido, 1)
+opinion: (sincero, 1)
+zona: (decorado, 1)(poco concurrido, 1)
+metro: (limpio, 1)(tranquilo, 1)
+lugar: (mucho bueno, 1)

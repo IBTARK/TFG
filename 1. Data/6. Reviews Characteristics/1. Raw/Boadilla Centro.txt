@@ -1,0 +1,6 @@
+sitio: (buen, 1)(agradable, 1)
+dia: (diferente, 1)
+parada: (sencillo, 1)
+avenida: (principal, 1)
+numero: (debido, 1)(gran, 1)
+estacion: (inesperado, 1)(excelente, 1)(mucho bien, 1)(bien, 2)(sitio, 1)
