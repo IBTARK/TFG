@@ -499,7 +499,210 @@ INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
 (130, 6, 25),
 (131, 6, 26);
 
+-- Inserción de estaciones para la Línea 7 en lineas_estaciones
+INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
+(132, 7, 1),
+(133, 7, 2),
+(134, 7, 3),
+(135, 7, 4),
+(136, 7, 5),
+(137, 7, 6),
+(138, 7, 7),
+(139, 7, 8),
+(140, 7, 9),
+(141, 7, 10),
+(142, 7, 11),
+(143, 7, 12),
+(144, 7, 13),
+(93, 7, 14),
+(145, 7, 15),
+(146, 7, 16),
+(147, 7, 17),
+(75, 7, 18),
+(148, 7, 19),
+(149, 7, 20),
+(51, 7, 21),
+(150, 7, 22),
+(125, 7, 23),
+(151, 7, 24),
+(152, 7, 25),
+(153, 7, 26),
+(154, 7, 27),
+(155, 7, 28),
+(156, 7, 29),
+(157, 7, 30),
+(158, 7, 31);
 
+-- Inserción de estaciones para la Línea 8 en lineas_estaciones
+INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
+(124, 8, 1),
+(159, 8, 2),
+(160, 8, 3),
+(82, 8, 4),
+(161, 8, 5),
+(162, 8, 6),
+(163, 8, 7),
+(164, 8, 8);
+
+-- Inserción de estaciones para la Línea 9 en lineas_estaciones
+INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
+(165, 9, 1),
+(166, 9, 2),
+(167, 9, 3),
+(168, 9, 4),
+(169, 9, 5),
+(4, 9, 6),
+(170, 9, 7),
+(171, 9, 8),
+(159, 9, 9),
+(172, 9, 10),
+(173, 9, 11),
+(75, 9, 12),
+(96, 9, 13),
+(42, 9, 14),
+(174, 9, 15),
+(121, 9, 16),
+(175, 9, 17),
+(176, 9, 18),
+(177, 9, 19),
+(178, 9, 20),
+(179, 9, 21),
+(180, 9, 22),
+(181, 9, 23),
+(182, 9, 24),
+(183, 9, 25),
+(184, 9, 26),
+(185, 9, 27),
+(186, 9, 28),
+(187, 9, 29);
+
+-- Inserción de estaciones para la Línea 10 en lineas_estaciones
+INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
+(188, 10, 1),
+(189, 10, 2),
+(190, 10, 3),
+(191, 10, 4),
+(192, 10, 5),
+(192, 10, 6),
+(194, 10, 7),
+(195, 10, 8),
+(196, 10, 9),
+(197, 10, 10),
+(198, 10, 11),
+(199, 10, 12),
+(200, 10, 13),
+(3, 10, 14),
+(4, 10, 15),
+(201, 10, 16),
+(202, 10, 17),
+(124, 10, 18),
+(148, 10, 19),
+(69, 10, 20),
+(13, 10, 21),
+(65, 10, 22),
+(128, 10, 23),
+(203, 10, 24),
+(204, 10, 25),
+(112, 10, 26),
+(205, 10, 27),
+(206, 10, 28),
+(207, 10, 29),
+(208, 10, 30),
+(209, 10, 31);
+
+-- Inserción de estaciones para la Línea 11 en lineas_estaciones
+INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
+(116, 11, 1),
+(210, 11, 2),
+(211, 11, 3),
+(212, 11, 4),
+(213, 11, 5),
+(214, 11, 6),
+(215, 11, 7);
+
+-- Inserción de estaciones para la Línea 12 en lineas_estaciones
+INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
+(209, 12, 1),
+(216, 12, 2),
+(217, 12, 3),
+(218, 12, 4),
+(219, 12, 5),
+(220, 12, 6),
+(221, 12, 7),
+(222, 12, 8),
+(223, 12, 9),
+(224, 12, 10),
+(225, 12, 11),
+(226, 12, 12),
+(227, 12, 13),
+(228, 12, 14),
+(229, 12, 15),
+(230, 12, 16),
+(231, 12, 17),
+(232, 12, 18),
+(233, 12, 19),
+(234, 12, 20),
+(235, 12, 21),
+(236, 12, 22),
+(237, 12, 23),
+(238, 12, 24),
+(239, 12, 25),
+(240, 12, 26),
+(241, 12, 27),
+(242, 12, 28);
+
+-- Inserción de estaciones para la Línea RAMAL en lineas_estaciones
+INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
+(46, 13, 1),
+(128, 13, 2);
+
+
+-- Inserción de estaciones para la Línea ML1 en lineas_estaciones
+INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
+(1, 14, 1),
+(243, 14, 2),
+(244, 14, 3),
+(245, 14, 4),
+(246, 14, 5),
+(247, 14, 6),
+(248, 14, 7),
+(249, 14, 8),
+(196, 14, 9);
+
+-- Inserción de estaciones para la Línea ML2 en lineas_estaciones
+INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
+(205, 15, 1),
+(250, 15, 2),
+(251, 15, 3),
+(252, 15, 4),
+(253, 15, 5),
+(254, 15, 6),
+(255, 15, 7),
+(256, 15, 8),
+(257, 15, 9),
+(258, 15, 10),
+(259, 15, 11),
+(260, 15, 12),
+(261, 15, 13);
+
+-- Inserción de estaciones para la Línea ML3 en lineas_estaciones
+INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
+(205, 16, 1),
+(262, 16, 2),
+(263, 16, 3),
+(264, 16, 4),
+(265, 16, 5),
+(266, 16, 6),
+(267, 16, 7),
+(268, 16, 8),
+(269, 16, 9),
+(270, 16, 10),
+(271, 16, 11),
+(272, 16, 12),
+(273, 16, 13),
+(274, 16, 14),
+(275, 16, 15),
+(276, 16, 16);
 
 
 TRUNCATE TABLE `transbordos`;
@@ -580,6 +783,71 @@ INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
 ('55', '68', '3'),           -- Moncloa
 ('56', '67', '3,4'),         -- Argüelles
 ('57', '128', '10,13');       -- Principe Pio (transbordo con L10 y Ramal)
+
+-- Transbordos para estaciones de la Línea 7
+INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
+('58', '93', '5'),           -- Pueblo Nuevo
+('59', '75', '4,6,9'),         -- Avenida de América
+('60', '148', '10'),           -- Gregorio Marañón
+('61', '51', '2');          -- Canal
+
+-- Transbordos para estaciones de la Línea 8
+INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
+('62', '124', '6,10'),           -- Nuevos Ministerios
+('63', '159', '9'),         -- Colombia
+('64', '82', '10');          -- Mar de Cristal
+
+-- Transbordos para estaciones de la Línea 9
+INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
+('65', '4', '1,10'),           -- Plaza Castilla
+('66', '159', '8'),         -- Colombia
+('67', '75', '4,6,7'),          -- Avenida de América
+('68', '96', '5'),            -- Núñez de Balboa (transbordo con L9)
+('69', '42', '2'),           -- Príncipe de Vergara
+('70', '121', '6');           -- Sainz de Baranda
+
+-- Transbordos para estaciones de la Línea 10
+INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
+('71', '196', '14'),           -- Las Tablas
+('72', '3', '1'),        -- Chamartín (solo metro)
+('73', '4', '1,9'),          -- Plaza de Castilla
+('74', '124', '6,8'),            -- Nuevos Ministerios
+('75', '148', '7'),           -- Gregorio Marañón
+('76', '69', '4,5'),           -- Alonso Martínez
+('77', '13', '1'),          -- Tribunal
+('78', '65', '2,3'),            -- Plaza España
+('79', '128', '6,13'),           -- Principe Pio
+('80', '112', '5'),          -- Casa de Campo (transbordo con L10)
+('81', '205', '15,16'),            -- Colonia Jardín
+('82', '209', '12');          -- Puerta del Sur
+
+-- Transbordos para estaciones de la Línea 11
+INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
+('83', '116', '6');           -- Plaza Elíptica (transbordo con L11)
+
+-- Transbordos para estaciones de la Línea 12
+INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
+('84', '209', '10');           -- Puerta del Sur
+
+-- Transbordos para estaciones de la Línea Ramal
+INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
+('85', '46', '2,5'),          -- Ópera (transbordo con L2 y Ramal)
+('86', '128', '6,10');          -- Principe Pio
+
+-- Transbordos para estaciones de la Línea ML1
+INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
+('87', '1', '1,4'),          -- Pinar de Chamartín
+('88', '196', '10');          -- Las Tablas
+
+-- Transbordos para estaciones de la Línea ML2
+INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
+('89', '205', '10,16');          -- Colonia Jardín
+
+
+-- Transbordos para estaciones de la Línea ML3
+INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
+('90', '205', '10,15');          -- Colonia Jardín
+
 
 INSERT INTO lineas (id, nombre, siglas) VALUES 
 (1, 'Línea 1', 'L1'),
