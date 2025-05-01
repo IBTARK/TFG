@@ -150,6 +150,184 @@ INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUE
 (132, 'Alto de Extremadura', TRUE, 'Paseo de Extremadura', 'Estación residencial en Latina'),
 (133, 'Lucero', TRUE, 'Calle de Latón', 'Zona residencial cercana a Casa de Campo');
 
+-- Inserción de estaciones de la Línea 7
+INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
+(134, 'Hospital de Henares', TRUE, 'Camino Labor, s/n', 'Hospital del Henares es una estación de la línea 7 del Metro de Madrid situada junto al Hospital del Henares de Coslada.'),
+(135, 'Henares', TRUE, 'Avenida Algorta, 12', 'Henares es una estación de la Línea 7 de Metro de Madrid situada bajo la avenida de Algorta, en San Fernando de Henares, próxima al cauce del río Henares.'),
+(136, 'Jarama', TRUE, 'Plaza Guernica', 'Jarama es una estación de la línea 7 del Metro de Madrid situada bajo la Plaza de Guernica, junto al Parque Dolores Ibárruri de San Fernando de Henares. El nombre de la estación se debe a que en sus proximidades, aunque alejado, pasa el río Jarama.'),
+(137, 'San Fernando', TRUE, 'Plaza Echebeste, 33', 'San Fernando es una estación de la línea 7 del Metro de Madrid situada bajo la Plaza de la Real Fábrica de Paños de San Fernando, en el casco histórico de San Fernando de Henares. Junto a la estación se encuentra el Ayuntamiento de San Fernando de Henares.'),
+(138, 'La Rambla', TRUE, 'Calle Honduras', 'La Rambla es una estación de la Línea 7 del Metro de Madrid situada bajo la intersección de las calles Honduras y México, en el municipio de Coslada.'),
+(139, 'Coslada Central', TRUE, 'Calle Doctor Fleming', 'Coslada Central es una estación de la línea 7 del Metro de Madrid, situada entre la calle de Pablo Neruda y el paseo de Francisco Javier Sauquillo, en el municipio madrileño de Coslada.'),
+(140, 'Barrio del Puerto', TRUE, 'Avenida de España', 'Barrio del Puerto es una estación de la línea 7 del Metro de Madrid situada bajo la avenida de España en el barrio del mismo nombre del municipio de Coslada.'),
+(141, 'Estadio Metropolitano', TRUE, 'Avenida de Arcentales', 'Acceso al estadio del Atlético de Madrid'),
+(142, 'Las Musas', TRUE, 'Calle Estocolmo', 'Zona residencial de San Blas'),
+(143, 'San Blas', TRUE, 'Calle Amposta', 'Centro del distrito San Blas-Canillejas'),
+(144, 'Simancas', FALSE, 'Calle de Simancas', 'Zona residencial'),
+(145, 'García Noblejas', FALSE, 'Calle de los Hermanos García Noblejas', 'Zona residencial'),
+(146, 'Ascao', FALSE, 'Calle de Ascao', 'Zona residencial del barrio Pueblo Nuevo'),
+(147, 'Barrio de la Concepción', TRUE, 'Plaza Virgen del Romero, 1', 'Barrio de la Concepción es una estación de la línea 7 del Metro de Madrid situada en el barrio de la Concepción, en el distrito de Ciudad Lineal.'),
+(148, 'Parque de las Avenidas', FALSE, 'Avenida de Bruselas, 56', 'Parque de las Avenidas es una estación de la línea 7 del Metro de Madrid situada bajo la avenida de Bruselas, en el barrio de La Guindalera, perteneciente al madrileño distrito de Salamanca.'),
+(149, 'Cartagena', FALSE, 'Avenida de América, 32', 'Cartagena es una estación de la Línea 7 del Metro de Madrid, situada entre los barrios de Prosperidad y La Guindalera bajo la intersección de la Avenida de América con la calle Cartagena.'),
+(150, 'Gregorio Marañón', TRUE, 'Calle de José Abascal', 'Conexión con Línea 10'),
+(151, 'Alonso Cano', FALSE, 'Calle de Alonso Cano', 'Barrio de Chamberí'),
+(152, 'Islas Filipinas', FALSE, 'Calle de Islas Filipinas', 'Distrito de Chamberí'),
+(153, 'Francos Rodríguez', FALSE, 'Calle de Francos Rodríguez', 'Zona residencial de Moncloa-Aravaca'),
+(154, 'Valdezarza', FALSE, 'Calle de Ofelia Nieto', 'Distrito Moncloa-Aravaca'),
+(155, 'Antonio Machado', FALSE, 'Calle de Antonio Machado', 'Zona residencial'),
+(156, 'Peñagrande', FALSE, 'Calle de Joaquín Lorenzo', 'Zona residencial de Fuencarral-El Pardo'),
+(157, 'Avenida de la Ilustración', TRUE, 'Av. de la Ilustración', 'Zona norte de Madrid junto a M-30'),
+(158, 'Lacoma', FALSE, 'Calle de Lacoma', 'Zona residencial del distrito Fuencarral-El Pardo'),
+(159, 'Arroyofresno', TRUE, 'Calle María de Maeztu, 52', 'Arroyofresno es una estación de la línea 7 del Metro de Madrid, situada en el área residencial de Arroyo del Fresno que forma parte del barrio de Mirasierra (distrito Fuencarral-El Pardo).'),
+(160, 'Pitis', FALSE, 'Calle Senda del Infante', 'Estación terminal con conexión a Cercanías');
+
+-- Inserción de estaciones de la Línea 8
+INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
+(161, 'Colombia', TRUE, 'Calle de Colombia', 'Conexión con Línea 9, zona empresarial y residencial'),
+(162, 'Pinar del Rey', TRUE, 'Calle de Pinar del Rey', 'Ubicada en el distrito de Hortaleza'),
+(163, 'Feria de Madrid', TRUE, 'Avenida del Partenón', 'Acceso al recinto ferial IFEMA'),
+(164, 'Aeropuerto T1-T2-T3', TRUE, 'Aeropuerto Adolfo Suárez Madrid-Barajas, Terminal 2', 'Acceso a terminales T1, T2 y T3'),
+(165, 'Barajas', TRUE, 'Plaza del Mercurio', 'Estación en el casco antiguo de Barajas'),
+(166, 'Aeropuerto T4', TRUE, 'Aeropuerto Adolfo Suárez Madrid-Barajas, Terminal 4', 'Conexión con Cercanías RENFE');
+
+-- Inserción de estaciones de la Línea 9
+INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
+(167, 'Paco de Lucía', TRUE, 'Calle Costa Brava', 'Terminal norte de Línea 9, conexión con Cercanías'),
+(168, 'Mirasierra', TRUE, 'Av. Ventisquero de la Condesa', 'Barrio residencial, cerca del hospital Ruber Internacional'),
+(169, 'Herrera Oria', FALSE, 'Calle Fermín Caballero', 'Zona residencial, también aparece en Línea 7'),
+(170, 'Barrio del Pilar', TRUE, 'Av. Betanzos', 'Conexión con centro comercial La Vaguada'),
+(171, 'Ventilla', FALSE, 'Calle de Asturias', 'Zona residencial de Tetuán'),
+(172, 'Duque de Pastrana', FALSE, 'Paseo de la Habana', 'Zona empresarial de Chamartín'),
+(173, 'Pío XII', FALSE, 'Avenida de Pío XII', 'Zona empresarial y residencial'),
+(174, 'Concha Espina', FALSE, 'Calle Concha Espina', 'Próxima al estadio Santiago Bernabéu'),
+(175, 'Cruz del Rayo', FALSE, 'Calle Serrano', 'Zona residencial de Salamanca'),
+(176, 'Ibiza', FALSE, 'Calle Ibiza', 'Junto al Hospital Gregorio Marañón'),
+(177, 'Estrella', FALSE, 'Calle Estrella Polar', 'Zona residencial'),
+(178, 'Vinateros', FALSE, 'Calle Marroquina', 'Zona residencial'),
+(179, 'Artilleros', FALSE, 'Calle Pico de Artilleros', 'Zona residencial'),
+(180, 'Pavones', FALSE, 'Calle de los Pavones', 'Barrio de Moratalaz'),
+(181, 'Valdebernardo', FALSE, 'Calle Ladera de los Almendros', 'Distrito Vicálvaro'),
+(182, 'Vicálvaro', FALSE, 'Plaza de Alonso', 'Centro del barrio de Vicálvaro'),
+(183, 'San Cipriano', FALSE, 'Calle de San Cipriano', 'Zona residencial'),
+(184, 'Puerta de Arganda', TRUE, 'Calle Pico Artilleros', 'Transbordo entre Metro y MetroEste'),
+(185, 'Rivas-Urbanizaciones', TRUE, 'Av. de Levante', 'Urbanizaciones de Rivas Vaciamadrid'),
+(186, 'Rivas Futura', TRUE, 'Av. de Levante', 'Nuevo desarrollo urbanístico de Rivas-Vaciamadrid'),
+(187, 'Rivas Vaciamadrid', TRUE, 'Calle de la Fundición', 'Centro urbano de Rivas'),
+(188, 'La Poveda', TRUE, 'Calle Camino de la Poveda', 'Zona residencial de Arganda del Rey'),
+(189, 'Arganda del Rey', TRUE, 'Calle del Real', 'Terminal este de Línea 9');
+
+
+-- Inserción de estaciones de la Línea 10
+INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
+(190, 'Hospital Infanta Sofía', TRUE, 'Av. de la Sierra, San Sebastián de los Reyes', 'Terminal norte de Línea 10'),
+(191, 'Reyes Católicos', TRUE, 'Av. de Reyes Católicos', 'Zona céntrica de San Sebastián de los Reyes'),
+(192, 'Baunatal', TRUE, 'Av. de España', 'Zona residencial y comercial'),
+(193, 'Manuel de Falla', TRUE, 'Av. de España, San Sebastián de los Reyes', 'Zona residencial'),
+(194, 'Marqués de la Valdavia', TRUE, 'Av. de España', 'Zona residencial de Alcobendas'),
+(195, 'La Moraleja', TRUE, 'Camino del Cura', 'Zona residencial de alto nivel'),
+(196, 'La Granja', TRUE, 'C/ Sepúlveda, 3', 'Situada en el municipio de Alcobendas en el polígono industrial Vereda del Pobre'),
+(197, 'Ronda de la Comunicación', TRUE, 'Distrito Telefónica', 'Sede central de Telefónica'),
+(198, 'Las Tablas', TRUE, 'Calle de Castiello de Jaca', 'Conexión con ML1'),
+(199, 'Montecarmelo', TRUE, 'Av. del Monte del Gozo', 'Barrio residencial al norte de Madrid'),
+(200, 'Tres Olivos', TRUE, 'Calle de Antonio Cabezón', 'Transbordo entre ramales de Línea 10'),
+(201, 'Fuencarral', TRUE, 'Calle de Nuestra Señora de Valverde', 'Zona norte tradicional'),
+(202, 'Begoña', TRUE, 'Av. de la Ilustración', 'Acceso al Hospital La Paz'),
+(203, 'Cuzco', TRUE, 'Paseo de la Castellana', 'Zona financiera'),
+(204, 'Santiago Bernabéu', TRUE, 'Paseo de la Castellana', 'Estadio del Real Madrid'),
+(205, 'Lago', TRUE, 'Paseo del Embarcadero', 'Acceso al Lago de la Casa de Campo'),
+(206, 'Batán', TRUE, 'Paseo de la Puerta del Ángel', 'Acceso al Parque de Atracciones'),
+(207, 'Colonia Jardín', TRUE, 'Calle del Oropéndola', 'Conexión con ML2 y ML3'),
+(208, 'Aviación Española', TRUE, 'Av. Aviación Española', 'Zona residencial'),
+(209, 'Cuatro Vientos', TRUE, 'Calle de Cuatro Vientos', 'Zona sur de Madrid'),
+(210, 'Joaquín Vilumbrales', TRUE, 'Av. de los Castillos', 'Alcorcón'),
+(211, 'Puerta del Sur', TRUE, 'Av. de Leganés', 'Conexión con Línea 12, Alcorcón');
+
+-- Inserción de estaciones de la Línea 11
+INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
+(212, 'Abrantes', TRUE, 'Calle de Abrantes', 'Barrio de Carabanchel, zona residencial'),
+(213, 'Pan Bendito', TRUE, 'Calle del Cristo de Lepanto', 'Barrio Pan Bendito, zona sur de Madrid'),
+(214, 'San Francisco', TRUE, 'Calle de Camino Viejo de Leganés', 'Barrio de San Francisco, zona residencial'),
+(215, 'Carabanchel Alto', TRUE, 'Calle de Alfonso Fernández', 'Antiguo municipio anexionado a Madrid'),
+(216, 'La Peseta', TRUE, 'Avenida de La Peseta', 'Barrio de Carabanchel, junto al PAU'),
+(217, 'La Fortuna', TRUE, 'Avenida de la Libertad', 'Única estación de Metro en Leganés');
+
+
+-- Inserción de estaciones de la Línea 12
+INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
+(218, 'Parque Lisboa', TRUE, 'Calle Porto Cristo', 'Zona residencial en Alcorcón'),
+(219, 'Alcorcón Central', TRUE, 'Calle del Retamas', 'Conexión con Cercanías RENFE'),
+(220, 'Parque Oeste', TRUE, 'Av. de la Libertad', 'Junto al centro comercial X-Madrid'),
+(221, 'Universidad Rey Juan Carlos', TRUE, 'Av. de Atenas', 'Campus de la URJC en Móstoles'),
+(222, 'Móstoles Central', TRUE, 'Calle del Cristo', 'Conexión con Cercanías RENFE'),
+(223, 'Pradillo', TRUE, 'Plaza del Pradillo', 'Centro de Móstoles'),
+(224, 'Hospital de Móstoles', TRUE, 'Av. de la Constitución', 'Acceso al hospital de Móstoles'),
+(225, 'Manuela Malasaña', TRUE, 'Calle Alfonso XII', 'Zona residencial de Móstoles'),
+(226, 'Loranca', TRUE, 'Av. Pablo Iglesias', 'Distrito de Loranca, Fuenlabrada'),
+(227, 'Hospital de Fuenlabrada', TRUE, 'Calle del Molino', 'Situada junto al Hospital de Fuenlabrada y el campus de la Universidad Rey Juan Carlos en Fuenlabrada'),
+(228, 'Parque Europa', TRUE, 'Calle Grecia', 'Zona nueva en Fuenlabrada'),
+(229, 'Fuenlabrada Central', TRUE, 'Plaza de la Constitución', 'Conexión con Cercanías RENFE'),
+(230, 'Parque de los Estados', TRUE, 'Calle Francia', 'Zona residencial de Fuenlabrada'),
+(231, 'Arroyo Culebro', TRUE, 'Av. del Hospital', 'Distrito de Leganés'),
+(232, 'Conservatorio', TRUE, 'Avenida de las Arcas del Agua, 9', 'El nombre se puso porque muy cerca de ella está el Conservatorio Profesional de Música de Getafe.'),
+(233, 'Alonso de Mendoza', TRUE, 'Calle El Greco, 2', 'Alonso de Mendoza es una estación de la línea 12 del Metro de Madrid ubicada bajo la calle del mismo nombre, en la zona sur del barrio de Alhóndiga de Getafe.'),
+(234, 'Getafe Central', TRUE, 'Av. Juan de la Cierva', 'Conexión con Cercanías RENFE'),
+(235, 'Juan de la Cierva', TRUE, 'Av. de Juan de la Cierva', 'Zona residencial de Getafe'),
+(236, 'El Casar', TRUE, 'Calle de El Casar', 'Conexión futura con Línea 3 (en construcción)'),
+(237, 'Los Espartales', TRUE, 'Av. Rigoberta Menchú', 'Barrio nuevo en Getafe'),
+(238, 'El Bercial', TRUE, 'Calle Islas Cíes', 'Zona residencial y comercial'),
+(239, 'El Carrascal', TRUE, 'Av. Rey Juan Carlos I', 'Cerca del centro comercial Parquesur'),
+(240, 'Julián Besteiro', TRUE, 'Av. de Juan XXIII', 'Zona sur de Leganés'),
+(241, 'Casa del Reloj', TRUE, 'Calle del Maestro', 'Zona residencial'),
+(242, 'Hospital Severo Ochoa', TRUE, 'Calle del Río Tajo', 'Acceso al hospital Severo Ochoa'),
+(243, 'Leganés Central', TRUE, 'Av. Fuenlabrada', 'Conexión con Cercanías RENFE'),
+(244, 'San Nicasio', TRUE, 'Calle La Encina', 'San Nicasio es una estación de la línea 12 del Metro de Madrid situada en la confluencia de la parte antigua y el ensanche del barrio homónimo de Leganés. La estación abrió al público el 11 de abril de 2003.');
+
+
+-- Inserción de estaciones de la Línea ML1
+INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
+(245, 'Fuente de la Mora', TRUE, 'Calle Fuente de la Mora', 'Conexión con Cercanías RENFE'),
+(246, 'Virgen del Cortijo', TRUE, 'Calle de Oña', 'Barrio residencial en Hortaleza'),
+(247, 'Antonio Saura', TRUE, 'Calle Antonio Saura', 'Zona empresarial de Sanchinarro'),
+(248, 'Álvarez de Villaamil', TRUE, 'Calle Álvarez de Villaamil', 'Sanchinarro'),
+(249, 'Blasco Ibáñez', TRUE, 'Calle Blasco Ibáñez', 'Barrio residencial de reciente construcción'),
+(250, 'María Tudor', TRUE, 'Calle María Tudor', 'Zona residencial de Sanchinarro'),
+(251, 'Palas de Rey', TRUE, 'Calle Palas de Rey', 'Zona norte de Sanchinarro');
+
+
+-- Inserción de estaciones de la Línea ML2
+INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
+(252, 'Prado de la Vega', TRUE, 'Calle Prado de la Vega', 'Zona residencial cerca de Ciudad de la Imagen'),
+(253, 'Colonia de los Ángeles', TRUE, 'Av. del Talgo', 'Zona residencial en Pozuelo de Alarcón'),
+(254, 'Prado del Rey', TRUE, 'Av. de Radio Televisión', 'Centro de RTVE en Pozuelo'),
+(255, 'Somosaguas Sur', TRUE, 'Calle Isaac Albéniz', 'Zona residencial del Campus de Somosaguas'),
+(256, 'Somosaguas Centro', TRUE, 'Calle de la Libertad', 'Zona universitaria de Somosaguas'),
+(257, 'Pozuelo Oeste', TRUE, 'Calle Portugal', 'Zona comercial de Pozuelo'),
+(258, 'Bélgica', TRUE, 'Av. de Europa', 'Barrio de Pozuelo de Alarcón'),
+(259, 'Dos Castillas', TRUE, 'Av. de Europa', 'Zona empresarial de Pozuelo'),
+(260, 'Campus de Somosaguas', TRUE, 'Campus de Somosaguas', 'Universidad Complutense de Madrid'),
+(261, 'Avenida de Europa', TRUE, 'Av. de Europa', 'Zona residencial y de oficinas'),
+(262, 'Berna', TRUE, 'Calle de Berna', 'Zona residencial y empresarial'),
+(263, 'Estación de Aravaca', TRUE, 'Av. de la Osa Mayor', 'Conexión con Cercanías RENFE');
+
+
+-- Inserción de estaciones de la Línea ML3
+INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
+(264, 'Ciudad de la Imagen', TRUE, 'Calle Luis Buñuel', 'Centro audiovisual y comercial'),
+(265, 'José Isbert', TRUE, 'Calle José Isbert', 'Zona de ocio y cines'),
+(266, 'Ciudad del Cine', TRUE, 'Calle Juan de Orduña', 'Zona audiovisual'),
+(267, 'Cocheras', TRUE, 'Camino de las Huertas', 'Depósito y talleres del metro ligero'),
+(268, 'Retamares', TRUE, 'Calle Retamares', 'Zona empresarial'),
+(269, 'Montepríncipe', TRUE, 'Av. de Montepríncipe', 'Campus universitario y hospital'),
+(270, 'Ventorro del Cano', TRUE, 'Pol. Ind. Ventorro del Cano', 'Zona empresarial'),
+(271, 'Prado del Espino', TRUE, 'Calle Prado del Espino', 'Zona industrial y empresarial'),
+(272, 'Cantabria', TRUE, 'Calle Cantabria', 'Barrio residencial'),
+(273, 'Ferial de Boadilla', TRUE, 'Av. Infante Don Luis', 'Zona del recinto ferial'),
+(274, 'Boadilla Centro', TRUE, 'Plaza de la Constitución', 'Centro histórico de Boadilla'),
+(275, 'Nuevo Mundo', TRUE, 'Calle Nuevo Mundo', 'Zona residencial'),
+(276, 'Siglo XXI', TRUE, 'Calle Siglo XXI', 'Barrio moderno en expansión'),
+(277, 'Infante Don Luis', TRUE, 'Av. Infante Don Luis', 'Zona comercial'),
+(278, 'Puerta de Boadilla', TRUE, 'Calle Valle del Silencio', 'Terminal de ML3');
+
+
 TRUNCATE TABLE `estaciones_lineas`;
 
 -- Asignación de estaciones a la Línea 1
@@ -321,6 +499,211 @@ INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
 (130, 6, 25),
 (131, 6, 26);
 
+-- Inserción de estaciones para la Línea 7 en lineas_estaciones
+INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
+(132, 7, 1),
+(133, 7, 2),
+(134, 7, 3),
+(135, 7, 4),
+(136, 7, 5),
+(137, 7, 6),
+(138, 7, 7),
+(139, 7, 8),
+(140, 7, 9),
+(141, 7, 10),
+(142, 7, 11),
+(143, 7, 12),
+(144, 7, 13),
+(93, 7, 14),
+(145, 7, 15),
+(146, 7, 16),
+(147, 7, 17),
+(75, 7, 18),
+(148, 7, 19),
+(149, 7, 20),
+(51, 7, 21),
+(150, 7, 22),
+(125, 7, 23),
+(151, 7, 24),
+(152, 7, 25),
+(153, 7, 26),
+(154, 7, 27),
+(155, 7, 28),
+(156, 7, 29),
+(157, 7, 30),
+(158, 7, 31);
+
+-- Inserción de estaciones para la Línea 8 en lineas_estaciones
+INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
+(124, 8, 1),
+(159, 8, 2),
+(160, 8, 3),
+(82, 8, 4),
+(161, 8, 5),
+(162, 8, 6),
+(163, 8, 7),
+(164, 8, 8);
+
+-- Inserción de estaciones para la Línea 9 en lineas_estaciones
+INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
+(165, 9, 1),
+(166, 9, 2),
+(167, 9, 3),
+(168, 9, 4),
+(169, 9, 5),
+(4, 9, 6),
+(170, 9, 7),
+(171, 9, 8),
+(159, 9, 9),
+(172, 9, 10),
+(173, 9, 11),
+(75, 9, 12),
+(96, 9, 13),
+(42, 9, 14),
+(174, 9, 15),
+(121, 9, 16),
+(175, 9, 17),
+(176, 9, 18),
+(177, 9, 19),
+(178, 9, 20),
+(179, 9, 21),
+(180, 9, 22),
+(181, 9, 23),
+(182, 9, 24),
+(183, 9, 25),
+(184, 9, 26),
+(185, 9, 27),
+(186, 9, 28),
+(187, 9, 29);
+
+-- Inserción de estaciones para la Línea 10 en lineas_estaciones
+INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
+(188, 10, 1),
+(189, 10, 2),
+(190, 10, 3),
+(191, 10, 4),
+(192, 10, 5),
+(192, 10, 6),
+(194, 10, 7),
+(195, 10, 8),
+(196, 10, 9),
+(197, 10, 10),
+(198, 10, 11),
+(199, 10, 12),
+(200, 10, 13),
+(3, 10, 14),
+(4, 10, 15),
+(201, 10, 16),
+(202, 10, 17),
+(124, 10, 18),
+(148, 10, 19),
+(69, 10, 20),
+(13, 10, 21),
+(65, 10, 22),
+(128, 10, 23),
+(203, 10, 24),
+(204, 10, 25),
+(112, 10, 26),
+(205, 10, 27),
+(206, 10, 28),
+(207, 10, 29),
+(208, 10, 30),
+(209, 10, 31);
+
+-- Inserción de estaciones para la Línea 11 en lineas_estaciones
+INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
+(116, 11, 1),
+(210, 11, 2),
+(211, 11, 3),
+(212, 11, 4),
+(213, 11, 5),
+(214, 11, 6),
+(215, 11, 7);
+
+-- Inserción de estaciones para la Línea 12 en lineas_estaciones
+INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
+(209, 12, 1),
+(216, 12, 2),
+(217, 12, 3),
+(218, 12, 4),
+(219, 12, 5),
+(220, 12, 6),
+(221, 12, 7),
+(222, 12, 8),
+(223, 12, 9),
+(224, 12, 10),
+(225, 12, 11),
+(226, 12, 12),
+(227, 12, 13),
+(228, 12, 14),
+(229, 12, 15),
+(230, 12, 16),
+(231, 12, 17),
+(232, 12, 18),
+(233, 12, 19),
+(234, 12, 20),
+(235, 12, 21),
+(236, 12, 22),
+(237, 12, 23),
+(238, 12, 24),
+(239, 12, 25),
+(240, 12, 26),
+(241, 12, 27),
+(242, 12, 28);
+
+-- Inserción de estaciones para la Línea RAMAL en lineas_estaciones
+INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
+(46, 13, 1),
+(128, 13, 2);
+
+
+-- Inserción de estaciones para la Línea ML1 en lineas_estaciones
+INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
+(1, 14, 1),
+(243, 14, 2),
+(244, 14, 3),
+(245, 14, 4),
+(246, 14, 5),
+(247, 14, 6),
+(248, 14, 7),
+(249, 14, 8),
+(196, 14, 9);
+
+-- Inserción de estaciones para la Línea ML2 en lineas_estaciones
+INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
+(205, 15, 1),
+(250, 15, 2),
+(251, 15, 3),
+(252, 15, 4),
+(253, 15, 5),
+(254, 15, 6),
+(255, 15, 7),
+(256, 15, 8),
+(257, 15, 9),
+(258, 15, 10),
+(259, 15, 11),
+(260, 15, 12),
+(261, 15, 13);
+
+-- Inserción de estaciones para la Línea ML3 en lineas_estaciones
+INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
+(205, 16, 1),
+(262, 16, 2),
+(263, 16, 3),
+(264, 16, 4),
+(265, 16, 5),
+(266, 16, 6),
+(267, 16, 7),
+(268, 16, 8),
+(269, 16, 9),
+(270, 16, 10),
+(271, 16, 11),
+(272, 16, 12),
+(273, 16, 13),
+(274, 16, 14),
+(275, 16, 15),
+(276, 16, 16);
+
 
 TRUNCATE TABLE `transbordos`;
 
@@ -400,6 +783,71 @@ INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
 ('55', '68', '3'),           -- Moncloa
 ('56', '67', '3,4'),         -- Argüelles
 ('57', '128', '10,13');       -- Principe Pio (transbordo con L10 y Ramal)
+
+-- Transbordos para estaciones de la Línea 7
+INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
+('58', '93', '5'),           -- Pueblo Nuevo
+('59', '75', '4,6,9'),         -- Avenida de América
+('60', '148', '10'),           -- Gregorio Marañón
+('61', '51', '2');          -- Canal
+
+-- Transbordos para estaciones de la Línea 8
+INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
+('62', '124', '6,10'),           -- Nuevos Ministerios
+('63', '159', '9'),         -- Colombia
+('64', '82', '10');          -- Mar de Cristal
+
+-- Transbordos para estaciones de la Línea 9
+INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
+('65', '4', '1,10'),           -- Plaza Castilla
+('66', '159', '8'),         -- Colombia
+('67', '75', '4,6,7'),          -- Avenida de América
+('68', '96', '5'),            -- Núñez de Balboa (transbordo con L9)
+('69', '42', '2'),           -- Príncipe de Vergara
+('70', '121', '6');           -- Sainz de Baranda
+
+-- Transbordos para estaciones de la Línea 10
+INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
+('71', '196', '14'),           -- Las Tablas
+('72', '3', '1'),        -- Chamartín (solo metro)
+('73', '4', '1,9'),          -- Plaza de Castilla
+('74', '124', '6,8'),            -- Nuevos Ministerios
+('75', '148', '7'),           -- Gregorio Marañón
+('76', '69', '4,5'),           -- Alonso Martínez
+('77', '13', '1'),          -- Tribunal
+('78', '65', '2,3'),            -- Plaza España
+('79', '128', '6,13'),           -- Principe Pio
+('80', '112', '5'),          -- Casa de Campo (transbordo con L10)
+('81', '205', '15,16'),            -- Colonia Jardín
+('82', '209', '12');          -- Puerta del Sur
+
+-- Transbordos para estaciones de la Línea 11
+INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
+('83', '116', '6');           -- Plaza Elíptica (transbordo con L11)
+
+-- Transbordos para estaciones de la Línea 12
+INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
+('84', '209', '10');           -- Puerta del Sur
+
+-- Transbordos para estaciones de la Línea Ramal
+INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
+('85', '46', '2,5'),          -- Ópera (transbordo con L2 y Ramal)
+('86', '128', '6,10');          -- Principe Pio
+
+-- Transbordos para estaciones de la Línea ML1
+INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
+('87', '1', '1,4'),          -- Pinar de Chamartín
+('88', '196', '10');          -- Las Tablas
+
+-- Transbordos para estaciones de la Línea ML2
+INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
+('89', '205', '10,16');          -- Colonia Jardín
+
+
+-- Transbordos para estaciones de la Línea ML3
+INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
+('90', '205', '10,15');          -- Colonia Jardín
+
 
 INSERT INTO lineas (id, nombre, siglas) VALUES 
 (1, 'Línea 1', 'L1'),
