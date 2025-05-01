@@ -340,3 +340,364 @@ INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`) VALUES
 (302, 133, 132),
 (303, 133, 115),
 (304, 115, 133);
+
+--Linea 7
+(305, 134, 135),
+(306, 135, 134),
+(307, 135, 136),
+(308, 136, 135),
+(309, 136, 137),
+(310, 137, 136),
+(311, 137, 138),
+(312, 138, 137),
+(313, 138, 139),
+(314, 139, 138),
+(315, 139, 140),
+(316, 140, 139),
+(317, 140, 141),
+(318, 141, 140),
+(319, 141, 142),
+(320, 142, 141),
+(321, 142, 143),
+(322, 143, 142),
+(323, 143, 144),
+(324, 144, 143),
+(325, 144, 145),
+(326, 145, 144),
+(327, 145, 146),
+(328, 146, 145),
+(329, 146, 96),
+(330, 96, 146),
+(331, 96, 147),
+(332, 147, 96),
+(333, 147, 148),
+(334, 148, 147),
+(335, 148, 149),
+(336, 149, 148),
+(337, 149, 78),
+(338, 78, 149),
+(339, 78, 150),
+(340, 150, 78),
+(341, 150, 151),
+(342, 151, 150),
+(343, 151, 35),
+(344, 35, 151),
+(345, 35, 152),
+(346, 152, 35),
+(347, 152, 127),
+(348, 127, 152),
+(349, 127, 153),
+(350, 153, 127),
+(351, 153, 154),
+(352, 154, 153),
+(353, 154, 155),
+(354, 155, 154),
+(355, 155, 156),
+(356, 156, 155),
+(357, 156, 157),
+(358, 157, 156),
+(359, 157, 158),
+(360, 158, 157),
+(361, 158, 159),
+(362, 159, 158),
+(363, 159, 160),
+(364, 160, 159);
+
+--Linea 8
+INSERT INTO conexiones (id, id_origen, id_destino) VALUES
+(365, 124, 159),          -- Nuevos Ministerios - Colombia
+(366, 159, 124),          -- Colombia - Nuevos Ministerios
+(367, 159, 160),          -- Colombia - Pinar del Rey
+(368, 160, 159),          -- Pinar del Rey - Colombia 
+(369, 160, 82),          -- Pinar del Rey - Mar de Cristal
+(370, 82, 160),          -- Mar de Cristal - Pinar del Rey
+(371, 82, 161),          -- Mar de Cristal - Feria de Madrid
+(372, 161, 82),          -- Feria de Madrid - Mar de Cristal
+(373, 161, 162),          -- Feria de Madrid - Aeropuerto T1-T2-T3
+(374, 162, 161),          -- Aeropuerto T1-T2-T3 - Feria de Madrid
+(375, 162, 163),          -- Aeropuerto T1-T2-T3 - Barajas
+(376, 163, 162),          -- Barajas - Aeropuerto T1-T2-T3
+(377, 163, 164),          -- Barajas - Aeropuerto T4
+(378, 164, 163);          -- Aeropuerto T4 - Barajas
+
+-- Línea 9
+INSERT INTO conexiones (id, id_origen, id_destino) VALUES
+(379, 165, 166),          -- Paco de Lucia - Mirasierra
+(380, 166, 165),          -- Mirasierra - Paco de Lucia
+(381, 166, 167),          -- Mirasierra - Herrera Oria
+(382, 167, 166),          -- Herrera Oria - Mirasierra
+(383, 167, 168),          -- Herrera Oria - Barrio del Pilar
+(384, 168, 167),          -- Barrio del Pilar - Herrera Oria
+(385, 168, 169),          -- Barrio del Pilar - Ventilla
+(386, 169, 168),          -- Ventilla - Barrio del Pilar
+(387, 169, 4),          -- Ventilla - Plaza Castilla
+(388, 4, 169),          -- Plaza Castilla - Ventilla
+(389, 4, 170),          -- Plaza Castilla - Duque de Pastrana
+(390, 170, 4),          -- Duque de Pastrana - Plaza Castilla
+(391, 170, 171),          -- Duque de Pastrana - Pío  XII
+(392, 171, 170),          -- Pío  XII - Duque de Pastrana
+(393, 171, 159),          -- Pío  XII - Colombia
+(394, 159, 171),          -- Colombia - Pío  XII
+(395, 159, 172),          -- Colombia - Concha Espina
+(396, 172, 159),          -- Concha Espina - Colombia
+(397, 172, 173),          -- Concha Espina - Cruz del Rayo
+(398, 173, 172),          -- Cruz del Rayo - Concha Espina
+(399, 173, 75),          -- Cruz del Rayo - Avenida de América
+(400, 75, 173),          -- Avenida de América - Cruz del Rayo
+(401, 75, 96),          -- Avenida de América - Núñez de Balboa
+(402, 96, 75),          -- Núñez de Balboa - Avenida de América
+(403, 96, 42),          -- Núñez de Balboa - Príncipe de Vergara
+(404, 42, 96),          -- Príncipe de Vergara - Núñez de Balboa
+(405, 42, 174),          -- Príncipe de Vergara - Ibiza
+(406, 174, 42),          -- Ibiza - Príncipe de Vergara
+(407, 174, 121),          -- Ibiza - Sainz de Baranda
+(408, 121, 174),          -- Sainz de Baranda - Ibiza
+(409, 121, 175),          -- Sainz de Baranda - Estrella
+(410, 175, 121),          -- Estrella - Sainz de Baranda
+(411, 175, 176),          -- Estrella - Vinateros
+(412, 176, 175),          -- Vinateros - Estrella
+(413, 176, 177),          -- Vinateros - Artilleros
+(414, 177, 176),          -- Artilleros - Vinateros
+(415, 177, 178),          -- Artilleros - Pavones
+(416, 178, 177),          -- Pavones - Artilleros
+(417, 178, 179),          -- Pavones - Valdebernardo
+(418, 179, 178),          -- Valdebernardo - Pavones
+(419, 179, 180),          -- Valdebernardo - Vicálvaro
+(420, 180, 179),          -- Vicálvaro - Valdebernardo
+(421, 180, 181),          -- Vicálvaro - San Cipriano
+(422, 181, 180),          -- San Cipriano - Vicálvaro
+(423, 181, 182),          -- San Cipriano - Puerta de Arganda
+(424, 182, 181),          -- Puerta de Arganda - San Cipriano
+(425, 182, 183),          -- Puerta de Arganda - Rivas-Urbanizaciones
+(426, 183, 182),          -- Rivas-Urbanizaciones - Puerta de Arganda
+(427, 183, 184),          -- Rivas-Urbanizaciones - Rivas Futura
+(428, 184, 183),          -- Rivas Futura - Rivas-Urbanizaciones
+(429, 184, 185),          -- Rivas Futura - Rivas-Vaciamadrid
+(430, 185, 184),          -- Rivas-Vaciamadrid - Rivas Futura
+(431, 185, 186),          -- Rivas-Vaciamadrid - La Poveda
+(432, 186, 185),          -- La Poveda - Rivas-Vaciamadrid
+(433, 186, 187),          -- La Poveda - Arganda del Rey
+(434, 187, 186);          -- Arganda del Rey - La Poveda
+
+-- Inserción de conexiones para la Línea 10
+INSERT INTO conexiones (id, id_origen, id_destino) VALUES
+(435, 188, 189),          -- Hospital Infanta Sofía - Reyes Católicos
+(436, 189, 188),          -- Reyes Católicos - Hospital Infanta Sofí
+(437, 189, 190),          -- Reyes Católicos - Baunatal
+(438, 190, 189),          -- Baunatal - Reyes Católicos
+(439, 190, 191),          -- Baunatal - Manuel de Falla
+(440, 191, 190),          -- Manuel de Falla - Baunatal
+(441, 191, 192),          -- Manuel de Falla - Marqués de Valdavia
+(442, 192, 191),          -- Marqués de Valdavia - Manuel de Falla
+(443, 192, 193),          -- Marqués de Valdavia - La Moraleja
+(444, 193, 192),          -- La Moraleja - Marqués de Valdavia
+(445, 193, 194),          -- La Moraleja - La Granja
+(446, 194, 193),          -- La Granja - La Moraleja
+(447, 194, 195),          -- La Granja - Ronda de la Comunicación
+(448, 195, 194),          -- Ronda de la Comunicación - La Granja
+(449, 195, 196),          -- Ronda de la Comunicación - Las Tablas
+(450, 196, 195),          -- Las Tablas - Ronda de la Comunicación
+(451, 196, 197),          -- Las Tablas - Montecarmelo
+(452, 197, 196),          -- Montecarmelo - Las Tablas
+(453, 197, 198),          -- Montecarmelo - Tres Olivos
+(454, 198, 197),          -- Tres Olivos - Montecarmelo
+(455, 198, 199),          -- Tres Olivos - Fuencarral
+(456, 199, 198),          -- Fuencarral - Tres Olivos
+(457, 199, 200),          -- Fuencarral - Begoña
+(458, 200, 199),          -- Begoñaa - Fuencarral
+(459, 200, 3),          -- Begoña - Chamartín
+(460, 3, 200),          -- Chamartín - Begoña
+(461, 3, 4),          -- Chamartín - Plaza de Castilla
+(462, 4, 3),          -- Plaza de Castilla - Chamartín
+(463, 4, 201),          -- Plaza de Castilla - Cuzco
+(464, 201, 4),          -- Cuzco - Plaza de Castilla
+(465, 201, 202),          -- Cuzco - Santiago Bernabéu
+(466, 202, 201),          -- Santiago Bernabéu - Cuzco
+(467, 202, 124),          -- Santiago Bernabéu - Nuevos Ministerios
+(468, 124, 202),          -- Nuevos Ministerios - Santiago Bernabéu
+(469, 124, 148),          -- Nuevos Ministerios - Gregorio Marañón
+(470, 148, 124),          -- Gregorio Marañón - Nuevos Ministerios
+(471, 148, 69),          -- Gregorio Marañón - Alonso Martínez
+(472, 69, 148),          -- Alonso Martínez - Gregorio Marañón
+(473, 69, 13),          -- Alonso Martínez - Tribunal
+(474, 13, 69),          -- Tribunal - Alonso Martínez
+(475, 13, 65),          -- Tribunal - Plaza de España
+(476, 65, 13),          -- Plaza de España - Tribunal
+(477, 65, 128),          -- Plaza de España - Principe Pío
+(478, 128, 65),          -- Principe Pío - Plaza de España
+(479, 128, 203),          -- Principe Pío - Lago
+(480, 203, 128),          -- Lago - Principe Pío
+(481, 203, 204),          -- Lago - Batán
+(482, 204, 203),          -- Batán - Lago
+(483, 204, 112),          -- Batán - Casa de Campo
+(484, 112, 204),          -- Casa de Campo - Batán
+(485, 112, 205),          -- Casa de Campo - Colonia Jardín
+(486, 205, 112),          -- Colonia Jardín - Casa de Campo
+(487, 205, 206),          -- Colonia Jardín - Aviación Española
+(488, 206, 205),          -- Aviación Española - La Poveda
+(489, 206, 207),          -- Aviación Española - Cuatro Vientos
+(490, 207, 206),          -- Cuatro Vientos - Aviación Española
+(491, 207, 208),          -- Cuatro Vientos - Joaquín Vilumbrales
+(492, 208, 207),          -- Joaquín Vilumbrales - Cuatro Vientos
+(493, 208, 209),          -- Joaquín Vilumbrales - Puerta del Sur
+(494, 209, 208);          -- Puerta del Sur - Joaquín Vilumbrales
+
+
+-- Inserción de conexiones para la Línea 11
+INSERT INTO conexiones (id, id_origen, id_destino) VALUES
+(495, 116, 210),          -- Plaza Elíptica - Abrantes
+(496, 210, 116),          -- Abrantes - Plaza Elíptica
+(497, 210, 211),          -- Abrantes - Pan Bendito
+(498, 211, 210),          -- Pan Bendito - Abrantes
+(499, 211, 212),          -- Pan Bendito - San Francisco
+(500, 212, 211),          -- San Francisco - Pan Bendito
+(501, 212, 213),          -- San Francisco - Carabanchel Alto
+(502, 213, 212),          -- Carabanchel Alto - San Francisco
+(503, 213, 214),          -- Carabanchel Alto - La Peseta
+(504, 214, 213),          -- La Peseta - Carabanchel Alto
+(505, 214, 215),          -- La Peseta - La Fortuna
+(506, 215, 214);          -- La Fortuna - La Peseta
+
+-- Inserción de conexiones para la Línea 12
+INSERT INTO conexiones (id, id_origen, id_destino) VALUES
+(507, 209, 216),          -- Puerta del Sur - Parque Lisboa
+(508, 216, 209),          -- Parque Lisboa - Puerta del Sur
+(509, 216, 217),          -- Parque Lisboa - Alcorcón Central
+(510, 217, 216),          -- Alcorcón Central - Parque Lisboa
+(511, 217, 218),          -- Alcorcón Central - Parque Oeste
+(512, 218, 217),          -- Parque Oeste - Alcorcón Central
+(513, 218, 219),          -- Parque Oeste - Universidad Rey Juan Carlos
+(514, 219, 218),          -- Universidad Rey Juan Carlos - Parque Oeste
+(515, 219, 220),          -- Universidad Rey Juan Carlos - Móstoles Central
+(516, 220, 219),          -- Móstoles Central - Universidad Rey Juan Carlos
+(517, 220, 221),          -- Móstoles Central - Pradillo
+(518, 221, 220),          -- Pradillo - Móstoles Central
+(519, 221, 222),          -- Pradillo - Hopital de Móstoles
+(520, 222, 221),          -- Hopital de Móstoles - Pradillo
+(521, 222, 223),          -- Hopital de Móstoles - Manuel Malasaña
+(522, 223, 222),          -- Manuel Malasaña - Hopital de Móstoles
+(523, 223, 224),          -- Manuel Malasaña - Loranca
+(524, 224, 223),          -- Loranca - Manuel Malasaña
+(525, 224, 225),          -- Loranca - Hospital de Fuenlabrada
+(526, 225, 224),          -- Hospital de Fuenlabrada - Loranca
+(527, 225, 226),          -- Hospital de Fuenlabrada - Parque Europa
+(528, 226, 225),          -- Parque Europa - Hospital de Fuenlabrada
+(529, 226, 227),          -- Parque Europa - Fuenlabrada Central
+(530, 227, 226),          -- Fuenlabrada Central - Parque Europa
+(531, 227, 228),          -- Fuenlabrada Central - Parque de los Estados
+(532, 228, 227),          -- Parque de los Estados - Fuenlabrada Central
+(533, 228, 229),          -- Parque de los Estados - Arroyo Culebro
+(534, 229, 228),          -- Arroyo Culebro - Parque de los Estados
+(535, 229, 230),          -- Arroyo Culebro - Conservatorio
+(536, 230, 229),          -- Conservatorio - Arroyo Culebro
+(537, 230, 231),          -- Conservatorio - Alonso de Mendoza
+(538, 231, 230),          -- Alonso de Mendoza - Conservatorio
+(539, 231, 232),          -- Alonso de Mendoza - Getafe Central
+(540, 232, 231),          -- Getafe Central - Alonso de Mendoza
+(541, 232, 233),          -- Getafe Central - Juan de la Cierva
+(542, 233, 232),          -- Juan de la Cierva - Getafe Central
+(543, 233, 234),          -- Juan de la Cierva - El Casar
+(544, 234, 233),          -- El Casar - Juan de la Cierva
+(545, 234, 235),          -- El Casar - Los Espartales
+(546, 235, 234),          -- Los Espartales - El Casar
+(547, 235, 236),          -- Los Espartales - El Bercial
+(548, 236, 235),          -- El Bercial - Los Espartales
+(549, 236, 237),          -- El Bercial - El Carrascal
+(550, 237, 236),          -- El Carrascal - El Bercial
+(551, 237, 238),          -- El Carrascal - Julián Besteiro
+(552, 238, 237),          -- Julián Besteiro - El Carrascal
+(553, 238, 239),          -- Julián Besteiro - Casa del Reloj
+(554, 239, 238),          -- Casa del Reloj - Julián Besteiro
+(555, 239, 240),          -- Casa del Reloj - Hospital Severo Ochoa
+(556, 240, 239),          -- Hospital Severo Ochoa - Casa del Reloj
+(557, 240, 241),          -- Hospital Severo Ochoa - Leganés Central
+(558, 241, 240),          -- Leganés Central - Hospital Severo Ochoa
+(559, 241, 242),          -- Leganés Central - San Nicasio
+(560, 242, 241);          -- San Nicasio - Leganés Central
+
+
+
+-- Inserción de conexiones para la Línea RAMAL
+INSERT INTO conexiones (id, id_origen, id_destino) VALUES
+(561, 46, 128),          -- Ópera - Príncipe Pío
+(562, 128, 46);          -- Príncipe Pío - Ópera
+
+
+-- Inserción de conexiones para la Línea ML1
+INSERT INTO conexiones (id, id_origen, id_destino) VALUES
+(563, 1, 243),          -- Pinar de Chamartín - Fuente de la Mora
+(564, 243, 1),          -- Fuente de la Mora - Pinar de Chamartín
+(565, 243, 244),          -- Fuente de la Mora - Virgen del Cortijo
+(566, 244, 243),          -- Virgen del Cortijo - Fuente de la Mora
+(567, 244, 245),          -- Virgen del Cortijo - Antonio Saura
+(568, 245, 244),          -- Antonio Saura - Virgen del Cortijo
+(569, 245, 246),          -- Antonio Saura - Álvarez de Villaamil
+(570, 246, 245),          -- Álvarez de Villaamil - Antonio Saura
+(571, 246, 247),          -- Álvarez de Villaamil - Blasco Ibáñez
+(572, 247, 246),          -- Blasco Ibáñez - Álvarez de Villaamil
+(573, 247, 248),          -- Blasco Ibáñez - María Tudor
+(574, 248, 247),          -- María Tudor - Blasco Ibáñez
+(575, 248, 249),          -- María Tudor - Palas de Rey
+(576, 249, 248),          -- Palas de Rey - María Tudor
+(577, 249, 196),          -- Palas de Rey - Las Tablas
+(578, 196, 249);          -- Las Tablas - Palas de Rey
+
+-- Inserción de conexiones para la Línea ML2
+INSERT INTO conexiones (id, id_origen, id_destino) VALUES
+(579, 205, 250),          -- Colonia Jardín - Prado de la Vega
+(580, 250, 205),          -- Prado de la Vega - Colonia Jardín
+(581, 250, 251),          -- Prado de la Vega - Colonia de los Ángeles
+(582, 251, 250),          -- Colonia de los Ángeles - Prado de la Vega
+(583, 251, 252),          -- Colonia de los Ángeles - Prado del Rey
+(584, 252, 251),          -- Prado del Rey - Colonia de los Ángeles
+(585, 252, 253),          -- Prado del Rey - Somosaguas Sur
+(586, 253, 252),          -- Somosaguas Sur - Prado del Rey
+(587, 253, 254),          -- Somosaguas Sur - Somosaguas Centro
+(588, 254, 253),          -- Somosaguas Centro - Somosaguas Sur
+(589, 254, 255),          -- Somosaguas Centro - Pozuelo Oeste
+(590, 255, 254),          -- Pozuelo Oeste - Somosaguas Centro
+(591, 255, 256),          -- Pozuelo Oeste - Bélgica
+(592, 256, 255),          -- Bélgica - Pozuelo Oeste
+(593, 256, 257),          -- Bélgica - Dos Castillas
+(594, 257, 256),          -- Dos Castillas - Bélgica
+(595, 257, 258),          -- Dos Castillas - Campus de Somosaguas
+(596, 258, 257),          -- Campus de Somosaguas - Dos Castillas
+(597, 258, 259),          -- Campus de Somosaguas - Avenida de Europa
+(598, 259, 258),          -- Avenida de Europa - Campus de Somosaguas
+(599, 259, 260),          -- Avenida de Europa - Berna
+(600, 260, 259),          -- Berna - Avenida de Europa
+(601, 260, 261),          -- Berna - Estación de Aravaca
+(602, 261, 260);          -- Estación de Aravaca - Berna
+
+-- Inserción de conexiones para la Línea ML3
+INSERT INTO conexiones (id, id_origen, id_destino) VALUES
+(603, 205, 262),          -- Colonia Jardín - Ciudad de la Imagen
+(604, 262, 205),          -- Ciudad de la Imagen - Colonia Jardín
+(605, 262, 263),          -- Ciudad de la Imagen - José Isbert
+(606, 263, 262),          -- José Isbert - Ciudad de la Imagen
+(607, 263, 264),          -- José Isbert - Ciudad del Cine
+(608, 264, 263),          -- Ciudad del Cine - José Isbert
+(609, 264, 265),          -- Ciudad del Cine - Cocheras
+(610, 265, 264),          -- Cocheras - Ciudad del Cine
+(611, 265, 266),          -- Cocheras - Retamares
+(612, 266, 265),          -- Retamares - Cocheras
+(613, 266, 267),          -- Retamares - Montepríncipe
+(614, 267, 266),          -- Montepríncipe - Retamares
+(615, 267, 268),          -- Montepríncipe - Ventorro del Cano
+(616, 268, 267),          -- Ventorro del Cano - Montepríncipe
+(617, 268, 269),          -- Ventorro del Cano - Prado del Espino
+(618, 269, 268),          -- Prado del Espino - Ventorro del Cano
+(619, 269, 270),          -- Prado del Espino - Cantabria
+(620, 270, 269),          -- Cantabria - Prado del Espino
+(621, 270, 271),          -- Cantabria - Ferial de Boadilla
+(622, 271, 270),          -- Ferial de Boadilla - Cantabria
+(623, 271, 272),          -- Ferial de Boadilla - Boadilla Centro
+(624, 272, 271),          -- Boadilla Centro - Ferial de Boadilla
+(625, 272, 273),          -- Boadilla Centro - Nuevo Mundo
+(626, 273, 272),          -- Nuevo Mundo - Boadilla Centro
+(628, 273, 274),          -- Nuevo Mundo - Siglo XXI
+(629, 274, 273),          -- Siglo XXI - Nuevo Mundo
+(630, 274, 275),          -- Siglo XXI - Infante Don Luis
+(631, 275, 274),          -- Infante Don Luis - Siglo XXI
+(632, 275, 276),          -- Infante Don Luis - Puerta de Boadilla
+(633, 276, 275);          -- Puerta de Boadilla - Infante Don Luis
