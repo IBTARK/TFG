@@ -1,0 +1,7 @@
+escalera: (siempre estropeado, 4)(mecánico, 5)(dañado, 1)
+tiempo: (mucho largo, 1)
+estacion: (demasiado profundo, 1)(abierto, 3)(encima, 1)(increíble, 2)(no accesible, 2)(buen, 4)(parada, 1)
+salida: (cerrado, 1)
+billete: (dañado, 2)
+movilidad: (reducido, 1)
+metro: (insoportable, 1)(bonito, 2)

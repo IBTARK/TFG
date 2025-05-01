@@ -1,0 +1,4 @@
+sitio: (buen, 6)(sencillo, 1)(inesperado, 1)(sitio, 1)
+dia: (diferente, 1)
+avenida: (principal, 1)
+numero: (debido, 1)(gran, 1)

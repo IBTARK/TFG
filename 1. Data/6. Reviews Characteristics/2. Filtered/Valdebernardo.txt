@@ -1,0 +1,7 @@
+estacion: (mucho interesante, 2)(normal, 1)(tranquilo, 3)(accesible, 2)(bien comunicado, 2)
+elemento: (perfecto, 1)
+metro: (mucho limpio, 1)(ordenado, 1)
+puntualidad: (riguroso, 1)
+atencion: (excelente, 2)(personal, 1)
+gente: (corriente, 1)(común, 1)
+acceso: (mucho buen, 1)

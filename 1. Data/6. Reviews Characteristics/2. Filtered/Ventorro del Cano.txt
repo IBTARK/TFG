@@ -1,0 +1,4 @@
+estacion: (limpio, 2)(caluroso, 1)(mucho lejos, 1)(más tranquilo, 1)
+rango: (horario, 1)
+cola: (grande, 1)
+afluencia: (mucho escaso, 1)

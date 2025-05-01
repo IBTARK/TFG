@@ -1,0 +1,3 @@
+estacion: (mucho lento, 1)(servicio, 1)(práctico, 1)(mucho animado, 1)
+servicio: (práctico, 1)(mucho lento, 1)
+practico: (mucho animado, 1)

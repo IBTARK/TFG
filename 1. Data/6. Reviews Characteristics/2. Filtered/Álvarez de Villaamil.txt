@@ -1,0 +1,6 @@
+estacion: (pequeño, 2)(importante, 3)(parada, 1)(normal, 1)(superficial, 2)(no subterráneo, 1)(frecuencia, 1)(servicio, 1)(más estación, 1)(bonito, 1)
+iluminacion: (buen, 2)(nocturno, 1)
+informativo: (panel, 1)
+metro: (ligero, 2)(lamentable, 1)
+servicio: (tercermundista, 1)
+lento: (mucho poco, 1)

@@ -1,0 +1,7 @@
+tunel: (cercano, 1)(infernal, 1)
+estacion: (más nuevo, 4)(enorme, 6)(último, 1)(abierto, 2)(parada, 1)(mucho limpio, 2)(mucho concurrido, 1)(completo, 2)(siempre accesibilidad, 1)(mas, 1)(más cercano, 1)
+metro: (mucho nuevo, 1)
+zona: (bastante bonito, 2)(mucho cercano, 1)(comercial, 4)(nuevo, 1)
+cobertura: (móvil, 1)
+servicio: (buen, 1)(ascensor, 1)
+instalacion: (excelente, 1)

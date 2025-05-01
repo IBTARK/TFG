@@ -1,0 +1,6 @@
+semana: (festivo, 1)
+fin: (fatal, 1)(comodo, 1)
+hora: (abierto, 1)(no mucho cómodo, 1)
+estacion: (parada, 2)(mucho bien, 1)
+metro: (ligero, 2)
+aire: (libre, 2)

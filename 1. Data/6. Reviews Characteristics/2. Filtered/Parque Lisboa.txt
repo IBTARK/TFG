@@ -1,0 +1,8 @@
+estacion: (descuidar, 2)(cómodo, 2)(más rápido, 2)(no mucho servir, 1)(más próximo, 1)(pasar, 2)(mucho bien, 6)(siempre especial, 1)(moderno, 1)
+acceso: (solo, 1)
+cobertura: (móvil, 1)
+salida: (enfrente justo, 1)
+linea: (arreglar, 1)
+verde: (oscuro, 1)
+tiempo: (averiada, 1)(cómodo, 2)(buen, 1)
+atencion: (mala, 2)

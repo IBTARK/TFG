@@ -1,0 +1,8 @@
+escalera: (mecánico, 1)(exterior, 1)(mucho comodo, 1)
+metro: (normal, 1)(fácil, 1)(mucho limpio, 1)(moderno, 1)
+estacion: (no normal, 1)(buen, 2)(amplio, 2)(totalmente estación, 1)
+aseo: (público, 1)
+brujula: (jepeese, 1)(seguro, 1)
+entrada: (buen, 1)
+estado: (buen, 1)
+alrededor: (sucio, 1)

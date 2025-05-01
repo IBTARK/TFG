@@ -1,0 +1,6 @@
+estacion: (no accesible, 1)(mucho pequeño, 1)(tanto céntrico, 1)(único, 1)
+centro: (junto, 1)(empresarial, 1)(valorar, 1)(tremendo, 1)
+dia: (vestido, 1)(incapacitado, 1)(llamarl, 1)(bastante mala, 1)
+manera: (mala, 1)
+escalera: (mecánico, 2)
+semana: (maldito, 1)

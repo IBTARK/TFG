@@ -1,0 +1,4 @@
+ubicacion: (buen, 2)(peor, 1)(parada, 1)(mucho útil, 2)(cómodo, 1)(mucho frio, 1)
+sabado: (especial, 1)
+metro: (ligero, 1)
+transporte: (público, 1)

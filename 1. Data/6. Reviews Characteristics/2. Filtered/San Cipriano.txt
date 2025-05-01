@@ -1,0 +1,8 @@
+movilidad: (reducido, 2)
+escalera: (mecánico, 1)(ascensor, 1)
+covertura: (móvil, 1)
+condicion: (buena, 5)(vicalvaro, 1)(pequeño, 2)
+estacion: (hoy surgir, 1)(bastante raro, 1)(admirable, 1)(visitar, 1)(facil, 3)(mucho ruidoso, 1)(mucho lindo, 3)(buenos, 1)
+persona: (atender, 1)
+acceso: (facil, 1)(localizable, 1)
+trabajador: (amable, 1)

@@ -1,0 +1,3 @@
+tranvia: (ligero, 1)
+parada: (cerca, 1)(otro, 1)
+camino: (peatonal, 2)(dicho, 1)

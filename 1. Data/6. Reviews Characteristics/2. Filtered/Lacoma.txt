@@ -1,0 +1,5 @@
+estacion: (mucho limpio, 4)(moderno, 2)(funcional, 1)(excelente, 2)(tranquilo, 1)(accesible, 1)(gente, 1)
+persona: (mejor, 1)
+manana: (lindo, 1)
+escalera: (mecánico, 2)(bastante, 1)
+humor: (mal, 1)
