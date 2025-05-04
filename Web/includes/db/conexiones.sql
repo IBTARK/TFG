@@ -88,7 +88,7 @@ INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`, `tiempo`)
 (64, 33, 32, 2); -- Valdecarros - Las Suertes
 
 -- Linea 2
-INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`) VALUES
+INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`, `tiempo`) VALUES
 (65, 9, 34, 2), -- Cuatro Caminos - Canal
 (66, 34, 9, 2), -- Canal - Cuatro Caminos
 (67, 34, 35, 2), -- Canal - Quevedo
@@ -129,7 +129,7 @@ INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`) VALUES
 (102, 51, 50, 3); -- Las Rosas - Avenida de Guadalajara
 
 -- Linea 3
-INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`) VALUES
+INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`, `tiempo`) VALUES
 (103, 52, 53, 1), -- Moncloa - Argüelles
 (104, 53, 52, 1), -- Argüelles - Moncloa
 (105, 53, 54, 2), -- Argüelles - Ventura Rodríguez
@@ -168,7 +168,7 @@ INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`) VALUES
 (138, 69, 68, 4); -- El Casar - Villaverde Alto
 
 --Linea 4
-INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`) VALUES
+INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`, `tiempo`) VALUES
 (139, 53, 36, 2), -- Argüelles - San Bernardo
 (140, 36, 53, 2), -- San Bernardo - Argüelles
 (141, 36, 12, 1), -- San Bernardo - Bilbao
@@ -215,7 +215,7 @@ INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`) VALUES
 (182, 1, 87, 2); -- Pinar de Chamartín - Manoteras
 
 --Linea 5
-INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`) VALUES
+INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`, `tiempo`) VALUES
 (183, 88, 89, 2), -- Alameda de Osuna - El Capricho
 (184, 89, 88, 2), -- El Capricho - Alameda de Osuna
 (185, 89, 90, 3), -- El Capricho - Canillejas
@@ -280,7 +280,7 @@ INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`) VALUES
 (244, 112, 111, 4); -- Casa de Campo - Campamento
 
 --Linea 6
-INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`) VALUES
+INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`, `tiempo`) VALUES
 (245, 113, 114, 2), -- Laguna - Carpetana
 (246, 114, 113, 2), -- Carpetana - Laguna
 (247, 114, 105, 3), -- Carpetana - Oporto
@@ -339,7 +339,7 @@ INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`) VALUES
 (300, 113, 131, 2); -- Laguna - Lucero
 
 --Linea 7
-INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`) VALUES
+INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`, `tiempo`) VALUES
 (301, 132, 133, 2), -- Hospital del Henares - Henares
 (302, 133, 132, 2), -- Henares - Hospital del Henares
 (303, 133, 134, 2), -- Henares - Jarama
@@ -402,7 +402,7 @@ INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`) VALUES
 (360, 158, 157, 2); -- Pitis - Arroyofresno
 
 -- Inserción de conexiones para la Línea 8
-INSERT INTO conexiones (id, id_origen, id_destino, tiempo) VALUES
+INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`, `tiempo`) VALUES
 (361, 124, 159, 3),          -- Nuevos Ministerios - Colombia
 (362, 159, 124, 3),          -- Colombia - Nuevos Ministerios
 (363, 159, 160, 4),          -- Colombia - Pinar del Rey
@@ -419,7 +419,7 @@ INSERT INTO conexiones (id, id_origen, id_destino, tiempo) VALUES
 (374, 164, 163, 3);          -- Aeropuerto T4 - Barajas
 
 -- Inserción de conexiones para la Línea 9
-INSERT INTO conexiones (id, id_origen, id_destino, tiempo) VALUES
+INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`, `tiempo`) VALUES
 (375, 165, 166, 3),          -- Paco de Lucia - Mirasierra
 (376, 166, 165, 3),          -- Mirasierra - Paco de Lucia
 (377, 166, 167, 6),          -- Mirasierra - Herrera Oria
@@ -479,7 +479,7 @@ INSERT INTO conexiones (id, id_origen, id_destino, tiempo) VALUES
 
 
 -- Inserción de conexiones para la Línea 10
-INSERT INTO conexiones (id, id_origen, id_destino, tiempo) VALUES
+INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`, `tiempo`) VALUES
 (431, 188, 189, 3),          -- Hospital Infanta Sofía - Reyes Católicos
 (432, 189, 188, 3),          -- Reyes Católicos - Hospital Infanta Sofía
 (433, 189, 190, 2),          -- Reyes Católicos - Baunatal
@@ -543,7 +543,7 @@ INSERT INTO conexiones (id, id_origen, id_destino, tiempo) VALUES
 
 
 -- Inserción de conexiones para la Línea 11
-INSERT INTO conexiones (id, id_origen, id_destino, tiempo) VALUES
+INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`, `tiempo`) VALUES
 (491, 116, 210, 2),          -- Plaza Elíptica - Abrantes
 (492, 210, 116, 2),          -- Abrantes - Plaza Elíptica
 (493, 210, 211, 1),          -- Abrantes - Pan Bendito
@@ -558,7 +558,7 @@ INSERT INTO conexiones (id, id_origen, id_destino, tiempo) VALUES
 (502, 215, 214, 5);          -- La Fortuna - La Peseta
 
 -- Inserción de conexiones para la Línea 12
-INSERT INTO conexiones (id, id_origen, id_destino, tiempo) VALUES
+INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`, `tiempo`) VALUES
 (503, 209, 216, 1),          -- Puerta del Sur - Parque Lisboa
 (504, 216, 209, 1),          -- Parque Lisboa - Puerta del Sur
 (505, 216, 217, 2),          -- Parque Lisboa - Alcorcón Central
@@ -595,108 +595,108 @@ INSERT INTO conexiones (id, id_origen, id_destino, tiempo) VALUES
 (536, 232, 231, 2),          -- Getafe Central - Alonso de Mendoza
 (537, 232, 233, 1),          -- Getafe Central - Juan de la Cierva
 (538, 233, 232, 1),          -- Juan de la Cierva - Getafe Central
-(539, 233, 234, 2),          -- Juan de la Cierva - El Casar
-(540, 234, 233, 2),          -- El Casar - Juan de la Cierva
-(541, 234, 235, 1),          -- El Casar - Los Espartales
-(542, 235, 234, 1),          -- Los Espartales - El Casar
-(543, 235, 236, 2),          -- Los Espartales - El Bercial
-(544, 236, 235, 2),          -- El Bercial - Los Espartales
-(545, 236, 237, 2),          -- El Bercial - El Carrascal
-(546, 237, 236, 2),          -- El Carrascal - El Bercial
-(547, 237, 238, 1),          -- El Carrascal - Julián Besteiro
-(548, 238, 237, 1),          -- Julián Besteiro - El Carrascal
-(549, 238, 239, 2),          -- Julián Besteiro - Casa del Reloj
-(550, 239, 238, 2),          -- Casa del Reloj - Julián Besteiro
-(551, 239, 240, 2),          -- Casa del Reloj - Hospital Severo Ochoa
-(552, 240, 239, 2),          -- Hospital Severo Ochoa - Casa del Reloj
-(553, 240, 241, 1),          -- Hospital Severo Ochoa - Leganés Central
-(554, 241, 240, 1),          -- Leganés Central - Hospital Severo Ochoa
-(555, 241, 242, 2),          -- Leganés Central - San Nicasio
-(556, 242, 241, 2);          -- San Nicasio - Leganés Central
+(539, 233, 69, 2),          -- Juan de la Cierva - El Casar
+(540, 69, 233, 2),          -- El Casar - Juan de la Cierva
+(541, 69, 234, 1),          -- El Casar - Los Espartales
+(542, 234, 69, 1),          -- Los Espartales - El Casar
+(543, 234, 235, 2),          -- Los Espartales - El Bercial
+(544, 235, 234, 2),          -- El Bercial - Los Espartales
+(545, 235, 236, 2),          -- El Bercial - El Carrascal
+(546, 236, 235, 2),          -- El Carrascal - El Bercial
+(547, 236, 237, 1),          -- El Carrascal - Julián Besteiro
+(548, 237, 236, 1),          -- Julián Besteiro - El Carrascal
+(549, 237, 238, 2),          -- Julián Besteiro - Casa del Reloj
+(550, 238, 237, 2),          -- Casa del Reloj - Julián Besteiro
+(551, 238, 239, 2),          -- Casa del Reloj - Hospital Severo Ochoa
+(552, 239, 238, 2),          -- Hospital Severo Ochoa - Casa del Reloj
+(553, 239, 240, 1),          -- Hospital Severo Ochoa - Leganés Central
+(554, 240, 239, 1),          -- Leganés Central - Hospital Severo Ochoa
+(555, 240, 241, 2),          -- Leganés Central - San Nicasio
+(556, 241, 240, 2);          -- San Nicasio - Leganés Central
 
 
 
 -- Inserción de conexiones para la Línea RAMAL
-INSERT INTO conexiones (id, id_origen, id_destino, tiempo) VALUES
-(557, 46, 128, 3),          -- Ópera - Príncipe Pío
-(558, 128, 46, 3);          -- Príncipe Pío - Ópera
+INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`, `tiempo`) VALUES
+(557, 39, 128, 3),          -- Ópera - Príncipe Pío
+(558, 128, 39, 3);          -- Príncipe Pío - Ópera
 
 
 -- Inserción de conexiones para la Línea ML1
-INSERT INTO conexiones (id, id_origen, id_destino, tiempo) VALUES
-(559, 1, 243, 1),          -- Pinar de Chamartín - Fuente de la Mora
-(560, 243, 1, 1),          -- Fuente de la Mora - Pinar de Chamartín
-(561, 243, 244, 2),        -- Fuente de la Mora - Virgen del Cortijo
-(562, 244, 243, 2),        -- Virgen del Cortijo - Fuente de la Mora
-(563, 244, 245, 2),        -- Virgen del Cortijo - Antonio Saura
-(564, 245, 244, 2),        -- Antonio Saura - Virgen del Cortijo
-(565, 245, 246, 1),        -- Antonio Saura - Álvarez de Villaamil
-(566, 246, 245, 1),        -- Álvarez de Villaamil - Antonio Saura
-(567, 246, 247, 2),        -- Álvarez de Villaamil - Blasco Ibáñez
-(568, 247, 246, 2),        -- Blasco Ibáñez - Álvarez de Villaamil
-(569, 247, 248, 2),        -- Blasco Ibáñez - María Tudor
-(570, 248, 247, 2),        -- María Tudor - Blasco Ibáñez
-(571, 248, 249, 3),        -- María Tudor - Palas de Rey
-(572, 249, 248, 3),        -- Palas de Rey - María Tudor
-(573, 249, 196, 2),        -- Palas de Rey - Las Tablas
-(574, 196, 249, 2);        -- Las Tablas - Palas de Rey
+INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`, `tiempo`) VALUES
+(559, 1, 242, 1),          -- Pinar de Chamartín - Fuente de la Mora
+(560, 242, 1, 1),          -- Fuente de la Mora - Pinar de Chamartín
+(561, 242, 243, 2),        -- Fuente de la Mora - Virgen del Cortijo
+(562, 243, 242, 2),        -- Virgen del Cortijo - Fuente de la Mora
+(563, 243, 244, 2),        -- Virgen del Cortijo - Antonio Saura
+(564, 244, 243, 2),        -- Antonio Saura - Virgen del Cortijo
+(565, 244, 245, 1),        -- Antonio Saura - Álvarez de Villaamil
+(566, 245, 244, 1),        -- Álvarez de Villaamil - Antonio Saura
+(567, 245, 246, 2),        -- Álvarez de Villaamil - Blasco Ibáñez
+(568, 246, 245, 2),        -- Blasco Ibáñez - Álvarez de Villaamil
+(569, 246, 247, 2),        -- Blasco Ibáñez - María Tudor
+(570, 247, 246, 2),        -- María Tudor - Blasco Ibáñez
+(571, 247, 248, 3),        -- María Tudor - Palas de Rey
+(572, 248, 247, 3),        -- Palas de Rey - María Tudor
+(573, 248, 196, 2),        -- Palas de Rey - Las Tablas
+(574, 196, 248, 2);        -- Las Tablas - Palas de Rey
 
 -- Inserción de conexiones para la Línea ML2
-INSERT INTO conexiones (id, id_origen, id_destino, tiempo) VALUES
-(575, 205, 250, 2),          -- Colonia Jardín - Prado de la Vega
-(576, 250, 205, 2),          -- Prado de la Vega - Colonia Jardín
-(577, 250, 251, 1),          -- Prado de la Vega - Colonia de los Ángeles
-(578, 251, 250, 1),          -- Colonia de los Ángeles - Prado de la Vega
-(579, 251, 252, 1),          -- Colonia de los Ángeles - Prado del Rey
-(580, 252, 251, 1),          -- Prado del Rey - Colonia de los Ángeles
-(581, 252, 253, 2),          -- Prado del Rey - Somosaguas Sur
-(582, 253, 252, 2),          -- Somosaguas Sur - Prado del Rey
-(583, 253, 254, 2),          -- Somosaguas Sur - Somosaguas Centro
-(584, 254, 253, 2),          -- Somosaguas Centro - Somosaguas Sur
-(585, 254, 255, 2),          -- Somosaguas Centro - Pozuelo Oeste
-(586, 255, 254, 2),          -- Pozuelo Oeste - Somosaguas Centro
-(587, 255, 256, 4),          -- Pozuelo Oeste - Bélgica
-(588, 256, 255, 4),          -- Bélgica - Pozuelo Oeste
-(589, 256, 257, 1),          -- Bélgica - Dos Castillas
-(590, 257, 256, 1),          -- Dos Castillas - Bélgica
-(591, 257, 258, 1),          -- Dos Castillas - Campus de Somosaguas
-(592, 258, 257, 1),          -- Campus de Somosaguas - Dos Castillas
-(593, 258, 259, 2),          -- Campus de Somosaguas - Avenida de Europa
-(594, 259, 258, 2),          -- Avenida de Europa - Campus de Somosaguas
-(595, 259, 260, 1),          -- Avenida de Europa - Berna
-(596, 260, 259, 1),          -- Berna - Avenida de Europa
-(597, 260, 261, 1),          -- Berna - Estación de Aravaca
-(598, 261, 260, 1);          -- Estación de Aravaca - Berna
+INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`, `tiempo`) VALUES
+(575, 205, 249, 2),          -- Colonia Jardín - Prado de la Vega
+(576, 249, 205, 2),          -- Prado de la Vega - Colonia Jardín
+(577, 249, 250, 1),          -- Prado de la Vega - Colonia de los Ángeles
+(578, 250, 249, 1),          -- Colonia de los Ángeles - Prado de la Vega
+(579, 250, 251, 1),          -- Colonia de los Ángeles - Prado del Rey
+(580, 251, 250, 1),          -- Prado del Rey - Colonia de los Ángeles
+(581, 251, 252, 2),          -- Prado del Rey - Somosaguas Sur
+(582, 252, 251, 2),          -- Somosaguas Sur - Prado del Rey
+(583, 252, 253, 2),          -- Somosaguas Sur - Somosaguas Centro
+(584, 253, 252, 2),          -- Somosaguas Centro - Somosaguas Sur
+(585, 253, 254, 2),          -- Somosaguas Centro - Pozuelo Oeste
+(586, 254, 253, 2),          -- Pozuelo Oeste - Somosaguas Centro
+(587, 254, 255, 4),          -- Pozuelo Oeste - Bélgica
+(588, 255, 254, 4),          -- Bélgica - Pozuelo Oeste
+(589, 255, 256, 1),          -- Bélgica - Dos Castillas
+(590, 256, 255, 1),          -- Dos Castillas - Bélgica
+(591, 256, 257, 1),          -- Dos Castillas - Campus de Somosaguas
+(592, 257, 256, 1),          -- Campus de Somosaguas - Dos Castillas
+(593, 257, 258, 2),          -- Campus de Somosaguas - Avenida de Europa
+(594, 258, 257, 2),          -- Avenida de Europa - Campus de Somosaguas
+(595, 258, 259, 1),          -- Avenida de Europa - Berna
+(596, 259, 258, 1),          -- Berna - Avenida de Europa
+(597, 259, 260, 1),          -- Berna - Estación de Aravaca
+(598, 260, 259, 1);          -- Estación de Aravaca - Berna
 
 -- Inserción de conexiones para la Línea ML3
-INSERT INTO conexiones (id, id_origen, id_destino, tiempo) VALUES
-(599, 205, 262, 3),          -- Colonia Jardín - Ciudad de la Imagen
-(600, 262, 205, 3),          -- Ciudad de la Imagen - Colonia Jardín
-(601, 262, 263, 1),          -- Ciudad de la Imagen - José Isbert
-(602, 263, 262, 1),          -- José Isbert - Ciudad de la Imagen
-(603, 263, 264, 1),          -- José Isbert - Ciudad del Cine
-(604, 264, 263, 1),          -- Ciudad del Cine - José Isbert
-(605, 264, 265, 2),          -- Ciudad del Cine - Cocheras
-(606, 265, 264, 2),          -- Cocheras - Ciudad del Cine
-(607, 265, 266, 4),          -- Cocheras - Retamares
-(608, 266, 265, 4),          -- Retamares - Cocheras
-(609, 266, 267, 4),          -- Retamares - Montepríncipe
-(610, 267, 266, 4),          -- Montepríncipe - Retamares
-(611, 267, 268, 2),          -- Montepríncipe - Ventorro del Cano
-(612, 268, 267, 2),          -- Ventorro del Cano - Montepríncipe
-(613, 268, 269, 1),          -- Ventorro del Cano - Prado del Espino
-(614, 269, 268, 1),          -- Prado del Espino - Ventorro del Cano
-(615, 269, 270, 3),          -- Prado del Espino - Cantabria
-(616, 270, 269, 3),          -- Cantabria - Prado del Espino
-(617, 270, 271, 5),          -- Cantabria - Ferial de Boadilla
-(618, 271, 270, 5),          -- Ferial de Boadilla - Cantabria
-(619, 271, 272, 2),          -- Ferial de Boadilla - Boadilla Centro
-(620, 272, 271, 2),          -- Boadilla Centro - Ferial de Boadilla
-(621, 272, 273, 2),          -- Boadilla Centro - Nuevo Mundo
-(622, 273, 272, 2),          -- Nuevo Mundo - Boadilla Centro
-(623, 273, 274, 1),          -- Nuevo Mundo - Siglo XXI
-(624, 274, 273, 1),          -- Siglo XXI - Nuevo Mundo
-(625, 274, 275, 2),          -- Siglo XXI - Infante Don Luis
-(626, 275, 274, 2),          -- Infante Don Luis - Siglo XXI
-(627, 275, 276, 1),          -- Infante Don Luis - Puerta de Boadilla
-(628, 276, 275, 1);          -- Puerta de Boadilla - Infante Don Luis
+INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`, `tiempo`) VALUES
+(599, 205, 261, 3),          -- Colonia Jardín - Ciudad de la Imagen
+(600, 261, 205, 3),          -- Ciudad de la Imagen - Colonia Jardín
+(601, 261, 262, 1),          -- Ciudad de la Imagen - José Isbert
+(602, 262, 261, 1),          -- José Isbert - Ciudad de la Imagen
+(603, 262, 263, 1),          -- José Isbert - Ciudad del Cine
+(604, 263, 262, 1),          -- Ciudad del Cine - José Isbert
+(605, 263, 264, 2),          -- Ciudad del Cine - Cocheras
+(606, 264, 263, 2),          -- Cocheras - Ciudad del Cine
+(607, 264, 265, 4),          -- Cocheras - Retamares
+(608, 265, 264, 4),          -- Retamares - Cocheras
+(609, 265, 266, 4),          -- Retamares - Montepríncipe
+(610, 266, 265, 4),          -- Montepríncipe - Retamares
+(611, 266, 267, 2),          -- Montepríncipe - Ventorro del Cano
+(612, 267, 266, 2),          -- Ventorro del Cano - Montepríncipe
+(613, 267, 268, 1),          -- Ventorro del Cano - Prado del Espino
+(614, 268, 267, 1),          -- Prado del Espino - Ventorro del Cano
+(615, 268, 269, 3),          -- Prado del Espino - Cantabria
+(616, 269, 268, 3),          -- Cantabria - Prado del Espino
+(617, 269, 270, 5),          -- Cantabria - Ferial de Boadilla
+(618, 270, 269, 5),          -- Ferial de Boadilla - Cantabria
+(619, 270, 271, 2),          -- Ferial de Boadilla - Boadilla Centro
+(620, 271, 270, 2),          -- Boadilla Centro - Ferial de Boadilla
+(621, 271, 272, 2),          -- Boadilla Centro - Nuevo Mundo
+(622, 272, 271, 2),          -- Nuevo Mundo - Boadilla Centro
+(623, 272, 273, 1),          -- Nuevo Mundo - Siglo XXI
+(624, 273, 272, 1),          -- Siglo XXI - Nuevo Mundo
+(625, 273, 274, 2),          -- Siglo XXI - Infante Don Luis
+(626, 274, 273, 2),          -- Infante Don Luis - Siglo XXI
+(627, 274, 275, 1),          -- Infante Don Luis - Puerta de Boadilla
+(628, 275, 274, 1);          -- Puerta de Boadilla - Infante Don Luis
