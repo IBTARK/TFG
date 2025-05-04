@@ -692,11 +692,11 @@ INSERT INTO conexiones (id, id_origen, id_destino, tiempo) VALUES
 (618, 271, 270, 5),          -- Ferial de Boadilla - Cantabria
 (619, 271, 272, 2),          -- Ferial de Boadilla - Boadilla Centro
 (620, 272, 271, 2),          -- Boadilla Centro - Ferial de Boadilla
-(622, 272, 273, 2),          -- Boadilla Centro - Nuevo Mundo
-(623, 273, 272, 2),          -- Nuevo Mundo - Boadilla Centro
-(624, 273, 274, 1),          -- Nuevo Mundo - Siglo XXI
-(625, 274, 273, 1),          -- Siglo XXI - Nuevo Mundo
-(626, 274, 275, 2),          -- Siglo XXI - Infante Don Luis
-(627, 275, 274, 2),          -- Infante Don Luis - Siglo XXI
-(628, 275, 276, 1),          -- Infante Don Luis - Puerta de Boadilla
-(629, 276, 275, 1);          -- Puerta de Boadilla - Infante Don Luis
+(621, 272, 273, 2),          -- Boadilla Centro - Nuevo Mundo
+(622, 273, 272, 2),          -- Nuevo Mundo - Boadilla Centro
+(623, 273, 274, 1),          -- Nuevo Mundo - Siglo XXI
+(624, 274, 273, 1),          -- Siglo XXI - Nuevo Mundo
+(625, 274, 275, 2),          -- Siglo XXI - Infante Don Luis
+(626, 275, 274, 2),          -- Infante Don Luis - Siglo XXI
+(627, 275, 276, 1),          -- Infante Don Luis - Puerta de Boadilla
+(628, 276, 275, 1);          -- Puerta de Boadilla - Infante Don Luis
