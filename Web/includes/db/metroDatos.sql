@@ -394,219 +394,219 @@ INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
 (55, 3, 4),   -- Plaza de España
 (56, 3, 5),   -- Callao
 (15, 3, 6),   -- Sol
-(58, 3, 7),   -- Lavapiés
-(59, 3, 8),   -- Embajadores
-(60, 3, 9),   -- Palos de la Frontera
-(61, 3, 10),  -- Delicias
-(62, 3, 11),  -- Legazpi
-(63, 3, 12),  -- Almendrales
-(64, 3, 13),  -- Hospital 12 de Octubre
-(65, 3, 14),  -- San Fermín-Orcasur
-(66, 3, 15),  -- Ciudad de los Ángeles
-(67, 3, 16),  -- Villaverde Bajo-Cruce
-(68, 3, 17),  -- San Cristóbal
-(69, 3, 18),  -- Villaverde Alto
-(70, 3, 19);  -- El Casar (reciente)
+(57, 3, 7),   -- Lavapiés
+(58, 3, 8),   -- Embajadores
+(59, 3, 9),   -- Palos de la Frontera
+(60, 3, 10),  -- Delicias
+(61, 3, 11),  -- Legazpi
+(62, 3, 12),  -- Almendrales
+(63, 3, 13),  -- Hospital 12 de Octubre
+(64, 3, 14),  -- San Fermín-Orcasur
+(65, 3, 15),  -- Ciudad de los Ángeles
+(66, 3, 16),  -- Villaverde Bajo-Cruce
+(67, 3, 17),  -- San Cristóbal
+(68, 3, 18),  -- Villaverde Alto
+(69, 3, 19);  -- El Casar
 
 -- Asignación a Línea 4 (ID línea = 4)
 INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
 (53, 4, 1),   -- Argüelles
 (36, 4, 2),   -- San Bernardo
-(13, 4, 3),   -- Bilbao
-(71, 4, 4),   -- Alonso Martínez
-(72, 4, 5),   -- Colón
-(73, 4, 6),   -- Serrano
-(74, 4, 7),   -- Velázquez
+(12, 4, 3),   -- Bilbao
+(70, 4, 4),   -- Alonso Martínez
+(71, 4, 5),   -- Colón
+(72, 4, 6),   -- Serrano
+(73, 4, 7),   -- Velázquez
 (44, 4, 8),   -- Goya
-(75, 4, 9),   -- Lista
-(76, 4, 10),  -- Diego de León
-(77, 4, 11),  -- Avenida de América
-(78, 4, 12),  -- Prosperidad
-(79, 4, 13),  -- Alfonso XIII
-(80, 4, 14),  -- Avenida de la Paz
-(81, 4, 15),  -- Arturo Soria
-(82, 4, 16),  -- Esperanza
-(83, 4, 17),  -- Canillas
-(84, 4, 18),  -- Mar de Cristal
-(85, 4, 19),  -- San Lorenzo
-(86, 4, 20),  -- Parque de Santa María
-(87, 4, 21),  -- Hortaleza
-(88, 4, 22),  -- Manoteras
+(74, 4, 9),   -- Lista
+(75, 4, 10),  -- Diego de León
+(76, 4, 11),  -- Avenida de América
+(77, 4, 12),  -- Prosperidad
+(78, 4, 13),  -- Alfonso XIII
+(79, 4, 14),  -- Avenida de la Paz
+(80, 4, 15),  -- Arturo Soria
+(81, 4, 16),  -- Esperanza
+(82, 4, 17),  -- Canillas
+(83, 4, 18),  -- Mar de Cristal
+(84, 4, 19),  -- San Lorenzo
+(85, 4, 20),  -- Parque de Santa María
+(86, 4, 21),  -- Hortaleza
+(87, 4, 22),  -- Manoteras
 (1, 4, 23);   -- Pinar de Chamartín
 
 -- Inserción de estaciones para la Línea 5 en lineas_estaciones
 INSERT INTO estaciones_lineas (linea_id, estacion_id, orden) VALUES
-(89, 5, 1),   -- Alameda de Osuna
-(90, 5, 2),   -- El Capricho
-(91, 5, 3),   -- Canillejas
-(92, 5, 4),   -- Torre Arias
-(93, 5, 5),   -- Suanzes
-(94, 5, 6),   -- Ciudad Lineal
-(95, 5, 7),   -- Pueblo Nuevo
-(96, 5, 8),   -- Quintana
-(97, 5, 9),   -- El Carmen
+(88, 5, 1),   -- Alameda de Osuna
+(89, 5, 2),   -- El Capricho
+(90, 5, 3),   -- Canillejas
+(91, 5, 4),   -- Torre Arias
+(92, 5, 5),   -- Suanzes
+(93, 5, 6),   -- Ciudad Lineal
+(94, 5, 7),   -- Pueblo Nuevo
+(95, 5, 8),   -- Quintana
+(96, 5, 9),   -- El Carmen
 (46, 5, 10)   -- Ventas
-(77, 5, 11),  -- Diego de León (id 77 en Línea 4)
-(98, 5, 12),  -- Núñez de Balboa (id 98 en Línea 9)
-(99, 5, 13),  -- Rubén Darío
-(100, 5, 14), -- Chueca
-(15, 5, 15),  -- Gran Vía (id 15 en Línea 1)
-(101, 5, 16), -- La Latina
-(102, 5, 17), -- Puerta de Toledo
-(60, 5, 18),  -- Embajadores (id 60 en Línea 3)
-(103, 5, 19), -- Pirámides
-(104, 5, 20), -- Marqués de Vadillo
-(105, 5, 21), -- Urgel
-(106, 5, 22), -- Oporto
-(107, 5, 23), -- Vista Alegre
-(108, 5, 24), -- Carabanchel
-(109, 5, 25), -- Eugenia de Montijo
-(110, 5, 26), -- Aluche
-(111, 5, 27), -- Empalme
-(112, 5, 28), -- Campamento
-(113, 5, 29); -- Casa de Campo
+(75, 5, 11),  -- Diego de León
+(97, 5, 12),  -- Núñez de Balboa
+(98, 5, 13),  -- Rubén Darío
+(99, 5, 14), -- Chueca
+(14, 5, 15),  -- Gran Vía
+(100, 5, 16), -- La Latina
+(101, 5, 17), -- Puerta de Toledo
+(58, 5, 18),  -- Acacias (Embajadores)
+(102, 5, 19), -- Pirámides
+(103, 5, 20), -- Marqués de Vadillo
+(104, 5, 21), -- Urgel
+(105, 5, 22), -- Oporto
+(106, 5, 23), -- Vista Alegre
+(107, 5, 24), -- Carabanchel
+(108, 5, 25), -- Eugenia de Montijo
+(109, 5, 26), -- Aluche
+(110, 5, 27), -- Empalme
+(111, 5, 28), -- Campamento
+(112, 5, 29); -- Casa de Campo
 
 -- Inserción de estaciones para la Línea 6 en lineas_estaciones
 INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(114, 6, 1), -- Laguna
-(115, 6, 2), -- Carpetana
-(116, 6, 3), -- Oporto
-(117, 6, 4), -- Opañel
-(118, 6, 5), -- Plaza Eliptica
-(119, 6, 6), -- Usera
-(59, 6, 7), -- Legazpi
-(120, 6, 8), -- Arganzuela-Planetario
-(121, 6, 9), -- Mendez Alvaro
+(113, 6, 1), -- Laguna
+(114, 6, 2), -- Carpetana
+(105, 6, 3), -- Oporto
+(115, 6, 4), -- Opañel
+(116, 6, 5), -- Plaza Eliptica
+(117, 6, 6), -- Usera
+(61, 6, 7), -- Legazpi
+(118, 6, 8), -- Arganzuela-Planetario
+(119, 6, 9), -- Mendez Alvaro
 (21, 6, 10), -- Pacifico
-(121, 6, 11), -- Conde de Casal
-(122, 6, 12), -- Sainz de Baranda
-(123, 6, 13), -- O'Donnell
-(40, 6, 14), -- Manuel Becerra
-(74, 6, 15), -- Diego de León
-(75, 6, 16), -- Avenida de América
-(124, 6, 17), -- República Argentina
-(125, 6, 18), -- Nuevos Ministerios
+(120, 6, 11), -- Conde de Casal
+(121, 6, 12), -- Sainz de Baranda
+(122, 6, 13), -- O'Donnell
+(45, 6, 14), -- Manuel Becerra
+(75, 6, 15), -- Diego de León
+(76, 6, 16), -- Avenida de América
+(123, 6, 17), -- República Argentina
+(124, 6, 18), -- Nuevos Ministerios
 (9, 6, 19), -- Cuatro Caminos
-(126, 6, 20), -- Guzman el Bueno
-(127, 6, 21), -- Vicente Aleixandre
-(128, 6, 22), -- Ciudad Universitaria
+(125, 6, 20), -- Guzmán el Bueno
+(126, 6, 21), -- Vicente Aleixandre
+(127, 6, 22), -- Ciudad Universitaria
 (52, 6, 23), -- Moncloa
 (53, 6, 24), -- Argüelles
-(129, 6, 25), -- Principe Pío
-(130, 6, 26), -- Puerta del Angel
-(131, 6, 27); -- Alto de Extremadura
-(132, 6, 27); -- Lucero
+(128, 6, 25), -- Principe Pío
+(129, 6, 26), -- Puerta del Angel
+(130, 6, 27); -- Alto de Extremadura
+(131, 6, 27); -- Lucero
 
 -- Inserción de estaciones para la Línea 7 en lineas_estaciones
 INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(132, 7, 1),
-(133, 7, 2),
-(134, 7, 3),
-(135, 7, 4),
-(136, 7, 5),
-(137, 7, 6),
-(138, 7, 7),
-(139, 7, 8),
-(140, 7, 9),
-(141, 7, 10),
-(142, 7, 11),
-(143, 7, 12),
-(144, 7, 13),
-(93, 7, 14),
-(145, 7, 15),
-(146, 7, 16),
-(147, 7, 17),
-(75, 7, 18),
-(148, 7, 19),
-(149, 7, 20),
-(51, 7, 21),
-(150, 7, 22),
-(125, 7, 23),
-(151, 7, 24),
-(152, 7, 25),
-(153, 7, 26),
-(154, 7, 27),
-(155, 7, 28),
-(156, 7, 29),
-(157, 7, 30),
-(158, 7, 31);
+(132, 7, 1), -- Hospital del Henares
+(133, 7, 2), -- Henares
+(134, 7, 3), -- Jarama
+(135, 7, 4), -- San Fernando
+(136, 7, 5), -- La Rambla
+(137, 7, 6), -- Coslada Central
+(138, 7, 7), -- Barrio del Puerto
+(139, 7, 8), -- Estadio Metropolitano
+(140, 7, 9), -- Las Musas
+(141, 7, 10), -- San Blas
+(142, 7, 11), -- Simancas
+(143, 7, 12), -- García Noblejas
+(144, 7, 13), -- Ascao
+(94, 7, 14), -- Pueblo Nuevo
+(145, 7, 15), -- Barrio de la Concepción
+(146, 7, 16), -- Parque de las Avenidas
+(147, 7, 17), -- Cartagena
+(76, 7, 18), -- Avenida de América
+(148, 7, 19), -- Gregorio Marañón
+(149, 7, 20), -- Alonso Cano
+(34, 7, 21), -- Canal
+(150, 7, 22), -- Islas Filipinas
+(125, 7, 23), -- Guzmán el Bueno
+(151, 7, 24), -- Francos Rodríguez
+(152, 7, 25), -- Valdezarza
+(153, 7, 26), -- Antonio Machado
+(154, 7, 27), -- Peñagrande
+(155, 7, 28), -- Avenida de la Ilustración
+(156, 7, 29), -- Lacoma
+(157, 7, 30), -- Arroyofresno
+(158, 7, 31); -- Pitis
 
 -- Inserción de estaciones para la Línea 8 en lineas_estaciones
 INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(124, 8, 1),
-(159, 8, 2),
-(160, 8, 3),
-(82, 8, 4),
-(161, 8, 5),
-(162, 8, 6),
-(163, 8, 7),
-(164, 8, 8);
+(124, 8, 1), -- Nuevos Ministerios
+(159, 8, 2), -- Colombia
+(160, 8, 3), -- Pinar del Rey
+(83, 8, 4), -- Mar de Cristal
+(161, 8, 5), -- Feria de Madrid
+(162, 8, 6), -- Aeropuerto T1-T2-T3
+(163, 8, 7), -- Barajas
+(164, 8, 8); -- Aeropuerto T4
 
 -- Inserción de estaciones para la Línea 9 en lineas_estaciones
 INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(165, 9, 1),
-(166, 9, 2),
-(167, 9, 3),
-(168, 9, 4),
-(169, 9, 5),
-(4, 9, 6),
-(170, 9, 7),
-(171, 9, 8),
-(159, 9, 9),
-(172, 9, 10),
-(173, 9, 11),
-(75, 9, 12),
-(96, 9, 13),
-(42, 9, 14),
-(174, 9, 15),
-(121, 9, 16),
-(175, 9, 17),
-(176, 9, 18),
-(177, 9, 19),
-(178, 9, 20),
-(179, 9, 21),
-(180, 9, 22),
-(181, 9, 23),
-(182, 9, 24),
-(183, 9, 25),
-(184, 9, 26),
-(185, 9, 27),
-(186, 9, 28),
-(187, 9, 29);
+(165, 9, 1), -- Paco de Lucía
+(166, 9, 2), -- Mirasierra
+(167, 9, 3), -- Herrera Oria
+(168, 9, 4), -- Barrio del Pilar
+(169, 9, 5), -- Ventilla
+(4, 9, 6), -- Plaza de Castilla
+(170, 9, 7), -- Duque de Pastrana
+(171, 9, 8), -- Pío XII
+(159, 9, 9), -- Colombia
+(172, 9, 10), -- Concha Espina
+(173, 9, 11), -- Cruz del Rayo
+(76, 9, 12), -- Avenida de América
+(97, 9, 13), -- Núñez de Balboa
+(43, 9, 14), -- Príncipe de Vergara
+(174, 9, 15), -- Ibiza
+(121, 9, 16), -- Sainz de Baranda
+(175, 9, 17), -- Estrella
+(176, 9, 18), -- Vinateros
+(177, 9, 19), -- Artilleros
+(178, 9, 20), -- Pavones
+(179, 9, 21), -- Valdebernardo
+(180, 9, 22), -- Vicálvaro
+(181, 9, 23), -- San Cipriano
+(182, 9, 24), -- Puerta de Arganda
+(183, 9, 25), -- Rivas Urbanizaciones
+(184, 9, 26), -- Rivas Futura
+(185, 9, 27), -- Rivas Vaciamadrid
+(186, 9, 28), -- La Poveda
+(187, 9, 29); -- Arganda del Rey
 
 -- Inserción de estaciones para la Línea 10 en lineas_estaciones
 INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(188, 10, 1),
-(189, 10, 2),
-(190, 10, 3),
-(191, 10, 4),
-(192, 10, 5),
-(192, 10, 6),
-(194, 10, 7),
-(195, 10, 8),
-(196, 10, 9),
-(197, 10, 10),
-(198, 10, 11),
-(199, 10, 12),
-(200, 10, 13),
-(3, 10, 14),
-(4, 10, 15),
-(201, 10, 16),
-(202, 10, 17),
-(124, 10, 18),
-(148, 10, 19),
-(69, 10, 20),
-(13, 10, 21),
-(65, 10, 22),
-(128, 10, 23),
-(203, 10, 24),
-(204, 10, 25),
-(112, 10, 26),
-(205, 10, 27),
-(206, 10, 28),
-(207, 10, 29),
-(208, 10, 30),
-(209, 10, 31);
+(188, 10, 1), -- Hospital Infanta Sofía
+(189, 10, 2), -- Reyes Católicos
+(190, 10, 3), -- Baunatal
+(191, 10, 4), -- Manuel de Falla
+(192, 10, 5), -- Marqués de la Valdavia
+(192, 10, 6), -- La Moraleja
+(194, 10, 7), -- La Granja
+(195, 10, 8), -- Ronda de la Comunicación
+(196, 10, 9), -- Las Tablas
+(197, 10, 10), -- Montecarmelo
+(198, 10, 11), -- Tres Olivos
+(199, 10, 12), -- Fuencarral
+(200, 10, 13), -- Begoña
+(3, 10, 14), -- Chamartín
+(4, 10, 15), -- Plaza de Castilla
+(201, 10, 16), -- Cuzco
+(202, 10, 17), -- Santiago Bernabéu
+(124, 10, 18), -- Nuevos Ministerios
+(148, 10, 19), -- Gregorio Marañón
+(70, 10, 20), -- Alonso Martínez
+(13, 10, 21), -- Tribunal
+(55, 10, 22), -- Plaza de España 
+(128, 10, 23), -- Príncipe Pío
+(203, 10, 24), -- Lago
+(204, 10, 25), -- Batán
+(112, 10, 26), -- Casa de Campo
+(205, 10, 27), -- Colonia Jardín
+(206, 10, 28), -- Aviación Española
+(207, 10, 29), -- Cuatro Vientos
+(208, 10, 30), -- Joaquín Vilumbrales
+(209, 10, 31); -- Puerta del Sur
 
 -- Inserción de estaciones para la Línea 11 en lineas_estaciones
 INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
