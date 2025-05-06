@@ -61,7 +61,7 @@ INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUE
 INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
 (52, 'Moncloa', TRUE, 'Plaza de Moncloa, s/n', 'Estación terminal en el noroeste de Madrid, con conexiones con las líneas 6 y 10.'),
 (53, 'Argüelles', TRUE, 'Calle de Arguelles, 76', 'Ubicada en el distrito de Moncloa-Aravaca, cerca de la Ciudad Universitaria.'),
-(54, 'Ventura Rodríguez', TRUE, 'Calle de Ventura Rodríguez, 7', 'Estación que conecta con la línea 2 y está cerca del Templo de Debod.'),
+(54, 'Ventura Rodríguez', TRUE, 'C/ Princesa, 22', 'Ventura Rodríguez es una estación de la línea 3 del Metro de Madrid ubicada bajo la calle de la Princesa, a la altura de la intersección con la calle del mismo nombre.'),
 (55, 'Plaza de España', TRUE, 'Plaza de España, s/n', 'Importante intersección con la línea 10 y acceso a la Gran Vía.'),
 (56, 'Callao', TRUE, 'Gran Vía, 45', 'Situada en el corazón de la Gran Vía, centro comercial y cultural.'),
 (57, 'Lavapiés', TRUE, 'Calle de Lavapiés, 34', 'Estación en un barrio multicultural, con numerosos bares y teatros.'),
@@ -610,97 +610,97 @@ INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
 
 -- Inserción de estaciones para la Línea 11 en lineas_estaciones
 INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(116, 11, 1),
-(210, 11, 2),
-(211, 11, 3),
-(212, 11, 4),
-(213, 11, 5),
-(214, 11, 6),
-(215, 11, 7);
+(116, 11, 1), -- Plaza Elíptica
+(210, 11, 2), -- Abrantes
+(211, 11, 3), -- Pan Bendito
+(212, 11, 4), -- San Francisco
+(213, 11, 5), -- Carabanchel Alto
+(214, 11, 6), -- La Peseta
+(215, 11, 7); -- La Fortuna
 
 -- Inserción de estaciones para la Línea 12 en lineas_estaciones
 INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(209, 12, 1),
-(216, 12, 2),
-(217, 12, 3),
-(218, 12, 4),
-(219, 12, 5),
-(220, 12, 6),
-(221, 12, 7),
-(222, 12, 8),
-(223, 12, 9),
-(224, 12, 10),
-(225, 12, 11),
-(226, 12, 12),
-(227, 12, 13),
-(228, 12, 14),
-(229, 12, 15),
-(230, 12, 16),
-(231, 12, 17),
-(232, 12, 18),
-(233, 12, 19),
-(234, 12, 20),
-(235, 12, 21),
-(236, 12, 22),
-(237, 12, 23),
-(238, 12, 24),
-(239, 12, 25),
-(240, 12, 26),
-(241, 12, 27),
-(242, 12, 28);
+(209, 12, 1), -- Puerta del Sur
+(216, 12, 2), -- Parque de Lisboa
+(217, 12, 3), -- Alcorcón Central
+(218, 12, 4), -- Parque Oeste
+(219, 12, 5), -- Universidad Rey Juan Carlos
+(220, 12, 6), -- Móstoles Central
+(221, 12, 7), -- Pradillo
+(222, 12, 8), -- Hospital de Móstoles
+(223, 12, 9), -- Manuela Malasaña
+(224, 12, 10), -- Loranca
+(225, 12, 11), -- Hospital de Fuenlabrada
+(226, 12, 12), -- Parque Europa
+(227, 12, 13), -- Fuenlabrada Central
+(228, 12, 14), -- Parque de los Estados
+(229, 12, 15), -- Arroyo Culebro
+(230, 12, 16), -- Conservatorio
+(231, 12, 17), -- Alonso de Mendoza
+(232, 12, 18), -- Getafe Central
+(233, 12, 19), -- Juan de la Cierva
+(69, 12, 20), -- El Casar
+(234, 12, 21), -- Los Espartales
+(235, 12, 22), -- El Bercial
+(236, 12, 23), -- El Carrascal
+(237, 12, 24), -- Julián Besteiro
+(238, 12, 25), -- Casa del Reloj
+(239, 12, 26), -- Hospital Severo Ochoa
+(240, 12, 27), -- Leganés Central
+(241, 12, 28); -- San Nicasio
 
 -- Inserción de estaciones para la Línea RAMAL en lineas_estaciones
 INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(46, 13, 1),
-(128, 13, 2);
+(39, 13, 1), -- Ópera
+(128, 13, 2); -- Príncipe Pío
 
 
 -- Inserción de estaciones para la Línea ML1 en lineas_estaciones
 INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(1, 14, 1),
-(243, 14, 2),
-(244, 14, 3),
-(245, 14, 4),
-(246, 14, 5),
-(247, 14, 6),
-(248, 14, 7),
-(249, 14, 8),
-(196, 14, 9);
+(1, 14, 1), -- Pinar de Chamartín
+(242, 14, 2), -- Fuente de la Mora
+(243, 14, 3), -- Virgen del Cortijo
+(244, 14, 4), -- Antonio Saura
+(245, 14, 5), -- Álvarez de Villaamil
+(246, 14, 6), -- Blasco Ibáñez
+(247, 14, 7), -- María Tudor
+(248, 14, 8), -- Palas de Rey
+(196, 14, 9); -- Las Tablas
 
 -- Inserción de estaciones para la Línea ML2 en lineas_estaciones
 INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(205, 15, 1),
-(250, 15, 2),
-(251, 15, 3),
-(252, 15, 4),
-(253, 15, 5),
-(254, 15, 6),
-(255, 15, 7),
-(256, 15, 8),
-(257, 15, 9),
-(258, 15, 10),
-(259, 15, 11),
-(260, 15, 12),
-(261, 15, 13);
+(205, 15, 1), -- Colonia Jardín
+(249, 15, 2), -- Prado de la Vega
+(250, 15, 3), -- Colonia de los Ángeles
+(251, 15, 4), -- Prado del Rey
+(252, 15, 5), -- Somosaguas Sur
+(253, 15, 6), -- Somosaguas Centro
+(254, 15, 7), -- Pozuelo Oeste
+(255, 15, 8), -- Bélgica
+(256, 15, 9), -- Dos Castillas
+(257, 15, 10), -- Campus de Somosaguas
+(258, 15, 11), -- Avenida de Europa
+(259, 15, 12), -- Berna
+(260, 15, 13); -- Estación de Aravaca
 
 -- Inserción de estaciones para la Línea ML3 en lineas_estaciones
 INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(205, 16, 1),
-(262, 16, 2),
-(263, 16, 3),
-(264, 16, 4),
-(265, 16, 5),
-(266, 16, 6),
-(267, 16, 7),
-(268, 16, 8),
-(269, 16, 9),
-(270, 16, 10),
-(271, 16, 11),
-(272, 16, 12),
-(273, 16, 13),
-(274, 16, 14),
-(275, 16, 15),
-(276, 16, 16);
+(205, 16, 1), -- Colonia Jardín
+(261, 16, 2), -- Ciudad de la Imagen
+(262, 16, 3), -- José Isbert
+(263, 16, 4), -- Ciudad del Cine
+(264, 16, 5), -- Cocheras
+(265, 16, 6), -- Retamares
+(266, 16, 7), -- Montepríncipe
+(267, 16, 8), -- Ventorro del Cano
+(268, 16, 9), -- Prado del Espino
+(269, 16, 10), -- Cantabria
+(270, 16, 11), -- Ferial de Boadilla
+(271, 16, 12), -- Boadilla Centro
+(272, 16, 13), -- Nuevo Mundo
+(273, 16, 14), -- Siglo XXI
+(274, 16, 15), -- Infante Don Luis
+(275, 16, 16); -- Puerta de Boadilla
 
 
 TRUNCATE TABLE `transbordos`;
@@ -708,146 +708,148 @@ TRUNCATE TABLE `transbordos`;
 -- Transbordos para estaciones de la Línea 1
 INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
 ('1', '1', '4,14'),         -- Pinar de Chamartín
-('2', '3', '10'),           -- Chamartín (solo metro)
+('2', '3', '10'),           -- Chamartín
 ('3', '4', '9,10'),         -- Plaza de Castilla
 ('4', '9', '2,6'),          -- Cuatro Caminos
-('5', '13', '4'),           -- Bilbao
-('6', '14', '10'),          -- Tribunal
-('7', '15', '5'),           -- Gran Vía
-('8', '16', '2,3'),         -- Sol
-('9', '22', '6');           -- Pacífico
+('5', '12', '4'),           -- Bilbao
+('6', '13', '10'),          -- Tribunal
+('7', '14', '5'),           -- Gran Vía
+('8', '15', '2,3'),         -- Sol
+('9', '21', '6');           -- Pacífico
 
 -- Transbordos para estaciones de la Línea 2
 INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
-('10', '2', '1,6'),          -- Cuatro Caminos (ya insertada previamente)
-('11', '35', '7'),           -- Canal
-('12', '37', '4'),           -- San Bernardo
-('13', '40', '5,13'),         -- Ópera (Ramal incluido como 'R')
-('14', '16', '1,3'),         -- Sol (transbordo con Línea 1 y 3)
-('15', '44', '9'),           -- Príncipe de Vergara
-('16', '45', '4'),           -- Goya
-('17', '46', '6'),           -- Manuel Becerra
-('18', '47', '5');           -- Ventas
+('10', '9', '1,6'),          -- Cuatro Caminos
+('11', '34', '7'),           -- Canal
+('12', '36', '4'),           -- San Bernardo
+('13', '39', '5,13'),        -- Ópera
+('14', '15', '1,3'),         -- Sol
+('15', '43', '9'),           -- Príncipe de Vergara
+('16', '44', '4'),           -- Goya
+('17', '45', '6'),           -- Manuel Becerra
+('18', '46', '5');           -- Ventas
 
 -- Transbordos para estaciones de la Línea 3
 INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
-('19', '35', '6'),            -- Moncloa (transbordo con Línea 6)
-('20', '36', '4'),            -- Argüelles (transbordo con Línea 4)
-('21', '38', '10'),           -- Plaza de España (transbordo con Línea 10)
-('22', '39', '5'),            -- Callao (transbordo con Línea 5)
-('23', '16', '1,2'),          -- Sol (transbordo con Línea 1 y 2)
-('24', '42', '5'),            -- Embajadores (transbordo con Línea 5)
-('25', '45', '6'),            -- Legazpi (transbordo con Línea 6)
-('26', '53', '6');            -- El Casar (transbordo con Línea 6)
+('19', '52', '6'),            -- Moncloa
+('20', '53', '4'),            -- Argüelles
+('21', '55', '10'),           -- Plaza de España
+('22', '56', '5'),            -- Callao
+('23', '15', '1,2'),          -- Sol
+('24', '58', '5'),            -- Embajadores
+('25', '61', '6'),            -- Legazpi
+('26', '69', '12');           -- El Casar
 
 -- Transbordos para estaciones de la Línea 4
 INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
-('27', '54', '3,4,6'),     -- Argüelles
-('28', '37', '2,4'),       -- San Bernardo
-('29', '13', '1,4'),       -- Bilbao
-('30', '72', '4,5,10'),    -- Alonso Martínez
-('31', '45', '2,4'),       -- Goya
-('32', '77', '4,5,6'),     -- Diego de León
-('33', '78', '4,6,7,9'),   -- Avenida de América
-('34', '85', '4,8'),       -- Mar de Cristal
-('35', '1', '1,4,14');    -- Pinar de Chamartín
+('27', '53', '3,6'),     -- Argüelles
+('28', '36', '2'),       -- San Bernardo
+('29', '12', '1'),       -- Bilbao
+('30', '70', '5,10'),    -- Alonso Martínez
+('31', '44', '2'),       -- Goya
+('32', '75', '5,6'),     -- Diego de León
+('33', '76', '6,7,9'),   -- Avenida de América
+('34', '83', '8'),       -- Mar de Cristal
+('35', '1', '1,14');     -- Pinar de Chamartín
 
 -- Transbordos para estaciones de la Línea 5
-INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
-('36', '96', '7'),         -- Pueblo Nuevo (transbordo con L7)
-('37', '47', '2'),         -- Ventas (transbordo con L2)
-('38', '77', '4,6'),       -- Diego de León (transbordo con L4 y L6)
-('39', '99', '9'),         -- Núñez de Balboa (transbordo con L9)
-('40', '15', '1'),         -- Gran Vía (transbordo con L1)
-('41', '57', '3'),         -- Callao (transbordo con L3)
-('42', '40', '2,13'),       -- Ópera (transbordo con L2 y Ramal)
-('43', '60', '3'),         -- Embajadores (transbordo con L3)
-('44', '106', '6'),       -- Oporto (transbordo con L6)
-('45', '114', '10');       -- Casa de Campo (transbordo con L10)
+INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
+('36', '94', '7'),       -- Pueblo Nuevo
+('37', '46', '2'),       -- Ventas
+('38', '75', '4,6'),     -- Diego de León
+('39', '97', '9'),       -- Núñez de Balboa
+('40', '70', '4,10'),    -- Alonso Martínez
+('41', '14', '1'),       -- Gran Vía
+('42', '56', '3'),       -- Callao
+('43', '39', '2,13'),    -- Ópera
+('44', '58', '3'),       -- Acacias (Embajadores)
+('45', '105', '6'),      -- Oporto
+('46', '112', '10');     -- Casa de Campo
 
 -- Transbordos para estaciones de la Línea 6
-INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
-('47', '105', '5'),          -- Oporto (transbordo con L10)
-('48', '116', '11'),         -- Plaza Elíptica (transbordo con L11)
-('49', '59', '3'),           -- Legazpi
+INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
+('47', '105', '5'),          -- Oporto
+('48', '116', '11'),         -- Plaza Elíptica
+('49', '61', '3'),           -- Legazpi
 ('50', '21', '1'),           -- Pacífico
 ('51', '121', '9'),          -- Sainz de Baranda
-('52', '40', '2'),           -- Manuel Becerra
-('53', '74', '4,5'),         -- Diego de León (transbordo con L4 y L5))
-('54', '75', '4,7,9'),       -- Avenida de América
+('52', '45', '2'),           -- Manuel Becerra
+('53', '75', '4,5'),         -- Diego de León
+('54', '76', '4,7,9'),       -- Avenida de América
 ('55', '124', '8,10'),       -- Nuevos Ministerios
 ('56', '9', '1,2'),          -- Cuatro Caminos
-('57', '125', '7'),          -- Guzmán El Bueno (transbordo con L7)
-('55', '68', '3'),           -- Moncloa
-('56', '67', '3,4'),         -- Argüelles
-('57', '128', '10,13');       -- Principe Pio (transbordo con L10 y Ramal)
+('57', '125', '7'),          -- Guzmán El Bueno
+('55', '52', '3'),           -- Moncloa
+('56', '53', '3,4'),         -- Argüelles
+('57', '128', '10,13');      -- Principe Pio
 
 -- Transbordos para estaciones de la Línea 7
-INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
-('58', '93', '5'),           -- Pueblo Nuevo
-('59', '75', '4,6,9'),         -- Avenida de América
-('60', '148', '10'),           -- Gregorio Marañón
-('61', '51', '2');          -- Canal
+INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
+('58', '94', '5'),           -- Pueblo Nuevo
+('59', '76', '4,6,9'),       -- Avenida de América
+('60', '148', '10'),         -- Gregorio Marañón
+('61', '34', '2');           -- Canal
 
 -- Transbordos para estaciones de la Línea 8
-INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
-('62', '124', '6,10'),           -- Nuevos Ministerios
-('63', '159', '9'),         -- Colombia
-('64', '82', '10');          -- Mar de Cristal
+INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
+('62', '124', '6,10'),       -- Nuevos Ministerios
+('63', '159', '9'),          -- Colombia
+('64', '83', '10');          -- Mar de Cristal
 
 -- Transbordos para estaciones de la Línea 9
-INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
-('65', '4', '1,10'),           -- Plaza Castilla
-('66', '159', '8'),         -- Colombia
-('67', '75', '4,6,7'),          -- Avenida de América
-('68', '96', '5'),            -- Núñez de Balboa (transbordo con L9)
-('69', '42', '2'),           -- Príncipe de Vergara
-('70', '121', '6');           -- Sainz de Baranda
+INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
+('65', '4', '1,10'),         -- Plaza de Castilla
+('66', '159', '8'),          -- Colombia
+('67', '76', '4,6,7'),       -- Avenida de América
+('68', '97', '5'),           -- Núñez de Balboa
+('69', '43', '2'),           -- Príncipe de Vergara
+('70', '121', '6');          -- Sainz de Baranda
 
 -- Transbordos para estaciones de la Línea 10
-INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
-('71', '196', '14'),           -- Las Tablas
-('72', '3', '1'),        -- Chamartín (solo metro)
+INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
+('71', '196', '14'),         -- Las Tablas
+('72', '3', '1'),            -- Chamartín
 ('73', '4', '1,9'),          -- Plaza de Castilla
-('74', '124', '6,8'),            -- Nuevos Ministerios
-('75', '148', '7'),           -- Gregorio Marañón
-('76', '69', '4,5'),           -- Alonso Martínez
-('77', '13', '1'),          -- Tribunal
-('78', '65', '2,3'),            -- Plaza España
-('79', '128', '6,13'),           -- Principe Pio
-('80', '112', '5'),          -- Casa de Campo (transbordo con L10)
-('81', '205', '15,16'),            -- Colonia Jardín
-('82', '209', '12');          -- Puerta del Sur
+('74', '124', '6,8'),        -- Nuevos Ministerios
+('75', '148', '7'),          -- Gregorio Marañón
+('76', '70', '4,5'),         -- Alonso Martínez
+('77', '13', '1'),           -- Tribunal
+('78', '55', '2,3'),         -- Plaza de España
+('79', '128', '6,13'),       -- Príncipe Pío
+('80', '112', '5'),          -- Casa de Campo
+('81', '205', '15,16'),      -- Colonia Jardín
+('82', '209', '12');         -- Puerta del Sur
 
 -- Transbordos para estaciones de la Línea 11
-INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
-('83', '116', '6');           -- Plaza Elíptica (transbordo con L11)
+INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
+('83', '116', '6');          -- Plaza Elíptica
 
 -- Transbordos para estaciones de la Línea 12
-INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
-('84', '209', '10');           -- Puerta del Sur
+INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
+('84', '209', '10'),         -- Puerta del Sur
+('85', '69', '3');           -- El Casar
 
 -- Transbordos para estaciones de la Línea Ramal
-INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
-('85', '46', '2,5'),          -- Ópera (transbordo con L2 y Ramal)
-('86', '128', '6,10');          -- Principe Pio
+INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
+('86', '39', '2,5'),         -- Ópera
+('87', '128', '6,10');       -- Principe Pio
 
 -- Transbordos para estaciones de la Línea ML1
-INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
-('87', '1', '1,4'),          -- Pinar de Chamartín
-('88', '196', '10');          -- Las Tablas
+INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
+('88', '1', '1,4'),          -- Pinar de Chamartín
+('89', '196', '10');         -- Las Tablas
 
 -- Transbordos para estaciones de la Línea ML2
-INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
-('89', '205', '10,16');          -- Colonia Jardín
-
+INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
+('90', '205', '10,16');      -- Colonia Jardín
 
 -- Transbordos para estaciones de la Línea ML3
-INSERT INTO transbordos (id, id_estacion, lineas_trasbordos) VALUES
-('90', '205', '10,15');          -- Colonia Jardín
+INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
+('91', '205', '10,15');      -- Colonia Jardín
 
-
-INSERT INTO lineas (id, nombre, siglas) VALUES 
+-- Lineas de metro
+TRUNCATE TABLE `lineas`;
+INSERT INTO `lineas` (`id`, `nombre`, `siglas`) VALUES 
 (1, 'Línea 1', 'L1'),
 (2, 'Línea 2', 'L2'),
 (3, 'Línea 3', 'L3'),
