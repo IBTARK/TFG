@@ -1,0 +1,7 @@
+jueves: (laboral, 1)
+ojo: (claro, 1)
+pelo: (rizado, 1)
+senora: (desagradable, 2)
+lugar: (mal, 2)(mucho limpio, 4)(situado, 6)(mucho gustar, 1)(mucho profundo, 2)(magnifico, 1)(permanentemente mecanizado, 1)(madrileño, 1)(normal, 1)
+metro: (espaciós, 1)(mucho limpio, 2)
+plaza: (disponible, 1)

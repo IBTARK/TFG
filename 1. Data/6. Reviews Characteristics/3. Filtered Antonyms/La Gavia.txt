@@ -1,0 +1,7 @@
+estacion: (estéticamente bastante bien, 3)(más cercano, 5)(bien indicar, 2)(limpio, 5)(adaptada, 1)(moderno, 3)(publico, 1)(grande, 2)(exelente, 1)
+centro: (comercial, 7)
+ascensor: (amplio, 1)
+senalizacion: (mucho malo, 1)
+distribucion: (buen, 1)
+mal: (poquito, 1)
+publico: (peligroso, 1)

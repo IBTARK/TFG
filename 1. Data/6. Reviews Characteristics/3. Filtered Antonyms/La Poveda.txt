@@ -1,0 +1,5 @@
+minuto: (lento, 1)(punta, 1)
+estacion: (parada, 1)(bastante bien, 6)(correspondiente, 3)(verde, 1)(pequeño, 1)(acondicionar, 1)(urgente, 1)(limpio, 1)
+ascensor: (perteneciente, 1)
+servicio: (penoso, 1)
+tren: (limitado, 1)

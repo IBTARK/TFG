@@ -1,0 +1,8 @@
+estacion: (tener, 4)(excelente, 9)(moderno, 1)(mucho amplio, 2)(fácil, 1)
+pantalla: (bien ubicado, 1)
+informacion: (no útil, 1)(mucho buen, 1)
+escalera: (eléctrico, 1)
+semana: (dañado, 1)
+metro: (corriente, 1)(normal, 1)
+magnifica: (funcional, 1)(amplio, 1)(agradable, 1)
+acierto: (buen, 1)

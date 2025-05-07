@@ -1,0 +1,6 @@
+estacion: (ubicado, 2)(moderno, 2)(mucho acondicionado, 1)(público, 1)(bastante tranquilo, 2)(mucho accesible, 2)(limpia, 2)(mucho bonito, 2)(caluroso, 1)(normal, 1)
+barrio: (madrileño, 1)(principal, 2)(mejor, 1)(comercial, 1)
+horario: (normal, 1)(buena, 1)
+cobertura: (móvil, 1)
+necesita: (ayudo, 1)
+fu: (normal, 1)

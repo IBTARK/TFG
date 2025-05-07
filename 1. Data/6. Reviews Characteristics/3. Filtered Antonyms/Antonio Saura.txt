@@ -1,0 +1,5 @@
+metro: (ligero, 1)
+conductor: (mal fatal, 1)
+estacion: (cumple, 1)(ligero, 1)(estándar, 1)
+frecuencia: (buen, 1)
+asiento: (precintado, 1)(roto, 1)

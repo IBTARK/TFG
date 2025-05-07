@@ -1,0 +1,6 @@
+atencion: (buen, 2)(personal, 1)
+profesional: (mucho buen, 1)
+estacion: (super, 1)(encantar, 1)(deficiente, 1)
+super: (encantado, 1)
+personal: (borde, 1)(mucho desagradable, 1)
+acceso: (buen, 1)

@@ -1,0 +1,6 @@
+acceso: (fácil, 1)
+movilidad: (reducido, 1)
+estacion: (mucho moderno, 2)(grande, 4)(agradable, 1)
+cuartel: (militar, 1)(buen, 1)
+experiencia: (bonito, 1)
+anden: (amplio, 1)
