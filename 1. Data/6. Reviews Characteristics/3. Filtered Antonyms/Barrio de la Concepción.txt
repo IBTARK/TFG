@@ -1,0 +1,8 @@
+escalera: (siempre estropeado, 2)(mucho largo, 1)(mecánico, 3)(más cuidado, 1)(roto, 1)(nuevo, 1)
+estacion: (mucho tranquilo, 4)(necesitar, 1)(limpio, 5)(mucho mejorado, 1)(ya totalmente accesible, 1)(no adaptado, 3)(encantado, 1)
+perfecto: (bien después quedar, 1)(limpio, 1)
+semana: (roto, 1)
+movilidad: (condicionado, 1)
+zona: (concurrido, 1)(mucho descuidado, 1)
+diseno: (bonito, 1)
+acceso: (discapacitado, 1)

@@ -1,0 +1,7 @@
+acceso: (fácil, 1)
+movilidad: (reducido, 1)
+cobertura: (móvil, 1)
+rollo: (mal, 1)
+estacion: (mucho tranquilo, 1)(excelente, 2)
+trabajador: (mucho amargado, 1)
+olor: (mal, 1)
