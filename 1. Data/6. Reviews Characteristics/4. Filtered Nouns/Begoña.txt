@@ -1,6 +1,6 @@
-estacion: (no mal conservado, 2)(siguiente, 4)(increíble, 4)(mucho accesible, 2)(arquitectura, 1)(buena, 3)(vergonzoso, 1)(mucho limpio, 2)(personal, 1)
+estacion: (no mal conservado, 2)(increíble, 4)(mucho accesible, 2)(arquitectura, 1)(buena, 3)(mucho limpio, 2)
 servicio: (pésimo, 1)
-escalera: (averiada, 1)(línea, 1)(mecánico, 1)
+escalera: (averiada, 1)(mecánico, 1)
 movilidad: (reducido, 1)
 tren: (sentido, 1)
 conexion: (buen, 1)

@@ -1,5 +1,5 @@
 linea: (situado, 1)(lento, 1)(bonito, 1)
-estacion: (algo, 7)(bien comunicado, 8)(proporcionando, 5)(parada, 1)(antiguo, 4)(falta, 2)(mucho descontento, 1)(considerable, 3)(line, 1)(lento, 1)(acceso, 1)(necesitamos, 1)(no mal, 2)(ascensor, 1)(fantástico, 2)(mucho ocupado, 1)(mucho sucio, 1)(normal, 1)
+estacion: (algo, 7)(bien comunicado, 8)(proporcionando, 5)(parada, 1)(antiguo, 4)(falta, 2)(mucho descontento, 1)(considerable, 3)(lento, 1)(acceso, 1)(ascensor, 1)(fantástico, 2)(mucho ocupado, 1)(mucho sucio, 1)(normal, 1)
 movilidad: (reducido, 1)
 experiencia: (adecuado, 1)
 senalizacion: (claro, 1)

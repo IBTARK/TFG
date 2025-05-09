@@ -1,0 +1,8 @@
+metro: (conservado, 2)
+acceso: (solo, 1)(salido, 2)(buen, 4)(cuidado, 1)
+movilidad: (reducido, 1)
+zona: (residencial, 1)(tranquilo, 1)(bonito, 2)
+servicio: (bien, 1)
+escalera: (ascensor, 1)
+informacion: (necesario, 1)
+instalacion: (buena, 1)

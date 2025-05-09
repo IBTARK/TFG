@@ -1,5 +1,5 @@
 salida: (pleno, 1)
 escalera: (mecanica, 2)
-estacion: (mucho grande, 1)(siempre mucho limpio, 2)(moderna, 1)(cómoda, 1)(perteneciente, 2)(perfecto, 2)(no olvid, 1)(funciona, 1)
+estacion: (mucho grande, 1)(siempre mucho limpio, 2)(moderna, 1)(cómoda, 1)(perteneciente, 2)(perfecto, 2)(funciona, 1)
 acceso: (fácil, 1)
 metro: (bien mantenido, 1)(moderno, 1)

@@ -1,5 +1,5 @@
 metro: (perteneciente, 2)(mucho amable, 1)
-estacion: (general, 2)(grande, 6)(limpio, 5)(bien cuidado, 1)(casi siempre limpio, 1)(estropeado, 3)(no alto, 1)(saturado, 1)(repugnante, 1)(salida, 1)(linea, 1)(cerca decés, 1)(adecuar, 1)
+estacion: (general, 2)(grande, 6)(limpio, 5)(bien cuidado, 1)(casi siempre limpio, 1)(estropeado, 3)(saturado, 1)
 personal: (atento, 4)
 frecuencia: (más alto, 2)
 escalera: (mecánico, 3)(estropeado, 1)

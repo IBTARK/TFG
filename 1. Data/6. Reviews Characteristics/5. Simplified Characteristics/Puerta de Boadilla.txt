@@ -1,0 +1,5 @@
+estacion: (horrible, 1)(eterno, 1)(lento, 1)(servicio, 1)(seguro, 3)(terminal, 1)(siguiente, 1)
+gente: (innecesario, 1)(total, 1)
+conexion: (cercano, 1)
+transporte: (publico, 2)(conectado, 1)(eléctrico, 1)(posible, 1)
+servicio: (nefasto, 1)

@@ -1,0 +1,7 @@
+estacion: (abandona, 1)(mejor, 3)(obviamente, 2)(enfadado, 2)(agradecida, 2)(completo, 1)(sucio, 2)(concurrido, 3)(antiguo, 1)(comunicado, 2)(peligroso, 1)(buenisima, 1)(normal, 1)(bonito, 1)(pasable, 1)(especial, 1)
+cobertura: (móvil, 2)
+servicio: (excepcional, 2)
+salida: (manual, 1)
+metro: (antiguo, 1)
+acceso: (buen, 1)
+movilidad: (buen, 1)

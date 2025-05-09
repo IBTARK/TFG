@@ -1,0 +1,7 @@
+ascensor: (disponible, 1)(automático, 1)
+estacion: (metro, 1)(accesible, 4)(limpio, 2)(situado, 1)(moderno, 2)(bonito, 4)(cuidado, 2)(funcional, 1)(buen, 4)
+cobertura: (móvil, 1)
+zona: (tarifario, 1)(universitario, 1)(puro, 1)(bonito, 1)
+metro: (normal, 1)
+linea: (completo, 1)
+salida: (buenísimo, 1)

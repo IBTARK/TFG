@@ -1,0 +1,751 @@
+mucho tranquilo: tranquilo
+siempre tanto limpio: limpio
+mucho importante: importante
+mucho amenudo: amenudo
+no encontrar: perder
+mucho mal: mal
+poco práctico: inutil
+mucho moderno: moderno
+mucho concurrido: concurrido
+mucho funcional: funcional
+mucho fácil: facil
+bien comunicado: comunicado
+mucho lejos: lejos
+relativamente vacío: vacio
+también limpio: limpio
+mucho desarrollado: desarrollado
+mucho buen: bien
+quizá demasiado grande: grande
+no necesario: innecesario
+mucho rico: rico
+totalmente accesible: accesible
+perfectamente señalizado: señalizado
+bien organizado: organizado
+evidentemente tirar: tirar
+mas nuevo: nuevo
+bien conectado: conectado
+no mucho generoso: tacaño
+más cercano: proximo
+no caótico: organizado
+mucho amable: amable
+mucho eficiente: eficiente
+siempre presente: presente
+lamentablemente no actualizado: obsoleto
+mucho limpio: limpio
+demasiado complicado: complicado
+más simple: simple
+mucho buena: buena
+mas ver: ver
+después vuelto: vuelto
+bastante amplio: amplio
+bien cuidado: cuidado
+aquí pasar: pasar
+mucho mala: mala
+cerca situada: proxima
+bien ubicado: ubicado
+mucho aprovechado: aprovechado
+bien diseñado: funcional
+poco antiguo: moderno
+poco accesible: inaccesible
+cerca zona: cerca
+completamente nuevo: nuevo
+mucho sucio: sucio
+siempre lleno: lleno
+algo antiguo: antiguo
+bien conservada: conservada
+bien señalizado: señalizado
+mucho antiguo: antiguo
+siempre estropeado: estropeado
+más rápido: rapido
+tanto necesario: necesario
+lógicamente no adaptado: inadaptado
+siempre dañado: dañado
+menos corto: largo
+bien iluminado: iluminado
+bastante tranquilo: tranquilo
+relativamente nuevo: nuevo
+perfectamente conectado: conectado
+más céntrico: centrico
+bien equipado: equipado
+bastante antiguo: antiguo
+no tanto costoso: economico
+cerca bien comunicado: comunicado
+mucho escaso: escaso
+mal dificil: dificil
+antes penúltimo: antepenultimo
+mucho bien: bien
+mucho necesario: necesario
+más nuevo: nuevo
+bastante oscuro: oscuro
+mucho cercano: cercano
+no preparado: incompleta
+siempre limpio: limpio
+no gustar: disgustar
+sorprendentemente fácil: facil
+no conectado: desconectado
+mas retrasado: retrasado
+no claro: confuso
+bastante lento: lento
+no seguro: inseguro
+mucho lleno: lleno
+mucho lindo: lindo
+más moderno: moderno
+más seguro: seguro
+además recomendable: recomendable
+bastante preparado: preparado
+mucho original: original
+poco conocido: desconocido
+mucho alto: alto
+mucho bonito: bonito
+mucho nuevo: nuevo
+más antiguo: antiguo
+especialmente transitado: transitado
+no mal: bien
+además cabecero: cabezon
+además mucho caro: caro
+mucho animado: animado
+más liós: lios
+mucho complicado: complicado
+más sencillo: sencillo
+mejor conectado: conectado
+mucho irregular: irregular
+mucho bueno: bueno
+mas tranquilo: tranquilo
+poco concurrido: intransitado
+demasiado profundo: profundo
+generalmente considerado: considerado
+mucho normal: normal
+allá abierto: abierto
+más concurrido: concurrido
+siempre pequeño: pequeño
+mucho bien ubicado: ubicado
+bien sitio: bien
+bastante ayudar: ayudar
+bastante limpio: limpio
+no bien comunicado: incomunicado
+más nunca: nunca
+tanto importante: importante
+bien acondicionado: acondicionado
+más bonito: bonito
+extremadamente ocupado: ocupado
+bastante confuso: confuso
+también conectado: conectado
+mucho organizado: organizado
+mucho puntual: puntual
+más estúpido: estupido
+mucho malo: malo
+mucho mal aprovechado: desperdiciado
+más educado: educado
+nada respetuoso: irrespetuoso
+más inútil: inutil
+jamás vivido: inedito
+extremadamente hostil: hostil
+menos decente: indecente
+antes fastidia: fastidiada
+mucho disperso: disperso
+no bien señalizado: confuso
+igual no suficientemente claro: confuso
+poco claro: confuso
+dentro personal: personal
+alrededor zona: periferia
+bastante grande: grande
+siempre mucho vigilar: vigilante
+tanto dificil: dificil
+mucho después mejorado: mejorado
+no mucho amplio: reducido
+bien climatizado: climatizado
+mucho grande: grande
+aquí encontrarás: encontrado
+bastante moderno: moderno
+más claro: claro
+además cerca: cerca
+ya no accesible: inaccesible
+siempre impecable: impecable
+bastante bueno: bueno
+mucho espaciós: espacioso
+no bonito: feo
+no directamente conectado: desconectado
+no accesible: inaccesible
+bien resolver: resolver
+recientemente reformado: reformado
+siempre mucho limpio: limpio
+bastante nuevo: nuevo
+completamente accesible: accesible
+más ruidoso: ruidoso
+más falso: falso
+mucho bajo: profundo
+no mucho profundo: superficial
+bien situado: situado
+actualmente cerrado: cerrado
+siempre sorprendentemente limpio: limpio
+algo escaso: escaso
+mucho largo: largo
+más cuidado: cuidado
+mucho mejorado: mejorado
+ya totalmente accesible: accesible
+no adaptado: inadaptado
+mucho descuidado: descuidado
+mucho cerca: cerca
+mal cuidado: descuidado
+tanto atento: vigilante
+dentro accesible: accesible
+menos mal: mejor
+hoy suspender: suspender
+no mucho grande: pequeño
+más cómodo: comodo
+bastante bien: bien
+mucho majo: majo
+no mal conservado: conservado
+mucho accesible: accesible
+mucho agradable: agradable
+no suficiente: insuficiente
+mucho básico: basico
+ahora reformado: reformado
+hoy tener: tener
+mucho raro: inusual
+bastante concurrido: concurrido
+bien después quedar: bien
+mucho tradicional: tradicional
+siempre así: igual
+mucho recomendable: recomendable
+relativamente moderno: moderno
+mucho central: central
+mucho cómodo: comodo
+mucho transitado: transitado
+mucho amplio: amplio
+mucho profundo: profundo
+bastante atasco: atasco
+mucho rápido: rapido
+no mucho útil: inutil
+bien estructuralmente: bien
+no mucho mal: bien
+enfrente situado: enfrente
+bien reformado: reformado
+más transitada: transitada
+mucho bien comunicado: comunicado
+bastante accesible: accesible
+más bien: bien
+perfectamente funcional: funcional
+aún abierto: abierto
+tanto simple: simple
+mucho práctico: practico
+además bien conectada: comunicada
+adecuadamente simbolizado: señalizado
+además tribunal: tribunal
+mucho liberal: liberal
+mucho turistificado: turistificado
+mejor decorado: decorado
+mal acondicionado: malrehabilitado
+más novedoso: novedoso
+demasiado vulgar: vulgar
+más colorido: colorido
+siempre moderno: moderno
+también amplio: amplio
+más centrales: centrales
+bastante dentro anticuado: anticuado
+mucho regular: regular
+más peligroso: peligroso
+mucho viejo: viejo
+hoy estupebdo: estupendo
+no estudiant: adultos
+bien mantenido: conservado
+quizás mejorable: mejorable
+mucho no cómodo: incomodo
+mucho abarrotado: abarrotado
+mucho comodo: comodo
+totalmente estación: estacionado
+bien decorado: decorado
+personalmente estacion: estacionado
+siempre puntual: puntual
+rápidamente conecta: conectado
+bastante buen: bien
+generalmente limpio: limpio
+completamente adaptado: adaptado
+siempre arriba: arriba
+casi vacío: vacio
+ahí alegre: alegre
+bien abrigado: abrigado
+bien engorroso: engorroso
+no especial: comun
+mucho comunicado: comunicado
+mucho próximo: cercano
+mucho feliz: feliz
+más grande: grande
+mucho acondicionado: acondicionado
+lejos cerca: cerca
+más directo: directo
+siempre magnifico: magnifica
+tanto concurrido: concurrido
+no mucho agrado: desagradable
+bastante deteriorada: deteriorada
+mucho útil: util
+siempre atestado: atestado
+no especialmente sucio: limpio
+recientemente rediseñar: rediseñado
+mejor cuidado: cuidado
+mas profundo: profundo
+siempre feliz: feliz
+no embarazado: infecundo
+densamente poblado: poblado
+mal señalizado: confuso
+sólo accesible: inaccesible
+mucho abajo: profundo
+no mucho práctico: impractico
+bastante mejorable: mejorable
+más desconocido: desconocido
+aún no llegar: tardar
+más profundo: profundo
+mucho interesante: interesante
+además accesible: accesible
+especialmente borde: desagradable
+extremadamente grosero: grosero
+mucho educar: educado
+además limpio: limpio
+mucho renovado: renovado
+más alto: alto
+no bien señalada: confusa
+bien quedar: bonito
+no mucho limpio: sucio
+después no poner: omitir
+cerca inglés: cerca
+bien vigilada: vigilada
+convenientemente cerca ubicado: ubicado
+totalmente eficiente: eficiente
+bien antiguo: antiguo
+dentro estación: estacionado
+alrededor línea: alrededor
+mucho duro: duro
+mucho empinada: empinada
+mucho lento: lento
+no malo: bueno
+mucho desagradable: desagradable
+además dar: dar
+no mucho alto: bajo
+ahora abrir: abrir
+no puntual: impuntual
+mucho acogedoro: acogedor
+hoy venir: venir
+bien funciona: bien
+no ahí: aqui
+no tanto complicado: sencillo
+más amplio: amplio
+lamentablemente no extender: retraer
+siempre sucio: sucio
+continuamente averiada: averiada
+más impecable: impecable
+mucho cuidado: cuidado
+no mucho concurrido: intransitado
+principalmente utilizar: util
+perfectamente iluminado: iluminado
+mucho atento: atento
+más importante: importante
+no digno: indigno
+mas bonito: bonito
+mucho mejorar: mejorado
+mucho artístico: artistico
+únicamente gratuito: gratuito
+especialmente impresionante: impresionante
+jamás ver: increible
+mucho estandarizado: estandarizado
+más amigable: amigable
+totalmente separado: separado
+realmente orgulloso: orgulloso
+mas probable: probable
+menos vigilado: desprotegido
+antes después lleno: lleno
+bien acceso: accesible
+bien amplio: amplio
+tampoco adaptado: inadaptado
+mucho céntrico: centrico
+dentro descuidado: descuidado
+no normal: raro
+mas moderno: moderno
+mucho completo: completo
+casi siempre: siempre
+algo pequeño: pequeño
+no disponible: indisponible
+además dentro conectado: conectado
+mucho desolado: desolado
+más próximo: proximo
+bastante completo: completo
+mas cercano: cercano
+mejor comunicado: comunicado
+normalmente limpio: limpio
+bastante espectacular: espectacular
+mucho diáfán: diafano
+siempre predispuesto: predispuesto
+poco descuidado: cuidado
+mucho ocupado: ocuapdo 
+más tarda: lento
+bastante amable: amable
+mucho disgustado: disgustado
+no bien adaptado: Inadaptado
+siempre disponible: disponible
+recientemente reformar: reformado
+bien actualizado: actualizado
+bastante cómodo: comodo
+bastante rápido: rapido
+razonablemente limpio: limpio
+bastante modernizar: moderno
+aparentemente mucho bonito: bonito
+además musealizar: bonito
+casi ya: inmediato
+además seguro: seguro
+mucho centrico: centrico
+mucho difícil: dificil
+no salgo: permanezco
+mucho siempre abarrotado: concurrido
+más vanguardista: vanguardista
+siempre petado: concurrido
+demasiado concurrido: concurrido
+bastante pequeño: pequeño
+poco equipado: desequipado
+siempre bien ir: fiable
+mucho conveniente: conveniente
+cerca situado: situado
+bien valorado: valorado
+no más cerca: lejos
+no más antipático: simpatico
+nunca romper: intacto
+poco empatía: insensible
+no cojen: incogido
+fatal enserio: mal
+bien caotico: caotico
+poco agradable: desagradable
+bien atendido: atento  
+mucho util: util
+mucho borracho: borracho
+todavía no adaptado: inadaptado
+poco cerca concurrido: intransitado
+más caro: caro
+más estacion: estacionado
+más útil: util
+bien localizado: ubicado
+casi desierto: intransitado
+actualmente correcto: correcto
+nunca ayudar: indiferente
+bien funcionante: funcional
+ahora arreglar: arreglado
+casi siempre limpio: limpio
+mucho adaptado: adaptado
+más utilizo: utilizado
+mucho espacioso: espacioso
+también mucho luminoso: luminoso
+estéticamente bastante bien: bonito
+bien indicar: indicado
+mucho normalita: normal
+no útil: inutil
+justo situado: situado
+nunca ver: oscuro
+no limpiar: sucio
+fácilmente navegable: navegable
+más lento: lento
+mucho inseguro: inseguro
+mucho oscuro: oscuro
+menos todavía iluminado: oscuro
+tampoco contesta: incontestable
+siempre accesibilidad: accesible
+bastante bonito: bonito
+casi disponible: indisponible
+cerca ubicada: ubicada
+bastante abandonado: abandonado 
+ya atrasado: atrasado
+mucho calentito: calentito
+mucho mejor: mejor
+no capaz: incapaz
+siempre bastante concurrido: concurrido
+bien distribuido: distribuido
+bastante espacioso: espacioso 
+no tanto largo: corto
+no molo: disgustado
+principalmente utilizado: utilizado
+bien tranquilo: tranquilo
+mucho desplazado: desplazado
+mucho simple: simple
+mas cuidado: cuidado
+siempre averiado: averiado
+mucho peligroso: peligroso
+constantemente estropeado: estropeado 
+mal colocado: descolocado
+siempre averiada: averiado
+más completo: completo
+no tanto mal: bien
+demasiado ruidoso: ruidoso
+rápido agradesido: rapido
+mucho frecuente: frecuente
+mucho recomendado: recomendado
+bien accesible: accesible
+además servido: servido
+poco controlado: incontroladp
+bastante transitado: transitado
+mucho frio: firo
+no quitar: dejar
+todavía aún decepcionante: decepcionante 
+siempre termino: terminado
+actualmente cortar: cortado
+más sostenible: sostenible
+ya retomado: retomado
+ahí mucho amable: amable
+más representativo: representativo
+más conocido: conocido
+siempre vacio: vacio
+mucho descontento: descontento
+también más cercano: cerca
+además hacer: realizado
+bastante ordenado: ordenado
+siempre agusto: comodo
+mucho saturado: saturado
+asfixiante calor: caluroso
+mucho cultural: culturizado
+especialmente concurrido: concurrido
+mucho i.portsnte: importante
+también bastante mejorable: mejorable
+más cerrado: cerrado
+mucho hermoso: hermoso
+mal climatizado: desclimatizado
+además rodeado: rodeado 
+aquí bien: bien
+mucho frecuentado: transitado
+más vergonzoso: vergonzoso
+hoy viajar: viajado
+ya renovar: renovado
+nunca tener: Inexistente
+siempre parado: parado
+bien limpio: limpio
+nada concurrido: intransitado
+hoy caer: caido
+no mucho exhaustivo: superficial
+bien indicado: señalizado
+demasiado trasiego: concurrido
+más estrecho: estrecho
+mucho comercial: comercial
+bien aseado: aseado
+más largo: largo
+bastante centrico: centrico
+cerca comunicado: comunicado
+realmente complicado: complicado
+no mucho cambiar: inmutable 
+ya antiguo: antiguo
+no fácil: dificil
+no ver: oscuro
+siempre va: funcional
+también conecta: correcta
+pobremente señalizado: confuso
+mucho satisfecho: satisfecho
+no nada intuitiva: complicada
+además bien etiquetado: etiquetado
+algo confuso: confuso
+más limpio: limpio
+mal señalado: confuso
+relativamente grande: grande
+definitivamente horrible: horrible
+totalmente adaptado: adpatado
+más económico: economico
+no adecuado: inadecuado
+bastante céntrico: centrico
+mucho agresivo: agresivo
+mucho seguir: persistir
+mal huele: apestoso
+mucho transitable: transitable
+igualmente mal ideado: desacertado
+casi increible: increible
+siempre mucho atento: atento
+no demasiado masificado: intransitado
+aquí coger: cogido
+no más renovado: Antiguo
+relativamente barato: barato
+no mucho aglomerado: intransitado
+quizás no más concurrido: intransitado
+después no mal quedar: arreglado
+únicamente abierto: abierto
+bien oler: aromatico
+mucho correcto: correcto
+mucho acogedor: acogedor
+no siguiente: anterior
+no viejo: moderno
+siempre ordenado: ordenado
+bastante bien amplio: amplio
+totalmente automatizado: automatizado
+mucho eficaz: eficaz
+no mucho servir: inservible
+siempre especial: especial
+enfrente justo: enfrente
+siempre cuidado: cuidado
+ya pagado: pagado
+mucho agradecido: agradecido
+totalmente personal: personal
+generalmente percibido: percibido
+además decorado: decorado
+bien adaptado: adaptado
+bien urbanizado: urbanizado 
+tanto inútil: inutil
+algo estrecho: estrecho
+siempre horrible: horrible
+no diferente: igual
+bastante descuidado: descuidado
+no nada agradable: desagradable
+apenas personal: impersonal
+bastante sucio: sucio
+más accesible: accesible
+mas desagradable: desagradable
+mucho igualmente cómodo: comodo
+aun no mucho accesibl: inaccesible 
+después encantar: fascinar
+bastante fluido: fluido
+poco cambiar: inmutable
+completamente peatonal: peatonal 
+mucho popular: popular
+básicamente conecta: conectado
+mucho ordenado: ordenado
+estrictamente necesario: necesario
+siempre ayudar: ayudado
+mejor situado: situado
+siempre libre: libre
+después ya terminar: concluido
+también habilitar: habilitado
+poco luminoso: oscuro
+siempre abierto: abierto
+estéticamente agradable: agradable
+bastante degradado: degradado
+no mucho agradable: desagradable
+poco seguro: inseguro
+no mucho cómodo: incomodo
+mucho estrecho: estrecho
+mucho mucho regular: regular
+absolutamente completo: completo
+no automático: manual
+hoy mas frecuente: frecuente 
+seguramente antes parto: cercano
+demasiado lento: lento
+no ticar: innecesario
+también cerca: cerca
+mucho utilizado: utilizado
+bien conservado: conservado
+bastante alto: alto
+no funcional: infuncional
+mucho claro: claro
+no brinda: negligente
+tanto profundo: profundo
+aún ya fácil: facil
+no demasiado empinada: recta
+poco transitado: intransitado
+bastante dañado: dañado
+directamente dentro sal: accesible
+simplemente relajarte: relajado
+directamente sales: accesible
+tarde visto: retardado
+suficientemente limpio: limpio
+no amigable: antipatico
+mucho vistoso: vistoso
+bastante menos bien: mal
+bien ventilado: ventilado
+mucho frío: frio
+más destacado: destacado
+aún relativamente nuevo: nuevo
+pronto lento: lento
+tanto pequeño: pequeño
+demasiado mala: mala
+fuera metro: metro
+casi incalculable: incalculable
+realmente mucho bien: bien
+tanto valioso: valioso
+no mucho tampoco alto: bajo
+físicamente impedido: impedido
+mucho iluminado: iluminado
+también mucho seguro: seguro
+antes más cálido: templado
+bastante largo: largo
+bastante viejo: viejo
+más clásico: clasico
+bastante normal: normal
+mucho sencillo: sencillo
+no mecánico: manual
+mucho frecuentemente puntual: puntual
+bastante raro: raro
+mucho ruidoso: ruidoso
+mucho amablemente atender: amable
+más nefasto: nefasto
+bien considerado: considerado
+mucho pequeño: pequeño
+tanto céntrico: centrico
+mucho practico: practico
+mucho chulo: chulo
+recién actualizado: actualizado
+ahora accesible: accesible
+ahora algo desordenado: desordenado 
+bastante situado: situado
+recién renovado: renovado
+también ubicado: ubicado
+constantemente rodeado: rodeado
+mucho fluido: fluido
+claro puntual: puntual
+mucho cualificado: cualificado
+también primero: primero
+menos higiénico: sucio
+claramente insuficiente: insuficiente
+mucho dificil: dificil
+directamente conecta: conectada
+siempre concurrido: concurrido
+mal mucho impuntual: impuntual
+continuamente averiado: averiado
+totalmente céntrico: centrico
+mucho desubicado: desubicado
+más roto: roto
+no mejor: mal
+poco transitada: intransitado
+poco modernizado: antiguo
+también llamado: alias
+más pintoresco: pintoresco
+aún cerrado: cerrado
+recien reformado: reformado
+nada accesible: inaccesible
+no posible: imposible
+tanto difícil: dificil
+físicamente posible: posible
+no coordinado: descoordinado
+más intuitivo: intuitivo
+mucho estable: estable
+mal siempre coordinado: descoordinado
+mucho nervioso: nervioso
+no tanto malo: bien
+no mucho lleno: moderado
+mucho masificado: masificado
+bien estacion: funcional
+mucho ya atractivo: atractivo
+también bastante estrecho: estrecho
+mucho variado: variado
+mucho familiar: familiar
+completamente vacío: vacio
+poco adaptado: inadaptado
+bastante profundo: profundo
+más sucio: sucio
+mucho cerca tranquilo: tranquilo
+no mal ubicado: ubicado
+correctamente funciona: funciona 
+más fresco: fresco
+además sencillo: sencillo
+no totalmente accesible: inaccesible
+tanto emblemático: emblematico
+no libre: restringido
+tanto turístico: turistico
+ya encantar: encantado
+mucho aseado: aseado
+medianamente cuidado: cuidado
+más tranquilo: tranquilo
+además bonito: bonito
+parcialmente renovada: renocada
+mucho contento: contento
+no peligroso: seguro
+recientemente instalar: nuevo
+bien atencion: cuidadoso
+no agradable: desagradable
+mucho mal preparado: incompetente
+bastante cuidado: cuidado
+bastante facil: facil
+poco masificado: Tranquilo
+poco vigilado: desprotegido
+no subterráneo: afuera
+debajo estación: subterraneo
+relativamente limpio: limpio
+mucho emblemático: emblematico
+mas llamativo: llamativo

@@ -1,4 +1,4 @@
-estacion: (reseña, 2)(situado, 7)(conexiones, 1)(importante, 3)(no directamente conectado, 1)(no accesible, 1)(bien resolver, 2)(efectivo, 1)(recientemente reformado, 1)(prácticamente m30, 1)
+estacion: (reseña, 2)(situado, 7)(importante, 3)(no directamente conectado, 1)(no accesible, 1)(bien resolver, 2)(efectivo, 1)(recientemente reformado, 1)
 escalera: (mecánico, 1)(automático, 1)
 movilidad: (reducido, 2)(gratuito, 1)
 maquina: (expendedor, 1)

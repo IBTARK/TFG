@@ -1,0 +1,8 @@
+estacion: (importante, 3)(situado, 3)(transitado, 1)(estupendo, 1)(adultos, 2)(accesible, 1)(conservado, 2)(mejorable, 1)(incomodo, 1)(instalación, 1)(profesorado, 1)(abarrotado, 1)(antiguo, 1)(barato, 1)
+linea: (servir, 1)(cómodo, 1)
+instalacion: (importante, 2)(deportivo, 1)(ideal, 1)(accesible, 1)
+escalera: (mecánico, 1)
+movilidad: (reducido, 1)(público, 1)
+informacion: (específico, 1)
+persona: (dispuesto, 1)(lleno, 1)
+servicio: (anticuado, 1)

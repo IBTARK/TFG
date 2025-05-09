@@ -1,4 +1,4 @@
-estacion: (moderno, 2)(no conectado, 1)(mas retrasado, 1)(recome, 1)(justo, 1)(genial, 2)(cómodo, 2)(practico, 1)(bien comunicado, 1)(exterior, 1)(gratuito, 1)(escaso, 1)
+estacion: (moderno, 2)(no conectado, 1)(mas retrasado, 1)(justo, 1)(genial, 2)(cómodo, 2)(practico, 1)(bien comunicado, 1)(exterior, 1)(gratuito, 1)(escaso, 1)
 instalacion: (necesario, 1)(elegante, 1)(público, 1)(no claro, 1)
 metro: (ligero, 4)
 acceso: (facil, 1)(conecto, 1)

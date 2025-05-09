@@ -1,4 +1,4 @@
-estacion: (reseña, 2)(situado, 7)(conexiones, 1)(importante, 4)(no directamente conectado, 1)(principalmente utilizado, 2)(lleno, 1)(marrón, 1)(increíble, 1)(remodelar, 3)(mucho recomendable, 1)(personal, 1)(mascarilla, 1)(sucio, 1)(pequeña, 1)(más antiguo, 1)(bastante limpio, 2)(ojo, 1)(elegante, 1)(no preparado, 1)(mejor, 1)
+estacion: (situado, 7)(conexiones, 1)(importante, 4)(no directamente conectado, 1)(principalmente utilizado, 2)(lleno, 1)(marrón, 1)(increíble, 1)(remodelar, 3)(mucho recomendable, 1)(personal, 1)(mascarilla, 1)(pequeña, 1)(más antiguo, 1)(bastante limpio, 2)(elegante, 1)(no preparado, 1)(mejor, 1)
 escalera: (mecánico, 1)(sustituir, 1)(tradicional, 1)
 movilidad: (reducido, 2)(increíble, 1)
 maquina: (expendedor, 1)(suficiente, 1)

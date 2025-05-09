@@ -1,0 +1,5 @@
+estacion: (limpio, 3)(antiguo, 1)(ubicado, 3)(cuidado, 1)(correcto, 1)(Inexistente, 1)(intransitado, 1)
+movilidad: (reducido, 2)
+acceso: (fácil, 1)
+servicio: (pésimo, 1)
+metro: (estándar, 1)(bien, 1)

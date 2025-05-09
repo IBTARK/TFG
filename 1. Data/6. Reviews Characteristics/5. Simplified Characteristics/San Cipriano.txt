@@ -1,0 +1,5 @@
+movilidad: (reducido, 2)
+escalera: (mecánico, 1)(ascensor, 1)
+estacion: (raro, 1)(admirable, 1)(facil, 3)(ruidoso, 1)(lindo, 3)(buenos, 1)
+persona: (atender, 1)
+acceso: (facil, 1)(localizable, 1)

@@ -1,4 +1,4 @@
-estacion: (no mal ubicado, 1)(mucho tranquilo, 4)(último, 1)(seguro, 5)(iluminado, 1)(amplio, 3)(moderno, 1)(cómodo, 1)(perfecto, 1)
+estacion: (no mal ubicado, 1)(mucho tranquilo, 4)(seguro, 5)(iluminado, 1)(amplio, 3)(moderno, 1)(cómodo, 1)(perfecto, 1)
 cobertura: (móvil, 1)
 linea: (identificado, 1)
 metro: (amplio, 1)

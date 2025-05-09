@@ -1,4 +1,4 @@
-estacion: (gran, 34)(bastante modernizar, 7)(aparentemente mucho bonito, 12)(nuevo, 4)(restaurado, 5)(convertir, 2)(unido, 4)(accesible, 3)(perfecto, 3)(bien quedar, 9)(ver, 4)(antiguo, 3)(construir, 1)(cerrado, 8)(bajarte, 1)(controlado, 1)(además musealizar, 1)(emblemático, 3)(alcalá, 1)(corridas, 1)(inaugura, 1)(casi ya, 2)(mucho limpio, 2)(además seguro, 2)(linea, 1)(imperdible, 1)(siempre, 2)(mucho centrico, 3)(bien iluminado, 2)(mucho difícil, 1)(más transitada, 1)(calle, 2)(favorito, 1)
+estacion: (gran, 34)(bastante modernizar, 7)(aparentemente mucho bonito, 12)(nuevo, 4)(restaurado, 5)(convertir, 2)(unido, 4)(accesible, 3)(perfecto, 3)(bien quedar, 9)(construir, 1)(cerrado, 8)(bajarte, 1)(controlado, 1)(además musealizar, 1)(emblemático, 3)(alcalá, 1)(corridas, 1)(inaugura, 1)(casi ya, 2)(mucho limpio, 2)(además seguro, 2)(linea, 1)(imperdible, 1)(siempre, 2)(mucho centrico, 3)(bien iluminado, 2)(mucho difícil, 1)(más transitada, 1)(calle, 2)(favorito, 1)
 linea: (ubicado, 1)(gran, 1)
 escalera: (mecánico, 1)(principal, 1)(viejo, 1)(construido, 1)
 senalizacion: (único, 1)

@@ -1,6 +1,6 @@
-estacion: (bello, 27)(ideal, 4)(nodo, 1)(diseño, 2)(acceso, 2)(ubicada, 14)(hay, 1)(bien vigilada, 9)(ópera, 3)(mucho concurrido, 11)(antiguo, 1)(remodelado, 3)(debajo estación, 1)(lleno, 2)(metro, 1)(abrir, 1)(nuevo, 1)(vergonzoso, 2)(mayte, 1)(pequeño, 2)(mucho bonito, 14)(sisi, 1)(genialidades, 1)(trasbordo, 1)(fascinante, 1)(line, 2)(museo, 1)(conexcion, 1)([, 1)(ˈo.pe.ɾa, 1)(más cercano, 2)(relativamente limpio, 1)(ok, 1)(súper, 1)(central, 2)(más cómodo, 1)(emblematico, 1)
+estacion: (bello, 27)(ideal, 4)(nodo, 1)(diseño, 2)(acceso, 2)(ubicada, 14)(hay, 1)(bien vigilada, 9)(ópera, 3)(mucho concurrido, 11)(remodelado, 3)(debajo estación, 1)(lleno, 2)(metro, 1)(abrir, 1)(nuevo, 1)(vergonzoso, 2)(pequeño, 2)(mucho bonito, 14)(trasbordo, 1)(fascinante, 1)(museo, 1)(conexcion, 1)(más cercano, 2)(relativamente limpio, 1)(ok, 1)(súper, 1)(central, 2)(más cómodo, 1)(emblematico, 1)
 movilidad: (reducido, 3)(público, 1)
-zona: (centrico, 2)(tarifario, 2)(audiovisual, 1)(mucho emblemático, 2)(seguro, 2)(dotado, 2)(amargad@s, 1)(bonito, 1)
+zona: (centrico, 2)(tarifario, 2)(audiovisual, 1)(mucho emblemático, 2)(seguro, 2)(dotado, 2)(amargados, 1)(bonito, 1)
 conexion: (buen, 1)
 limpieza: (adecuados, 1)
 senalizacion: (claro, 1)

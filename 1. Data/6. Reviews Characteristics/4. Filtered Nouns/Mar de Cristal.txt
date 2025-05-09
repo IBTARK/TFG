@@ -1,4 +1,4 @@
-estacion: (mucho organizado, 7)(limpio, 27)(mucho recomendado, 6)(reseña, 1)(bien accesible, 7)(además servido, 1)(eficiente, 2)(monumental, 2)(moderno, 9)(ascensor, 1)(mucho grande, 5)(sorio, 1)(madrileño, 1)(recorrer, 4)(barrio, 2)(espaciós, 1)(poco controlado, 2)(bastante transitado, 2)(empleado, 1)(metro, 1)(viva, 1)(autobús, 1)(relativamente nuevo, 1)(mucho mal, 1)(mejor, 2)(mucho frio, 1)(feliz, 1)(normal, 2)(intercambiador, 1)(isabel, 1)(no necesario, 1)(caótico, 1)(público, 1)
+estacion: (mucho organizado, 7)(limpio, 27)(mucho recomendado, 6)(reseña, 1)(bien accesible, 7)(además servido, 1)(eficiente, 2)(monumental, 2)(moderno, 9)(ascensor, 1)(mucho grande, 5)(espacioso, 1)(poco controlado, 2)(bastante transitado, 2)(autobús, 1)(relativamente nuevo, 1)(mejor, 2)(mucho frio, 1)(feliz, 1)(normal, 2)(intercambiador, 1)(público, 1)
 gente: (nuevo, 1)(no quitar, 1)(todavía aún decepcionante, 1)(debido, 1)(grande, 1)
 conexion: (excelente, 3)
 escalera: (mecánico, 3)(personal, 1)(amable, 1)

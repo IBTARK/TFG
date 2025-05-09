@@ -1,0 +1,7 @@
+movilidad: (reducido, 5)
+linea: (descuidado, 1)(moderno, 1)
+estacion: (inadaptado, 6)(normal, 1)(igual, 6)(facilito, 3)(parada, 1)(limpieza, 1)(reformado, 2)(feo, 1)
+escalera: (eléctrico, 1)
+metro: (antiguo, 2)
+servicio: (propio, 1)(buen, 1)
+estado: (buen, 1)

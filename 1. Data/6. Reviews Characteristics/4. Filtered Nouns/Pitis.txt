@@ -1,4 +1,4 @@
-estacion: (ahora, 2)(no, 1)(facilitar, 3)(tren, 1)(pequeño, 2)(bien, 12)(horrible, 2)(bastante sucio, 1)(encima sero, 1)(único, 2)(ojo, 1)(hola, 1)(horario, 1)(no adaptado, 1)(imposible, 1)(renfe, 2)(abandonada, 1)(disuasorio, 1)
+estacion: (facilitar, 3)(tren, 1)(pequeño, 2)(bien, 12)(bastante sucio, 1)(único, 2)(no adaptado, 1)(imposible, 1)(renfe, 2)(abandonada, 1)(disuasorio, 1)
 maquina: (expendedor, 1)(aparcado, 1)
 servicio: (público, 1)(mucho mal, 1)(excelente, 2)
 transporte: (publico, 1)(deficiente, 1)

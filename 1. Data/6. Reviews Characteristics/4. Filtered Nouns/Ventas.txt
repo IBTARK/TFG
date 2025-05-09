@@ -1,6 +1,6 @@
 escalera: (mecánico, 7)(ascensor, 3)(eléctrico, 1)
 cobertura: (móvil, 2)
-estacion: (bien, 21)(más fresco, 1)(salida, 2)(líneas, 1)(diseño, 2)(chloe, 1)(popular, 2)(situado, 5)(además sencillo, 1)(bien iluminado, 1)(plaza, 1)(falta, 1)(no totalmente accesible, 1)(pintoresco, 8)(comodidad, 1)(edificación, 1)(eficientemente, 1)(tanto emblemático, 1)(no libre, 1)
+estacion: (bien, 21)(más fresco, 1)(diseño, 2)(popular, 2)(situado, 5)(además sencillo, 1)(bien iluminado, 1)(no totalmente accesible, 1)(pintoresco, 8)(comodidad, 1)(edificación, 1)(eficientemente, 1)(tanto emblemático, 1)(no libre, 1)
 metro: (tanto turístico, 1)(único, 1)
 gente: (mayor, 1)
 movilidad: (reducido, 1)

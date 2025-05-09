@@ -1,4 +1,4 @@
-estacion: (principal, 1)(lograr, 10)(después encantar, 9)(zona, 5)(adaptado, 4)(siempre limpio, 3)(bastante bien, 30)(estancado, 1)(mucho complicado, 4)(superbien, 3)(bastante fluido, 1)(bien conectado, 1)(poco cambiar, 1)(rehabilitada, 1)(completamente peatonal, 1)(habrio, 1)(comombia, 1)(deberio, 1)(perdido, 1)(lleno, 2)(más profundo, 1)(escalera, 1)(situación, 1)(preciosa, 2)(monumental, 2)(poco práctico, 3)(sucio, 3)(icónico, 2)(bastante feo, 1)(mucho popular, 1)(favorito, 1)(acogedor, 1)
+estacion: (principal, 1)(lograr, 10)(después encantar, 9)(zona, 5)(adaptado, 4)(siempre limpio, 3)(bastante bien, 30)(estancado, 1)(mucho complicado, 4)(superbien, 3)(bastante fluido, 1)(bien conectado, 1)(poco cambiar, 1)(rehabilitada, 1)(completamente peatonal, 1)(habrio, 1)(lleno, 2)(más profundo, 1)(escalera, 1)(situación, 1)(preciosa, 2)(monumental, 2)(poco práctico, 3)(icónico, 2)(mucho popular, 1)(favorito, 1)(acogedor, 1)
 escalera: (mecánico, 3)(electrica, 1)(mucho malo, 1)(único, 1)(moderno, 1)(alfombrado, 1)
 conexion: (buen, 1)(amplio, 1)
 movilidad: (reducido, 1)

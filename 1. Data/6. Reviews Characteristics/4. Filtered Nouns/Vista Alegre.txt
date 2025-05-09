@@ -1,4 +1,4 @@
-estacion: (diseño, 1)(acceso, 1)(situada, 5)(no nodo, 1)(mucho bajo, 1)(escalera, 1)(barrio, 1)(mucho bien, 5)(poco vigilado, 1)(limpio, 1)(mucho concurrido, 1)(falta, 1)
+estacion: (diseño, 1)(acceso, 1)(situada, 5)(mucho bajo, 1)(escalera, 1)(mucho bien, 5)(poco vigilado, 1)(limpio, 1)(mucho concurrido, 1)
 movilidad: (reducido, 2)
 experiencia: (adecuado, 1)
 senalizacion: (claro, 1)

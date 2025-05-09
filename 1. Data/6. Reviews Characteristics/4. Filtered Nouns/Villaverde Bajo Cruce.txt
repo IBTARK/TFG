@@ -1,4 +1,4 @@
-estacion: (grande, 12)(accesible, 1)(bastante cuidado, 3)(bastante nuevo, 1)(bien señalizado, 3)(inagurar, 1)(caótico, 1)(intercambiador, 1)(tranquilo, 1)(bastante facil, 2)(as, 1)(abandonadas, 1)(combinación, 1)(tarta, 1)(riquisimas, 1)(barrio, 1)(perfecto, 1)(normal, 1)(incluido, 1)
+estacion: (grande, 12)(accesible, 1)(bastante cuidado, 3)(bastante nuevo, 1)(bien señalizado, 3)((intercambiador, 1)(tranquilo, 1)(bastante facil, 2)(riquisimas, 1)(barrio, 1)(perfecto, 1)(normal, 1)(incluido, 1)
 movilidad: (reducido, 2)(interurbano, 1)(público, 1)
 zona: (sur, 1)(mucho tranquilo, 2)(cuidado, 1)
 metro: (adoptado, 1)

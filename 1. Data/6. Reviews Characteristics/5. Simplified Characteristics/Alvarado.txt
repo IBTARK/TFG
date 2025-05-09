@@ -1,0 +1,5 @@
+estacion: (antiguo, 4)(antepenultimo, 1)(bien, 13)(comodo, 5)(funcionamiento, 1)(normal, 1)(pequeño, 1)
+acceso: (sencillo, 2)
+escalera: (mecánico, 3)(ascensor, 1)
+movilidad: (reducido, 1)
+metro: (antiguo, 1)

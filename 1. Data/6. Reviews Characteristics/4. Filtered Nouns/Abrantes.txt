@@ -1,4 +1,4 @@
 acceso: (fácil, 1)
 movilidad: (reducido, 1)
 cobertura: (móvil, 1)
-estacion: (mucho tranquilo, 1)(asqueroso, 1)(excelente, 2)
+estacion: (mucho tranquilo, 1)(excelente, 2)

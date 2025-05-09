@@ -1,6 +1,5 @@
-estacion: (mucho limpio, 6)(nuevo, 1)(bien cuidado, 3)(fatal, 2)(quedar, 1)(line, 1)(zona, 3)(metro, 1)(fuente, 1)(paseo, 1)(llamativo, 1)(mucho organizado, 1)
+estacion: (mucho limpio, 6)(nuevo, 1)(bien cuidado, 3)(metro, 1)(llamativo, 1)(mucho organizado, 1)
 ascensor: (estropeado, 1)(apoyado, 1)(no limpiar, 1)(normal, 1)
-tren: (último, 1)(limpio, 1)(:), 1)
-salida: (solo, 1)
+tren: (último, 1)(limpio, 1)
 zona: (bien acondicionado, 1)
 linea: (mucho amplio, 1)(limpio, 1)

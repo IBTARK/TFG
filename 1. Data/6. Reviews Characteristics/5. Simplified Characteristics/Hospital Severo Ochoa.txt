@@ -1,0 +1,6 @@
+estacion: (nuevo, 1)(ignorado, 1)(inagurar, 2)(caotico, 1)(limpio, 1)(mejor, 2)(instalaciones, 1)(atención, 1)(desagradable, 1)
+servicio: (directo, 1)(buen, 1)
+acceso: (congestionado, 1)
+senalizacion: (penoso, 1)
+personal: (atento, 2)(mala, 1)
+zona: (gran, 1)

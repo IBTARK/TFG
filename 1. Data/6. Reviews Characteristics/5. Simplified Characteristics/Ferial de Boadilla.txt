@@ -1,0 +1,2 @@
+estacion: (lento, 1)(servicio, 1)(práctico, 1)(animado, 1)
+servicio: (práctico, 1)(lento, 1)

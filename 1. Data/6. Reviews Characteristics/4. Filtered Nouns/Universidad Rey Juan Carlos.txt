@@ -1,3 +1,3 @@
-estacion: (moderno, 1)(actual, 1)(relativamente nuevo, 1)(ubicada, 3)(mucho cerca, 2)(limpio, 1)(inagurar, 1)(sólo estar, 1)(bien komunikado, 1)(ascensor, 1)(mucho variado, 1)(normal, 1)
+estacion: (moderno, 1)(actual, 1)(relativamente nuevo, 1)(ubicada, 3)(mucho cerca, 2)(limpio, 1)(inagurar, 1)(bien comunicado, 1)(ascensor, 1)(mucho variado, 1)(normal, 1)
 gente: (muchísimo, 1)(no mucho agradable, 1)
 instalacion: (buena, 1)

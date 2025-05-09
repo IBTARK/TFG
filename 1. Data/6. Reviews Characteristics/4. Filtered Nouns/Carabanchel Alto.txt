@@ -1,4 +1,4 @@
-estacion: (moderno, 3)(bien, 16)(luminoso, 3)(boca, 1)(incómodo, 2)(mucho rápido, 1)(más, 1)(parado, 1)(normal, 1)(escondido, 1)
+estacion: (moderno, 3)(bien, 16)(luminoso, 3)(mucho rápido, 1)(normal, 1)
 escalera: (mecánico, 3)(eléctrico, 1)
 cobertura: (móvil, 1)
 acceso: (buen, 3)

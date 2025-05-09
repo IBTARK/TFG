@@ -1,4 +1,4 @@
-estacion: (parada, 3)(acceso, 1)(conectada, 1)(área, 2)(reformar, 1)(mucho bonito, 9)(linea, 1)(necesit, 1)(moderno, 2)(mucho antiguo, 1)(poco transitado, 2)(más limpio, 1)(civilizado, 1)(céntrico, 3)(súper, 1)(señorial, 1)(sucio, 1)(normal, 1)(diferente, 1)
+estacion: (parada, 3)(acceso, 1)(conectada, 1)(área, 2)(mucho bonito, 9)(moderno, 2)(poco transitado, 2)(más limpio, 1)(civilizado, 1)(céntrico, 3)(súper, 1)(señorial, 1)(sucio, 1)(normal, 1)(diferente, 1)
 conexion: (buen, 3)
 limpieza: (adecuados, 1)
 senalizacion: (claro, 1)(céntrico, 1)

@@ -1,6 +1,6 @@
 metro: (mucho limpio, 1)(tranquilo, 1)(norte, 2)(amplio, 1)(moderno, 2)
 cobertura: (telefónico, 1)
-estacion: (limpio, 4)(bastante bien, 3)(primero difícil, 1)(amplio, 2)(nunca tener, 1)
+estacion: (limpio, 4)(bastante bien, 3)(amplio, 2)
 gente: (mucho majo, 2)
 acceso: (fácil, 1)
 movilidad: (reducido, 1)

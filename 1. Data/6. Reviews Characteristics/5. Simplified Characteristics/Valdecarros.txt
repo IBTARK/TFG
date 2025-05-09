@@ -1,0 +1,6 @@
+estacion: (ubicado, 1)(tranquilo, 4)(seguro, 5)(iluminado, 1)(amplio, 3)(moderno, 1)(cómodo, 1)(perfecto, 1)
+cobertura: (móvil, 1)
+linea: (identificado, 1)
+metro: (amplio, 1)
+escalera: (buena, 1)(mecanica, 1)
+acceso: (buen, 1)

@@ -1,0 +1,6 @@
+escalera: (mecánico, 1)(ascensor, 1)(vigilante, 1)
+estacion: (concurrido, 1)(lleno, 2)(perfecto, 7)(último, 1)(inagurar, 1)(limpio, 1)(moderno, 1)
+transporte: (público, 1)
+cobertura: (móvil, 1)
+acceso: (fácil, 1)(buen, 1)
+metro: (típico, 1)

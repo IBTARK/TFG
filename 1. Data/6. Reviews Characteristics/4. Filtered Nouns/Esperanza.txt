@@ -1,4 +1,4 @@
-estacion: (mucho moderno, 2)(reseña, 2)(ubicado, 5)(conexiones, 1)(no directamente conectado, 1)(principalmente utilizar, 1)(mucho bien, 9)(perfectamente iluminado, 1)(no adaptado, 1)(llegas, 1)(ascensor, 1)(antiguo, 1)(móvil, 1)(normal, 1)
+estacion: (mucho moderno, 2)(reseña, 2)(ubicado, 5)(no directamente conectado, 1)(principalmente utilizar, 1)(mucho bien, 9)(perfectamente iluminado, 1)(no adaptado, 1)(llegas, 1)(ascensor, 1)(antiguo, 1)(móvil, 1)(normal, 1)
 acceso: (único, 1)
 escalera: (mecánico, 3)(mucho atento, 1)
 movilidad: (reducido, 6)

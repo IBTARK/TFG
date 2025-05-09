@@ -1,6 +1,6 @@
 estacion: (importante, 3)(situado, 3)(especialmente transitado, 1)(hoy estupebdo, 1)(no estudiant, 2)(mucho accesible, 1)(bien mantenido, 2)(quizás mejorable, 1)(mucho no cómodo, 1)(instalación, 1)(profesorado, 1)(mucho abarrotado, 1)(antiguo, 1)(barato, 1)
 linea: (servir, 1)(cómodo, 1)
-instalacion: (importante, 2)(deportivo, 1)(ideal, 1)(accesibl, 1)
+instalacion: (importante, 2)(deportivo, 1)(ideal, 1)(accesible, 1)
 escalera: (mecánico, 1)
 movilidad: (reducido, 1)(público, 1)
 informacion: (específico, 1)

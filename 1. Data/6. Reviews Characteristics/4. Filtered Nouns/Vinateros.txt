@@ -1,4 +1,4 @@
-estacion: (moderno, 1)(buen, 4)(bastante lento, 1)(solitaria, 1)(mas, 1)(poco masificado, 1)(lejos, 1)
+estacion: (moderno, 1)(buen, 4)(bastante lento, 1)(solitaria, 1)(poco masificado, 1)(lejos, 1)
 escalera: (limpio, 2)(automático, 1)
 movilidad: (reducido, 2)
 cobertura: (telefónico, 2)

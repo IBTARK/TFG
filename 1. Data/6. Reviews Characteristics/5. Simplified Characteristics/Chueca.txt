@@ -1,0 +1,8 @@
+estacion: (parada, 9)(comunicada, 1)(famosa, 14)(vibrante, 1)(señalizado, 1)(antiguo, 2)(cuidado, 2)(accesible, 2)(ordenado, 2)(limpio, 7)(lindo, 4)(tribunal, 1)(liberal, 1)(turistificado, 1)(decorado, 2)(malrehabilitado, 1)(novedoso, 3)(inadaptado, 1)(disgustar, 1)(bellisimo, 1)(central, 1)(diferente, 1)(vulgar, 1)
+movilidad: (reducido, 2)
+conexion: (buen, 2)(diferente, 1)
+limpieza: (adecuados, 2)
+senalizacion: (claro, 1)
+maquina: (accesibles, 1)
+persona: (mayor, 1)(pequeño, 1)
+metro: (colorido, 1)(único, 1)(ubicado, 1)

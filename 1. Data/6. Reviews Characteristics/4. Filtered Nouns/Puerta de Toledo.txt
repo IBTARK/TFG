@@ -1,4 +1,4 @@
-estacion: (situado, 8)(nodo, 1)(servicios, 1)(hay, 3)(también cerca, 2)(inaccesible, 2)(mucho utilizado, 2)(pirámides, 1)(mucho bonito, 9)(viajera, 1)(bien conservado, 1)(normal, 1)(perfecto, 2)(romántico, 1)(cómodo, 1)
+estacion: (situado, 8)(servicios, 1)(también cerca, 2)(inaccesible, 2)(mucho utilizado, 2)(mucho bonito, 9)(bien conservado, 1)(normal, 1)(perfecto, 2)(romántico, 1)(cómodo, 1)
 movilidad: (reducido, 1)(publico, 1)
 linea: (numeroso, 1)
 salida: (solo, 1)(bien vigilada, 1)(hermoso, 1)

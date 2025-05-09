@@ -1,4 +1,4 @@
-estacion: (ubicado, 10)(line, 1)(asceso, 1)(mucho antiguo, 1)(excelente, 15)(mucho descuidado, 2)(más estación, 1)(dificil, 1)(horrible, 1)(denunciable, 1)(mucho interesante, 1)(siempre, 1)(tranquilo, 1)(además accesible, 1)(moderno, 1)
+estacion: (ubicado, 10)(mucho antiguo, 1)(excelente, 15)(mucho descuidado, 2)(dificil, 1)(horrible, 1)(denunciable, 1)(mucho interesante, 1)(siempre, 1)(tranquilo, 1)(además accesible, 1)
 movilidad: (reducido, 3)
 gente: (muchísimo, 1)
 frecuencia: (alto, 1)

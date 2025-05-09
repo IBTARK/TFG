@@ -1,4 +1,4 @@
-estacion: (siempre limpio, 6)(adaptado, 6)(habitual, 1)(pasar, 1)(siempre ayudar, 1)(inagurar, 1)(próximo, 1)(luminoso, 4)(mejor situado, 1)(mucho bien, 7)(:), 1)
+estacion: (siempre limpio, 6)(adaptado, 6)(habitual, 1)(pasar, 1)(siempre ayudar, 1)(inagurar, 1)(próximo, 1)(luminoso, 4)(mejor situado, 1)(mucho bien, 7)
 personal: (ayudar, 1)(cálido, 1)
 metro: (más céntrico, 2)(siempre libre, 1)(amplio, 2)(puntual, 1)
 escalera: (mecanica, 2)(sucio, 1)

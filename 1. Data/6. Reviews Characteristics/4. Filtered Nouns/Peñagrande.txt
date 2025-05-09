@@ -1,6 +1,6 @@
 zona: (residencial, 1)(mucho tranquilo, 2)(buen, 1)
 acceso: (fácil, 2)(prioritario, 1)(terrible, 1)
-estacion: (parada, 2)(ascensor, 1)(mucho agradecido, 2)(totalmente personal, 1)(limpia, 5)(mucho amplio, 1)(peor, 1)(acogedoro, 1)(perfecto, 5)(mucho cómodo, 1)
+estacion: (parada, 2)(ascensor, 1)(mucho agradecido, 2)(totalmente personal, 1)(limpia, 5)(mucho amplio, 1)(acogedoro, 1)(perfecto, 5)(mucho cómodo, 1)
 metro: (accesible, 1)(bien, 1)
 movilidad: (reducido, 1)
 persona: (ocioso, 1)

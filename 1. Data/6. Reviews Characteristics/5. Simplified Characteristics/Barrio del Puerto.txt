@@ -1,0 +1,7 @@
+personal: (vigilante, 1)(fenomenal, 1)(intentar, 1)
+maquina: (autoventa, 1)
+estacion: (impecable, 1)(correspondiente, 3)(accesible, 1)(nuevo, 1)(proximo, 1)(mejor, 1)(encantar, 1)(normal, 1)
+zona: (tarifario, 1)(buena, 1)
+movilidad: (reducido, 1)
+escalera: (mecánico, 1)
+experiencia: (malo, 1)

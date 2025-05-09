@@ -1,0 +1,2 @@
+metro: (ligero, 1)
+transporte: (público, 1)

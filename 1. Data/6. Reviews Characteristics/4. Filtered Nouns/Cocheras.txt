@@ -1,4 +1,4 @@
 escalera: (mecánico, 1)(exterior, 1)(mucho comodo, 1)
 metro: (normal, 1)(fácil, 1)(mucho limpio, 1)(moderno, 1)
-estacion: (no normal, 1)(buen, 2)(amplio, 2)(totalmente estación, 1)
+estacion: (buen, 2)(amplio, 2)(totalmente estación, 1)
 estado: (buen, 1)

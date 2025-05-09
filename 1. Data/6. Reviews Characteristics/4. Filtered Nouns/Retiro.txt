@@ -1,4 +1,4 @@
-estacion: (antiguo, 2)(metro, 1)(situado, 8)(decorado, 1)(pequeño, 2)(directamente dentro sal, 1)(interesante, 17)(no accesible, 5)(incluso estación, 1)(fresco, 4)(verde, 1)(simplemente relajarte, 1)(mucho bien, 13)(cómoda, 1)(directamente sales, 1)(mucho saturado, 1)(tarde visto, 1)(sucio, 1)(suficientemente limpio, 1)(siempre, 1)(principal, 1)(.madrid, 1)
+estacion: (antiguo, 2)(metro, 1)(situado, 8)(decorado, 1)(pequeño, 2)(directamente dentro sal, 1)(interesante, 17)(no accesible, 5)(fresco, 4)(verde, 1)(simplemente relajarte, 1)(mucho bien, 13)(cómoda, 1)(directamente sales, 1)(mucho saturado, 1)(tarde visto, 1)(suficientemente limpio, 1)(siempre, 1)(principal, 1)
 servicio: (gran, 1)
 metro: (céntrico, 2)(no mucho profundo, 1)(pequeño, 1)(antiguo, 1)(mucho bonito, 2)(reformado, 1)(limpio, 1)(gran, 1)
 movilidad: (reducido, 1)(público, 1)

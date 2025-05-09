@@ -1,0 +1,7 @@
+estacion: (conservado, 2)(increíble, 4)(accesible, 2)(arquitectura, 1)(buena, 3)(limpio, 2)
+servicio: (pésimo, 1)
+escalera: (averiada, 1)(mecánico, 1)
+movilidad: (reducido, 1)
+tren: (sentido, 1)
+conexion: (buen, 1)
+personal: (resolutivo, 1)(agradable, 1)

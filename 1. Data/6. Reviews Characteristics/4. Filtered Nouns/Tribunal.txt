@@ -1,4 +1,4 @@
-estacion: (antiguo, 7)(bien comunicado, 16)(mejor, 2)(no mucho lleno, 1)(poner, 1)(eterno, 1)(mucho funcional, 2)(maquinas, 1)(mucho profundo, 1)(estupendamente, 5)(sucio, 1)(no hacer, 2)(escalera, 1)(accesible, 2)(transbordo, 1)(mucho cómodo, 3)(amplio, 1)(mucho masificado, 1)(mítico, 2)(mucho fluido, 1)(personal, 1)(bien estacion, 1)(normalito, 4)(primavera, 1)(esepsional, 1)(confuso, 1)(privilegiado, 1)(mucho ya atractivo, 1)(siempre lleno, 1)(bastante oscuro, 1)
+estacion: (antiguo, 7)(bien comunicado, 16)(mejor, 2)(no mucho lleno, 1)(mucho funcional, 2)(maquinas, 1)(mucho profundo, 1)(estupendamente, 5)(sucio, 1)(escalera, 1)(accesible, 2)(transbordo, 1)(mucho cómodo, 3)(amplio, 1)(mucho masificado, 1)(mucho fluido, 1)(bien estacion, 1)(normalito, 4)(primavera, 1)(excepcional, 1)(confuso, 1)(privilegiado, 1)(mucho ya atractivo, 1)(siempre lleno, 1)(bastante oscuro, 1)
 gente: (minusválido, 2)(siempre parado, 1)(antipatiquisimo, 1)(también bastante estrecho, 1)
 movilidad: (reducido, 1)(público, 1)
 escalera: (mecánico, 6)(pésimas, 1)(interminable, 2)

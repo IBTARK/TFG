@@ -1,4 +1,4 @@
-estacion: (ojalá, 1)(peor, 1)(buen, 9)(espabilen, 1)(ideal, 1)(final, 1)(encantar, 1)(no adaptado, 4)(normal, 1)(bro, 1)
+estacion: (buen, 9)(espabilen, 1)(ideal, 1)(final, 1)(encantar, 1)(no adaptado, 4)(normal, 1)
 ascensor: (buen, 1)(mecánico, 3)
 movilidad: (reducido, 3)(público, 1)
 zona: (tarifario, 1)(buena, 1)(vendido, 1)

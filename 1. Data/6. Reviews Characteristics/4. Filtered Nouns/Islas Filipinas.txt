@@ -1,4 +1,4 @@
-estacion: (amplio, 11)(mucho cerca, 1)(mucho moderno, 2)(limpio, 17)(ascensor, 1)(fundación, 1)(atte.cemarye, 1)(mucho recomendable, 1)(faraónico, 1)(ojalá, 1)(siempre, 1)(bien conectado, 1)(más estacion, 1)(probable, 1)
+estacion: (amplio, 11)(mucho cerca, 1)(mucho moderno, 2)(limpio, 17)(ascensor, 1)(fundación, 1)(mucho recomendable, 1)(bien conectado, 1)(más estacion, 1)(probable, 1)
 salida: (totalmente accesible, 1)(diferente, 1)(recomendable, 1)
 movilidad: (reducido, 1)(público, 1)
 servicio: (mucho buen, 2)(colectivo, 1)

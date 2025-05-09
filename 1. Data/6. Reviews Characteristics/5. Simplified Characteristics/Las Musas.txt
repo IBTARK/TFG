@@ -1,0 +1,7 @@
+estacion: (buen, 9)(espabilen, 1)(ideal, 1)(final, 1)(encantar, 1)(inadaptado, 4)(normal, 1)
+ascensor: (buen, 1)(mecánico, 3)
+movilidad: (reducido, 3)(público, 1)
+zona: (tarifario, 1)(buena, 1)(vendido, 1)
+acceso: (fatal, 1)(descuida, 1)
+metro: (limpio, 2)(antiguo, 1)
+personal: (incontestable, 1)

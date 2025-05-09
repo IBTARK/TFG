@@ -1,4 +1,4 @@
-estacion: (moderno, 7)(bastante amplio, 3)(mucho buen, 11)(bastante desagradable, 1)(abarrotado, 2)(parada, 1)(bien señalizado, 3)(rápido, 1)(limpio, 2)(ordenado, 1)(practico, 1)
+estacion: (moderno, 7)(bastante amplio, 3)(mucho buen, 11)(abarrotado, 2)(parada, 1)(bien señalizado, 3)(rápido, 1)(limpio, 2)(ordenado, 1)(practico, 1)
 metro: (ligero, 4)(moderno, 1)(cómodo, 1)(perfecto, 1)(más lento, 1)(próximo, 1)
 instalacion: (moderno, 1)
 cobertura: (móvil, 1)

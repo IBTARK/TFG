@@ -1,6 +1,6 @@
-estacion: (no adaptado, 1)(impracticable, 1)(parada, 3)(plazas, 1)(mucho transitado, 2)(bulliciós, 1)(demasiadas, 1)(terrible, 5)(bien cuidado, 4)(céntrico, 1)(discapacitado, 1)(viejo, 2)(mucho bonito, 2)(bien ubicado, 2)(sinceramente prima, 1)(simple, 1)(aún ya fácil, 1)
+estacion: (no adaptado, 1)(impracticable, 1)(parada, 3)(plazas, 1)(mucho transitado, 2)(bullicioso, 1)(demasiadas, 1)(bien cuidado, 4)(céntrico, 1)(discapacitado, 1)(viejo, 2)(mucho bonito, 2)(bien ubicado, 2)(simple, 1)(aún ya fácil, 1)
 salida: (no accesible, 1)(penúltimo, 1)(mejor, 1)
-zona: (mucho comercial, 1)(acessibl, 1)(discapacitado, 1)(bueno, 1)
+zona: (mucho comercial, 1)(acessible, 1)(discapacitado, 1)(bueno, 1)
 escalera: (mecanica, 3)(electrica, 1)(ascensor, 2)(no demasiado empinada, 1)
 servicio: (mucho buen, 3)
 movilidad: (reducido, 2)

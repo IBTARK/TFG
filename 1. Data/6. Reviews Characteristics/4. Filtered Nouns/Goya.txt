@@ -1,5 +1,5 @@
 personal: (bastante amable, 1)(cualificado, 1)(responsable, 1)(alto, 1)(mayor, 1)
-estacion: (enorme, 6)(difícil, 2)(ubicado, 6)(mucho bonito, 17)(limpio, 8)(habitual, 1)(original, 5)(bien cuidado, 3)(mucho disgustado, 1)(sacar, 2)(rapido, 2)(no bien adaptado, 3)(personal, 1)(innegable, 2)(siempre disponible, 1)(primero, 1)(recientemente reformar, 1)(juntar, 1)(broma, 1)(funciona, 3)(servicio, 1)(correspondencia, 1)(público, 1)(preferible, 5)(bien actualizado, 1)(cómodo, 1)(chuli, 1)(busca, 1)
+estacion: (enorme, 6)(difícil, 2)(ubicado, 6)(mucho bonito, 17)(limpio, 8)(habitual, 1)(original, 5)(bien cuidado, 3)(mucho disgustado, 1)(sacar, 2)(rapido, 2)(no bien adaptado, 3)(personal, 1)(innegable, 2)(siempre disponible, 1)(primero, 1)(recientemente reformar, 1)(juntar, 1)(broma, 1)(funciona, 3)(servicio, 1)(correspondencia, 1)(público, 1)(preferible, 5)(bien actualizado, 1)(cómodo, 1)(chuli, 1)
 transporte: (público, 3)(excelente, 4)(rápido, 1)(cómodo, 1)(eficiente, 1)(segundo, 1)(reducido, 1)
 metro: (bastante cómodo, 1)(organizado, 1)(fantastico, 1)(mucho concurrido, 1)(viejo, 1)(bien mantenido, 1)(puntual, 1)
 escalera: (mecánico, 1)(averiada, 1)

@@ -1,3 +1,3 @@
-estacion: (mucho simple, 3)(diferente, 1)(espartal, 1)(mucho mucho deficiente, 1)(seguro, 12)(fenomenal, 3)(amplio, 1)(cortado, 1)(más cercano, 1)(mucho normal, 1)(limpia, 1)(mas cuidado, 1)(menuda, 1)(mucho puntual, 1)
+estacion: (mucho simple, 3)(diferente, 1)(seguro, 12)(fenomenal, 3)(amplio, 1)(cortado, 1)(más cercano, 1)(mucho normal, 1)(limpia, 1)(mas cuidado, 1)(menuda, 1)(mucho puntual, 1)
 maquina: (torno, 1)
 conexion: (buen, 1)

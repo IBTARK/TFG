@@ -1,4 +1,4 @@
-estacion: (parada, 3)(acceso, 1)(conectada, 2)(servicios, 1)(área, 1)(opinión, 1)(residencial, 1)(pésimo, 2)(bastante buen, 9)(dentro estación, 2)(alrededor línea, 1)(feo, 1)(limpio, 3)(diferente, 1)
+estacion: (parada, 3)(acceso, 1)(conectada, 2)(servicios, 1)(área, 1)(opinión, 1)(residencial, 1)(bastante buen, 9)(dentro estación, 2)(alrededor línea, 1)(feo, 1)(limpio, 3)(diferente, 1)
 movilidad: (reducido, 2)
 conexion: (buen, 3)
 zona: (residencial, 1)(seguro, 1)

@@ -1,0 +1,751 @@
+mucho tranquilo: 
+siempre tanto limpio: 
+mucho importante: 
+mucho amenudo: 
+no encontrar: 
+mucho mal: 
+poco práctico: 
+mucho moderno: 
+mucho concurrido: 
+mucho funcional: 
+mucho fácil: 
+bien comunicado: 
+mucho lejos: 
+relativamente vacío: 
+también limpio: 
+mucho desarrollado: 
+mucho buen: 
+quizá demasiado grande: 
+no necesario: 
+mucho rico: 
+totalmente accesible: 
+perfectamente señalizado: 
+bien organizado: 
+evidentemente tirar: 
+mas nuevo: 
+bien conectado: 
+no mucho generoso: 
+más cercano: 
+no caótico: 
+mucho amable: 
+mucho eficiente: 
+siempre presente: 
+lamentablemente no actualizado: 
+mucho limpio: 
+demasiado complicado: 
+más simple: 
+mucho buena: 
+mas ver: 
+después vuelto: 
+bastante amplio: 
+bien cuidado: 
+aquí pasar: 
+mucho mala: 
+cerca situada: 
+bien ubicado: 
+mucho aprovechado: 
+bien diseñado: 
+poco antiguo: 
+poco accesible: 
+cerca zona: 
+completamente nuevo: 
+mucho sucio: 
+siempre lleno: 
+algo antiguo: 
+bien conservada: 
+bien señalizado: 
+mucho antiguo: 
+siempre estropeado: 
+más rápido: 
+tanto necesario: 
+lógicamente no adaptado: 
+siempre dañado: 
+menos corto: 
+bien iluminado: 
+bastante tranquilo: 
+relativamente nuevo: 
+perfectamente conectado: 
+más céntrico: 
+bien equipado: 
+bastante antiguo: 
+no tanto costoso: 
+cerca bien comunicado: 
+mucho escaso: 
+mal dificil: 
+antes penúltimo: 
+mucho bien: 
+mucho necesario: 
+más nuevo: 
+bastante oscuro: 
+mucho cercano: 
+no preparado: 
+siempre limpio: 
+no gustar: 
+sorprendentemente fácil: 
+no conectado: 
+mas retrasado: 
+no claro: 
+bastante lento: 
+no seguro: 
+mucho lleno: 
+mucho lindo: 
+más moderno: 
+más seguro: 
+además recomendable: 
+bastante preparado: 
+mucho original: 
+poco conocido: 
+mucho alto: 
+mucho bonito: 
+mucho nuevo: 
+más antiguo: 
+especialmente transitado: 
+no mal: 
+además cabecero: 
+además mucho caro: 
+mucho animado: 
+más liós: 
+mucho complicado: 
+más sencillo: 
+mejor conectado: 
+mucho irregular: 
+mucho bueno: 
+mas tranquilo: 
+poco concurrido: 
+demasiado profundo: 
+generalmente considerado: 
+mucho normal: 
+allá abierto: 
+más concurrido: 
+siempre pequeño: 
+mucho bien ubicado: 
+bien sitio: 
+bastante ayudar: 
+bastante limpio: 
+no bien comunicado: 
+más nunca: 
+tanto importante: 
+bien acondicionado: 
+más bonito: 
+extremadamente ocupado: 
+bastante confuso: 
+también conectado: 
+mucho organizado: 
+mucho puntual: 
+más estúpido: 
+mucho malo: 
+mucho mal aprovechado: 
+más educado: 
+nada respetuoso: 
+más inútil: 
+jamás vivido: 
+extremadamente hostil: 
+menos decente: 
+antes fastidia: 
+mucho disperso: 
+no bien señalizado: 
+igual no suficientemente claro: 
+poco claro: 
+dentro personal: 
+alrededor zona: 
+bastante grande: 
+siempre mucho vigilar: 
+tanto dificil: 
+mucho después mejorado: 
+no mucho amplio: 
+bien climatizado: 
+mucho grande: 
+aquí encontrarás: 
+bastante moderno: 
+más claro: 
+además cerca: 
+ya no accesible: 
+siempre impecable: 
+bastante bueno: 
+mucho espaciós: 
+no bonito: 
+no directamente conectado: 
+no accesible: 
+bien resolver: 
+recientemente reformado: 
+siempre mucho limpio: 
+bastante nuevo: 
+completamente accesible: 
+más ruidoso: 
+más falso: 
+mucho bajo: 
+no mucho profundo: 
+bien situado: 
+actualmente cerrado: 
+siempre sorprendentemente limpio: 
+algo escaso: 
+mucho largo: 
+más cuidado: 
+mucho mejorado: 
+ya totalmente accesible: 
+no adaptado: 
+mucho descuidado: 
+mucho cerca: 
+mal cuidado: 
+tanto atento: 
+dentro accesible: 
+menos mal: 
+hoy suspender: 
+no mucho grande: 
+más cómodo: 
+bastante bien: 
+mucho majo: 
+no mal conservado: 
+mucho accesible: 
+mucho agradable: 
+no suficiente: 
+mucho básico: 
+ahora reformado: 
+hoy tener: 
+mucho raro: 
+bastante concurrido: 
+bien después quedar: 
+mucho tradicional: 
+siempre así: 
+mucho recomendable: 
+relativamente moderno: 
+mucho central: 
+mucho cómodo: 
+mucho transitado: 
+mucho amplio: 
+mucho profundo: 
+bastante atasco: 
+mucho rápido: 
+no mucho útil: 
+bien estructuralmente: 
+no mucho mal: 
+enfrente situado: 
+bien reformado: 
+más transitada: 
+mucho bien comunicado: 
+bastante accesible: 
+más bien: 
+perfectamente funcional: 
+aún abierto: 
+tanto simple: 
+mucho práctico: 
+además bien conectada: 
+adecuadamente simbolizado: 
+además tribunal: 
+mucho liberal: 
+mucho turistificado: 
+mejor decorado: 
+mal acondicionado: 
+más novedoso: 
+demasiado vulgar: 
+más colorido: 
+siempre moderno: 
+también amplio: 
+más centrales: 
+bastante dentro anticuado: 
+mucho regular: 
+más peligroso: 
+mucho viejo: 
+hoy estupebdo: 
+no estudiant: 
+bien mantenido: 
+quizás mejorable: 
+mucho no cómodo: 
+mucho abarrotado: 
+mucho comodo: 
+totalmente estación: 
+bien decorado: 
+personalmente estacion: 
+siempre puntual: 
+rápidamente conecta: 
+bastante buen: 
+generalmente limpio: 
+completamente adaptado: 
+siempre arriba: 
+casi vacío: 
+ahí alegre: 
+bien abrigado: 
+bien engorroso: 
+no especial: 
+mucho comunicado: 
+mucho próximo: 
+mucho feliz: 
+más grande: 
+mucho acondicionado: 
+lejos cerca: 
+más directo: 
+siempre magnifico: 
+tanto concurrido: 
+no mucho agrado: 
+bastante deteriorada: 
+mucho útil: 
+siempre atestado: 
+no especialmente sucio: 
+recientemente rediseñar: 
+mejor cuidado: 
+mas profundo: 
+siempre feliz: 
+no embarazado: 
+densamente poblado: 
+mal señalizado: 
+sólo accesible: 
+mucho abajo: 
+no mucho práctico: 
+bastante mejorable: 
+más desconocido: 
+aún no llegar: 
+más profundo: 
+mucho interesante: 
+además accesible: 
+especialmente borde: 
+extremadamente grosero: 
+mucho educar: 
+además limpio: 
+mucho renovado: 
+más alto: 
+no bien señalada: 
+bien quedar: 
+no mucho limpio: 
+después no poner: 
+cerca inglés: 
+bien vigilada: 
+convenientemente cerca ubicado: 
+totalmente eficiente: 
+bien antiguo: 
+dentro estación: 
+alrededor línea: 
+mucho duro: 
+mucho empinada: 
+mucho lento: 
+no malo: 
+mucho desagradable: 
+además dar: 
+no mucho alto: 
+ahora abrir: 
+no puntual: 
+mucho acogedoro: 
+hoy venir: 
+bien funciona: 
+no ahí: 
+no tanto complicado: 
+más amplio: 
+lamentablemente no extender: 
+siempre sucio: 
+continuamente averiada: 
+más impecable: 
+mucho cuidado: 
+no mucho concurrido: 
+principalmente utilizar: 
+perfectamente iluminado: 
+mucho atento: 
+más importante: 
+no digno: 
+mas bonito: 
+mucho mejorar: 
+mucho artístico: 
+únicamente gratuito: 
+especialmente impresionante: 
+jamás ver: 
+mucho estandarizado: 
+más amigable: 
+totalmente separado: 
+realmente orgulloso: 
+mas probable: 
+menos vigilado: 
+antes después lleno: 
+bien acceso: 
+bien amplio: 
+tampoco adaptado: 
+mucho céntrico: 
+dentro descuidado: 
+no normal: 
+mas moderno: 
+mucho completo: 
+casi siempre: 
+algo pequeño: 
+no disponible: 
+además dentro conectado: 
+mucho desolado: 
+más próximo: 
+bastante completo: 
+mas cercano: 
+mejor comunicado: 
+normalmente limpio: 
+bastante espectacular: 
+mucho diáfán: 
+siempre predispuesto: 
+poco descuidado: 
+mucho ocupado: 
+más tarda: 
+bastante amable: 
+mucho disgustado: 
+no bien adaptado: 
+siempre disponible: 
+recientemente reformar: 
+bien actualizado: 
+bastante cómodo: 
+bastante rápido: 
+razonablemente limpio: 
+bastante modernizar: 
+aparentemente mucho bonito: 
+además musealizar: 
+casi ya: 
+además seguro: 
+mucho centrico: 
+mucho difícil: 
+no salgo: 
+mucho siempre abarrotado: 
+más vanguardista: 
+siempre petado: 
+demasiado concurrido: 
+bastante pequeño: 
+poco equipado: 
+siempre bien ir: 
+mucho conveniente: 
+cerca situado: 
+bien valorado: 
+no más cerca: 
+no más antipático: 
+nunca romper: 
+poco empatía: 
+no cojen: 
+fatal enserio: 
+bien caotico: 
+poco agradable: 
+bien atendido: 
+mucho util: 
+mucho borracho: 
+todavía no adaptado: 
+poco cerca concurrido: 
+más caro: 
+más estacion: 
+más útil: 
+bien localizado: 
+casi desierto: 
+actualmente correcto: 
+nunca ayudar: 
+bien funcionante: 
+ahora arreglar: 
+casi siempre limpio: 
+mucho adaptado: 
+más utilizo: 
+mucho espacioso: 
+también mucho luminoso: 
+estéticamente bastante bien: 
+bien indicar: 
+mucho normalita: 
+no útil: 
+justo situado: 
+nunca ver: 
+no limpiar: 
+fácilmente navegable: 
+más lento: 
+mucho inseguro: 
+mucho oscuro: 
+menos todavía iluminado: 
+tampoco contesta: 
+siempre accesibilidad: 
+bastante bonito: 
+casi disponible: 
+cerca ubicada: 
+bastante abandonado: 
+ya atrasado: 
+mucho calentito: 
+mucho mejor: 
+no capaz: 
+siempre bastante concurrido: 
+bien distribuido: 
+bastante espacioso: 
+no tanto largo: 
+no molo: 
+principalmente utilizado: 
+bien tranquilo: 
+mucho desplazado: 
+mucho simple: 
+mas cuidado: 
+siempre averiado: 
+mucho peligroso: 
+constantemente estropeado: 
+mal colocado: 
+siempre averiada: 
+más completo: 
+no tanto mal: 
+demasiado ruidoso: 
+rápido agradesido: 
+mucho frecuente: 
+mucho recomendado: 
+bien accesible: 
+además servido: 
+poco controlado: 
+bastante transitado: 
+mucho frio: 
+no quitar: 
+todavía aún decepcionante: 
+siempre termino: 
+actualmente cortar: 
+más sostenible: 
+ya retomado: 
+ahí mucho amable: 
+más representativo: 
+más conocido: 
+siempre vacio: 
+mucho descontento: 
+también más cercano: 
+además hacer: 
+bastante ordenado: 
+siempre agusto: 
+mucho saturado: 
+asfixiante calor: 
+mucho cultural: 
+especialmente concurrido: 
+mucho i.portsnte: 
+también bastante mejorable: 
+más cerrado: 
+mucho hermoso: 
+mal climatizado: 
+además rodeado: 
+aquí bien: 
+mucho frecuentado: 
+más vergonzoso: 
+hoy viajar: 
+ya renovar: 
+nunca tener: 
+siempre parado: 
+bien limpio: 
+nada concurrido: 
+hoy caer: 
+no mucho exhaustivo: 
+bien indicado: 
+demasiado trasiego: 
+más estrecho: 
+mucho comercial: 
+bien aseado: 
+más largo: 
+bastante centrico: 
+cerca comunicado: 
+realmente complicado: 
+no mucho cambiar: 
+ya antiguo: 
+no fácil: 
+no ver: 
+siempre va: 
+también conecta: 
+pobremente señalizado: 
+mucho satisfecho: 
+no nada intuitiva: 
+además bien etiquetado: 
+algo confuso: 
+más limpio: 
+mal señalado: 
+relativamente grande: 
+definitivamente horrible: 
+totalmente adaptado: 
+más económico: 
+no adecuado: 
+bastante céntrico: 
+mucho agresivo: 
+mucho seguir: 
+mal huele: 
+mucho transitable: 
+igualmente mal ideado: 
+casi increible: 
+siempre mucho atento: 
+no demasiado masificado: 
+aquí coger: 
+no más renovado: 
+relativamente barato: 
+no mucho aglomerado: 
+quizás no más concurrido: 
+después no mal quedar: 
+únicamente abierto: 
+bien oler: 
+mucho correcto: 
+mucho acogedor: 
+no siguiente: 
+no viejo: 
+siempre ordenado: 
+bastante bien amplio: 
+totalmente automatizado: 
+mucho eficaz: 
+no mucho servir: 
+siempre especial: 
+enfrente justo: 
+siempre cuidado: 
+ya pagado: 
+mucho agradecido: 
+totalmente personal: 
+generalmente percibido: 
+además decorado: 
+bien adaptado: 
+bien urbanizado: 
+tanto inútil: 
+algo estrecho: 
+siempre horrible: 
+no diferente: 
+bastante descuidado: 
+no nada agradable: 
+apenas personal: 
+bastante sucio: 
+más accesible: 
+mas desagradable: 
+mucho igualmente cómodo: 
+aun no mucho accesibl: 
+después encantar: 
+bastante fluido: 
+poco cambiar: 
+completamente peatonal: 
+mucho popular: 
+básicamente conecta: 
+mucho ordenado: 
+estrictamente necesario: 
+siempre ayudar: 
+mejor situado: 
+siempre libre: 
+después ya terminar: 
+también habilitar: 
+poco luminoso: 
+siempre abierto: 
+estéticamente agradable: 
+bastante degradado: 
+no mucho agradable: 
+poco seguro: 
+no mucho cómodo: 
+mucho estrecho: 
+mucho mucho regular: 
+absolutamente completo: 
+no automático: 
+hoy mas frecuente: 
+seguramente antes parto: 
+demasiado lento: 
+no ticar: 
+también cerca: 
+mucho utilizado: 
+bien conservado: 
+bastante alto: 
+no funcional: 
+mucho claro: 
+no brinda: 
+tanto profundo: 
+aún ya fácil: 
+no demasiado empinada: 
+poco transitado: 
+bastante dañado: 
+directamente dentro sal: 
+simplemente relajarte: 
+directamente sales: 
+tarde visto: 
+suficientemente limpio: 
+no amigable: 
+mucho vistoso: 
+bastante menos bien: 
+bien ventilado: 
+mucho frío: 
+más destacado: 
+aún relativamente nuevo: 
+pronto lento: 
+tanto pequeño: 
+demasiado mala: 
+fuera metro: 
+casi incalculable: 
+realmente mucho bien: 
+tanto valioso: 
+no mucho tampoco alto: 
+físicamente impedido: 
+mucho iluminado: 
+también mucho seguro: 
+antes más cálido: 
+bastante largo: 
+bastante viejo: 
+más clásico: 
+bastante normal: 
+mucho sencillo: 
+no mecánico: 
+mucho frecuentemente puntual: 
+bastante raro: 
+mucho ruidoso: 
+mucho amablemente atender: 
+más nefasto: 
+bien considerado: 
+mucho pequeño: 
+tanto céntrico: 
+mucho practico: 
+mucho chulo: 
+recién actualizado: 
+ahora accesible: 
+ahora algo desordenado: 
+bastante situado: 
+recién renovado: 
+también ubicado: 
+constantemente rodeado: 
+mucho fluido: 
+claro puntual: 
+mucho cualificado: 
+también primero: 
+menos higiénico: 
+claramente insuficiente: 
+mucho dificil: 
+directamente conecta: 
+siempre concurrido: 
+mal mucho impuntual: 
+continuamente averiado: 
+totalmente céntrico: 
+mucho desubicado: 
+más roto: 
+no mejor: 
+poco transitada: 
+poco modernizado: 
+también llamado: 
+más pintoresco: 
+aún cerrado: 
+recien reformado: 
+nada accesible: 
+no posible: 
+tanto difícil: 
+físicamente posible: 
+no coordinado: 
+más intuitivo: 
+mucho estable: 
+mal siempre coordinado: 
+mucho nervioso: 
+no tanto malo: 
+no mucho lleno: 
+mucho masificado: 
+bien estacion: 
+mucho ya atractivo: 
+también bastante estrecho: 
+mucho variado: 
+mucho familiar: 
+completamente vacío: 
+poco adaptado: 
+bastante profundo: 
+más sucio: 
+mucho cerca tranquilo: 
+no mal ubicado: 
+correctamente funciona: 
+más fresco: 
+además sencillo: 
+no totalmente accesible: 
+tanto emblemático: 
+no libre: 
+tanto turístico: 
+ya encantar: 
+mucho aseado: 
+medianamente cuidado: 
+más tranquilo: 
+además bonito: 
+parcialmente renovada: 
+mucho contento: 
+no peligroso: 
+recientemente instalar: 
+bien atencion: 
+no agradable: 
+mucho mal preparado: 
+bastante cuidado: 
+bastante facil: 
+poco masificado: 
+poco vigilado: 
+no subterráneo: 
+debajo estación: 
+relativamente limpio: 
+mucho emblemático: 
+mas llamativo: 

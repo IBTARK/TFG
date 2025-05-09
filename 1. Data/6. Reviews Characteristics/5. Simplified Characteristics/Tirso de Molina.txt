@@ -1,0 +1,7 @@
+estacion: (perfecta, 21)(lindo, 7)(abarrotado, 1)(recomendar, 1)(antiguo, 3)(viejo, 10)(accesible, 2)(discapacitado, 1)(decorado, 1)(único, 3)(comunicado, 1)(descuidado, 3)(limpia, 3)(alias, 1)(huele, 1)(súper, 2)(azul, 1)
+gente: (mayor, 1)(borracho, 1)(abierto, 1)(protegido, 1)(paso, 1)(conectado, 1)
+estado: (buen, 1)
+escalera: (interminable, 1)(eléctrico, 1)
+maquina: (disponible, 1)
+metro: (antiguo, 1)
+zona: (pintoresco, 1)(conocer, 1)(bohemio, 1)

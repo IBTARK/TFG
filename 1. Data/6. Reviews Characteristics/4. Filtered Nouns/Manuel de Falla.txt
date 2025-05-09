@@ -1,5 +1,5 @@
 maquina: (sucio, 2)(roto, 1)
-estacion: (vergonzoso, 1)(además, 3)(excelente, 3)(juzgado, 1)(bien cuidado, 1)
+estacion: (además, 3)(excelente, 3)(juzgado, 1)(bien cuidado, 1)
 informacion: (falso, 1)
 tren: (parado, 1)(norte, 1)
 escalera: (eléctrico, 1)

@@ -1,6 +1,6 @@
 acceso: (buen, 1)(fácil, 1)
 movilidad: (reducido, 1)
-estacion: (san, 1)(mosaico, 1)(mucho vistoso, 2)(siempre limpio, 3)(menudo, 1)(impresentable, 1)(vergonzoso, 1)(bastante menos bien, 1)(relativamente nuevo, 2)(bien ubicado, 1)(moderno, 1)
+estacion: (mucho vistoso, 2)(siempre limpio, 3)(menudo, 1)(impresentable, 1)(vergonzoso, 1)(bastante menos bien, 1)(relativamente nuevo, 2)(bien ubicado, 1)(moderno, 1)
 linea: (construido, 1)
 salida: (cercano, 1)
 metro: (decorado, 1)

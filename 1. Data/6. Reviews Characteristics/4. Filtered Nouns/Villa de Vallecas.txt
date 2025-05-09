@@ -1,4 +1,4 @@
-estacion: (correspondiente, 3)(accesible, 2)(mucho contento, 4)(bien cuidado, 3)(tranquilo, 3)(no peligroso, 1)(moderno, 1)(mucho diáfán, 1)(mucho limpio, 1)
+estacion: (correspondiente, 3)(accesible, 2)(mucho contento, 4)(bien cuidado, 3)(tranquilo, 3)(no peligroso, 1)(moderno, 1)(mucho limpio, 1)
 movilidad: (reducido, 2)
 escalera: (mecánico, 2)
 zona: (tarifario, 1)(buena, 1)

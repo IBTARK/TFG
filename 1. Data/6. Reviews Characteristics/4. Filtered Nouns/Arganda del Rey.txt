@@ -1,4 +1,4 @@
-estacion: (cuestionar, 1)(bastante lento, 1)(horrible, 1)(viejo, 1)(descuidado, 5)(encima súper, 2)(personal, 1)(pago, 1)(merecer, 1)(servicio, 2)(accesible, 1)(mucho cercano, 1)(no seguro, 1)(tardo, 1)(mucho bien, 2)
+estacion: (cuestionar, 1)(bastante lento, 1)(horrible, 1)(viejo, 1)(descuidado, 5)(personal, 1)(pago, 1)(merecer, 1)(servicio, 2)(accesible, 1)(mucho cercano, 1)(no seguro, 1)(tardo, 1)
 linea: (independiente, 1)(tercermundista, 1)
 frecuencia: (mucho lleno, 1)(pésimo, 1)(averiado, 1)
 personal: (borde, 1)(antipático, 1)

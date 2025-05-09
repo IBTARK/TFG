@@ -1,0 +1,3 @@
+estacion: (limpio, 2)(solitario, 1)
+frecuencia: (buena, 1)
+tren: (insuficiente, 1)(ligero, 1)(basico, 1)

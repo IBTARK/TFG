@@ -1,5 +1,5 @@
 transporte: (publico, 1)
-estacion: (cerrado, 3)(mucho antiguo, 4)(bastante oscuro, 1)(hutil, 1)(aunk, 1)(mucho cercano, 2)(conexión, 1)(dicho, 4)(no preparado, 2)(escalera, 1)(preferente, 1)(bueno, 10)(kk, 1)(siempre limpio, 1)(no gustar, 1)(fácil, 2)(genuina, 1)(cuidado, 1)(difícil, 1)(complejo, 1)
+estacion: (cerrado, 3)(mucho antiguo, 4)(bastante oscuro, 1)(util, 1)(mucho cercano, 2)(conexión, 1)(no preparado, 2)(escalera, 1)(preferente, 1)(bueno, 10)(siempre limpio, 1)(no gustar, 1)(fácil, 2)(genuina, 1)(cuidado, 1)
 cobertura: (móvil, 1)
 ascensor: (buen, 1)
 tren: (siguiente, 1)(perfecto, 1)(consistente, 1)(sorprendentemente fácil, 1)

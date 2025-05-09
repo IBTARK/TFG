@@ -1,0 +1,8 @@
+estacion: (gran, 34)(moderno, 7)(bonito, 22)(nuevo, 4)(restaurado, 5)(convertir, 2)(unido, 4)(accesible, 3)(perfecto, 3)(construir, 1)(cerrado, 8)(bajarte, 1)(controlado, 1)(emblemático, 3)(alcalá, 1)(corridas, 1)(inaugura, 1)(inmediato, 2)(limpio, 2)(seguro, 2)(linea, 1)(imperdible, 1)(siempre, 2)(centrico, 3)(iluminado, 2)(dificil, 1)(transitada, 1)(calle, 2)(favorito, 1)
+linea: (ubicado, 1)(gran, 1)
+escalera: (mecánico, 1)(principal, 1)(viejo, 1)(construido, 1)
+senalizacion: (único, 1)
+estado: (mal, 1)
+metro: (continuo, 2)(centrico, 3)(turístico, 1)(gran, 1)(conveniente, 1)
+movilidad: (reducido, 1)
+conexion: (asequible, 1)

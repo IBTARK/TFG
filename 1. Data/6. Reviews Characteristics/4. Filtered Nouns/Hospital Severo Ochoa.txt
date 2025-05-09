@@ -1,4 +1,4 @@
-estacion: (nuevo, 1)(iignorado, 1)(inagurar, 2)(bien caotico, 1)(mucho limpio, 1)(mejor, 2)(instalaciones, 1)(atención, 1)(poco agradable, 1)
+estacion: (nuevo, 1)(ignorado, 1)(inagurar, 2)(bien caotico, 1)(mucho limpio, 1)(mejor, 2)(instalaciones, 1)(atención, 1)(poco agradable, 1)
 servicio: (directo, 1)(buen, 1)
 acceso: (congestionado, 1)
 senalizacion: (penoso, 1)

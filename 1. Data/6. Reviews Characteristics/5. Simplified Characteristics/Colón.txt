@@ -1,0 +1,6 @@
+estacion: (parada, 1)(engorroso, 5)(inaccesible, 2)(ubicado, 3)(pequeño, 1)(viejo, 1)(imprescindible, 3)(hermoso, 3)(comun, 1)
+movilidad: (reducido, 2)
+metro: (line, 1)
+cobertura: (móvil, 1)
+estado: (buen, 1)
+senalizacion: (buen, 1)

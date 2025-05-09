@@ -1,4 +1,4 @@
-estacion: (mucho cerca tranquilo, 4)(bastante bien, 4)(pequeño, 3)(poco adaptado, 1)(accesible, 1)(concurrido, 1)(bien conectado, 1)(anticuado, 2)(amabilidad, 1)(siempre solo, 1)
+estacion: (mucho cerca tranquilo, 4)(bastante bien, 4)(pequeño, 3)(poco adaptado, 1)(accesible, 1)(concurrido, 1)(bien conectado, 1)(anticuado, 2)
 zona: (comercial, 1)
 escalera: (mecánico, 1)
 movilidad: (reducido, 1)

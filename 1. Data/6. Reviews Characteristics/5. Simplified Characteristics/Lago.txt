@@ -1,0 +1,6 @@
+acceso: (buen, 1)(rápido, 1)
+movilidad: (reducido, 2)
+escalera: (pequeño, 1)
+tren: (próximo, 1)(animado, 2)(frecuente, 1)
+maquina: (expendedor, 1)(navegable, 1)
+senalizacion: (buen, 1)

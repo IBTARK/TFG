@@ -1,4 +1,4 @@
-estacion: (inadmisible, 1)(algo estrecho, 3)(diseño, 1)(acceso, 1)(servicios, 1)(pirámides, 1)(situada, 11)(line, 1)(no habia, 1)(perdi, 1)(centrico, 1)(vigilante, 1)(siempre horrible, 1)(más cercano, 1)(mucho transitado, 1)(no diferente, 2)(después, 3)(bastante accesible, 1)(rio, 1)(peor, 1)(limpio, 15)(bien señalizado, 1)(antiguo, 1)(intercambiador, 1)(renovado, 1)(mucho bonito, 1)(funcional, 1)(lamentable, 1)(emblemático, 1)(principal, 1)(rápido, 1)
+estacion: (inadmisible, 1)(algo estrecho, 3)(diseño, 1)(acceso, 1)(servicios, 1)(pirámides, 1)(situada, 11)(centrico, 1)(vigilante, 1)(siempre horrible, 1)(más cercano, 1)(mucho transitado, 1)(no diferente, 2)(después, 3)(bastante accesible, 1)(limpio, 15)(bien señalizado, 1)(intercambiador, 1)(renovado, 1)(mucho bonito, 1)(funcional, 1)(lamentable, 1)(emblemático, 1)(principal, 1)(rápido, 1)
 escalera: (mecánico, 3)(lateral, 1)(bastante descuidado, 1)
 conexion: (buen, 3)(line, 1)
 limpieza: (adecuados, 1)

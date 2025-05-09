@@ -1,0 +1,1 @@
+metro: (espaciós, 1)(limpio, 2)

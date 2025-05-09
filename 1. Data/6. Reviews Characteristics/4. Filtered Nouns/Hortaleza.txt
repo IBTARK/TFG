@@ -1,4 +1,4 @@
-estacion: (reseña, 2)(cerca situado, 4)(equipado, 11)(conexiones, 1)(no directamente conectado, 1)(bien valorado, 9)(siempre limpio, 4)(grande, 2)(marrón, 1)(nuevo, 4)(mucho moderno, 1)(agradable, 5)(mucho profundo, 2)(metro, 1)(rápido, 1)(línea, 1)(no molo, 1)(mejor, 1)(billetes, 1)(mapas, 1)
+estacion: (cerca situado, 4)(equipado, 11)(bien valorado, 9)(siempre limpio, 4)(grande, 2)(marrón, 1)(nuevo, 4)(mucho moderno, 1)(agradable, 5)(mucho profundo, 2)(metro, 1)(rápido, 1)(mejor, 1)
 escalera: (mecánico, 1)(montacarga, 1)
 movilidad: (reducido, 4)
 maquina: (expendedor, 1)

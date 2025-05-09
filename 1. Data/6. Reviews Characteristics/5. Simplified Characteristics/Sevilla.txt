@@ -1,0 +1,8 @@
+ascensor: (buen, 1)(mecánico, 2)
+acceso: (fácil, 1)
+movilidad: (reducido, 1)
+estacion: (remodelado, 5)(bien, 21)(actualizado, 2)(situado, 4)(histórico, 1)(moderno, 2)(pequeño, 1)(accesible, 2)(desordenado, 1)(util, 1)(colorido, 1)
+salida: (dejar, 1)(situado, 1)
+zona: (turístico, 1)(acometido, 1)(pleno, 1)
+linea: (pequeñito, 1)(comparado, 1)(moderno, 1)
+metro: (renovado, 1)

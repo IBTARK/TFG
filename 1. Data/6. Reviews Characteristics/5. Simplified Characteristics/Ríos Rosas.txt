@@ -1,0 +1,5 @@
+movilidad: (reducido, 1)
+salida: (proximo, 1)
+estacion: (señalizado, 4)(iluminado, 2)(proximo, 2)(amable, 4)(funcional, 1)(normalita, 1)
+acceso: (buen, 1)
+metro: (cutre, 1)

@@ -1,3 +1,3 @@
-estacion: (rl, 1)(bastante viejo, 1)(más bonito, 6)(situado, 4)(más clásico, 1)(no accesible, 2)(bastante normal, 1)(mucho sencillo, 1)(centrico, 2)(madrid, 1)(limpio, 2)(bien comunicado, 1)
+estacion: (bastante viejo, 1)(más bonito, 6)(situado, 4)(más clásico, 1)(no accesible, 2)(bastante normal, 1)(mucho sencillo, 1)(centrico, 2)(limpio, 2)(bien comunicado, 1)
 personal: (agradable, 1)
 estado: (puro, 1)

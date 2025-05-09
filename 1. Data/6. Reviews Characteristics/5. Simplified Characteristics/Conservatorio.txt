@@ -1,0 +1,5 @@
+estacion: (moderno, 1)(amplio, 1)(cerca, 1)(directo, 1)(inagurar, 1)(abandonado, 1)(buenisimo, 1)(genial, 2)(pequeño, 1)
+cobertura: (móvil, 1)
+ascensor: (averiado, 1)(mecánico, 1)
+movilidad: (reducido, 1)
+metro: (magnifica, 1)

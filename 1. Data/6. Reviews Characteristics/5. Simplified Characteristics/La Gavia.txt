@@ -1,0 +1,3 @@
+estacion: (bonito, 3)(proximo, 5)(indicado, 2)(limpio, 5)(adaptada, 1)(moderno, 3)(publico, 1)(grande, 2)(exelente, 1)
+ascensor: (amplio, 1)
+senalizacion: (malo, 1)

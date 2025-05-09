@@ -1,0 +1,8 @@
+maquina: (sucio, 2)(roto, 1)
+estacion: (además, 3)(excelente, 3)(juzgado, 1)(cuidado, 1)
+informacion: (falso, 1)
+tren: (parado, 1)(norte, 1)
+escalera: (eléctrico, 1)
+persona: (discapacitada, 1)
+servicio: (eficiente, 1)(buen, 1)
+linea: (azul, 1)(oscuro, 1)

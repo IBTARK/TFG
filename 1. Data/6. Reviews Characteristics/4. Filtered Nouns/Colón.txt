@@ -1,4 +1,4 @@
-estacion: (parada, 1)(bien engorroso, 5)(no accesible, 2)(bien ubicado, 3)(pequeño, 1)(viejo, 1)(mas, 1)(imprescindible, 3)(fuuuu, 1)(fácilmente navegable, 1)(hermoso, 3)(no especial, 1)(mucho simple, 1)(relajarte, 1)
+estacion: (parada, 1)(bien engorroso, 5)(no accesible, 2)(bien ubicado, 3)(pequeño, 1)(viejo, 1)(imprescindible, 3)(hermoso, 3)(no especial, 1)
 movilidad: (reducido, 2)
 metro: (line, 1)
 cobertura: (móvil, 1)

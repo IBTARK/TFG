@@ -1,4 +1,4 @@
-estacion: (moderno, 1)(amplio, 1)(tender, 1)(conservatorio, 1)(dicho, 2)(lejos cerca, 1)(más directo, 1)(inagurar, 1)(abandonado, 1)(buenisimo, 1)(genial, 2)(pequeño, 1)
+estacion: (moderno, 1)(amplio, 1)(lejos cerca, 1)(más directo, 1)(inagurar, 1)(abandonado, 1)(buenisimo, 1)(genial, 2)(pequeño, 1)
 cobertura: (móvil, 1)
 ascensor: (averiado, 1)(mecánico, 1)
 movilidad: (reducido, 1)
