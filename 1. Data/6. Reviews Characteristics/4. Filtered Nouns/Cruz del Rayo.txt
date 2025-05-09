@@ -1,0 +1,6 @@
+escalera: (eléctrico, 1)(mecánico, 1)
+maquina: (solo, 1)(dispensadoro, 1)
+servicio: (mucho mal, 1)
+salida: (equivocado, 1)
+experiencia: (mucho agradable, 1)
+informacion: (mucho útil, 1)

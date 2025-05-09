@@ -1,0 +1,7 @@
+estacion: (dais, 3)(peor, 11)(organizado, 3)(no posible, 5)(tanto difícil, 2)(habilitado, 4)(moderno, 3)(amplio, 4)(limpio, 11)(línea, 2)(transbordo, 3)(inhumano, 2)(huyan, 1)(físicamente posible, 1)(desquiciante, 1)(bien señalizado, 2)(frecuente, 2)(terrorífica, 2)(no coordinado, 1)(fuencarral, 1)(mucho lento, 1)(vergüenza, 1)(geniales, 4)(cómodo, 1)(rápido, 1)(espera, 1)(record, 1)(infierno, 1)(más intuitivo, 1)(estar, 1)(allí coger, 1)
+metro: (excelente, 2)(ya aparecer, 1)(mucho estable, 2)(siguiente, 3)(no posible, 1)(ir, 2)(corto, 2)(mal siempre coordinado, 2)(sobreocupado, 1)
+gente: (mucho nervioso, 1)(aglomerado, 1)(no tanto malo, 1)(mayor, 1)(conocido, 2)(acabar, 1)(apelotonada, 1)(molesto, 1)
+servicio: (h.infanto, 1)(estacion, 1)(pésimo, 1)
+transporte: (publico, 1)(bueno, 1)(reducido, 1)
+linea: (solo, 1)
+instalacion: (buena, 1)

@@ -1,0 +1,5 @@
+estacion: (vestíbulo, 1)(moderno, 1)(cerca inglés, 2)(línea, 1)(bastante nuevo, 1)(bien cuidado, 4)(bastante amplio, 3)(inagurar, 1)(corte, 1)(mucho bueno, 3)(más, 1)(tranquilo, 2)
+acceso: (buen, 1)(mucho fácil, 1)
+movilidad: (reducido, 2)
+escalera: (mecánico, 1)(ascensor, 1)
+tren: (próximo, 1)

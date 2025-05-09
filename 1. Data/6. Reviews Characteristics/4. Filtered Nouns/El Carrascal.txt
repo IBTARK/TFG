@@ -1,0 +1,3 @@
+estacion: (espaciós, 1)(grande, 6)(cerca, 5)(jeje, 1)(moderno, 1)(no malo, 4)(mucho concurrido, 2)(completamente inútil, 1)(verde, 1)(acogedor, 1)(mucho limpio, 1)(mejor, 1)(primero, 1)(transitado, 1)
+movilidad: (reducido, 1)
+personal: (mucho desagradable, 1)

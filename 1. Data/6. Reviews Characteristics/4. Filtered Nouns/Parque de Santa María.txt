@@ -1,0 +1,7 @@
+linea: (moderno, 1)
+estacion: (moderno, 2)(primero, 1)(totalmente automatizado, 1)(accesible, 1)(siempre mucho limpio, 2)(igual, 2)(contento, 1)(mucho eficaz, 1)
+personal: (exelente, 1)(reducido, 1)
+escalera: (mecanica, 1)(más lento, 1)(frágil, 1)
+movilidad: (reducido, 1)
+metro: (mucho profundo, 1)(rápido, 1)
+acceso: (rápido, 1)

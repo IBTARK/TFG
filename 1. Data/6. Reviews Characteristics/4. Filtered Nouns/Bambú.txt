@@ -1,0 +1,4 @@
+escalera: (mecánico, 2)
+estacion: (bastante nuevo, 2)(completamente accesible, 1)(más ruidoso, 2)(siguiente, 1)(acceso, 1)(amplia, 5)(difícil, 1)(bien comunicado, 2)(moderna, 1)(limpio, 1)(parada, 1)(renovado, 1)(pequeño, 1)
+informacion: (más falso, 1)
+acceso: (universal, 1)

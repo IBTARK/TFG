@@ -1,0 +1,6 @@
+estacion: (siempre limpio, 1)(grande, 2)(acer, 1)(no normal, 1)(no mucho grande, 1)(cerrado, 1)(inagurar, 1)(bien tranquilo, 2)(moderno, 1)(centro, 1)(goteras, 1)(mucho desplazado, 1)
+cobertura: (móvil, 1)
+tren: (próximo, 1)
+movilidad: (reducido, 1)
+frecuencia: (aceptable, 1)
+escalera: (roto, 1)

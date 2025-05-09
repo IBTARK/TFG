@@ -1,0 +1,7 @@
+instalacion: (preparado, 1)(mucho bueno, 2)(tanto concurrido, 1)
+estacion: (vivir, 2)(esteticamente, 1)(no mucho agrado, 1)(bajar, 1)(mucho amplio, 1)(mucho limpio, 1)(breve, 1)(bien, 3)(comida, 1)(operativo, 1)(bastante deteriorada, 1)
+cobertura: (movil, 1)
+linea: (accesible, 1)
+tren: (próximo, 1)
+acceso: (cerrado, 1)
+escalera: (mecánico, 1)(ascensor, 1)

@@ -1,0 +1,4 @@
+estacion: (mucho interesante, 2)(normal, 1)(tranquilo, 3)(accesible, 2)(bien comunicado, 2)
+metro: (mucho limpio, 1)(ordenado, 1)
+gente: (corriente, 1)(común, 1)
+acceso: (mucho buen, 1)

@@ -1,0 +1,8 @@
+movilidad: (reducido, 2)
+estado: (confinado, 1)
+escalera: (solo, 1)(mecánico, 3)(adaptado, 1)(grande, 1)(interminable, 1)
+metro: (conectado, 1)(mucho descuidado, 1)(adecuado, 1)
+gente: (minusválido, 2)
+cobertura: (movil, 1)
+salida: (no bien señalada, 1)(diferente, 1)(correcto, 1)
+zona: (este, 1)

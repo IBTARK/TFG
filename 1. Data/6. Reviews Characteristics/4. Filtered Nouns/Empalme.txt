@@ -1,0 +1,7 @@
+estacion: (genial, 3)(defectos, 2)(accesible, 6)(bien mantenido, 4)(funcional, 2)(reabierto, 2)(diferente, 1)(mucho mejorar, 1)
+linea: (importante, 2)(solo, 1)(poco claro, 1)
+escalera: (mecánico, 4)
+movilidad: (reducido, 1)
+servicio: (conveniente, 2)(local, 1)(mucho buen, 1)
+senalizacion: (claro, 1)
+maquina: (expendedor, 1)

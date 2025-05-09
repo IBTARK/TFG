@@ -1,0 +1,7 @@
+estacion: (reseña, 2)(equipado, 4)(generalmente considerado, 1)(mucho tranquilo, 1)(mucho antiguo, 2)(dar, 5)(mejorar, 1)(prioritario, 3)(deplorable, 1)(funcional, 1)(limpio, 4)(mucho sucio, 1)(mucho normal, 1)(solo, 1)
+salida: (rápido, 1)(conveniente, 2)(allá abierto, 1)
+escalera: (mecánico, 2)(buen, 1)
+movilidad: (reducido, 3)(público, 1)(cercano, 1)
+servicio: (básico, 1)(eficiente, 1)
+maquina: (expendedor, 1)
+cobertura: (mejor, 1)(móvil, 1)

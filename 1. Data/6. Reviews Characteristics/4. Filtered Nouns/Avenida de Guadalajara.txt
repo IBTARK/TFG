@@ -1,0 +1,7 @@
+salida: (único, 1)
+estacion: (amplio, 3)(buen, 8)(complicado, 1)(totalmente innecesario, 1)(mucho moderno, 4)(accesible, 1)(ordenado, 2)(avenida, 1)(mario, 1)(mucho limpio, 1)(ascensor, 1)(bien cuidado, 1)(personal, 1)
+acceso: (discapacitado, 1)(solo, 1)(buen, 1)
+movilidad: (reducido, 1)
+instalacion: (moderno, 1)(mucho buena, 2)
+escalera: (ascensor, 1)(mecánico, 1)(estropeado, 1)(ya no accesible, 1)
+cobertura: (ascensor, 1)

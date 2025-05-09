@@ -1,0 +1,6 @@
+salida: (ubicado, 1)(solo, 1)
+cobertura: (móvil, 1)
+escalera: (mecánico, 2)(lado, 1)(facil, 1)
+estacion: (servio, 1)(metro, 1)(situado, 4)(inaugurar, 1)(mucho buen, 7)(atención, 1)(saturado, 1)(impecable, 1)(personal, 2)(antiguo, 1)
+movilidad: (reducido, 2)
+acceso: (buen, 1)

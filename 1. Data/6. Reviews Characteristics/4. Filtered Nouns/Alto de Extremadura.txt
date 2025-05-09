@@ -1,0 +1,4 @@
+estacion: (bien comunicado, 1)(casa, 1)(especial, 1)(herramiento, 1)
+experiencia: (cercano, 1)
+zona: (verde, 1)
+escalera: (roto, 1)

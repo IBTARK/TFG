@@ -1,0 +1,5 @@
+estacion: (peor, 1)(parado, 3)(cojo, 1)(accesible, 2)(importante, 1)(mucho aprovechado, 2)(moderno, 2)(bien diseñado, 1)(bien cuidado, 1)(super, 1)
+escalera: (mecánico, 2)(roto, 2)(grande, 1)
+movilidad: (reducido, 1)
+gente: (mayor, 1)
+metro: (céntrico, 1)(bien ubicado, 1)

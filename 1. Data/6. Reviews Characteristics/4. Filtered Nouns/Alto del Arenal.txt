@@ -1,0 +1,5 @@
+acceso: (nuevo, 1)(universal, 1)
+estacion: (antiguo, 4)(accesible, 2)(mucho limpio, 5)(buen, 6)(interesante, 2)(metro, 1)(total, 1)(ascensor, 1)(perfectamente conectado, 1)(más céntrico, 1)(único, 1)(vestíbulo, 1)(asistido, 2)(pequeño, 1)(huele, 1)
+linea: (situado, 1)(antiguo, 1)
+instalacion: (realizado, 1)(mucho buena, 2)
+metro: (bien equipado, 2)(antiguo, 1)(mucho limpio, 1)

@@ -1,0 +1,8 @@
+escalera: (mecánico, 3)(estropeado, 1)(bastante bien, 1)
+estacion: (claro, 15)(sol, 1)(increíble, 6)(parada, 3)(moderno, 4)(bastante limpio, 4)(mucho amplio, 3)(relativamente nuevo, 1)(accesible, 2)(iba, 1)(rápido, 1)(línea, 1)(puntualidad, 1)(cuarto, 1)
+acceso: (fácil, 1)(minusvalido, 1)(excelente, 1)(ascensor, 1)
+movilidad: (reducido, 2)
+linea: (diferente, 1)(rojo, 1)(directo, 1)
+metro: (cuidado, 1)(mucho nuevo, 1)(accesible, 1)(personal, 1)(unipersonal, 1)
+personal: (trabajador, 1)
+cobertura: (móvil, 1)

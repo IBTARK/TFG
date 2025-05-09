@@ -1,0 +1,4 @@
+servicio: (pésimo, 3)(publico, 1)(buen, 5)(profesional, 1)
+estacion: (después, 4)(importante, 3)(señalizadas, 1)(poco empatía, 1)(no cojen, 2)(bastante bien, 2)(mucho accesible, 2)(moderno, 2)(fatal enserio, 1)(terminal, 1)(atencion, 1)
+gente: (profesional, 1)(grosero, 1)
+instalacion: (excelente, 1)

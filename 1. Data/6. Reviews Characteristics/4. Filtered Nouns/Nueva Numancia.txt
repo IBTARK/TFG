@@ -1,0 +1,7 @@
+estacion: (bien comunicado, 11)(céntrica, 2)(mucho limpio, 3)(ordenado, 1)(antiguo, 1)(bonito, 4)(cambiar, 1)(no adaptado, 2)(sucia, 1)(lleno, 1)(:), 1)(mui, 1)(normal, 2)(ascensor, 1)(mucho comercial, 1)
+salida: (superior, 2)(único, 1)
+escalera: (mecánico, 2)
+movilidad: (reducido, 2)(difícil, 1)
+cobertura: (móvil, 1)(movil, 1)
+metro: (histórico, 1)
+gente: (buen, 1)

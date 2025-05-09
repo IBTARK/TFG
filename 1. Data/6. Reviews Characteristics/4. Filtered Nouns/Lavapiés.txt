@@ -1,0 +1,7 @@
+ascensor: (casi disponible, 1)(igual, 1)(eléctrico, 2)(roto, 1)(mecánico, 1)
+frecuencia: (diario, 1)
+metro: (primero, 1)(grande, 1)(grest, 1)
+estacion: (bastante grande, 6)(pequeño, 2)(suficiente, 2)(amarillo, 1)(referir, 3)(más cercano, 1)(sucio, 1)(parado, 1)(vestíbulo, 1)(siempre limpio, 1)(super, 9)(mola, 1)(ten, 1)(cómodo, 1)(emblemático, 1)(renovar, 1)(mu, 1)(caótico, 1)(lavapiés, 1)(sistema, 1)(alternativo, 1)(multicultural, 1)(mucho interesante, 1)
+salida: (solo, 1)
+cobertura: (movil, 1)
+movilidad: (reducido, 1)

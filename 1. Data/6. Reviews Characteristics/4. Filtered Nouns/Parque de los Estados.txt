@@ -1,0 +1,5 @@
+personal: (mucho amable, 5)(pésimo, 1)
+estacion: (no viejo, 1)(limpio, 3)(inagurar, 1)(siempre ordenado, 1)(moderno, 1)(bastante bien amplio, 3)(lugar, 1)
+tren: (igual, 2)(fácil, 1)
+instalacion: (sucio, 1)
+acceso: (bien mantenido, 2)

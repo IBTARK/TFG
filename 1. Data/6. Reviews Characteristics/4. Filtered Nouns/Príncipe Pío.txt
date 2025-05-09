@@ -1,0 +1,7 @@
+estacion: (cubierto, 6)(mucho amplio, 13)(hoy ir, 2)(no perder, 1)(buen, 17)(bien organizado, 2)(cuidado, 1)(mucho pequeño, 1)(metro, 1)(pasado, 4)(intercambiador, 2)(también renfe, 1)(disfrut, 1)(palacio, 1)(tradicional, 1)(siempre horrible, 1)(siempre abierto, 1)(gracias, 1)(sucio, 1)(practico, 2)(amplitud, 1)(cómoda, 2)(estéticamente agradable, 1)(eficiente, 1)(información, 1)(volvere, 1)(bastante degradado, 1)(rapido, 1)(conectividad, 2)(personal, 1)(normal, 1)(confuso, 1)
+salida: (posterior, 1)(buena, 1)
+metro: (opera-norte, 1)(mucho bonito, 2)(ligero, 1)(príncipe, 1)(resolutivo, 1)(pequeño, 1)(más grande, 1)(intercambiador, 1)
+instalacion: (mucho bien, 1)
+acceso: (fácil, 2)(respetuoso, 1)
+personal: (servicial, 1)
+informacion: (erróneo, 2)

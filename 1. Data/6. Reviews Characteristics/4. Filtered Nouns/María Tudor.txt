@@ -1,0 +1,5 @@
+metro: (subterráneo, 1)(ligero, 2)(accesible, 1)(line, 1)
+escalera: (mecánico, 2)
+estacion: (siempre mucho limpio, 2)(también más cercano, 1)(cobertura, 1)(bastante nuevo, 1)(máquinas, 1)(maravillosa, 1)(very, 1)
+cobertura: (móvil, 1)(soterrar, 1)
+salida: (perfecto, 1)

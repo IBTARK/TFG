@@ -1,0 +1,3 @@
+estacion: (super, 1)(encantar, 1)(deficiente, 1)
+personal: (borde, 1)(mucho desagradable, 1)
+acceso: (buen, 1)

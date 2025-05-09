@@ -1,0 +1,7 @@
+estacion: (bastante moderno, 2)(limpio, 1)(nuevo, 1)(mui, 1)(preciosa, 1)(anterior, 1)
+transporte: (público, 1)
+servicio: (mucho bien, 1)(mucho malo, 1)(descarado, 1)
+acceso: (cómodo, 1)(minusválir, 1)
+tren: (mucho antiguo, 1)(correcto, 2)
+zona: (norte, 1)(azul, 1)
+cobertura: (móvil, 1)

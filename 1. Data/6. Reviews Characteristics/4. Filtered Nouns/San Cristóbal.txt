@@ -1,0 +1,4 @@
+acceso: (fácil, 1)(mal, 1)
+movilidad: (reducido, 1)
+estacion: (mucho moderno, 2)(inagurar, 1)(grande, 4)(agradable, 1)
+experiencia: (bonito, 1)

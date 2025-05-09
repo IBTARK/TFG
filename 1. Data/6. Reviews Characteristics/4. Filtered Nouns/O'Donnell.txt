@@ -1,0 +1,7 @@
+tren: (primero, 1)(modesto, 1)(limpio, 1)(genial, 1)
+estacion: (vergüenza, 1)(ademas, 1)(corriente, 1)(normal, 1)(estar, 3)(mucho interesante, 1)(zona, 1)(mucho concurrido, 2)(genial, 1)(mejor, 1)
+ascensor: (único, 1)(buen, 1)(eléctrico, 1)
+cobertura: (movil, 1)
+instalacion: (algo antiguo, 1)(desfasada, 1)
+conexion: (imprescindible, 1)
+zona: (sur, 2)

@@ -1,0 +1,2 @@
+estacion: (no accesible, 1)(mucho pequeño, 1)(tanto céntrico, 1)(único, 1)
+escalera: (mecánico, 2)

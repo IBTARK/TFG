@@ -1,0 +1,7 @@
+salida: (solo, 1)(segundo, 1)(ascensor, 1)(roto, 1)
+cobertura: (móvil, 1)
+estacion: (cerca, 5)(digno, 2)(bien comunicado, 3)(eficaz, 1)(luminoso, 1)(grande, 1)
+escalera: (mecánico, 1)(roto, 1)(nunca romper, 1)
+metro: (moderno, 1)(bien mantenido, 1)
+zona: (sur, 1)(residencial, 1)(industrial, 1)(mucho próximo, 1)
+movilidad: (reducido, 1)(bien señalizado, 1)

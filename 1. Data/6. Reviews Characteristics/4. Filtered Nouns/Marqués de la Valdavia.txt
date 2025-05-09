@@ -1,0 +1,7 @@
+estacion: (mucho limpio, 4)(ahí mucho amable, 1)(más representativo, 1)(profundo, 1)(más conocido, 3)(céntrico, 1)(sugerencia, 1)(invisible, 2)(colar, 1)(imponente, 3)(cuidado, 1)(amplia, 1)(cómodo, 1)(mucho nuevo, 1)(siempre vacio, 1)(bien, 1)(justo situado, 1)
+frecuencia: (caprichoso, 1)
+linea: (nuevo, 1)(sólo accesible, 1)
+acceso: (principal, 1)(buen, 2)(mucho rápido, 1)
+escalera: (mecánico, 1)
+metro: (cómodo, 1)(mucho rápido, 1)
+servicio: (buen, 3)

@@ -1,0 +1,4 @@
+estacion: (más concurrido, 1)(metro, 1)(siempre pequeño, 2)(mucho bien ubicado, 5)(danceteria, 1)(excelete, 3)(parada, 1)(limpio, 3)(bien citio, 1)(bastante ayudar, 1)(antiguo, 1)(precio, 1)(desfasada, 1)(calor, 1)
+linea: (line, 1)(rápido, 1)
+escalera: (automático, 1)
+acceso: (solo, 1)(salido, 1)(buen, 1)(bastante limpio, 1)

@@ -1,0 +1,2 @@
+estacion: (mucho buen, 2)(cercano, 1)(mucho transitado, 1)
+metro: (ligero, 1)

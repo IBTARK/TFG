@@ -1,0 +1,2 @@
+estacion: (parada, 2)(mucho bien, 1)
+metro: (ligero, 2)

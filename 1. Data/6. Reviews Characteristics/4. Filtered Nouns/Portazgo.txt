@@ -1,0 +1,7 @@
+estacion: (antiguo, 2)(mucho bien, 10)(estrictamente necesario, 1)(nuevo, 1)(servicio, 1)(limpio, 1)(pinto, 1)(relajado, 1)(entrañable, 1)
+cobertura: (móvil, 1)
+movilidad: (reducido, 1)
+acceso: (mucho bien, 1)(fácil, 2)
+ascensor: (contrario, 1)
+metro: (bien ubicado, 1)
+servicio: (profesional, 1)(mucho rápido, 1)

@@ -1,0 +1,1 @@
+estacion: (limpio, 2)(caluroso, 1)(mucho lejos, 1)(más tranquilo, 1)

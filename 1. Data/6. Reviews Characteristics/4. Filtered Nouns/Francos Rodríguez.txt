@@ -1,0 +1,6 @@
+metro: (imposible, 1)
+escalera: (mecanica, 2)
+linea: (iluminado, 1)(bien señalizado, 1)
+estado: (perfecto, 1)
+movilidad: (bajo, 1)
+acceso: (buen, 2)

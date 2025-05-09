@@ -1,0 +1,4 @@
+estacion: (posible, 1)(inagurar, 2)(junto, 1)(mucho bien, 4)(no más cerca, 1)
+escalera: (mecánico, 1)
+persona: (malo, 1)(no más antipático, 1)
+zona: (neuralgico, 1)

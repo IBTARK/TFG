@@ -1,0 +1,5 @@
+frecuencia: (además dar, 1)(actual, 1)(no mucho alto, 1)
+estacion: (mejor, 6)(moderno, 2)(parking, 1)(valla, 1)(cuidado, 1)(cómodo, 1)(limpio, 1)(abrir, 1)(disuasorio, 1)
+gente: (mayor, 1)
+acceso: (ahora abrir, 1)(generar, 1)
+tren: (no puntual, 1)

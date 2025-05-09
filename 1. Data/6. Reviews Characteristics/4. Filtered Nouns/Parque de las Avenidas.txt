@@ -1,0 +1,7 @@
+estacion: (mucho acogedor, 3)(parada, 1)(malo, 2)(no siguiente, 2)(peor, 2)(rápido, 1)(más limpio, 2)(bien señalizado, 2)(tranquilo, 3)(maravilloso, 1)
+estado: (buen, 1)
+acceso: (difícil, 1)(discapacitado, 1)
+zona: (buen, 1)
+servicio: (mejor, 1)
+movilidad: (reducido, 1)
+metro: (típico, 1)

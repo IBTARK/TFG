@@ -1,0 +1,4 @@
+servicio: (buen, 1)(rápido, 1)(constante, 1)
+escalera: (automático, 1)(ascensor, 1)(siempre mucho limpio, 1)
+acceso: (disponible, 1)(buen, 2)
+gente: (mayor, 1)

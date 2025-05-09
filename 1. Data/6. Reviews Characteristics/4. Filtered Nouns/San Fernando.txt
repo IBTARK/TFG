@@ -1,0 +1,5 @@
+estacion: (mucho animado, 4)(gente, 2)(hola, 1)(realizar, 1)(mover, 1)(ojalá, 1)(mil, 1)(sucio, 2)(vestíbulo, 1)(línea, 2)(atencion, 1)(excente, 1)(mucho util, 1)(encantar, 3)
+gente: (joven, 1)(mucho animado, 1)
+metro: (mucho amablemente atender, 1)(ayudar, 1)
+acceso: (solo, 1)(buen, 1)
+ascensor: (estropeado, 1)
