@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-04-2025 a las 21:18:51
+-- Tiempo de generación: 09-05-2025 a las 10:28:40
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.0.30
 
@@ -20,6 +20,22 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `tfgmetro`
 --
+CREATE DATABASE IF NOT EXISTS `tfgmetro` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `tfgmetro`;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `conexiones`
+--
+
+DROP TABLE IF EXISTS `conexiones`;
+CREATE TABLE `conexiones` (
+  `id` int(11) NOT NULL,
+  `estacion_origen` int(11) NOT NULL,
+  `estacion_destino` int(11) NOT NULL,
+  `tiempo` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -27,6 +43,7 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `estaciones`
 --
 
+DROP TABLE IF EXISTS `estaciones`;
 CREATE TABLE `estaciones` (
   `id` int(11) NOT NULL,
   `nombre` varchar(100) NOT NULL,
@@ -41,6 +58,7 @@ CREATE TABLE `estaciones` (
 -- Estructura de tabla para la tabla `estaciones_lineas`
 --
 
+DROP TABLE IF EXISTS `estaciones_lineas`;
 CREATE TABLE `estaciones_lineas` (
   `estacion_id` int(11) NOT NULL,
   `linea_id` int(11) NOT NULL,
@@ -53,10 +71,11 @@ CREATE TABLE `estaciones_lineas` (
 -- Estructura de tabla para la tabla `lineas`
 --
 
+DROP TABLE IF EXISTS `lineas`;
 CREATE TABLE `lineas` (
   `id` int(11) NOT NULL,
   `nombre` varchar(50) NOT NULL,
-  `siglas` varchar(10) NOT NULL,
+  `siglas` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -65,6 +84,7 @@ CREATE TABLE `lineas` (
 -- Estructura de tabla para la tabla `transbordos`
 --
 
+DROP TABLE IF EXISTS `transbordos`;
 CREATE TABLE `transbordos` (
   `id` int(11) NOT NULL,
   `id_estacion` int(11) NOT NULL,
@@ -74,6 +94,14 @@ CREATE TABLE `transbordos` (
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `conexiones`
+--
+ALTER TABLE `conexiones`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `estacion_origen_id` (`estacion_origen`),
+  ADD KEY `estacion_destino_id` (`estacion_destino`);
 
 --
 -- Indices de la tabla `estaciones`
@@ -106,6 +134,12 @@ ALTER TABLE `transbordos`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `conexiones`
+--
+ALTER TABLE `conexiones`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de la tabla `estaciones`
 --
 ALTER TABLE `estaciones`
@@ -126,6 +160,13 @@ ALTER TABLE `transbordos`
 --
 -- Restricciones para tablas volcadas
 --
+
+--
+-- Filtros para la tabla `conexiones`
+--
+ALTER TABLE `conexiones`
+  ADD CONSTRAINT `conexiones_ibfk_1` FOREIGN KEY (`estacion_origen`) REFERENCES `estaciones` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `conexiones_ibfk_2` FOREIGN KEY (`estacion_destino`) REFERENCES `estaciones` (`id`) ON DELETE CASCADE;
 
 --
 -- Filtros para la tabla `estaciones_lineas`

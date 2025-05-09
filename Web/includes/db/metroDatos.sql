@@ -1,85 +1,734 @@
-TRUNCATE TABLE `estaciones`;
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 09-05-2025 a las 10:31:03
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.0.30
 
--- Inserción de estaciones de la Línea 1 del Metro de Madrid
-INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
-(1, 'Pinar de Chamartín', TRUE, 'Calle Arturo Soria, 330', 'Estación terminal de la línea 1 con conexión con la línea 4 y ML1.'),
-(2, 'Bambú', TRUE, 'Calle Bambú, 12', 'Estación ubicada en el barrio de Chamartín.'),
-(3, 'Chamartín', TRUE, 'Calle Agustín de Foxá, s/n', 'Estación con conexión con la línea 10 y Cercanías Renfe.'),
-(4, 'Plaza de Castilla', TRUE, 'Paseo de la Castellana, 189', 'Intercambiador con líneas 1, 9 y 10.'),
-(5, 'Valdeacederas', FALSE, 'Calle Bravo Murillo, 297', 'Estación del barrio de Tetuán.'),
-(6, 'Tetuán', FALSE, 'Calle Bravo Murillo, 340', 'Ubicada en el distrito de Tetuán.'),
-(7, 'Estrecho', FALSE, 'Calle Bravo Murillo, 377', 'Estación cerca de Bravo Murillo.'),
-(8, 'Alvarado', FALSE, 'Calle Bravo Murillo, 255', 'Ubicada en la calle Bravo Murillo.'),
-(9, 'Cuatro Caminos', TRUE, 'Glorieta de Cuatro Caminos, s/n', 'Conexión con líneas 2 y 6.'),
-(10, 'Ríos Rosas', FALSE, 'Calle Ríos Rosas, 47', 'Cerca del Canal de Isabel II.'),
-(11, 'Iglesia', FALSE, 'Calle Santa Engracia, 125', 'Estación en Chamberí.'),
-(12, 'Bilbao', TRUE, 'Glorieta de Bilbao, s/n', 'Conexión con línea 4.'),
-(13, 'Tribunal', FALSE, 'Calle Fuencarral, 81', 'Conexión con línea 10.'),
-(14, 'Gran Vía', FALSE, 'Calle Gran Vía, 27', 'Conexión con línea 5.'),
-(15, 'Sol', TRUE, 'Puerta del Sol, s/n', 'Conexión con líneas 2 y 3.'),
-(16, 'Tirso de Molina', FALSE, 'Plaza de Tirso de Molina, s/n', 'Situada en el barrio de Embajadores.'),
-(17, 'Antón Martín', FALSE, 'Plaza de Antón Martín, s/n', 'Ubicada en el centro de Madrid.'),
-(18, 'Estación del Arte', FALSE, 'Paseo del Prado, s/n', 'Cercana a museos y Atocha.'),
-(19, 'Atocha', TRUE, 'Glorieta del Emperador Carlos V, s/n', 'Estación de conexión futura con línea 11.'),
-(20, 'Menéndez Pelayo', FALSE, 'Avenida de Menéndez Pelayo, 67', 'Ubicada junto al parque del Retiro.'),
-(21, 'Pacífico', TRUE, 'Calle de Cavanilles, 5', 'Conexión con línea 6.'),
-(22, 'Puente de Vallecas', FALSE, 'Avenida de la Albufera, 145', 'Estación del distrito de Vallecas.'),
-(23, 'Nueva Numancia', FALSE, 'Avenida de la Albufera, 125', 'Zona de Puente de Vallecas.'),
-(24, 'Portazgo', FALSE, 'Avenida de la Albufera, 99', 'Junto al estadio del Rayo Vallecano.'),
-(25, 'Buenos Aires', FALSE, 'Avenida de la Albufera, 67', 'Ubicada en el barrio de Numancia.'),
-(26, 'Alto del Arenal', TRUE, 'Avenida de la Albufera, 45', 'Cerca del centro comercial Albufera Plaza.'),
-(27, 'Miguel Hernández', FALSE, 'Avenida de la Albufera, 25', 'Barrio de Entrevías.'),
-(28, 'Sierra de Guadalupe', FALSE, 'Calle Sierra de Guadalupe, s/n', 'Conexión con Cercanías Renfe.'),
-(29, 'Villa de Vallecas', FALSE, 'Paseo de Federico García Lorca, 2', 'Distrito de Villa de Vallecas.'),
-(30, 'Congosto', FALSE, 'Calle Congosto, 1', 'Zona sur de Vallecas.'),
-(31, 'La Gavia', TRUE, 'Avenida del Ensanche de Vallecas, s/n', 'Cerca del centro comercial La Gavia.'),
-(32, 'Las Suertes', TRUE, 'Avenida del Ensanche de Vallecas, s/n', 'Ubicada en el Ensanche de Vallecas.'),
-(33, 'Valdecarros', TRUE, 'Avenida del Ensanche de Vallecas, s/n', 'Estación terminal de la línea 1 al sureste.');
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
 
--- Nuevas estaciones Línea 2 (excluyendo Sol y Cuatro Caminos ya insertadas)
-INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
-(34, 'Canal', TRUE, 'Calle de Cea Bermúdez, 1', 'Conexión con línea 7.'),
-(35, 'Quevedo', FALSE, 'Glorieta de Quevedo, s/n', 'Ubicada en el distrito de Chamberí.'),
-(36, 'San Bernardo', TRUE, 'Calle de San Bernardo, 107', 'Conexión con línea 4.'),
-(37, 'Noviciado', FALSE, 'Calle de San Bernardo, 63', 'Estación en el barrio de Universidad.'),
-(38, 'Santo Domingo', FALSE, 'Plaza de Santo Domingo, s/n', 'Ubicada en el distrito Centro.'),
-(39, 'Ópera', TRUE, 'Plaza de Isabel II, s/n', 'Conexión con líneas 5 y Ramal.'),
-(40, 'Sevilla', FALSE, 'Calle de Alcalá, 13', 'Ubicada en pleno centro, próxima al Círculo de Bellas Artes.'),
-(41, 'Banco de España', TRUE, 'Plaza de Cibeles, s/n', 'Frente al Banco de España y próximo a museos.'),
-(42, 'Retiro', TRUE, 'Calle de Alcalá, 83', 'Junto a la entrada del Parque del Retiro.'),
-(43, 'Príncipe de Vergara', TRUE, 'Calle Príncipe de Vergara, 5', 'Conexión con línea 9, en el barrio de Salamanca.'),
-(44, 'Goya', TRUE, 'Calle de Goya, 1', 'Conexión con línea 4, junto al Palacio de los Deportes.'),
-(45, 'Manuel Becerra', TRUE, 'Plaza de Manuel Becerra, s/n', 'Conexión con línea 6, en el distrito de Salamanca.'),
-(46, 'Ventas', TRUE, 'Calle de Alcalá, 237', 'Conexión con línea 5 y cerca de la Plaza de Toros.'),
-(47, 'La Elipa', TRUE, 'Calle Santa Felicidad, 1', 'Ubicada en el barrio de Ventas.'),
-(48, 'La Almudena', TRUE, 'Calle de los Hermanos García Noblejas, 115', 'Estación cercana al cementerio de La Almudena.'),
-(49, 'Alsacia', TRUE, 'Avenida de Guadalajara, 26', 'Ubicada en el barrio de San Blas-Canillejas.'),
-(50, 'Avenida de Guadalajara', TRUE, 'Avenida de Guadalajara, s/n', 'Estación en expansión urbana al este de Madrid.'),
-(51, 'Las Rosas', TRUE, 'Avenida de Niza, s/n', 'Estación terminal de la Línea 2, en el barrio del mismo nombre.');
 
--- Inserción de estaciones de la Línea 3
-INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
-(52, 'Moncloa', TRUE, 'Plaza de Moncloa, s/n', 'Estación terminal en el noroeste de Madrid, con conexiones con las líneas 6 y 10.'),
-(53, 'Argüelles', TRUE, 'Calle de Arguelles, 76', 'Ubicada en el distrito de Moncloa-Aravaca, cerca de la Ciudad Universitaria.'),
-(54, 'Ventura Rodríguez', TRUE, 'C/ Princesa, 22', 'Ventura Rodríguez es una estación de la línea 3 del Metro de Madrid ubicada bajo la calle de la Princesa, a la altura de la intersección con la calle del mismo nombre.'),
-(55, 'Plaza de España', TRUE, 'Plaza de España, s/n', 'Importante intersección con la línea 10 y acceso a la Gran Vía.'),
-(56, 'Callao', TRUE, 'Gran Vía, 45', 'Situada en el corazón de la Gran Vía, centro comercial y cultural.'),
-(57, 'Lavapiés', TRUE, 'Calle de Lavapiés, 34', 'Estación en un barrio multicultural, con numerosos bares y teatros.'),
-(58, 'Embajadores', TRUE, 'Avenida de los Poblados, 23', 'Conexión con la línea 5 y acceso a la estación de Cercanías.'),
-(59, 'Palos de la Frontera', TRUE, 'Calle de Palos de la Frontera, 34', 'Anteriormente conocida como Palos de Moguer, conecta con la línea 10.'),
-(60, 'Delicias', TRUE, 'Paseo de las Delicias, 61', 'Cerca del Museo del Ferrocarril y estación de Cercanías.'),
-(61, 'Legazpi', TRUE, 'Calle de Méndez Álvaro, 83', 'Zona industrial y de ocio, conecta con la línea 6.'),
-(62, 'Almendrales', TRUE, 'Avenida de Córdoba, 21', 'Estación en el barrio de Usera, con cuatro vías para mayor capacidad.'),
-(63, 'Hospital 12 de Octubre', TRUE, 'Avenida de Córdoba, 61', 'Servicio directo al Hospital 12 de Octubre.'),
-(64, 'San Fermín-Orcasur', TRUE, 'Calle de San Fermín, 1', 'Acceso al barrio de Orcasur.'),
-(65, 'Ciudad de los Ángeles', TRUE, 'Calle de la Ciudad de los Ángeles, 2', 'Ubicada en el distrito de Villaverde.'),
-(66, 'Villaverde Bajo-Cruce', TRUE, 'Calle de Villaverde, 1', 'Conexión con la línea 5 y cercanías.'),
-(67, 'San Cristóbal', TRUE, 'Calle de San Cristóbal, 3', 'Acceso al barrio de San Cristóbal.'),
-(68, 'Villaverde Alto', TRUE, 'Calle de Villaverde, 4', 'Estación terminal en el sur de Madrid, con conexión a cercanías.'),
-(69, 'El Casar', TRUE, 'Calle del Casar, 1', 'Ampliación reciente que conecta con Getafe.');
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
 
--- Inserción de estaciones de la Línea 4
-INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
+--
+-- Base de datos: `tfgmetro`
+--
+
+--
+-- Volcado de datos para la tabla `conexiones`
+--
+
+INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`, `tiempo`) VALUES
+(1, 1, 2, 3),
+(2, 2, 1, 4),
+(3, 2, 3, 2),
+(4, 3, 2, 2),
+(5, 3, 4, 2),
+(6, 4, 3, 2),
+(7, 4, 5, 2),
+(8, 5, 4, 2),
+(9, 5, 6, 2),
+(10, 6, 5, 2),
+(11, 6, 7, 2),
+(12, 7, 6, 2),
+(13, 7, 8, 2),
+(14, 8, 7, 2),
+(15, 8, 9, 2),
+(16, 9, 8, 2),
+(17, 9, 10, 2),
+(18, 10, 9, 2),
+(19, 10, 11, 2),
+(20, 11, 10, 2),
+(21, 11, 12, 2),
+(22, 12, 11, 2),
+(23, 12, 13, 2),
+(24, 13, 12, 2),
+(25, 13, 14, 2),
+(26, 14, 13, 2),
+(27, 14, 15, 1),
+(28, 15, 14, 1),
+(29, 15, 16, 2),
+(30, 16, 15, 2),
+(31, 16, 17, 2),
+(32, 17, 16, 2),
+(33, 17, 18, 2),
+(34, 18, 17, 2),
+(35, 18, 19, 1),
+(36, 19, 18, 1),
+(37, 19, 20, 2),
+(38, 20, 19, 2),
+(39, 20, 21, 2),
+(40, 21, 20, 2),
+(41, 21, 22, 2),
+(42, 22, 21, 2),
+(43, 22, 23, 2),
+(44, 23, 22, 2),
+(45, 23, 24, 2),
+(46, 24, 23, 2),
+(47, 24, 25, 1),
+(48, 25, 24, 1),
+(49, 25, 26, 2),
+(50, 26, 25, 2),
+(51, 26, 27, 2),
+(52, 27, 26, 2),
+(53, 27, 28, 4),
+(54, 28, 27, 4),
+(55, 28, 29, 2),
+(56, 29, 28, 2),
+(57, 29, 30, 3),
+(58, 30, 29, 3),
+(59, 30, 31, 2),
+(60, 31, 30, 2),
+(61, 31, 32, 4),
+(62, 32, 31, 4),
+(63, 32, 33, 2),
+(64, 33, 32, 2),
+(65, 9, 34, 2),
+(66, 34, 9, 2),
+(67, 34, 35, 2),
+(68, 35, 34, 2),
+(69, 35, 36, 1),
+(70, 36, 35, 1),
+(71, 36, 37, 2),
+(72, 37, 36, 2),
+(73, 37, 38, 1),
+(74, 38, 37, 1),
+(75, 38, 39, 2),
+(76, 39, 38, 2),
+(77, 39, 15, 2),
+(78, 15, 39, 2),
+(79, 15, 40, 1),
+(80, 40, 15, 1),
+(81, 40, 41, 2),
+(82, 41, 40, 2),
+(83, 41, 42, 2),
+(84, 42, 41, 2),
+(85, 42, 43, 2),
+(86, 43, 42, 2),
+(87, 43, 44, 2),
+(88, 44, 43, 2),
+(89, 44, 45, 2),
+(90, 45, 44, 2),
+(91, 45, 46, 2),
+(92, 46, 45, 2),
+(93, 46, 47, 4),
+(94, 47, 46, 4),
+(95, 47, 48, 3),
+(96, 48, 47, 3),
+(97, 48, 49, 4),
+(98, 49, 48, 4),
+(99, 49, 50, 3),
+(100, 50, 49, 3),
+(101, 50, 51, 3),
+(102, 51, 50, 3),
+(103, 52, 53, 1),
+(104, 53, 52, 1),
+(105, 53, 54, 2),
+(106, 54, 53, 2),
+(107, 54, 55, 2),
+(108, 55, 54, 2),
+(109, 55, 56, 2),
+(110, 56, 55, 2),
+(111, 56, 15, 2),
+(112, 15, 56, 2),
+(113, 15, 57, 3),
+(114, 57, 15, 3),
+(115, 57, 58, 2),
+(116, 58, 57, 2),
+(117, 58, 59, 2),
+(118, 59, 58, 2),
+(119, 59, 60, 2),
+(120, 60, 59, 2),
+(121, 60, 61, 2),
+(122, 61, 60, 2),
+(123, 61, 62, 3),
+(124, 62, 61, 3),
+(125, 62, 63, 3),
+(126, 63, 62, 3),
+(127, 63, 64, 2),
+(128, 64, 63, 2),
+(129, 64, 65, 3),
+(130, 65, 64, 3),
+(131, 65, 66, 3),
+(132, 66, 65, 3),
+(133, 66, 67, 2),
+(134, 67, 66, 2),
+(135, 67, 68, 5),
+(136, 68, 67, 4),
+(137, 68, 69, 4),
+(138, 69, 68, 4),
+(139, 53, 36, 2),
+(140, 36, 53, 2),
+(141, 36, 12, 1),
+(142, 12, 36, 1),
+(143, 12, 70, 1),
+(144, 70, 12, 1),
+(145, 70, 71, 1),
+(146, 71, 70, 1),
+(147, 71, 72, 1),
+(148, 72, 71, 1),
+(149, 72, 73, 1),
+(150, 73, 72, 1),
+(151, 73, 44, 1),
+(152, 44, 73, 1),
+(153, 44, 74, 2),
+(154, 74, 44, 2),
+(155, 74, 75, 1),
+(156, 75, 74, 1),
+(157, 75, 76, 1),
+(158, 76, 75, 1),
+(159, 76, 77, 2),
+(160, 77, 76, 2),
+(161, 77, 78, 2),
+(162, 78, 77, 2),
+(163, 78, 79, 2),
+(164, 79, 78, 2),
+(165, 79, 80, 2),
+(166, 80, 79, 2),
+(167, 80, 81, 2),
+(168, 81, 80, 2),
+(169, 81, 82, 3),
+(170, 82, 81, 3),
+(171, 82, 83, 2),
+(172, 83, 82, 2),
+(173, 83, 84, 1),
+(174, 84, 83, 1),
+(175, 84, 85, 2),
+(176, 85, 84, 2),
+(177, 85, 86, 2),
+(178, 86, 85, 2),
+(179, 86, 87, 3),
+(180, 87, 86, 3),
+(181, 87, 1, 2),
+(182, 1, 87, 2),
+(183, 88, 89, 2),
+(184, 89, 88, 2),
+(185, 89, 90, 3),
+(186, 90, 89, 3),
+(187, 90, 91, 3),
+(188, 91, 90, 3),
+(189, 91, 92, 2),
+(190, 92, 91, 2),
+(191, 92, 93, 3),
+(192, 93, 92, 3),
+(193, 93, 94, 2),
+(194, 94, 93, 2),
+(195, 94, 95, 2),
+(196, 95, 94, 2),
+(197, 95, 96, 2),
+(198, 96, 95, 2),
+(199, 96, 46, 2),
+(200, 46, 96, 2),
+(201, 46, 75, 3),
+(202, 75, 46, 3),
+(203, 75, 97, 2),
+(204, 97, 75, 2),
+(205, 97, 98, 2),
+(206, 98, 97, 2),
+(207, 98, 70, 2),
+(208, 70, 98, 2),
+(209, 70, 99, 2),
+(210, 99, 70, 2),
+(211, 99, 14, 2),
+(212, 14, 99, 2),
+(213, 14, 56, 1),
+(214, 56, 14, 1),
+(215, 56, 39, 2),
+(216, 39, 56, 2),
+(217, 39, 100, 2),
+(218, 100, 39, 2),
+(219, 100, 101, 2),
+(220, 101, 100, 2),
+(221, 101, 58, 4),
+(222, 58, 101, 4),
+(223, 58, 102, 2),
+(224, 102, 58, 2),
+(225, 102, 103, 2),
+(226, 103, 102, 2),
+(227, 103, 104, 2),
+(228, 104, 103, 2),
+(229, 104, 105, 2),
+(230, 105, 104, 2),
+(231, 105, 106, 2),
+(232, 106, 105, 2),
+(233, 106, 107, 2),
+(234, 107, 106, 2),
+(235, 107, 108, 2),
+(236, 108, 107, 2),
+(237, 108, 109, 3),
+(238, 109, 108, 3),
+(239, 109, 110, 2),
+(240, 110, 109, 2),
+(241, 110, 111, 2),
+(242, 111, 110, 2),
+(243, 111, 112, 4),
+(244, 112, 111, 4),
+(245, 113, 114, 2),
+(246, 114, 113, 2),
+(247, 114, 105, 3),
+(248, 105, 114, 3),
+(249, 105, 115, 2),
+(250, 115, 105, 2),
+(251, 115, 116, 2),
+(252, 116, 115, 2),
+(253, 116, 117, 3),
+(254, 117, 116, 3),
+(255, 117, 61, 3),
+(256, 61, 117, 3),
+(257, 61, 118, 2),
+(258, 118, 61, 2),
+(259, 118, 119, 2),
+(260, 119, 118, 2),
+(261, 119, 21, 2),
+(262, 21, 119, 2),
+(263, 21, 120, 2),
+(264, 120, 21, 2),
+(265, 120, 121, 2),
+(266, 121, 120, 2),
+(267, 121, 122, 2),
+(268, 122, 121, 2),
+(269, 122, 45, 2),
+(270, 45, 122, 2),
+(271, 45, 75, 2),
+(272, 75, 45, 2),
+(273, 75, 76, 2),
+(274, 76, 75, 2),
+(275, 76, 123, 3),
+(276, 123, 76, 3),
+(277, 123, 124, 3),
+(278, 124, 123, 3),
+(279, 124, 9, 2),
+(280, 9, 124, 2),
+(281, 9, 125, 2),
+(282, 125, 9, 2),
+(283, 125, 126, 2),
+(284, 126, 125, 2),
+(285, 126, 127, 2),
+(286, 127, 126, 2),
+(287, 127, 52, 4),
+(288, 52, 127, 4),
+(289, 52, 53, 1),
+(290, 53, 52, 1),
+(291, 53, 128, 4),
+(292, 128, 53, 4),
+(293, 128, 129, 3),
+(294, 129, 128, 3),
+(295, 129, 130, 3),
+(296, 130, 129, 3),
+(297, 130, 131, 3),
+(298, 131, 130, 3),
+(299, 131, 113, 2),
+(300, 113, 131, 2),
+(301, 132, 133, 2),
+(302, 133, 132, 2),
+(303, 133, 134, 2),
+(304, 134, 133, 2),
+(305, 134, 135, 2),
+(306, 135, 134, 2),
+(307, 135, 136, 2),
+(308, 136, 135, 2),
+(309, 136, 137, 2),
+(310, 137, 136, 2),
+(311, 137, 138, 2),
+(312, 138, 137, 2),
+(313, 138, 139, 5),
+(314, 139, 138, 5),
+(315, 139, 140, 3),
+(316, 140, 139, 3),
+(317, 140, 141, 2),
+(318, 141, 140, 2),
+(319, 141, 142, 2),
+(320, 142, 141, 2),
+(321, 142, 143, 2),
+(322, 143, 142, 2),
+(323, 143, 144, 2),
+(324, 144, 143, 2),
+(325, 144, 94, 2),
+(326, 94, 144, 2),
+(327, 94, 145, 3),
+(328, 145, 94, 3),
+(329, 145, 146, 2),
+(330, 146, 145, 2),
+(331, 146, 147, 2),
+(332, 147, 146, 2),
+(333, 147, 76, 2),
+(334, 76, 147, 2),
+(335, 76, 148, 3),
+(336, 148, 76, 3),
+(337, 148, 149, 2),
+(338, 149, 148, 2),
+(339, 149, 34, 2),
+(340, 34, 149, 2),
+(341, 34, 150, 2),
+(342, 150, 34, 2),
+(343, 150, 125, 3),
+(344, 125, 150, 3),
+(345, 125, 151, 3),
+(346, 151, 125, 3),
+(347, 151, 152, 3),
+(348, 152, 151, 3),
+(349, 152, 153, 2),
+(350, 153, 152, 2),
+(351, 153, 154, 2),
+(352, 154, 153, 2),
+(353, 154, 155, 2),
+(354, 155, 154, 2),
+(355, 155, 156, 2),
+(356, 156, 155, 2),
+(357, 156, 157, 2),
+(358, 157, 156, 2),
+(359, 157, 158, 2),
+(360, 158, 157, 2),
+(361, 124, 159, 3),
+(362, 159, 124, 3),
+(363, 159, 160, 4),
+(364, 160, 159, 4),
+(365, 160, 82, 2),
+(366, 82, 160, 2),
+(367, 82, 161, 3),
+(368, 161, 82, 3),
+(369, 161, 162, 5),
+(370, 162, 161, 5),
+(371, 162, 163, 2),
+(372, 163, 162, 2),
+(373, 163, 164, 3),
+(374, 164, 163, 3),
+(375, 165, 166, 3),
+(376, 166, 165, 3),
+(377, 166, 167, 6),
+(378, 167, 166, 6),
+(379, 167, 168, 2),
+(380, 168, 167, 2),
+(381, 168, 169, 3),
+(382, 169, 168, 3),
+(383, 169, 4, 2),
+(384, 4, 169, 2),
+(385, 4, 170, 1),
+(386, 170, 4, 1),
+(387, 170, 171, 1),
+(388, 171, 170, 1),
+(389, 171, 159, 2),
+(390, 159, 171, 2),
+(391, 159, 172, 2),
+(392, 172, 159, 2),
+(393, 172, 173, 2),
+(394, 173, 172, 2),
+(395, 173, 75, 2),
+(396, 75, 173, 2),
+(397, 75, 96, 1),
+(398, 96, 75, 1),
+(399, 96, 42, 2),
+(400, 42, 96, 2),
+(401, 42, 174, 2),
+(402, 174, 42, 2),
+(403, 174, 121, 2),
+(404, 121, 174, 2),
+(405, 121, 175, 2),
+(406, 175, 121, 2),
+(407, 175, 176, 2),
+(408, 176, 175, 2),
+(409, 176, 177, 2),
+(410, 177, 176, 2),
+(411, 177, 178, 2),
+(412, 178, 177, 2),
+(413, 178, 179, 3),
+(414, 179, 178, 3),
+(415, 179, 180, 3),
+(416, 180, 179, 3),
+(417, 180, 181, 1),
+(418, 181, 180, 1),
+(419, 181, 182, 2),
+(420, 182, 181, 2),
+(421, 182, 183, 7),
+(422, 183, 182, 7),
+(423, 183, 184, 4),
+(424, 184, 183, 4),
+(425, 184, 185, 2),
+(426, 185, 184, 2),
+(427, 185, 186, 4),
+(428, 186, 185, 4),
+(429, 186, 187, 4),
+(430, 187, 186, 4),
+(431, 188, 189, 3),
+(432, 189, 188, 3),
+(433, 189, 190, 2),
+(434, 190, 189, 2),
+(435, 190, 191, 1),
+(436, 191, 190, 1),
+(437, 191, 192, 3),
+(438, 192, 191, 3),
+(439, 192, 193, 3),
+(440, 193, 192, 3),
+(441, 193, 194, 3),
+(442, 194, 193, 3),
+(443, 194, 195, 3),
+(444, 195, 194, 3),
+(445, 195, 196, 2),
+(446, 196, 195, 2),
+(447, 196, 197, 6),
+(448, 197, 196, 6),
+(449, 197, 198, 1),
+(450, 198, 197, 1),
+(451, 198, 199, 2),
+(452, 199, 198, 2),
+(453, 199, 200, 3),
+(454, 200, 199, 3),
+(455, 200, 3, 2),
+(456, 3, 200, 2),
+(457, 3, 4, 2),
+(458, 4, 3, 2),
+(459, 4, 201, 2),
+(460, 201, 4, 2),
+(461, 201, 202, 1),
+(462, 202, 201, 1),
+(463, 202, 124, 2),
+(464, 124, 202, 2),
+(465, 124, 148, 2),
+(466, 148, 124, 2),
+(467, 148, 69, 2),
+(468, 69, 148, 2),
+(469, 69, 13, 1),
+(470, 13, 69, 1),
+(471, 13, 65, 2),
+(472, 65, 13, 2),
+(473, 65, 128, 1),
+(474, 128, 65, 1),
+(475, 128, 203, 3),
+(476, 203, 128, 3),
+(477, 203, 204, 4),
+(478, 204, 203, 4),
+(479, 204, 112, 2),
+(480, 112, 204, 2),
+(481, 112, 205, 2),
+(482, 205, 112, 2),
+(483, 205, 206, 4),
+(484, 206, 205, 4),
+(485, 206, 207, 2),
+(486, 207, 206, 2),
+(487, 207, 208, 7),
+(488, 208, 207, 7),
+(489, 208, 209, 1),
+(490, 209, 208, 1),
+(491, 116, 210, 2),
+(492, 210, 116, 2),
+(493, 210, 211, 1),
+(494, 211, 210, 1),
+(495, 211, 212, 1),
+(496, 212, 211, 1),
+(497, 212, 213, 3),
+(498, 213, 212, 3),
+(499, 213, 214, 2),
+(500, 214, 213, 2),
+(501, 214, 215, 5),
+(502, 215, 214, 5),
+(503, 209, 216, 1),
+(504, 216, 209, 1),
+(505, 216, 217, 2),
+(506, 217, 216, 2),
+(507, 217, 218, 2),
+(508, 218, 217, 2),
+(509, 218, 219, 4),
+(510, 219, 218, 4),
+(511, 219, 220, 2),
+(512, 220, 219, 2),
+(513, 220, 221, 1),
+(514, 221, 220, 1),
+(515, 221, 222, 1),
+(516, 222, 221, 1),
+(517, 222, 223, 2),
+(518, 223, 222, 2),
+(519, 223, 224, 4),
+(520, 224, 223, 4),
+(521, 224, 225, 3),
+(522, 225, 224, 3),
+(523, 225, 226, 1),
+(524, 226, 225, 1),
+(525, 226, 227, 1),
+(526, 227, 226, 1),
+(527, 227, 228, 2),
+(528, 228, 227, 2),
+(529, 228, 229, 4),
+(530, 229, 228, 4),
+(531, 229, 230, 1),
+(532, 230, 229, 1),
+(533, 230, 231, 2),
+(534, 231, 230, 2),
+(535, 231, 232, 2),
+(536, 232, 231, 2),
+(537, 232, 233, 1),
+(538, 233, 232, 1),
+(539, 233, 69, 2),
+(540, 69, 233, 2),
+(541, 69, 234, 1),
+(542, 234, 69, 1),
+(543, 234, 235, 2),
+(544, 235, 234, 2),
+(545, 235, 236, 2),
+(546, 236, 235, 2),
+(547, 236, 237, 1),
+(548, 237, 236, 1),
+(549, 237, 238, 2),
+(550, 238, 237, 2),
+(551, 238, 239, 2),
+(552, 239, 238, 2),
+(553, 239, 240, 1),
+(554, 240, 239, 1),
+(555, 240, 241, 2),
+(556, 241, 240, 2),
+(557, 39, 128, 3),
+(558, 128, 39, 3),
+(559, 1, 242, 1),
+(560, 242, 1, 1),
+(561, 242, 243, 2),
+(562, 243, 242, 2),
+(563, 243, 244, 2),
+(564, 244, 243, 2),
+(565, 244, 245, 1),
+(566, 245, 244, 1),
+(567, 245, 246, 2),
+(568, 246, 245, 2),
+(569, 246, 247, 2),
+(570, 247, 246, 2),
+(571, 247, 248, 3),
+(572, 248, 247, 3),
+(573, 248, 196, 2),
+(574, 196, 248, 2),
+(575, 205, 249, 2),
+(576, 249, 205, 2),
+(577, 249, 250, 1),
+(578, 250, 249, 1),
+(579, 250, 251, 1),
+(580, 251, 250, 1),
+(581, 251, 252, 2),
+(582, 252, 251, 2),
+(583, 252, 253, 2),
+(584, 253, 252, 2),
+(585, 253, 254, 2),
+(586, 254, 253, 2),
+(587, 254, 255, 4),
+(588, 255, 254, 4),
+(589, 255, 256, 1),
+(590, 256, 255, 1),
+(591, 256, 257, 1),
+(592, 257, 256, 1),
+(593, 257, 258, 2),
+(594, 258, 257, 2),
+(595, 258, 259, 1),
+(596, 259, 258, 1),
+(597, 259, 260, 1),
+(598, 260, 259, 1),
+(599, 205, 261, 3),
+(600, 261, 205, 3),
+(601, 261, 262, 1),
+(602, 262, 261, 1),
+(603, 262, 263, 1),
+(604, 263, 262, 1),
+(605, 263, 264, 2),
+(606, 264, 263, 2),
+(607, 264, 265, 4),
+(608, 265, 264, 4),
+(609, 265, 266, 4),
+(610, 266, 265, 4),
+(611, 266, 267, 2),
+(612, 267, 266, 2),
+(613, 267, 268, 1),
+(614, 268, 267, 1),
+(615, 268, 269, 3),
+(616, 269, 268, 3),
+(617, 269, 270, 5),
+(618, 270, 269, 5),
+(619, 270, 271, 2),
+(620, 271, 270, 2),
+(621, 271, 272, 2),
+(622, 272, 271, 2),
+(623, 272, 273, 1),
+(624, 273, 272, 1),
+(625, 273, 274, 2),
+(626, 274, 273, 2),
+(627, 274, 275, 1),
+(628, 275, 274, 1);
+
+--
+-- Volcado de datos para la tabla `estaciones`
+--
+
+INSERT INTO `estaciones` (`id`, `nombre`, `accesibilidad`, `direccion`, `descripcion`) VALUES
+(1, 'Pinar de Chamartín', 1, 'Calle Arturo Soria, 330', 'Estación terminal de la línea 1 con conexión con la línea 4 y ML1.'),
+(2, 'Bambú', 1, 'Calle Bambú, 12', 'Estación ubicada en el barrio de Chamartín.'),
+(3, 'Chamartín', 1, 'Calle Agustín de Foxá, s/n', 'Estación con conexión con la línea 10 y Cercanías Renfe.'),
+(4, 'Plaza de Castilla', 1, 'Paseo de la Castellana, 189', 'Intercambiador con líneas 1, 9 y 10.'),
+(5, 'Valdeacederas', 0, 'Calle Bravo Murillo, 297', 'Estación del barrio de Tetuán.'),
+(6, 'Tetuán', 0, 'Calle Bravo Murillo, 340', 'Ubicada en el distrito de Tetuán.'),
+(7, 'Estrecho', 0, 'Calle Bravo Murillo, 377', 'Estación cerca de Bravo Murillo.'),
+(8, 'Alvarado', 0, 'Calle Bravo Murillo, 255', 'Ubicada en la calle Bravo Murillo.'),
+(9, 'Cuatro Caminos', 1, 'Glorieta de Cuatro Caminos, s/n', 'Conexión con líneas 2 y 6.'),
+(10, 'Ríos Rosas', 0, 'Calle Ríos Rosas, 47', 'Cerca del Canal de Isabel II.'),
+(11, 'Iglesia', 0, 'Calle Santa Engracia, 125', 'Estación en Chamberí.'),
+(12, 'Bilbao', 1, 'Glorieta de Bilbao, s/n', 'Conexión con línea 4.'),
+(13, 'Tribunal', 0, 'Calle Fuencarral, 81', 'Conexión con línea 10.'),
+(14, 'Gran Vía', 0, 'Calle Gran Vía, 27', 'Conexión con línea 5.'),
+(15, 'Sol', 1, 'Puerta del Sol, s/n', 'Conexión con líneas 2 y 3.'),
+(16, 'Tirso de Molina', 0, 'Plaza de Tirso de Molina, s/n', 'Situada en el barrio de Embajadores.'),
+(17, 'Antón Martín', 0, 'Plaza de Antón Martín, s/n', 'Ubicada en el centro de Madrid.'),
+(18, 'Estación del Arte', 0, 'Paseo del Prado, s/n', 'Cercana a museos y Atocha.'),
+(19, 'Atocha', 1, 'Glorieta del Emperador Carlos V, s/n', 'Estación de conexión futura con línea 11.'),
+(20, 'Menéndez Pelayo', 0, 'Avenida de Menéndez Pelayo, 67', 'Ubicada junto al parque del Retiro.'),
+(21, 'Pacífico', 1, 'Calle de Cavanilles, 5', 'Conexión con línea 6.'),
+(22, 'Puente de Vallecas', 0, 'Avenida de la Albufera, 145', 'Estación del distrito de Vallecas.'),
+(23, 'Nueva Numancia', 0, 'Avenida de la Albufera, 125', 'Zona de Puente de Vallecas.'),
+(24, 'Portazgo', 0, 'Avenida de la Albufera, 99', 'Junto al estadio del Rayo Vallecano.'),
+(25, 'Buenos Aires', 0, 'Avenida de la Albufera, 67', 'Ubicada en el barrio de Numancia.'),
+(26, 'Alto del Arenal', 1, 'Avenida de la Albufera, 45', 'Cerca del centro comercial Albufera Plaza.'),
+(27, 'Miguel Hernández', 0, 'Avenida de la Albufera, 25', 'Barrio de Entrevías.'),
+(28, 'Sierra de Guadalupe', 0, 'Calle Sierra de Guadalupe, s/n', 'Conexión con Cercanías Renfe.'),
+(29, 'Villa de Vallecas', 0, 'Paseo de Federico García Lorca, 2', 'Distrito de Villa de Vallecas.'),
+(30, 'Congosto', 0, 'Calle Congosto, 1', 'Zona sur de Vallecas.'),
+(31, 'La Gavia', 1, 'Avenida del Ensanche de Vallecas, s/n', 'Cerca del centro comercial La Gavia.'),
+(32, 'Las Suertes', 1, 'Avenida del Ensanche de Vallecas, s/n', 'Ubicada en el Ensanche de Vallecas.'),
+(33, 'Valdecarros', 1, 'Avenida del Ensanche de Vallecas, s/n', 'Estación terminal de la línea 1 al sureste.'),
+(34, 'Canal', 1, 'Calle de Cea Bermúdez, 1', 'Conexión con línea 7.'),
+(35, 'Quevedo', 0, 'Glorieta de Quevedo, s/n', 'Ubicada en el distrito de Chamberí.'),
+(36, 'San Bernardo', 1, 'Calle de San Bernardo, 107', 'Conexión con línea 4.'),
+(37, 'Noviciado', 0, 'Calle de San Bernardo, 63', 'Estación en el barrio de Universidad.'),
+(38, 'Santo Domingo', 0, 'Plaza de Santo Domingo, s/n', 'Ubicada en el distrito Centro.'),
+(39, 'Ópera', 1, 'Plaza de Isabel II, s/n', 'Conexión con líneas 5 y Ramal.'),
+(40, 'Sevilla', 0, 'Calle de Alcalá, 13', 'Ubicada en pleno centro, próxima al Círculo de Bellas Artes.'),
+(41, 'Banco de España', 1, 'Plaza de Cibeles, s/n', 'Frente al Banco de España y próximo a museos.'),
+(42, 'Retiro', 1, 'Calle de Alcalá, 83', 'Junto a la entrada del Parque del Retiro.'),
+(43, 'Príncipe de Vergara', 1, 'Calle Príncipe de Vergara, 5', 'Conexión con línea 9, en el barrio de Salamanca.'),
+(44, 'Goya', 1, 'Calle de Goya, 1', 'Conexión con línea 4, junto al Palacio de los Deportes.'),
+(45, 'Manuel Becerra', 1, 'Plaza de Manuel Becerra, s/n', 'Conexión con línea 6, en el distrito de Salamanca.'),
+(46, 'Ventas', 1, 'Calle de Alcalá, 237', 'Conexión con línea 5 y cerca de la Plaza de Toros.'),
+(47, 'La Elipa', 1, 'Calle Santa Felicidad, 1', 'Ubicada en el barrio de Ventas.'),
+(48, 'La Almudena', 1, 'Calle de los Hermanos García Noblejas, 115', 'Estación cercana al cementerio de La Almudena.'),
+(49, 'Alsacia', 1, 'Avenida de Guadalajara, 26', 'Ubicada en el barrio de San Blas-Canillejas.'),
+(50, 'Avenida de Guadalajara', 1, 'Avenida de Guadalajara, s/n', 'Estación en expansión urbana al este de Madrid.'),
+(51, 'Las Rosas', 1, 'Avenida de Niza, s/n', 'Estación terminal de la Línea 2, en el barrio del mismo nombre.'),
+(52, 'Moncloa', 1, 'Plaza de Moncloa, s/n', 'Estación terminal en el noroeste de Madrid, con conexiones con las líneas 6 y 10.'),
+(53, 'Argüelles', 1, 'Calle de Arguelles, 76', 'Ubicada en el distrito de Moncloa-Aravaca, cerca de la Ciudad Universitaria.'),
+(54, 'Ventura Rodríguez', 1, 'C/ Princesa, 22', 'Ventura Rodríguez es una estación de la línea 3 del Metro de Madrid ubicada bajo la calle de la Princesa, a la altura de la intersección con la calle del mismo nombre.'),
+(55, 'Plaza de España', 1, 'Plaza de España, s/n', 'Importante intersección con la línea 10 y acceso a la Gran Vía.'),
+(56, 'Callao', 1, 'Gran Vía, 45', 'Situada en el corazón de la Gran Vía, centro comercial y cultural.'),
+(57, 'Lavapiés', 1, 'Calle de Lavapiés, 34', 'Estación en un barrio multicultural, con numerosos bares y teatros.'),
+(58, 'Embajadores', 1, 'Avenida de los Poblados, 23', 'Conexión con la línea 5 y acceso a la estación de Cercanías.'),
+(59, 'Palos de la Frontera', 1, 'Calle de Palos de la Frontera, 34', 'Anteriormente conocida como Palos de Moguer, conecta con la línea 10.'),
+(60, 'Delicias', 1, 'Paseo de las Delicias, 61', 'Cerca del Museo del Ferrocarril y estación de Cercanías.'),
+(61, 'Legazpi', 1, 'Calle de Méndez Álvaro, 83', 'Zona industrial y de ocio, conecta con la línea 6.'),
+(62, 'Almendrales', 1, 'Avenida de Córdoba, 21', 'Estación en el barrio de Usera, con cuatro vías para mayor capacidad.'),
+(63, 'Hospital 12 de Octubre', 1, 'Avenida de Córdoba, 61', 'Servicio directo al Hospital 12 de Octubre.'),
+(64, 'San Fermín-Orcasur', 1, 'Calle de San Fermín, 1', 'Acceso al barrio de Orcasur.'),
+(65, 'Ciudad de los Ángeles', 1, 'Calle de la Ciudad de los Ángeles, 2', 'Ubicada en el distrito de Villaverde.'),
+(66, 'Villaverde Bajo-Cruce', 1, 'Calle de Villaverde, 1', 'Conexión con la línea 5 y cercanías.'),
+(67, 'San Cristóbal', 1, 'Calle de San Cristóbal, 3', 'Acceso al barrio de San Cristóbal.'),
+(68, 'Villaverde Alto', 1, 'Calle de Villaverde, 4', 'Estación terminal en el sur de Madrid, con conexión a cercanías.'),
+(69, 'El Casar', 1, 'Calle del Casar, 1', 'Ampliación reciente que conecta con Getafe.'),
 (70, 'Alonso Martínez', 1, 'Plaza de Alonso Martínez, s/n', 'Ubicada en el barrio de Justicia, conecta con líneas 4, 5 y 10.'),
 (71, 'Colón', 1, 'Calle de Génova, s/n', 'Situada bajo la plaza de Colón.'),
 (72, 'Serrano', 1, 'Calle de Serrano, s/n', 'Ubicada en el barrio de Salamanca.'),
@@ -97,759 +746,532 @@ INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUE
 (84, 'San Lorenzo', 1, 'Calle de Santa Virgilia, s/n', 'Estación en el barrio de Hortaleza.'),
 (85, 'Parque de Santa María', 1, 'Calle de Santa Virgilia, s/n', 'Ubicada junto al parque homónimo.'),
 (86, 'Hortaleza', 1, 'Calle de Santa Susana, s/n', 'Estación en el distrito de Hortaleza.'),
-(87, 'Manoteras', 1, 'Calle de Bacares, s/n', 'Situada en el barrio de Hortaleza.');
+(87, 'Manoteras', 1, 'Calle de Bacares, s/n', 'Situada en el barrio de Hortaleza.'),
+(88, 'Alameda de Osuna', 1, 'Calle de la Ribera del Sena, s/n', 'Estación terminal noreste de la Línea 5, situada en el distrito de Barajas.'),
+(89, 'El Capricho', 1, 'Calle de la Ribera del Sena, s/n', 'Estación próxima al Parque de El Capricho.'),
+(90, 'Canillejas', 1, 'Calle de Alcalá, s/n', 'Conecta con intercambiador de autobuses interurbanos.'),
+(91, 'Torre Arias', 1, 'Calle de Alcalá, s/n', 'Ubicada junto al parque y palacio de Torre Arias.'),
+(92, 'Suanzes', 1, 'Calle de Alcalá, s/n', 'Nombrada en honor al ingeniero Juan de Suanzes.'),
+(93, 'Ciudad Lineal', 1, 'Calle de Alcalá, s/n', 'Estación en el distrito de Ciudad Lineal.'),
+(94, 'Pueblo Nuevo', 1, 'Calle de Alcalá, s/n', 'Intercambio con Línea 7.'),
+(95, 'Quintana', 1, 'Calle de Alcalá, s/n', 'Cerca de la plaza de Quintana.'),
+(96, 'El Carmen', 1, 'Calle de Alcalá, s/n', 'Situada cerca de la plaza de toros de Las Ventas.'),
+(97, 'Núñez de Balboa', 1, 'Calle de Núñez de Balboa, s/n', 'Conexión con línea 9.'),
+(98, 'Rubén Darío', 1, 'Paseo de Eduardo Dato, s/n', 'Cerca del Museo Sorolla.'),
+(99, 'Chueca', 1, 'Plaza de Chueca, s/n', 'Ubicada en el centro del barrio con el mismo nombre.'),
+(100, 'La Latina', 1, 'Plaza de la Cebada, s/n', 'En pleno centro histórico de Madrid.'),
+(101, 'Puerta de Toledo', 1, 'Glorieta de la Puerta de Toledo, s/n', 'Cerca del monumento Puerta de Toledo.'),
+(102, 'Pirámides', 1, 'Paseo de la Virgen del Puerto, s/n', 'Conexión con Cercanías y acceso al estadio Vicente Calderón.'),
+(103, 'Marqués de Vadillo', 1, 'Plaza de Marqués de Vadillo, s/n', 'Cerca del Puente de Toledo y Madrid Río.'),
+(104, 'Urgel', 1, 'Calle General Ricardos, s/n', 'Ubicada en el distrito de Carabanchel.'),
+(105, 'Oporto', 1, 'Plaza de Oporto, s/n', 'Intercambio con Línea 6.'),
+(106, 'Vista Alegre', 1, 'Calle General Ricardos, s/n', 'Próxima al Palacio de Vistalegre.'),
+(107, 'Carabanchel', 1, 'Calle General Ricardos, s/n', 'Una de las estaciones históricas del distrito.'),
+(108, 'Eugenia de Montijo', 1, 'Avenida de Eugenia de Montijo, s/n', 'Sirve al barrio del mismo nombre.'),
+(109, 'Aluche', 1, 'Avenida de los Poblados, s/n', 'Intercambio con Cercanías Renfe y numerosas líneas de autobús.'),
+(110, 'Empalme', 1, 'Calle de Illescas, s/n', 'Estación en el barrio de Aluche.'),
+(111, 'Campamento', 1, 'Paseo de Extremadura, s/n', 'Cerca del antiguo cuartel militar.'),
+(112, 'Casa de Campo', 1, 'Paseo de la Puerta del Ángel, s/n', 'Intercambio con la Línea 10, próxima al parque de atracciones y zoológico.'),
+(113, 'Laguna', 1, 'Calle Cuart de Poblet', 'Conexión con Cercanías RENFE'),
+(114, 'Carpetana', 1, 'Vía Carpetana', 'Cerca del museo de los Orígenes'),
+(115, 'Opañel', 1, 'Calle de Ocaña', 'Ubicada en el distrito de Carabanchel'),
+(116, 'Plaza Elíptica', 1, 'Plaza Elíptica', 'Intercambiador con Línea 6 y autobuses interurbanos'),
+(117, 'Usera', 1, 'Calle de Amparo Usera', 'Zona multicultural del distrito Usera'),
+(118, 'Arganzuela-Planetario', 1, 'Calle Bronce, 1', 'Arganzuela-Planetario es una estación de la línea 6 del Metro de Madrid situada bajo el barrio de los Metales, dentro del distrito madrileño de Arganzuela. La estación abrió al público el 26 de enero de 2007.​'),
+(119, 'Méndez Álvaro', 1, 'Calle de Méndez Álvaro', 'Conexión con Cercanías RENFE y Estación Sur de Autobuses'),
+(120, 'Conde de Casal', 1, 'Plaza del Conde de Casal', 'Acceso futuro a ampliación Línea 11'),
+(121, 'Sainz de Baranda', 1, 'Calle de Sainz de Baranda', 'Conexión con Línea 9'),
+(122, 'O Donnell', 1, 'Calle de O Donnell', 'Cerca del Hospital Gregorio Marañón'),
+(123, 'República Argentina', 0, 'Plaza de República Argentina', 'Zona de embajadas y oficinas'),
+(124, 'Nuevos Ministerios', 1, 'Paseo de la Castellana', 'Conexión con Líneas 8 y 10 y Cercanías RENFE'),
+(125, 'Guzmán el Bueno', 1, 'Av. de la Reina Victoria', 'Conexión con Línea 7'),
+(126, 'Vicente Aleixandre', 0, 'Calle Gregorio del Amo, 8', 'Vicente Aleixandre​​ es una estación de la línea 6 del Metro de Madrid situada bajo la Avenida de Gregorio del Amo, en el distrito de Moncloa-Aravaca, si bien uno de sus accesos está en el distrito de Chamberí.'),
+(127, 'Ciudad Universitaria', 1, 'Avenida Complutense', 'Ubicada en el campus universitario'),
+(128, 'Príncipe Pío', 1, 'Paseo de la Florida', 'Conexión con Líneas 6 y 10, y Cercanías RENFE. El Ramal Ópera-Príncipe Pío del Metro de Madrid es una línea corta que une dichas estaciones, con andenes de 60 m, situadas en el distrito Centro de la ciudad a través de un túnel de 1092 m de vía doble y gálibo estrecho'),
+(129, 'Puerta del Ángel', 1, 'Paseo de Extremadura', 'Acceso a zona sur de Madrid Río'),
+(130, 'Alto de Extremadura', 1, 'Paseo de Extremadura', 'Estación residencial en Latina'),
+(131, 'Lucero', 1, 'Calle de Latón', 'Zona residencial cercana a Casa de Campo'),
+(132, 'Hospital de Henares', 1, 'Camino Labor, s/n', 'Hospital del Henares es una estación de la línea 7 del Metro de Madrid situada junto al Hospital del Henares de Coslada.'),
+(133, 'Henares', 1, 'Avenida Algorta, 12', 'Henares es una estación de la Línea 7 de Metro de Madrid situada bajo la avenida de Algorta, en San Fernando de Henares, próxima al cauce del río Henares.'),
+(134, 'Jarama', 1, 'Plaza Guernica', 'Jarama es una estación de la línea 7 del Metro de Madrid situada bajo la Plaza de Guernica, junto al Parque Dolores Ibárruri de San Fernando de Henares. El nombre de la estación se debe a que en sus proximidades, aunque alejado, pasa el río Jarama.'),
+(135, 'San Fernando', 1, 'Plaza Echebeste, 33', 'San Fernando es una estación de la línea 7 del Metro de Madrid situada bajo la Plaza de la Real Fábrica de Paños de San Fernando, en el casco histórico de San Fernando de Henares. Junto a la estación se encuentra el Ayuntamiento de San Fernando de Henares.'),
+(136, 'La Rambla', 1, 'Calle Honduras', 'La Rambla es una estación de la Línea 7 del Metro de Madrid situada bajo la intersección de las calles Honduras y México, en el municipio de Coslada.'),
+(137, 'Coslada Central', 1, 'Calle Doctor Fleming', 'Coslada Central es una estación de la línea 7 del Metro de Madrid, situada entre la calle de Pablo Neruda y el paseo de Francisco Javier Sauquillo, en el municipio madrileño de Coslada.'),
+(138, 'Barrio del Puerto', 1, 'Avenida de España', 'Barrio del Puerto es una estación de la línea 7 del Metro de Madrid situada bajo la avenida de España en el barrio del mismo nombre del municipio de Coslada.'),
+(139, 'Estadio Metropolitano', 1, 'Avenida de Arcentales', 'Acceso al estadio del Atlético de Madrid'),
+(140, 'Las Musas', 1, 'Calle Estocolmo', 'Zona residencial de San Blas'),
+(141, 'San Blas', 1, 'Calle Amposta', 'Centro del distrito San Blas-Canillejas'),
+(142, 'Simancas', 0, 'Calle de Simancas', 'Zona residencial'),
+(143, 'García Noblejas', 0, 'Calle de los Hermanos García Noblejas', 'Zona residencial'),
+(144, 'Ascao', 0, 'Calle de Ascao', 'Zona residencial del barrio Pueblo Nuevo'),
+(145, 'Barrio de la Concepción', 1, 'Plaza Virgen del Romero, 1', 'Barrio de la Concepción es una estación de la línea 7 del Metro de Madrid situada en el barrio de la Concepción, en el distrito de Ciudad Lineal.'),
+(146, 'Parque de las Avenidas', 0, 'Avenida de Bruselas, 56', 'Parque de las Avenidas es una estación de la línea 7 del Metro de Madrid situada bajo la avenida de Bruselas, en el barrio de La Guindalera, perteneciente al madrileño distrito de Salamanca.'),
+(147, 'Cartagena', 0, 'Avenida de América, 32', 'Cartagena es una estación de la Línea 7 del Metro de Madrid, situada entre los barrios de Prosperidad y La Guindalera bajo la intersección de la Avenida de América con la calle Cartagena.'),
+(148, 'Gregorio Marañón', 1, 'Calle de José Abascal', 'Conexión con Línea 10'),
+(149, 'Alonso Cano', 0, 'Calle de Alonso Cano', 'Barrio de Chamberí'),
+(150, 'Islas Filipinas', 0, 'Calle de Islas Filipinas', 'Distrito de Chamberí'),
+(151, 'Francos Rodríguez', 0, 'Calle de Francos Rodríguez', 'Zona residencial de Moncloa-Aravaca'),
+(152, 'Valdezarza', 0, 'Calle de Ofelia Nieto', 'Distrito Moncloa-Aravaca'),
+(153, 'Antonio Machado', 0, 'Calle de Antonio Machado', 'Zona residencial'),
+(154, 'Peñagrande', 0, 'Calle de Joaquín Lorenzo', 'Zona residencial de Fuencarral-El Pardo'),
+(155, 'Avenida de la Ilustración', 1, 'Av. de la Ilustración', 'Zona norte de Madrid junto a M-30'),
+(156, 'Lacoma', 0, 'Calle de Lacoma', 'Zona residencial del distrito Fuencarral-El Pardo'),
+(157, 'Arroyofresno', 1, 'Calle María de Maeztu, 52', 'Arroyofresno es una estación de la línea 7 del Metro de Madrid, situada en el área residencial de Arroyo del Fresno que forma parte del barrio de Mirasierra (distrito Fuencarral-El Pardo).'),
+(158, 'Pitis', 0, 'Calle Senda del Infante', 'Estación terminal con conexión a Cercanías'),
+(159, 'Colombia', 1, 'Calle de Colombia', 'Conexión con Línea 9, zona empresarial y residencial'),
+(160, 'Pinar del Rey', 1, 'Calle de Pinar del Rey', 'Ubicada en el distrito de Hortaleza'),
+(161, 'Feria de Madrid', 1, 'Avenida del Partenón', 'Acceso al recinto ferial IFEMA'),
+(162, 'Aeropuerto T1-T2-T3', 1, 'Aeropuerto Adolfo Suárez Madrid-Barajas, Terminal 2', 'Acceso a terminales T1, T2 y T3'),
+(163, 'Barajas', 1, 'Plaza del Mercurio', 'Estación en el casco antiguo de Barajas'),
+(164, 'Aeropuerto T4', 1, 'Aeropuerto Adolfo Suárez Madrid-Barajas, Terminal 4', 'Conexión con Cercanías RENFE'),
+(165, 'Paco de Lucía', 1, 'Calle Costa Brava', 'Terminal norte de Línea 9, conexión con Cercanías'),
+(166, 'Mirasierra', 1, 'Av. Ventisquero de la Condesa', 'Barrio residencial, cerca del hospital Ruber Internacional'),
+(167, 'Herrera Oria', 0, 'Calle Fermín Caballero', 'Zona residencial, también aparece en Línea 7'),
+(168, 'Barrio del Pilar', 1, 'Av. Betanzos', 'Conexión con centro comercial La Vaguada'),
+(169, 'Ventilla', 0, 'Calle de Asturias', 'Zona residencial de Tetuán'),
+(170, 'Duque de Pastrana', 0, 'Paseo de la Habana', 'Zona empresarial de Chamartín'),
+(171, 'Pío XII', 0, 'Avenida de Pío XII', 'Zona empresarial y residencial'),
+(172, 'Concha Espina', 0, 'Calle Concha Espina', 'Próxima al estadio Santiago Bernabéu'),
+(173, 'Cruz del Rayo', 0, 'Calle Serrano', 'Zona residencial de Salamanca'),
+(174, 'Ibiza', 0, 'Calle Ibiza', 'Junto al Hospital Gregorio Marañón'),
+(175, 'Estrella', 0, 'Calle Estrella Polar', 'Zona residencial'),
+(176, 'Vinateros', 0, 'Calle Marroquina', 'Zona residencial'),
+(177, 'Artilleros', 0, 'Calle Pico de Artilleros', 'Zona residencial'),
+(178, 'Pavones', 0, 'Calle de los Pavones', 'Barrio de Moratalaz'),
+(179, 'Valdebernardo', 0, 'Calle Ladera de los Almendros', 'Distrito Vicálvaro'),
+(180, 'Vicálvaro', 0, 'Plaza de Alonso', 'Centro del barrio de Vicálvaro'),
+(181, 'San Cipriano', 0, 'Calle de San Cipriano', 'Zona residencial'),
+(182, 'Puerta de Arganda', 1, 'Calle Pico Artilleros', 'Transbordo entre Metro y MetroEste'),
+(183, 'Rivas-Urbanizaciones', 1, 'Av. de Levante', 'Urbanizaciones de Rivas Vaciamadrid'),
+(184, 'Rivas Futura', 1, 'Av. de Levante', 'Nuevo desarrollo urbanístico de Rivas-Vaciamadrid'),
+(185, 'Rivas Vaciamadrid', 1, 'Calle de la Fundición', 'Centro urbano de Rivas'),
+(186, 'La Poveda', 1, 'Calle Camino de la Poveda', 'Zona residencial de Arganda del Rey'),
+(187, 'Arganda del Rey', 1, 'Calle del Real', 'Terminal este de Línea 9'),
+(188, 'Hospital Infanta Sofía', 1, 'Av. de la Sierra, San Sebastián de los Reyes', 'Terminal norte de Línea 10'),
+(189, 'Reyes Católicos', 1, 'Av. de Reyes Católicos', 'Zona céntrica de San Sebastián de los Reyes'),
+(190, 'Baunatal', 1, 'Av. de España', 'Zona residencial y comercial'),
+(191, 'Manuel de Falla', 1, 'Av. de España, San Sebastián de los Reyes', 'Zona residencial'),
+(192, 'Marqués de la Valdavia', 1, 'Av. de España', 'Zona residencial de Alcobendas'),
+(193, 'La Moraleja', 1, 'Camino del Cura', 'Zona residencial de alto nivel'),
+(194, 'La Granja', 1, 'C/ Sepúlveda, 3', 'Situada en el municipio de Alcobendas en el polígono industrial Vereda del Pobre'),
+(195, 'Ronda de la Comunicación', 1, 'Distrito Telefónica', 'Sede central de Telefónica'),
+(196, 'Las Tablas', 1, 'Calle de Castiello de Jaca', 'Conexión con ML1'),
+(197, 'Montecarmelo', 1, 'Av. del Monte del Gozo', 'Barrio residencial al norte de Madrid'),
+(198, 'Tres Olivos', 1, 'Calle de Antonio Cabezón', 'Transbordo entre ramales de Línea 10'),
+(199, 'Fuencarral', 1, 'Calle de Nuestra Señora de Valverde', 'Zona norte tradicional'),
+(200, 'Begoña', 1, 'Av. de la Ilustración', 'Acceso al Hospital La Paz'),
+(201, 'Cuzco', 1, 'Paseo de la Castellana', 'Zona financiera'),
+(202, 'Santiago Bernabéu', 1, 'Paseo de la Castellana', 'Estadio del Real Madrid'),
+(203, 'Lago', 1, 'Paseo del Embarcadero', 'Acceso al Lago de la Casa de Campo'),
+(204, 'Batán', 1, 'Paseo de la Puerta del Ángel', 'Acceso al Parque de Atracciones'),
+(205, 'Colonia Jardín', 1, 'Calle del Oropéndola', 'Conexión con ML2 y ML3'),
+(206, 'Aviación Española', 1, 'Av. Aviación Española', 'Zona residencial'),
+(207, 'Cuatro Vientos', 1, 'Calle de Cuatro Vientos', 'Zona sur de Madrid'),
+(208, 'Joaquín Vilumbrales', 1, 'Av. de los Castillos', 'Alcorcón'),
+(209, 'Puerta del Sur', 1, 'Av. de Leganés', 'Conexión con Línea 12, Alcorcón'),
+(210, 'Abrantes', 1, 'Calle de Abrantes', 'Barrio de Carabanchel, zona residencial'),
+(211, 'Pan Bendito', 1, 'Calle del Cristo de Lepanto', 'Barrio Pan Bendito, zona sur de Madrid'),
+(212, 'San Francisco', 1, 'Calle de Camino Viejo de Leganés', 'Barrio de San Francisco, zona residencial'),
+(213, 'Carabanchel Alto', 1, 'Calle de Alfonso Fernández', 'Antiguo municipio anexionado a Madrid'),
+(214, 'La Peseta', 1, 'Avenida de La Peseta', 'Barrio de Carabanchel, junto al PAU'),
+(215, 'La Fortuna', 1, 'Avenida de la Libertad', 'Única estación de Metro en Leganés'),
+(216, 'Parque Lisboa', 1, 'Calle Porto Cristo', 'Zona residencial en Alcorcón'),
+(217, 'Alcorcón Central', 1, 'Calle del Retamas', 'Conexión con Cercanías RENFE'),
+(218, 'Parque Oeste', 1, 'Av. de la Libertad', 'Junto al centro comercial X-Madrid'),
+(219, 'Universidad Rey Juan Carlos', 1, 'Av. de Atenas', 'Campus de la URJC en Móstoles'),
+(220, 'Móstoles Central', 1, 'Calle del Cristo', 'Conexión con Cercanías RENFE'),
+(221, 'Pradillo', 1, 'Plaza del Pradillo', 'Centro de Móstoles'),
+(222, 'Hospital de Móstoles', 1, 'Av. de la Constitución', 'Acceso al hospital de Móstoles'),
+(223, 'Manuela Malasaña', 1, 'Calle Alfonso XII', 'Zona residencial de Móstoles'),
+(224, 'Loranca', 1, 'Av. Pablo Iglesias', 'Distrito de Loranca, Fuenlabrada'),
+(225, 'Hospital de Fuenlabrada', 1, 'Calle del Molino', 'Situada junto al Hospital de Fuenlabrada y el campus de la Universidad Rey Juan Carlos en Fuenlabrada'),
+(226, 'Parque Europa', 1, 'Calle Grecia', 'Zona nueva en Fuenlabrada'),
+(227, 'Fuenlabrada Central', 1, 'Plaza de la Constitución', 'Conexión con Cercanías RENFE'),
+(228, 'Parque de los Estados', 1, 'Calle Francia', 'Zona residencial de Fuenlabrada'),
+(229, 'Arroyo Culebro', 1, 'Av. del Hospital', 'Distrito de Leganés'),
+(230, 'Conservatorio', 1, 'Avenida de las Arcas del Agua, 9', 'El nombre se puso porque muy cerca de ella está el Conservatorio Profesional de Música de Getafe.'),
+(231, 'Alonso de Mendoza', 1, 'Calle El Greco, 2', 'Alonso de Mendoza es una estación de la línea 12 del Metro de Madrid ubicada bajo la calle del mismo nombre, en la zona sur del barrio de Alhóndiga de Getafe.'),
+(232, 'Getafe Central', 1, 'Av. Juan de la Cierva', 'Conexión con Cercanías RENFE'),
+(233, 'Juan de la Cierva', 1, 'Av. de Juan de la Cierva', 'Zona residencial de Getafe'),
+(234, 'Los Espartales', 1, 'Av. Rigoberta Menchú', 'Barrio nuevo en Getafe'),
+(235, 'El Bercial', 1, 'Calle Islas Cíes', 'Zona residencial y comercial'),
+(236, 'El Carrascal', 1, 'Av. Rey Juan Carlos I', 'Cerca del centro comercial Parquesur'),
+(237, 'Julián Besteiro', 1, 'Av. de Juan XXIII', 'Zona sur de Leganés'),
+(238, 'Casa del Reloj', 1, 'Calle del Maestro', 'Zona residencial'),
+(239, 'Hospital Severo Ochoa', 1, 'Calle del Río Tajo', 'Acceso al hospital Severo Ochoa'),
+(240, 'Leganés Central', 1, 'Av. Fuenlabrada', 'Conexión con Cercanías RENFE'),
+(241, 'San Nicasio', 1, 'Calle La Encina', 'San Nicasio es una estación de la línea 12 del Metro de Madrid situada en la confluencia de la parte antigua y el ensanche del barrio homónimo de Leganés. La estación abrió al público el 11 de abril de 2003.'),
+(242, 'Fuente de la Mora', 1, 'Calle Fuente de la Mora', 'Conexión con Cercanías RENFE'),
+(243, 'Virgen del Cortijo', 1, 'Calle de Oña', 'Barrio residencial en Hortaleza'),
+(244, 'Antonio Saura', 1, 'Calle Antonio Saura', 'Zona empresarial de Sanchinarro'),
+(245, 'Álvarez de Villaamil', 1, 'Calle Álvarez de Villaamil', 'Sanchinarro'),
+(246, 'Blasco Ibáñez', 1, 'Calle Blasco Ibáñez', 'Barrio residencial de reciente construcción'),
+(247, 'María Tudor', 1, 'Calle María Tudor', 'Zona residencial de Sanchinarro'),
+(248, 'Palas de Rey', 1, 'Calle Palas de Rey', 'Zona norte de Sanchinarro'),
+(249, 'Prado de la Vega', 1, 'Calle Prado de la Vega', 'Zona residencial cerca de Ciudad de la Imagen'),
+(250, 'Colonia de los Ángeles', 1, 'Av. del Talgo', 'Zona residencial en Pozuelo de Alarcón'),
+(251, 'Prado del Rey', 1, 'Av. de Radio Televisión', 'Centro de RTVE en Pozuelo'),
+(252, 'Somosaguas Sur', 1, 'Calle Isaac Albéniz', 'Zona residencial del Campus de Somosaguas'),
+(253, 'Somosaguas Centro', 1, 'Calle de la Libertad', 'Zona universitaria de Somosaguas'),
+(254, 'Pozuelo Oeste', 1, 'Calle Portugal', 'Zona comercial de Pozuelo'),
+(255, 'Bélgica', 1, 'Av. de Europa', 'Barrio de Pozuelo de Alarcón'),
+(256, 'Dos Castillas', 1, 'Av. de Europa', 'Zona empresarial de Pozuelo'),
+(257, 'Campus de Somosaguas', 1, 'Campus de Somosaguas', 'Universidad Complutense de Madrid'),
+(258, 'Avenida de Europa', 1, 'Av. de Europa', 'Zona residencial y de oficinas'),
+(259, 'Berna', 1, 'Calle de Berna', 'Zona residencial y empresarial'),
+(260, 'Estación de Aravaca', 1, 'Av. de la Osa Mayor', 'Conexión con Cercanías RENFE'),
+(261, 'Ciudad de la Imagen', 1, 'Calle Luis Buñuel', 'Centro audiovisual y comercial'),
+(262, 'José Isbert', 1, 'Calle José Isbert', 'Zona de ocio y cines'),
+(263, 'Ciudad del Cine', 1, 'Calle Juan de Orduña', 'Zona audiovisual'),
+(264, 'Cocheras', 1, 'Camino de las Huertas', 'Depósito y talleres del metro ligero'),
+(265, 'Retamares', 1, 'Calle Retamares', 'Zona empresarial'),
+(266, 'Montepríncipe', 1, 'Av. de Montepríncipe', 'Campus universitario y hospital'),
+(267, 'Ventorro del Cano', 1, 'Pol. Ind. Ventorro del Cano', 'Zona empresarial'),
+(268, 'Prado del Espino', 1, 'Calle Prado del Espino', 'Zona industrial y empresarial'),
+(269, 'Cantabria', 1, 'Calle Cantabria', 'Barrio residencial'),
+(270, 'Ferial de Boadilla', 1, 'Av. Infante Don Luis', 'Zona del recinto ferial'),
+(271, 'Boadilla Centro', 1, 'Plaza de la Constitución', 'Centro histórico de Boadilla'),
+(272, 'Nuevo Mundo', 1, 'Calle Nuevo Mundo', 'Zona residencial'),
+(273, 'Siglo XXI', 1, 'Calle Siglo XXI', 'Barrio moderno en expansión'),
+(274, 'Infante Don Luis', 1, 'Av. Infante Don Luis', 'Zona comercial'),
+(275, 'Puerta de Boadilla', 1, 'Calle Valle del Silencio', 'Terminal de ML3');
 
--- Inserción de estaciones de la Línea 5
-INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
-(88, 'Alameda de Osuna', TRUE, 'Calle de la Ribera del Sena, s/n', 'Estación terminal noreste de la Línea 5, situada en el distrito de Barajas.'),
-(89, 'El Capricho', TRUE, 'Calle de la Ribera del Sena, s/n', 'Estación próxima al Parque de El Capricho.'),
-(90, 'Canillejas', TRUE, 'Calle de Alcalá, s/n', 'Conecta con intercambiador de autobuses interurbanos.'),
-(91, 'Torre Arias', TRUE, 'Calle de Alcalá, s/n', 'Ubicada junto al parque y palacio de Torre Arias.'),
-(92, 'Suanzes', TRUE, 'Calle de Alcalá, s/n', 'Nombrada en honor al ingeniero Juan de Suanzes.'),
-(93, 'Ciudad Lineal', TRUE, 'Calle de Alcalá, s/n', 'Estación en el distrito de Ciudad Lineal.'),
-(94, 'Pueblo Nuevo', TRUE, 'Calle de Alcalá, s/n', 'Intercambio con Línea 7.'),
-(95, 'Quintana', TRUE, 'Calle de Alcalá, s/n', 'Cerca de la plaza de Quintana.'),
-(96, 'El Carmen', TRUE, 'Calle de Alcalá, s/n', 'Situada cerca de la plaza de toros de Las Ventas.'),
-(97, 'Núñez de Balboa', TRUE, 'Calle de Núñez de Balboa, s/n', 'Conexión con línea 9.'),
-(98, 'Rubén Darío', TRUE, 'Paseo de Eduardo Dato, s/n', 'Cerca del Museo Sorolla.'),
-(99, 'Chueca', TRUE, 'Plaza de Chueca, s/n', 'Ubicada en el centro del barrio con el mismo nombre.'),
-(100, 'La Latina', TRUE, 'Plaza de la Cebada, s/n', 'En pleno centro histórico de Madrid.'),
-(101, 'Puerta de Toledo', TRUE, 'Glorieta de la Puerta de Toledo, s/n', 'Cerca del monumento Puerta de Toledo.'),
-(102, 'Pirámides', TRUE, 'Paseo de la Virgen del Puerto, s/n', 'Conexión con Cercanías y acceso al estadio Vicente Calderón.'),
-(103, 'Marqués de Vadillo', TRUE, 'Plaza de Marqués de Vadillo, s/n', 'Cerca del Puente de Toledo y Madrid Río.'),
-(104, 'Urgel', TRUE, 'Calle General Ricardos, s/n', 'Ubicada en el distrito de Carabanchel.'),
-(105, 'Oporto', TRUE, 'Plaza de Oporto, s/n', 'Intercambio con Línea 6.'),
-(106, 'Vista Alegre', TRUE, 'Calle General Ricardos, s/n', 'Próxima al Palacio de Vistalegre.'),
-(107, 'Carabanchel', TRUE, 'Calle General Ricardos, s/n', 'Una de las estaciones históricas del distrito.'),
-(108, 'Eugenia de Montijo', TRUE, 'Avenida de Eugenia de Montijo, s/n', 'Sirve al barrio del mismo nombre.'),
-(109, 'Aluche', TRUE, 'Avenida de los Poblados, s/n', 'Intercambio con Cercanías Renfe y numerosas líneas de autobús.'),
-(110, 'Empalme', TRUE, 'Calle de Illescas, s/n', 'Estación en el barrio de Aluche.'),
-(111, 'Campamento', TRUE, 'Paseo de Extremadura, s/n', 'Cerca del antiguo cuartel militar.'),
-(112, 'Casa de Campo', TRUE, 'Paseo de la Puerta del Ángel, s/n', 'Intercambio con la Línea 10, próxima al parque de atracciones y zoológico.');
+--
+-- Volcado de datos para la tabla `estaciones_lineas`
+--
 
--- Inserción de estaciones de la Línea 6
-INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
-(113, 'Laguna', TRUE, 'Calle Cuart de Poblet', 'Conexión con Cercanías RENFE'),
-(114, 'Carpetana', TRUE, 'Vía Carpetana', 'Cerca del museo de los Orígenes'),
-(115, 'Opañel', TRUE, 'Calle de Ocaña', 'Ubicada en el distrito de Carabanchel'),
-(116, 'Plaza Elíptica', TRUE, 'Plaza Elíptica', 'Intercambiador con Línea 6 y autobuses interurbanos'),
-(117, 'Usera', TRUE, 'Calle de Amparo Usera', 'Zona multicultural del distrito Usera'),
-(118, 'Arganzuela-Planetario', TRUE, 'Calle Bronce, 1', 'Arganzuela-Planetario es una estación de la línea 6 del Metro de Madrid situada bajo el barrio de los Metales, dentro del distrito madrileño de Arganzuela. La estación abrió al público el 26 de enero de 2007.​'),
-(119, 'Méndez Álvaro', TRUE, 'Calle de Méndez Álvaro', 'Conexión con Cercanías RENFE y Estación Sur de Autobuses'),
-(120, 'Conde de Casal', TRUE, 'Plaza del Conde de Casal', 'Acceso futuro a ampliación Línea 11'),
-(121, 'Sainz de Baranda', TRUE, 'Calle de Sainz de Baranda', 'Conexión con Línea 9'),
-(122, 'O Donnell', TRUE, 'Calle de O Donnell', 'Cerca del Hospital Gregorio Marañón'),
-(123, 'República Argentina', FALSE, 'Plaza de República Argentina', 'Zona de embajadas y oficinas'),
-(124, 'Nuevos Ministerios', TRUE, 'Paseo de la Castellana', 'Conexión con Líneas 8 y 10 y Cercanías RENFE'),
-(125, 'Guzmán el Bueno', TRUE, 'Av. de la Reina Victoria', 'Conexión con Línea 7'),
-(126, 'Vicente Aleixandre', FALSE, 'Calle Gregorio del Amo, 8', 'Vicente Aleixandre​​ es una estación de la línea 6 del Metro de Madrid situada bajo la Avenida de Gregorio del Amo, en el distrito de Moncloa-Aravaca, si bien uno de sus accesos está en el distrito de Chamberí.'),
-(127, 'Ciudad Universitaria', TRUE, 'Avenida Complutense', 'Ubicada en el campus universitario'),
-(128, 'Príncipe Pío', TRUE, 'Paseo de la Florida', 'Conexión con Líneas 6 y 10, y Cercanías RENFE. El Ramal Ópera-Príncipe Pío del Metro de Madrid es una línea corta que une dichas estaciones, con andenes de 60 m, situadas en el distrito Centro de la ciudad a través de un túnel de 1092 m de vía doble y gálibo estrecho'),
-(129, 'Puerta del Ángel', TRUE, 'Paseo de Extremadura', 'Acceso a zona sur de Madrid Río'),
-(130, 'Alto de Extremadura', TRUE, 'Paseo de Extremadura', 'Estación residencial en Latina'),
-(131, 'Lucero', TRUE, 'Calle de Latón', 'Zona residencial cercana a Casa de Campo');
+INSERT INTO `estaciones_lineas` (`estacion_id`, `linea_id`, `orden`) VALUES
+(1, 1, 1),
+(1, 4, 23),
+(1, 14, 1),
+(2, 1, 2),
+(3, 1, 3),
+(3, 10, 14),
+(4, 1, 4),
+(4, 9, 6),
+(4, 10, 15),
+(5, 1, 5),
+(6, 1, 6),
+(7, 1, 7),
+(8, 1, 8),
+(9, 1, 9),
+(9, 2, 20),
+(9, 6, 19),
+(10, 1, 10),
+(12, 1, 12),
+(12, 4, 3),
+(13, 1, 13),
+(13, 10, 21),
+(14, 1, 14),
+(14, 5, 15),
+(15, 1, 15),
+(15, 2, 13),
+(15, 3, 6),
+(16, 1, 16),
+(17, 1, 17),
+(18, 1, 18),
+(19, 1, 19),
+(20, 1, 20),
+(21, 1, 21),
+(21, 6, 10),
+(22, 1, 22),
+(23, 1, 23),
+(24, 1, 24),
+(25, 1, 25),
+(26, 1, 26),
+(27, 1, 27),
+(28, 1, 28),
+(29, 1, 29),
+(30, 1, 30),
+(31, 1, 31),
+(32, 1, 32),
+(33, 1, 33),
+(34, 2, 19),
+(34, 7, 21),
+(35, 2, 18),
+(36, 2, 17),
+(36, 4, 2),
+(37, 2, 16),
+(38, 2, 15),
+(39, 2, 14),
+(39, 13, 1),
+(40, 2, 12),
+(41, 2, 11),
+(42, 2, 10),
+(43, 2, 9),
+(43, 9, 14),
+(44, 2, 8),
+(44, 4, 8),
+(45, 2, 7),
+(45, 6, 14),
+(46, 2, 6),
+(46, 5, 10),
+(47, 2, 5),
+(48, 2, 4),
+(49, 2, 3),
+(50, 2, 2),
+(51, 2, 1),
+(52, 3, 1),
+(52, 6, 23),
+(53, 3, 2),
+(53, 4, 1),
+(53, 6, 24),
+(54, 3, 3),
+(55, 3, 4),
+(55, 10, 22),
+(56, 3, 5),
+(57, 3, 7),
+(58, 3, 8),
+(58, 5, 18),
+(59, 3, 9),
+(60, 3, 10),
+(61, 3, 11),
+(61, 6, 7),
+(62, 3, 12),
+(63, 3, 13),
+(64, 3, 14),
+(65, 3, 15),
+(66, 3, 16),
+(67, 3, 17),
+(68, 3, 18),
+(69, 3, 19),
+(69, 12, 20),
+(70, 4, 4),
+(70, 10, 20),
+(71, 4, 5),
+(72, 4, 6),
+(73, 4, 7),
+(74, 4, 9),
+(75, 4, 10),
+(75, 5, 11),
+(75, 6, 15),
+(76, 4, 11),
+(76, 6, 16),
+(76, 7, 18),
+(76, 9, 12),
+(77, 4, 12),
+(78, 4, 13),
+(79, 4, 14),
+(80, 4, 15),
+(81, 4, 16),
+(82, 4, 17),
+(83, 4, 18),
+(83, 8, 4),
+(84, 4, 19),
+(85, 4, 20),
+(86, 4, 21),
+(87, 4, 22),
+(88, 5, 1),
+(89, 5, 2),
+(90, 5, 3),
+(91, 5, 4),
+(92, 5, 5),
+(93, 5, 6),
+(94, 5, 7),
+(94, 7, 14),
+(95, 5, 8),
+(96, 5, 9),
+(97, 5, 12),
+(97, 9, 13),
+(98, 5, 13),
+(99, 5, 14),
+(100, 5, 16),
+(101, 5, 17),
+(102, 5, 19),
+(103, 5, 20),
+(104, 5, 21),
+(105, 5, 22),
+(105, 6, 3),
+(106, 5, 23),
+(107, 5, 24),
+(108, 5, 25),
+(109, 5, 26),
+(110, 5, 27),
+(111, 5, 28),
+(112, 5, 29),
+(112, 10, 26),
+(113, 6, 1),
+(114, 6, 2),
+(115, 6, 4),
+(116, 6, 5),
+(116, 11, 1),
+(117, 6, 6),
+(118, 6, 8),
+(119, 6, 9),
+(120, 6, 11),
+(121, 6, 12),
+(121, 9, 16),
+(122, 6, 13),
+(123, 6, 17),
+(124, 6, 18),
+(124, 8, 1),
+(124, 10, 18),
+(125, 6, 20),
+(125, 7, 23),
+(126, 6, 21),
+(127, 6, 22),
+(128, 6, 25),
+(128, 10, 23),
+(128, 13, 2),
+(129, 6, 26),
+(130, 6, 27),
+(131, 6, 27),
+(132, 7, 1),
+(133, 7, 2),
+(134, 7, 3),
+(135, 7, 4),
+(136, 7, 5),
+(137, 7, 6),
+(138, 7, 7),
+(139, 7, 8),
+(140, 7, 9),
+(141, 7, 10),
+(142, 7, 11),
+(143, 7, 12),
+(144, 7, 13),
+(145, 7, 15),
+(146, 7, 16),
+(147, 7, 17),
+(148, 7, 19),
+(148, 10, 19),
+(149, 7, 20),
+(150, 7, 22),
+(151, 7, 24),
+(152, 7, 25),
+(153, 7, 26),
+(154, 7, 27),
+(155, 7, 28),
+(156, 7, 29),
+(157, 7, 30),
+(158, 7, 31),
+(159, 8, 2),
+(159, 9, 9),
+(160, 8, 3),
+(161, 8, 5),
+(162, 8, 6),
+(163, 8, 7),
+(164, 8, 8),
+(165, 9, 1),
+(166, 9, 2),
+(167, 9, 3),
+(168, 9, 4),
+(169, 9, 5),
+(170, 9, 7),
+(171, 9, 8),
+(172, 9, 10),
+(173, 9, 11),
+(174, 9, 15),
+(175, 9, 17),
+(176, 9, 18),
+(177, 9, 19),
+(178, 9, 20),
+(179, 9, 21),
+(180, 9, 22),
+(181, 9, 23),
+(182, 9, 24),
+(183, 9, 25),
+(184, 9, 26),
+(185, 9, 27),
+(186, 9, 28),
+(187, 9, 29),
+(188, 10, 1),
+(189, 10, 2),
+(190, 10, 3),
+(191, 10, 4),
+(192, 10, 5),
+(193, 10, 6),
+(194, 10, 7),
+(195, 10, 8),
+(196, 10, 9),
+(196, 14, 9),
+(197, 10, 10),
+(198, 10, 11),
+(199, 10, 12),
+(200, 10, 13),
+(201, 10, 16),
+(202, 10, 17),
+(203, 10, 24),
+(204, 10, 25),
+(205, 10, 27),
+(205, 15, 1),
+(205, 16, 1),
+(206, 10, 28),
+(207, 10, 29),
+(208, 10, 30),
+(209, 10, 31),
+(209, 12, 1),
+(210, 11, 2),
+(211, 11, 3),
+(212, 11, 4),
+(213, 11, 5),
+(214, 11, 6),
+(215, 11, 7),
+(216, 12, 2),
+(217, 12, 3),
+(218, 12, 4),
+(219, 12, 5),
+(220, 12, 6),
+(221, 12, 7),
+(222, 12, 8),
+(223, 12, 9),
+(224, 12, 10),
+(225, 12, 11),
+(226, 12, 12),
+(227, 12, 13),
+(228, 12, 14),
+(229, 12, 15),
+(230, 12, 16),
+(231, 12, 17),
+(232, 12, 18),
+(233, 12, 19),
+(234, 12, 21),
+(235, 12, 22),
+(236, 12, 23),
+(237, 12, 24),
+(238, 12, 25),
+(239, 12, 26),
+(240, 12, 27),
+(241, 12, 28),
+(242, 14, 2),
+(243, 14, 3),
+(244, 14, 4),
+(245, 14, 5),
+(246, 14, 6),
+(247, 14, 7),
+(248, 14, 8),
+(249, 15, 2),
+(250, 15, 3),
+(251, 15, 4),
+(252, 15, 5),
+(253, 15, 6),
+(254, 15, 7),
+(255, 15, 8),
+(256, 15, 9),
+(257, 15, 10),
+(258, 15, 11),
+(259, 15, 12),
+(260, 15, 13),
+(261, 16, 2),
+(262, 16, 3),
+(263, 16, 4),
+(264, 16, 5),
+(265, 16, 6),
+(266, 16, 7),
+(267, 16, 8),
+(268, 16, 9),
+(269, 16, 10),
+(270, 16, 11),
+(271, 16, 12),
+(272, 16, 13),
+(273, 16, 14),
+(274, 16, 15),
+(275, 16, 16);
 
--- Inserción de estaciones de la Línea 7
-INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
-(132, 'Hospital de Henares', TRUE, 'Camino Labor, s/n', 'Hospital del Henares es una estación de la línea 7 del Metro de Madrid situada junto al Hospital del Henares de Coslada.'),
-(133, 'Henares', TRUE, 'Avenida Algorta, 12', 'Henares es una estación de la Línea 7 de Metro de Madrid situada bajo la avenida de Algorta, en San Fernando de Henares, próxima al cauce del río Henares.'),
-(134, 'Jarama', TRUE, 'Plaza Guernica', 'Jarama es una estación de la línea 7 del Metro de Madrid situada bajo la Plaza de Guernica, junto al Parque Dolores Ibárruri de San Fernando de Henares. El nombre de la estación se debe a que en sus proximidades, aunque alejado, pasa el río Jarama.'),
-(135, 'San Fernando', TRUE, 'Plaza Echebeste, 33', 'San Fernando es una estación de la línea 7 del Metro de Madrid situada bajo la Plaza de la Real Fábrica de Paños de San Fernando, en el casco histórico de San Fernando de Henares. Junto a la estación se encuentra el Ayuntamiento de San Fernando de Henares.'),
-(136, 'La Rambla', TRUE, 'Calle Honduras', 'La Rambla es una estación de la Línea 7 del Metro de Madrid situada bajo la intersección de las calles Honduras y México, en el municipio de Coslada.'),
-(137, 'Coslada Central', TRUE, 'Calle Doctor Fleming', 'Coslada Central es una estación de la línea 7 del Metro de Madrid, situada entre la calle de Pablo Neruda y el paseo de Francisco Javier Sauquillo, en el municipio madrileño de Coslada.'),
-(138, 'Barrio del Puerto', TRUE, 'Avenida de España', 'Barrio del Puerto es una estación de la línea 7 del Metro de Madrid situada bajo la avenida de España en el barrio del mismo nombre del municipio de Coslada.'),
-(139, 'Estadio Metropolitano', TRUE, 'Avenida de Arcentales', 'Acceso al estadio del Atlético de Madrid'),
-(140, 'Las Musas', TRUE, 'Calle Estocolmo', 'Zona residencial de San Blas'),
-(141, 'San Blas', TRUE, 'Calle Amposta', 'Centro del distrito San Blas-Canillejas'),
-(142, 'Simancas', FALSE, 'Calle de Simancas', 'Zona residencial'),
-(143, 'García Noblejas', FALSE, 'Calle de los Hermanos García Noblejas', 'Zona residencial'),
-(144, 'Ascao', FALSE, 'Calle de Ascao', 'Zona residencial del barrio Pueblo Nuevo'),
-(145, 'Barrio de la Concepción', TRUE, 'Plaza Virgen del Romero, 1', 'Barrio de la Concepción es una estación de la línea 7 del Metro de Madrid situada en el barrio de la Concepción, en el distrito de Ciudad Lineal.'),
-(146, 'Parque de las Avenidas', FALSE, 'Avenida de Bruselas, 56', 'Parque de las Avenidas es una estación de la línea 7 del Metro de Madrid situada bajo la avenida de Bruselas, en el barrio de La Guindalera, perteneciente al madrileño distrito de Salamanca.'),
-(147, 'Cartagena', FALSE, 'Avenida de América, 32', 'Cartagena es una estación de la Línea 7 del Metro de Madrid, situada entre los barrios de Prosperidad y La Guindalera bajo la intersección de la Avenida de América con la calle Cartagena.'),
-(148, 'Gregorio Marañón', TRUE, 'Calle de José Abascal', 'Conexión con Línea 10'),
-(149, 'Alonso Cano', FALSE, 'Calle de Alonso Cano', 'Barrio de Chamberí'),
-(150, 'Islas Filipinas', FALSE, 'Calle de Islas Filipinas', 'Distrito de Chamberí'),
-(151, 'Francos Rodríguez', FALSE, 'Calle de Francos Rodríguez', 'Zona residencial de Moncloa-Aravaca'),
-(152, 'Valdezarza', FALSE, 'Calle de Ofelia Nieto', 'Distrito Moncloa-Aravaca'),
-(153, 'Antonio Machado', FALSE, 'Calle de Antonio Machado', 'Zona residencial'),
-(154, 'Peñagrande', FALSE, 'Calle de Joaquín Lorenzo', 'Zona residencial de Fuencarral-El Pardo'),
-(155, 'Avenida de la Ilustración', TRUE, 'Av. de la Ilustración', 'Zona norte de Madrid junto a M-30'),
-(156, 'Lacoma', FALSE, 'Calle de Lacoma', 'Zona residencial del distrito Fuencarral-El Pardo'),
-(157, 'Arroyofresno', TRUE, 'Calle María de Maeztu, 52', 'Arroyofresno es una estación de la línea 7 del Metro de Madrid, situada en el área residencial de Arroyo del Fresno que forma parte del barrio de Mirasierra (distrito Fuencarral-El Pardo).'),
-(158, 'Pitis', FALSE, 'Calle Senda del Infante', 'Estación terminal con conexión a Cercanías');
+--
+-- Volcado de datos para la tabla `lineas`
+--
 
--- Inserción de estaciones de la Línea 8
-INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
-(159, 'Colombia', TRUE, 'Calle de Colombia', 'Conexión con Línea 9, zona empresarial y residencial'),
-(160, 'Pinar del Rey', TRUE, 'Calle de Pinar del Rey', 'Ubicada en el distrito de Hortaleza'),
-(161, 'Feria de Madrid', TRUE, 'Avenida del Partenón', 'Acceso al recinto ferial IFEMA'),
-(162, 'Aeropuerto T1-T2-T3', TRUE, 'Aeropuerto Adolfo Suárez Madrid-Barajas, Terminal 2', 'Acceso a terminales T1, T2 y T3'),
-(163, 'Barajas', TRUE, 'Plaza del Mercurio', 'Estación en el casco antiguo de Barajas'),
-(164, 'Aeropuerto T4', TRUE, 'Aeropuerto Adolfo Suárez Madrid-Barajas, Terminal 4', 'Conexión con Cercanías RENFE');
-
--- Inserción de estaciones de la Línea 9
-INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
-(165, 'Paco de Lucía', TRUE, 'Calle Costa Brava', 'Terminal norte de Línea 9, conexión con Cercanías'),
-(166, 'Mirasierra', TRUE, 'Av. Ventisquero de la Condesa', 'Barrio residencial, cerca del hospital Ruber Internacional'),
-(167, 'Herrera Oria', FALSE, 'Calle Fermín Caballero', 'Zona residencial, también aparece en Línea 7'),
-(168, 'Barrio del Pilar', TRUE, 'Av. Betanzos', 'Conexión con centro comercial La Vaguada'),
-(169, 'Ventilla', FALSE, 'Calle de Asturias', 'Zona residencial de Tetuán'),
-(170, 'Duque de Pastrana', FALSE, 'Paseo de la Habana', 'Zona empresarial de Chamartín'),
-(171, 'Pío XII', FALSE, 'Avenida de Pío XII', 'Zona empresarial y residencial'),
-(172, 'Concha Espina', FALSE, 'Calle Concha Espina', 'Próxima al estadio Santiago Bernabéu'),
-(173, 'Cruz del Rayo', FALSE, 'Calle Serrano', 'Zona residencial de Salamanca'),
-(174, 'Ibiza', FALSE, 'Calle Ibiza', 'Junto al Hospital Gregorio Marañón'),
-(175, 'Estrella', FALSE, 'Calle Estrella Polar', 'Zona residencial'),
-(176, 'Vinateros', FALSE, 'Calle Marroquina', 'Zona residencial'),
-(177, 'Artilleros', FALSE, 'Calle Pico de Artilleros', 'Zona residencial'),
-(178, 'Pavones', FALSE, 'Calle de los Pavones', 'Barrio de Moratalaz'),
-(179, 'Valdebernardo', FALSE, 'Calle Ladera de los Almendros', 'Distrito Vicálvaro'),
-(180, 'Vicálvaro', FALSE, 'Plaza de Alonso', 'Centro del barrio de Vicálvaro'),
-(181, 'San Cipriano', FALSE, 'Calle de San Cipriano', 'Zona residencial'),
-(182, 'Puerta de Arganda', TRUE, 'Calle Pico Artilleros', 'Transbordo entre Metro y MetroEste'),
-(183, 'Rivas-Urbanizaciones', TRUE, 'Av. de Levante', 'Urbanizaciones de Rivas Vaciamadrid'),
-(184, 'Rivas Futura', TRUE, 'Av. de Levante', 'Nuevo desarrollo urbanístico de Rivas-Vaciamadrid'),
-(185, 'Rivas Vaciamadrid', TRUE, 'Calle de la Fundición', 'Centro urbano de Rivas'),
-(186, 'La Poveda', TRUE, 'Calle Camino de la Poveda', 'Zona residencial de Arganda del Rey'),
-(187, 'Arganda del Rey', TRUE, 'Calle del Real', 'Terminal este de Línea 9');
-
-
--- Inserción de estaciones de la Línea 10
-INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
-(188, 'Hospital Infanta Sofía', TRUE, 'Av. de la Sierra, San Sebastián de los Reyes', 'Terminal norte de Línea 10'),
-(189, 'Reyes Católicos', TRUE, 'Av. de Reyes Católicos', 'Zona céntrica de San Sebastián de los Reyes'),
-(190, 'Baunatal', TRUE, 'Av. de España', 'Zona residencial y comercial'),
-(191, 'Manuel de Falla', TRUE, 'Av. de España, San Sebastián de los Reyes', 'Zona residencial'),
-(192, 'Marqués de la Valdavia', TRUE, 'Av. de España', 'Zona residencial de Alcobendas'),
-(193, 'La Moraleja', TRUE, 'Camino del Cura', 'Zona residencial de alto nivel'),
-(194, 'La Granja', TRUE, 'C/ Sepúlveda, 3', 'Situada en el municipio de Alcobendas en el polígono industrial Vereda del Pobre'),
-(195, 'Ronda de la Comunicación', TRUE, 'Distrito Telefónica', 'Sede central de Telefónica'),
-(196, 'Las Tablas', TRUE, 'Calle de Castiello de Jaca', 'Conexión con ML1'),
-(197, 'Montecarmelo', TRUE, 'Av. del Monte del Gozo', 'Barrio residencial al norte de Madrid'),
-(198, 'Tres Olivos', TRUE, 'Calle de Antonio Cabezón', 'Transbordo entre ramales de Línea 10'),
-(199, 'Fuencarral', TRUE, 'Calle de Nuestra Señora de Valverde', 'Zona norte tradicional'),
-(200, 'Begoña', TRUE, 'Av. de la Ilustración', 'Acceso al Hospital La Paz'),
-(201, 'Cuzco', TRUE, 'Paseo de la Castellana', 'Zona financiera'),
-(202, 'Santiago Bernabéu', TRUE, 'Paseo de la Castellana', 'Estadio del Real Madrid'),
-(203, 'Lago', TRUE, 'Paseo del Embarcadero', 'Acceso al Lago de la Casa de Campo'),
-(204, 'Batán', TRUE, 'Paseo de la Puerta del Ángel', 'Acceso al Parque de Atracciones'),
-(205, 'Colonia Jardín', TRUE, 'Calle del Oropéndola', 'Conexión con ML2 y ML3'),
-(206, 'Aviación Española', TRUE, 'Av. Aviación Española', 'Zona residencial'),
-(207, 'Cuatro Vientos', TRUE, 'Calle de Cuatro Vientos', 'Zona sur de Madrid'),
-(208, 'Joaquín Vilumbrales', TRUE, 'Av. de los Castillos', 'Alcorcón'),
-(209, 'Puerta del Sur', TRUE, 'Av. de Leganés', 'Conexión con Línea 12, Alcorcón');
-
--- Inserción de estaciones de la Línea 11
-INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
-(210, 'Abrantes', TRUE, 'Calle de Abrantes', 'Barrio de Carabanchel, zona residencial'),
-(211, 'Pan Bendito', TRUE, 'Calle del Cristo de Lepanto', 'Barrio Pan Bendito, zona sur de Madrid'),
-(212, 'San Francisco', TRUE, 'Calle de Camino Viejo de Leganés', 'Barrio de San Francisco, zona residencial'),
-(213, 'Carabanchel Alto', TRUE, 'Calle de Alfonso Fernández', 'Antiguo municipio anexionado a Madrid'),
-(214, 'La Peseta', TRUE, 'Avenida de La Peseta', 'Barrio de Carabanchel, junto al PAU'),
-(215, 'La Fortuna', TRUE, 'Avenida de la Libertad', 'Única estación de Metro en Leganés');
-
-
--- Inserción de estaciones de la Línea 12
-INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
-(216, 'Parque Lisboa', TRUE, 'Calle Porto Cristo', 'Zona residencial en Alcorcón'),
-(217, 'Alcorcón Central', TRUE, 'Calle del Retamas', 'Conexión con Cercanías RENFE'),
-(218, 'Parque Oeste', TRUE, 'Av. de la Libertad', 'Junto al centro comercial X-Madrid'),
-(219, 'Universidad Rey Juan Carlos', TRUE, 'Av. de Atenas', 'Campus de la URJC en Móstoles'),
-(220, 'Móstoles Central', TRUE, 'Calle del Cristo', 'Conexión con Cercanías RENFE'),
-(221, 'Pradillo', TRUE, 'Plaza del Pradillo', 'Centro de Móstoles'),
-(222, 'Hospital de Móstoles', TRUE, 'Av. de la Constitución', 'Acceso al hospital de Móstoles'),
-(223, 'Manuela Malasaña', TRUE, 'Calle Alfonso XII', 'Zona residencial de Móstoles'),
-(224, 'Loranca', TRUE, 'Av. Pablo Iglesias', 'Distrito de Loranca, Fuenlabrada'),
-(225, 'Hospital de Fuenlabrada', TRUE, 'Calle del Molino', 'Situada junto al Hospital de Fuenlabrada y el campus de la Universidad Rey Juan Carlos en Fuenlabrada'),
-(226, 'Parque Europa', TRUE, 'Calle Grecia', 'Zona nueva en Fuenlabrada'),
-(227, 'Fuenlabrada Central', TRUE, 'Plaza de la Constitución', 'Conexión con Cercanías RENFE'),
-(228, 'Parque de los Estados', TRUE, 'Calle Francia', 'Zona residencial de Fuenlabrada'),
-(229, 'Arroyo Culebro', TRUE, 'Av. del Hospital', 'Distrito de Leganés'),
-(230, 'Conservatorio', TRUE, 'Avenida de las Arcas del Agua, 9', 'El nombre se puso porque muy cerca de ella está el Conservatorio Profesional de Música de Getafe.'),
-(231, 'Alonso de Mendoza', TRUE, 'Calle El Greco, 2', 'Alonso de Mendoza es una estación de la línea 12 del Metro de Madrid ubicada bajo la calle del mismo nombre, en la zona sur del barrio de Alhóndiga de Getafe.'),
-(232, 'Getafe Central', TRUE, 'Av. Juan de la Cierva', 'Conexión con Cercanías RENFE'),
-(233, 'Juan de la Cierva', TRUE, 'Av. de Juan de la Cierva', 'Zona residencial de Getafe'),
-(234, 'Los Espartales', TRUE, 'Av. Rigoberta Menchú', 'Barrio nuevo en Getafe'),
-(235, 'El Bercial', TRUE, 'Calle Islas Cíes', 'Zona residencial y comercial'),
-(236, 'El Carrascal', TRUE, 'Av. Rey Juan Carlos I', 'Cerca del centro comercial Parquesur'),
-(237, 'Julián Besteiro', TRUE, 'Av. de Juan XXIII', 'Zona sur de Leganés'),
-(238, 'Casa del Reloj', TRUE, 'Calle del Maestro', 'Zona residencial'),
-(239, 'Hospital Severo Ochoa', TRUE, 'Calle del Río Tajo', 'Acceso al hospital Severo Ochoa'),
-(240, 'Leganés Central', TRUE, 'Av. Fuenlabrada', 'Conexión con Cercanías RENFE'),
-(241, 'San Nicasio', TRUE, 'Calle La Encina', 'San Nicasio es una estación de la línea 12 del Metro de Madrid situada en la confluencia de la parte antigua y el ensanche del barrio homónimo de Leganés. La estación abrió al público el 11 de abril de 2003.');
-
-
--- Inserción de estaciones de la Línea ML1
-INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
-(242, 'Fuente de la Mora', TRUE, 'Calle Fuente de la Mora', 'Conexión con Cercanías RENFE'),
-(243, 'Virgen del Cortijo', TRUE, 'Calle de Oña', 'Barrio residencial en Hortaleza'),
-(244, 'Antonio Saura', TRUE, 'Calle Antonio Saura', 'Zona empresarial de Sanchinarro'),
-(245, 'Álvarez de Villaamil', TRUE, 'Calle Álvarez de Villaamil', 'Sanchinarro'),
-(246, 'Blasco Ibáñez', TRUE, 'Calle Blasco Ibáñez', 'Barrio residencial de reciente construcción'),
-(247, 'María Tudor', TRUE, 'Calle María Tudor', 'Zona residencial de Sanchinarro'),
-(248, 'Palas de Rey', TRUE, 'Calle Palas de Rey', 'Zona norte de Sanchinarro');
-
-
--- Inserción de estaciones de la Línea ML2
-INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
-(249, 'Prado de la Vega', TRUE, 'Calle Prado de la Vega', 'Zona residencial cerca de Ciudad de la Imagen'),
-(250, 'Colonia de los Ángeles', TRUE, 'Av. del Talgo', 'Zona residencial en Pozuelo de Alarcón'),
-(251, 'Prado del Rey', TRUE, 'Av. de Radio Televisión', 'Centro de RTVE en Pozuelo'),
-(252, 'Somosaguas Sur', TRUE, 'Calle Isaac Albéniz', 'Zona residencial del Campus de Somosaguas'),
-(253, 'Somosaguas Centro', TRUE, 'Calle de la Libertad', 'Zona universitaria de Somosaguas'),
-(254, 'Pozuelo Oeste', TRUE, 'Calle Portugal', 'Zona comercial de Pozuelo'),
-(255, 'Bélgica', TRUE, 'Av. de Europa', 'Barrio de Pozuelo de Alarcón'),
-(256, 'Dos Castillas', TRUE, 'Av. de Europa', 'Zona empresarial de Pozuelo'),
-(257, 'Campus de Somosaguas', TRUE, 'Campus de Somosaguas', 'Universidad Complutense de Madrid'),
-(258, 'Avenida de Europa', TRUE, 'Av. de Europa', 'Zona residencial y de oficinas'),
-(259, 'Berna', TRUE, 'Calle de Berna', 'Zona residencial y empresarial'),
-(260, 'Estación de Aravaca', TRUE, 'Av. de la Osa Mayor', 'Conexión con Cercanías RENFE');
-
-
--- Inserción de estaciones de la Línea ML3
-INSERT INTO estaciones (id, nombre, accesibilidad, direccion, descripcion) VALUES
-(261, 'Ciudad de la Imagen', TRUE, 'Calle Luis Buñuel', 'Centro audiovisual y comercial'),
-(262, 'José Isbert', TRUE, 'Calle José Isbert', 'Zona de ocio y cines'),
-(263, 'Ciudad del Cine', TRUE, 'Calle Juan de Orduña', 'Zona audiovisual'),
-(264, 'Cocheras', TRUE, 'Camino de las Huertas', 'Depósito y talleres del metro ligero'),
-(265, 'Retamares', TRUE, 'Calle Retamares', 'Zona empresarial'),
-(266, 'Montepríncipe', TRUE, 'Av. de Montepríncipe', 'Campus universitario y hospital'),
-(267, 'Ventorro del Cano', TRUE, 'Pol. Ind. Ventorro del Cano', 'Zona empresarial'),
-(268, 'Prado del Espino', TRUE, 'Calle Prado del Espino', 'Zona industrial y empresarial'),
-(269, 'Cantabria', TRUE, 'Calle Cantabria', 'Barrio residencial'),
-(270, 'Ferial de Boadilla', TRUE, 'Av. Infante Don Luis', 'Zona del recinto ferial'),
-(271, 'Boadilla Centro', TRUE, 'Plaza de la Constitución', 'Centro histórico de Boadilla'),
-(272, 'Nuevo Mundo', TRUE, 'Calle Nuevo Mundo', 'Zona residencial'),
-(273, 'Siglo XXI', TRUE, 'Calle Siglo XXI', 'Barrio moderno en expansión'),
-(274, 'Infante Don Luis', TRUE, 'Av. Infante Don Luis', 'Zona comercial'),
-(275, 'Puerta de Boadilla', TRUE, 'Calle Valle del Silencio', 'Terminal de ML3');
-
-
-TRUNCATE TABLE `estaciones_lineas`;
-
--- Asignación de estaciones a la Línea 1
-INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(1, 1, 1),   -- Pinar de Chamartín
-(2, 1, 2),   -- Bambú
-(3, 1, 3),   -- Chamartín
-(4, 1, 4),   -- Plaza de Castilla
-(5, 1, 5),   -- Valdeacederas
-(6, 1, 6),   -- Tetuán
-(7, 1, 7),   -- Estrecho
-(8, 1, 8),   -- Alvarado
-(9, 1, 9),   -- Cuatro Caminos
-(10, 1, 10), -- Ríos Rosas
-(12, 1, 12), -- Bilbao
-(13, 1, 13), -- Tribunal
-(14, 1, 14), -- Gran Vía
-(15, 1, 15), -- Sol
-(16, 1, 16), -- Tirso de Molina
-(17, 1, 17), -- Antón Martín
-(18, 1, 18), -- Estación del Arte
-(19, 1, 19), -- Atocha
-(20, 1, 20), -- Menéndez Pelayo
-(21, 1, 21), -- Pacífico
-(22, 1, 22), -- Puente de Vallecas
-(23, 1, 23), -- Nueva Numancia
-(24, 1, 24), -- Portazgo
-(25, 1, 25), -- Buenos Aires
-(26, 1, 26), -- Alto del Arenal
-(27, 1, 27), -- Miguel Hernández
-(28, 1, 28), -- Sierra de Guadalupe
-(29, 1, 29), -- Villa de Vallecas
-(30, 1, 30), -- Congosto
-(31, 1, 31), -- La Gavia
-(32, 1, 32), -- Las Suertes
-(33, 1, 33); -- Valdecarros
-
--- Asignación a Línea 2 (ID línea = 2)
-INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(51, 2, 1),   -- Las Rosas
-(50, 2, 2),   -- Avenida de Guadalajara
-(49, 2, 3),   -- Alsacia
-(48, 2, 4),   -- La Almudena
-(47, 2, 5),   -- La Elipa
-(46, 2, 6),   -- Ventas
-(45, 2, 7),   -- Manuel Becerra
-(44, 2, 8),   -- Goya
-(43, 2, 9),   -- Príncipe de Vergara
-(42, 2, 10),  -- Retiro
-(41, 2, 11),  -- Banco de España
-(40, 2, 12),  -- Sevilla
-(15, 2, 13),  -- Sol (ya insertada previamente)
-(39, 2, 14),  -- Ópera
-(38, 2, 15),  -- Santo Domingo
-(37, 2, 16),  -- Noviciado
-(36, 2, 17),  -- San Bernardo
-(35, 2, 18),  -- Quevedo
-(34, 2, 19),  -- Canal
-(9, 2, 20);   -- Cuatro Caminos (ya insertada previamente)
-
--- Asignación a Línea 3 (ID línea = 3)
-INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(52, 3, 1),   -- Moncloa
-(53, 3, 2),   -- Argüelles
-(54, 3, 3),   -- Ventura Rodríguez
-(55, 3, 4),   -- Plaza de España
-(56, 3, 5),   -- Callao
-(15, 3, 6),   -- Sol
-(57, 3, 7),   -- Lavapiés
-(58, 3, 8),   -- Embajadores
-(59, 3, 9),   -- Palos de la Frontera
-(60, 3, 10),  -- Delicias
-(61, 3, 11),  -- Legazpi
-(62, 3, 12),  -- Almendrales
-(63, 3, 13),  -- Hospital 12 de Octubre
-(64, 3, 14),  -- San Fermín-Orcasur
-(65, 3, 15),  -- Ciudad de los Ángeles
-(66, 3, 16),  -- Villaverde Bajo-Cruce
-(67, 3, 17),  -- San Cristóbal
-(68, 3, 18),  -- Villaverde Alto
-(69, 3, 19);  -- El Casar
-
--- Asignación a Línea 4 (ID línea = 4)
-INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(53, 4, 1),   -- Argüelles
-(36, 4, 2),   -- San Bernardo
-(12, 4, 3),   -- Bilbao
-(70, 4, 4),   -- Alonso Martínez
-(71, 4, 5),   -- Colón
-(72, 4, 6),   -- Serrano
-(73, 4, 7),   -- Velázquez
-(44, 4, 8),   -- Goya
-(74, 4, 9),   -- Lista
-(75, 4, 10),  -- Diego de León
-(76, 4, 11),  -- Avenida de América
-(77, 4, 12),  -- Prosperidad
-(78, 4, 13),  -- Alfonso XIII
-(79, 4, 14),  -- Avenida de la Paz
-(80, 4, 15),  -- Arturo Soria
-(81, 4, 16),  -- Esperanza
-(82, 4, 17),  -- Canillas
-(83, 4, 18),  -- Mar de Cristal
-(84, 4, 19),  -- San Lorenzo
-(85, 4, 20),  -- Parque de Santa María
-(86, 4, 21),  -- Hortaleza
-(87, 4, 22),  -- Manoteras
-(1, 4, 23);   -- Pinar de Chamartín
-
--- Inserción de estaciones para la Línea 5 en lineas_estaciones
-INSERT INTO estaciones_lineas (linea_id, estacion_id, orden) VALUES
-(88, 5, 1),   -- Alameda de Osuna
-(89, 5, 2),   -- El Capricho
-(90, 5, 3),   -- Canillejas
-(91, 5, 4),   -- Torre Arias
-(92, 5, 5),   -- Suanzes
-(93, 5, 6),   -- Ciudad Lineal
-(94, 5, 7),   -- Pueblo Nuevo
-(95, 5, 8),   -- Quintana
-(96, 5, 9),   -- El Carmen
-(46, 5, 10)   -- Ventas
-(75, 5, 11),  -- Diego de León
-(97, 5, 12),  -- Núñez de Balboa
-(98, 5, 13),  -- Rubén Darío
-(99, 5, 14), -- Chueca
-(14, 5, 15),  -- Gran Vía
-(100, 5, 16), -- La Latina
-(101, 5, 17), -- Puerta de Toledo
-(58, 5, 18),  -- Acacias (Embajadores)
-(102, 5, 19), -- Pirámides
-(103, 5, 20), -- Marqués de Vadillo
-(104, 5, 21), -- Urgel
-(105, 5, 22), -- Oporto
-(106, 5, 23), -- Vista Alegre
-(107, 5, 24), -- Carabanchel
-(108, 5, 25), -- Eugenia de Montijo
-(109, 5, 26), -- Aluche
-(110, 5, 27), -- Empalme
-(111, 5, 28), -- Campamento
-(112, 5, 29); -- Casa de Campo
-
--- Inserción de estaciones para la Línea 6 en lineas_estaciones
-INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(113, 6, 1), -- Laguna
-(114, 6, 2), -- Carpetana
-(105, 6, 3), -- Oporto
-(115, 6, 4), -- Opañel
-(116, 6, 5), -- Plaza Eliptica
-(117, 6, 6), -- Usera
-(61, 6, 7), -- Legazpi
-(118, 6, 8), -- Arganzuela-Planetario
-(119, 6, 9), -- Mendez Alvaro
-(21, 6, 10), -- Pacifico
-(120, 6, 11), -- Conde de Casal
-(121, 6, 12), -- Sainz de Baranda
-(122, 6, 13), -- O'Donnell
-(45, 6, 14), -- Manuel Becerra
-(75, 6, 15), -- Diego de León
-(76, 6, 16), -- Avenida de América
-(123, 6, 17), -- República Argentina
-(124, 6, 18), -- Nuevos Ministerios
-(9, 6, 19), -- Cuatro Caminos
-(125, 6, 20), -- Guzmán el Bueno
-(126, 6, 21), -- Vicente Aleixandre
-(127, 6, 22), -- Ciudad Universitaria
-(52, 6, 23), -- Moncloa
-(53, 6, 24), -- Argüelles
-(128, 6, 25), -- Principe Pío
-(129, 6, 26), -- Puerta del Angel
-(130, 6, 27); -- Alto de Extremadura
-(131, 6, 27); -- Lucero
-
--- Inserción de estaciones para la Línea 7 en lineas_estaciones
-INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(132, 7, 1), -- Hospital del Henares
-(133, 7, 2), -- Henares
-(134, 7, 3), -- Jarama
-(135, 7, 4), -- San Fernando
-(136, 7, 5), -- La Rambla
-(137, 7, 6), -- Coslada Central
-(138, 7, 7), -- Barrio del Puerto
-(139, 7, 8), -- Estadio Metropolitano
-(140, 7, 9), -- Las Musas
-(141, 7, 10), -- San Blas
-(142, 7, 11), -- Simancas
-(143, 7, 12), -- García Noblejas
-(144, 7, 13), -- Ascao
-(94, 7, 14), -- Pueblo Nuevo
-(145, 7, 15), -- Barrio de la Concepción
-(146, 7, 16), -- Parque de las Avenidas
-(147, 7, 17), -- Cartagena
-(76, 7, 18), -- Avenida de América
-(148, 7, 19), -- Gregorio Marañón
-(149, 7, 20), -- Alonso Cano
-(34, 7, 21), -- Canal
-(150, 7, 22), -- Islas Filipinas
-(125, 7, 23), -- Guzmán el Bueno
-(151, 7, 24), -- Francos Rodríguez
-(152, 7, 25), -- Valdezarza
-(153, 7, 26), -- Antonio Machado
-(154, 7, 27), -- Peñagrande
-(155, 7, 28), -- Avenida de la Ilustración
-(156, 7, 29), -- Lacoma
-(157, 7, 30), -- Arroyofresno
-(158, 7, 31); -- Pitis
-
--- Inserción de estaciones para la Línea 8 en lineas_estaciones
-INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(124, 8, 1), -- Nuevos Ministerios
-(159, 8, 2), -- Colombia
-(160, 8, 3), -- Pinar del Rey
-(83, 8, 4), -- Mar de Cristal
-(161, 8, 5), -- Feria de Madrid
-(162, 8, 6), -- Aeropuerto T1-T2-T3
-(163, 8, 7), -- Barajas
-(164, 8, 8); -- Aeropuerto T4
-
--- Inserción de estaciones para la Línea 9 en lineas_estaciones
-INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(165, 9, 1), -- Paco de Lucía
-(166, 9, 2), -- Mirasierra
-(167, 9, 3), -- Herrera Oria
-(168, 9, 4), -- Barrio del Pilar
-(169, 9, 5), -- Ventilla
-(4, 9, 6), -- Plaza de Castilla
-(170, 9, 7), -- Duque de Pastrana
-(171, 9, 8), -- Pío XII
-(159, 9, 9), -- Colombia
-(172, 9, 10), -- Concha Espina
-(173, 9, 11), -- Cruz del Rayo
-(76, 9, 12), -- Avenida de América
-(97, 9, 13), -- Núñez de Balboa
-(43, 9, 14), -- Príncipe de Vergara
-(174, 9, 15), -- Ibiza
-(121, 9, 16), -- Sainz de Baranda
-(175, 9, 17), -- Estrella
-(176, 9, 18), -- Vinateros
-(177, 9, 19), -- Artilleros
-(178, 9, 20), -- Pavones
-(179, 9, 21), -- Valdebernardo
-(180, 9, 22), -- Vicálvaro
-(181, 9, 23), -- San Cipriano
-(182, 9, 24), -- Puerta de Arganda
-(183, 9, 25), -- Rivas Urbanizaciones
-(184, 9, 26), -- Rivas Futura
-(185, 9, 27), -- Rivas Vaciamadrid
-(186, 9, 28), -- La Poveda
-(187, 9, 29); -- Arganda del Rey
-
--- Inserción de estaciones para la Línea 10 en lineas_estaciones
-INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(188, 10, 1), -- Hospital Infanta Sofía
-(189, 10, 2), -- Reyes Católicos
-(190, 10, 3), -- Baunatal
-(191, 10, 4), -- Manuel de Falla
-(192, 10, 5), -- Marqués de la Valdavia
-(192, 10, 6), -- La Moraleja
-(194, 10, 7), -- La Granja
-(195, 10, 8), -- Ronda de la Comunicación
-(196, 10, 9), -- Las Tablas
-(197, 10, 10), -- Montecarmelo
-(198, 10, 11), -- Tres Olivos
-(199, 10, 12), -- Fuencarral
-(200, 10, 13), -- Begoña
-(3, 10, 14), -- Chamartín
-(4, 10, 15), -- Plaza de Castilla
-(201, 10, 16), -- Cuzco
-(202, 10, 17), -- Santiago Bernabéu
-(124, 10, 18), -- Nuevos Ministerios
-(148, 10, 19), -- Gregorio Marañón
-(70, 10, 20), -- Alonso Martínez
-(13, 10, 21), -- Tribunal
-(55, 10, 22), -- Plaza de España 
-(128, 10, 23), -- Príncipe Pío
-(203, 10, 24), -- Lago
-(204, 10, 25), -- Batán
-(112, 10, 26), -- Casa de Campo
-(205, 10, 27), -- Colonia Jardín
-(206, 10, 28), -- Aviación Española
-(207, 10, 29), -- Cuatro Vientos
-(208, 10, 30), -- Joaquín Vilumbrales
-(209, 10, 31); -- Puerta del Sur
-
--- Inserción de estaciones para la Línea 11 en lineas_estaciones
-INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(116, 11, 1), -- Plaza Elíptica
-(210, 11, 2), -- Abrantes
-(211, 11, 3), -- Pan Bendito
-(212, 11, 4), -- San Francisco
-(213, 11, 5), -- Carabanchel Alto
-(214, 11, 6), -- La Peseta
-(215, 11, 7); -- La Fortuna
-
--- Inserción de estaciones para la Línea 12 en lineas_estaciones
-INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(209, 12, 1), -- Puerta del Sur
-(216, 12, 2), -- Parque de Lisboa
-(217, 12, 3), -- Alcorcón Central
-(218, 12, 4), -- Parque Oeste
-(219, 12, 5), -- Universidad Rey Juan Carlos
-(220, 12, 6), -- Móstoles Central
-(221, 12, 7), -- Pradillo
-(222, 12, 8), -- Hospital de Móstoles
-(223, 12, 9), -- Manuela Malasaña
-(224, 12, 10), -- Loranca
-(225, 12, 11), -- Hospital de Fuenlabrada
-(226, 12, 12), -- Parque Europa
-(227, 12, 13), -- Fuenlabrada Central
-(228, 12, 14), -- Parque de los Estados
-(229, 12, 15), -- Arroyo Culebro
-(230, 12, 16), -- Conservatorio
-(231, 12, 17), -- Alonso de Mendoza
-(232, 12, 18), -- Getafe Central
-(233, 12, 19), -- Juan de la Cierva
-(69, 12, 20), -- El Casar
-(234, 12, 21), -- Los Espartales
-(235, 12, 22), -- El Bercial
-(236, 12, 23), -- El Carrascal
-(237, 12, 24), -- Julián Besteiro
-(238, 12, 25), -- Casa del Reloj
-(239, 12, 26), -- Hospital Severo Ochoa
-(240, 12, 27), -- Leganés Central
-(241, 12, 28); -- San Nicasio
-
--- Inserción de estaciones para la Línea RAMAL en lineas_estaciones
-INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(39, 13, 1), -- Ópera
-(128, 13, 2); -- Príncipe Pío
-
-
--- Inserción de estaciones para la Línea ML1 en lineas_estaciones
-INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(1, 14, 1), -- Pinar de Chamartín
-(242, 14, 2), -- Fuente de la Mora
-(243, 14, 3), -- Virgen del Cortijo
-(244, 14, 4), -- Antonio Saura
-(245, 14, 5), -- Álvarez de Villaamil
-(246, 14, 6), -- Blasco Ibáñez
-(247, 14, 7), -- María Tudor
-(248, 14, 8), -- Palas de Rey
-(196, 14, 9); -- Las Tablas
-
--- Inserción de estaciones para la Línea ML2 en lineas_estaciones
-INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(205, 15, 1), -- Colonia Jardín
-(249, 15, 2), -- Prado de la Vega
-(250, 15, 3), -- Colonia de los Ángeles
-(251, 15, 4), -- Prado del Rey
-(252, 15, 5), -- Somosaguas Sur
-(253, 15, 6), -- Somosaguas Centro
-(254, 15, 7), -- Pozuelo Oeste
-(255, 15, 8), -- Bélgica
-(256, 15, 9), -- Dos Castillas
-(257, 15, 10), -- Campus de Somosaguas
-(258, 15, 11), -- Avenida de Europa
-(259, 15, 12), -- Berna
-(260, 15, 13); -- Estación de Aravaca
-
--- Inserción de estaciones para la Línea ML3 en lineas_estaciones
-INSERT INTO estaciones_lineas (estacion_id, linea_id, orden) VALUES
-(205, 16, 1), -- Colonia Jardín
-(261, 16, 2), -- Ciudad de la Imagen
-(262, 16, 3), -- José Isbert
-(263, 16, 4), -- Ciudad del Cine
-(264, 16, 5), -- Cocheras
-(265, 16, 6), -- Retamares
-(266, 16, 7), -- Montepríncipe
-(267, 16, 8), -- Ventorro del Cano
-(268, 16, 9), -- Prado del Espino
-(269, 16, 10), -- Cantabria
-(270, 16, 11), -- Ferial de Boadilla
-(271, 16, 12), -- Boadilla Centro
-(272, 16, 13), -- Nuevo Mundo
-(273, 16, 14), -- Siglo XXI
-(274, 16, 15), -- Infante Don Luis
-(275, 16, 16); -- Puerta de Boadilla
-
-
-TRUNCATE TABLE `transbordos`;
-
--- Transbordos para estaciones de la Línea 1
-INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
-('1', '1', '4,14'),         -- Pinar de Chamartín
-('2', '3', '10'),           -- Chamartín
-('3', '4', '9,10'),         -- Plaza de Castilla
-('4', '9', '2,6'),          -- Cuatro Caminos
-('5', '12', '4'),           -- Bilbao
-('6', '13', '10'),          -- Tribunal
-('7', '14', '5'),           -- Gran Vía
-('8', '15', '2,3'),         -- Sol
-('9', '21', '6');           -- Pacífico
-
--- Transbordos para estaciones de la Línea 2
-INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
-('10', '9', '1,6'),          -- Cuatro Caminos
-('11', '34', '7'),           -- Canal
-('12', '36', '4'),           -- San Bernardo
-('13', '39', '5,13'),        -- Ópera
-('14', '15', '1,3'),         -- Sol
-('15', '43', '9'),           -- Príncipe de Vergara
-('16', '44', '4'),           -- Goya
-('17', '45', '6'),           -- Manuel Becerra
-('18', '46', '5');           -- Ventas
-
--- Transbordos para estaciones de la Línea 3
-INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
-('19', '52', '6'),            -- Moncloa
-('20', '53', '4'),            -- Argüelles
-('21', '55', '10'),           -- Plaza de España
-('22', '56', '5'),            -- Callao
-('23', '15', '1,2'),          -- Sol
-('24', '58', '5'),            -- Embajadores
-('25', '61', '6'),            -- Legazpi
-('26', '69', '12');           -- El Casar
-
--- Transbordos para estaciones de la Línea 4
-INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
-('27', '53', '3,6'),     -- Argüelles
-('28', '36', '2'),       -- San Bernardo
-('29', '12', '1'),       -- Bilbao
-('30', '70', '5,10'),    -- Alonso Martínez
-('31', '44', '2'),       -- Goya
-('32', '75', '5,6'),     -- Diego de León
-('33', '76', '6,7,9'),   -- Avenida de América
-('34', '83', '8'),       -- Mar de Cristal
-('35', '1', '1,14');     -- Pinar de Chamartín
-
--- Transbordos para estaciones de la Línea 5
-INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
-('36', '94', '7'),       -- Pueblo Nuevo
-('37', '46', '2'),       -- Ventas
-('38', '75', '4,6'),     -- Diego de León
-('39', '97', '9'),       -- Núñez de Balboa
-('40', '70', '4,10'),    -- Alonso Martínez
-('41', '14', '1'),       -- Gran Vía
-('42', '56', '3'),       -- Callao
-('43', '39', '2,13'),    -- Ópera
-('44', '58', '3'),       -- Acacias (Embajadores)
-('45', '105', '6'),      -- Oporto
-('46', '112', '10');     -- Casa de Campo
-
--- Transbordos para estaciones de la Línea 6
-INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
-('47', '105', '5'),          -- Oporto
-('48', '116', '11'),         -- Plaza Elíptica
-('49', '61', '3'),           -- Legazpi
-('50', '21', '1'),           -- Pacífico
-('51', '121', '9'),          -- Sainz de Baranda
-('52', '45', '2'),           -- Manuel Becerra
-('53', '75', '4,5'),         -- Diego de León
-('54', '76', '4,7,9'),       -- Avenida de América
-('55', '124', '8,10'),       -- Nuevos Ministerios
-('56', '9', '1,2'),          -- Cuatro Caminos
-('57', '125', '7'),          -- Guzmán El Bueno
-('55', '52', '3'),           -- Moncloa
-('56', '53', '3,4'),         -- Argüelles
-('57', '128', '10,13');      -- Principe Pio
-
--- Transbordos para estaciones de la Línea 7
-INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
-('58', '94', '5'),           -- Pueblo Nuevo
-('59', '76', '4,6,9'),       -- Avenida de América
-('60', '148', '10'),         -- Gregorio Marañón
-('61', '34', '2');           -- Canal
-
--- Transbordos para estaciones de la Línea 8
-INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
-('62', '124', '6,10'),       -- Nuevos Ministerios
-('63', '159', '9'),          -- Colombia
-('64', '83', '10');          -- Mar de Cristal
-
--- Transbordos para estaciones de la Línea 9
-INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
-('65', '4', '1,10'),         -- Plaza de Castilla
-('66', '159', '8'),          -- Colombia
-('67', '76', '4,6,7'),       -- Avenida de América
-('68', '97', '5'),           -- Núñez de Balboa
-('69', '43', '2'),           -- Príncipe de Vergara
-('70', '121', '6');          -- Sainz de Baranda
-
--- Transbordos para estaciones de la Línea 10
-INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
-('71', '196', '14'),         -- Las Tablas
-('72', '3', '1'),            -- Chamartín
-('73', '4', '1,9'),          -- Plaza de Castilla
-('74', '124', '6,8'),        -- Nuevos Ministerios
-('75', '148', '7'),          -- Gregorio Marañón
-('76', '70', '4,5'),         -- Alonso Martínez
-('77', '13', '1'),           -- Tribunal
-('78', '55', '2,3'),         -- Plaza de España
-('79', '128', '6,13'),       -- Príncipe Pío
-('80', '112', '5'),          -- Casa de Campo
-('81', '205', '15,16'),      -- Colonia Jardín
-('82', '209', '12');         -- Puerta del Sur
-
--- Transbordos para estaciones de la Línea 11
-INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
-('83', '116', '6');          -- Plaza Elíptica
-
--- Transbordos para estaciones de la Línea 12
-INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
-('84', '209', '10'),         -- Puerta del Sur
-('85', '69', '3');           -- El Casar
-
--- Transbordos para estaciones de la Línea Ramal
-INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
-('86', '39', '2,5'),         -- Ópera
-('87', '128', '6,10');       -- Principe Pio
-
--- Transbordos para estaciones de la Línea ML1
-INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
-('88', '1', '1,4'),          -- Pinar de Chamartín
-('89', '196', '10');         -- Las Tablas
-
--- Transbordos para estaciones de la Línea ML2
-INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
-('90', '205', '10,16');      -- Colonia Jardín
-
--- Transbordos para estaciones de la Línea ML3
-INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
-('91', '205', '10,15');      -- Colonia Jardín
-
--- Lineas de metro
-TRUNCATE TABLE `lineas`;
-INSERT INTO `lineas` (`id`, `nombre`, `siglas`) VALUES 
+INSERT INTO `lineas` (`id`, `nombre`, `siglas`) VALUES
 (1, 'Línea 1', 'L1'),
 (2, 'Línea 2', 'L2'),
 (3, 'Línea 3', 'L3'),
@@ -866,3 +1288,108 @@ INSERT INTO `lineas` (`id`, `nombre`, `siglas`) VALUES
 (14, 'Metro Ligero 1', 'ML1'),
 (15, 'Metro Ligero 2', 'ML2'),
 (16, 'Metro Ligero 3', 'ML3');
+
+--
+-- Volcado de datos para la tabla `transbordos`
+--
+
+INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
+(1, 1, '4,14'),
+(2, 3, '10'),
+(3, 4, '9,10'),
+(4, 9, '2,6'),
+(5, 12, '4'),
+(6, 13, '10'),
+(7, 14, '5'),
+(8, 15, '2,3'),
+(9, 21, '6'),
+(10, 9, '1,6'),
+(11, 34, '7'),
+(12, 36, '4'),
+(13, 39, '5,13'),
+(14, 15, '1,3'),
+(15, 43, '9'),
+(16, 44, '4'),
+(17, 45, '6'),
+(18, 46, '5'),
+(19, 52, '6'),
+(20, 53, '4'),
+(21, 55, '10'),
+(22, 56, '5'),
+(23, 15, '1,2'),
+(24, 58, '5'),
+(25, 61, '6'),
+(26, 69, '12'),
+(27, 53, '3,6'),
+(28, 36, '2'),
+(29, 12, '1'),
+(30, 70, '5,10'),
+(31, 44, '2'),
+(32, 75, '5,6'),
+(33, 76, '6,7,9'),
+(34, 83, '8'),
+(35, 1, '1,14'),
+(36, 94, '7'),
+(37, 46, '2'),
+(38, 75, '4,6'),
+(39, 97, '9'),
+(40, 70, '4,10'),
+(41, 14, '1'),
+(42, 56, '3'),
+(43, 39, '2,13'),
+(44, 58, '3'),
+(45, 105, '6'),
+(46, 112, '10'),
+(47, 105, '5'),
+(48, 116, '11'),
+(49, 61, '3'),
+(50, 21, '1'),
+(51, 121, '9'),
+(52, 45, '2'),
+(53, 75, '4,5'),
+(54, 76, '4,7,9'),
+(55, 124, '8,10'),
+(56, 9, '1,2'),
+(57, 125, '7'),
+(58, 52, '3'),
+(59, 53, '3,4'),
+(60, 128, '10,13'),
+(61, 94, '5'),
+(62, 76, '4,6,9'),
+(63, 148, '10'),
+(64, 34, '2'),
+(65, 124, '6,10'),
+(66, 159, '9'),
+(67, 83, '10'),
+(68, 4, '1,10'),
+(69, 159, '8'),
+(70, 76, '4,6,7'),
+(71, 97, '5'),
+(72, 43, '2'),
+(73, 121, '6'),
+(74, 196, '14'),
+(75, 3, '1'),
+(76, 4, '1,9'),
+(77, 124, '6,8'),
+(78, 148, '7'),
+(79, 70, '4,5'),
+(80, 13, '1'),
+(81, 55, '2,3'),
+(82, 128, '6,13'),
+(83, 112, '5'),
+(84, 205, '15,16'),
+(85, 209, '12'),
+(86, 116, '6'),
+(87, 209, '10'),
+(88, 69, '3'),
+(89, 39, '2,5'),
+(90, 128, '6,10'),
+(91, 1, '1,4'),
+(92, 196, '10'),
+(93, 205, '10,16'),
+(94, 205, '10,15');
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
