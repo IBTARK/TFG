@@ -25,6 +25,7 @@ SET time_zone = "+00:00";
 -- Volcado de datos para la tabla `conexiones`
 --
 
+TRUNCATE TABLE `conexiones`;
 INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`, `tiempo`) VALUES
 (1, 1, 2, 3),
 (2, 2, 1, 4),
@@ -659,6 +660,7 @@ INSERT INTO `conexiones` (`id`, `estacion_origen`, `estacion_destino`, `tiempo`)
 -- Volcado de datos para la tabla `estaciones`
 --
 
+TRUNCATE TABLE `estaciones`;
 INSERT INTO `estaciones` (`id`, `nombre`, `direccion`, `descripcion`) VALUES
 (1, 'Pinar de Chamartín', 'Calle Arturo Soria, 330', 'Estación terminal de la línea 1 con conexión con la línea 4 y ML1.'),
 (2, 'Bambú', 'Calle Bambú, 12', 'Estación ubicada en el barrio de Chamartín.'),
@@ -940,6 +942,7 @@ INSERT INTO `estaciones` (`id`, `nombre`, `direccion`, `descripcion`) VALUES
 -- Volcado de datos para la tabla `estaciones_lineas`
 --
 
+TRUNCATE TABLE `estaciones_lineas`;
 INSERT INTO `estaciones_lineas` (`estacion_id`, `linea_id`, `orden`) VALUES
 (1, 1, 1),
 (1, 4, 23),
@@ -1271,6 +1274,7 @@ INSERT INTO `estaciones_lineas` (`estacion_id`, `linea_id`, `orden`) VALUES
 -- Volcado de datos para la tabla `lineas`
 --
 
+TRUNCATE TABLE `lineas`;
 INSERT INTO `lineas` (`id`, `nombre`, `siglas`, `color`) VALUES
 (1, 'Línea 1', 'L1', 'AEC9E0'),
 (2, 'Línea 2', 'L2', 'FF0000'),
@@ -1293,6 +1297,7 @@ INSERT INTO `lineas` (`id`, `nombre`, `siglas`, `color`) VALUES
 -- Volcado de datos para la tabla `transbordos`
 --
 
+TRUNCATE TABLE `transbordos`;
 INSERT INTO `transbordos` (`id`, `id_estacion`, `lineas_trasbordos`) VALUES
 (1, 1, '4,14'),
 (2, 3, '10'),
