@@ -1,0 +1,5 @@
+movilidad: (pequeño, 1)
+salida: (cerca, 1)
+estacion: (señalizar, 4)(luminoso, 2)(cerca, 2)(amable, 4)(bien, 1)
+acceso: (bien, 1)
+metro: 

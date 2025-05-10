@@ -1,0 +1,7 @@
+estacion: (limpio, 4)(amable, 1)(profundo, 1)(transitado, 3)(centrado, 1)(bien, 2)(grande, 1)(comodo, 1)(nuevo, 1)(intransitado, 1)(ubicado, 1)
+frecuencia: 
+linea: (nuevo, 1)(inaccesible, 1)
+acceso: (principal, 1)(bien, 2)(rapido, 1)
+escalera: (mecanico, 1)
+metro: (comodo, 1)(rapido, 1)
+servicio: (bien, 3)

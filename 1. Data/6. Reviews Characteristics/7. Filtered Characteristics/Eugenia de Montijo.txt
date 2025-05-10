@@ -1,0 +1,3 @@
+estacion: (centrado, 2)(limpio, 2)(nuevo, 4)(bien, 7)(vestibulo, 1)(grande, 1)
+transporte: (publico, 1)
+ascensor: (tranquilo, 1)

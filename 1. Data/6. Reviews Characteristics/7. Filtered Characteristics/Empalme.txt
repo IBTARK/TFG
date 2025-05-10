@@ -1,0 +1,7 @@
+estacion: (bien, 9)(accesible, 6)(diferente, 1)
+linea: (importante, 2)(unico, 1)(confuso, 1)
+escalera: (mecanico, 4)
+movilidad: (pequeño, 1)
+servicio: (bien, 3)(local, 1)
+senalizacion: (claro, 1)
+maquina: (expendedor, 1)

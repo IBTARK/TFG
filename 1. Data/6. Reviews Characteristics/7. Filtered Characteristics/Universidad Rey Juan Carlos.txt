@@ -1,0 +1,3 @@
+estacion: (nuevo, 4)(ubicado, 3)(cerca, 2)(limpio, 1)(comunicado, 1)(ascensor, 1)(normal, 1)
+gente: (bien, 1)(mal, 1)
+instalacion: (bien, 1)

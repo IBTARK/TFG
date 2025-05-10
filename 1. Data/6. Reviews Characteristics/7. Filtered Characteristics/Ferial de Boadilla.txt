@@ -1,0 +1,2 @@
+estacion: (lento, 1)(servicio, 1)(bien, 2)
+servicio: (bien, 1)(lento, 1)

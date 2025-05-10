@@ -1,0 +1,9 @@
+estacion: (nuevo, 3)(bien, 16)(luminoso, 3)(rapido, 1)(normal, 1)
+escalera: (mecanico, 3)(electrico, 1)
+cobertura: (movil, 1)
+acceso: (bien, 3)
+movilidad: (pequeño, 2)
+linea: (verde, 1)(oscuro, 1)(inutil, 1)
+personal: (amable, 1)(discapacitado, 1)
+instalacion: (bien, 2)
+zona: 

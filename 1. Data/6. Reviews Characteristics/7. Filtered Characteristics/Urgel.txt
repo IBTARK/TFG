@@ -1,0 +1,8 @@
+movilidad: (pequeño, 5)
+estacion: (bien, 9)(vigilado, 4)(antiguo, 2)(mal, 1)(discapacitado, 1)(pequeño, 1)(lento, 1)
+experiencia: (bien, 1)
+senalizacion: (claro, 1)
+maquina: (accesible, 1)
+metro: (intransitado, 1)(normal, 1)(limpio, 1)(ordenado, 1)
+cobertura: (movil, 2)
+acceso: (facil, 2)(bien, 1)

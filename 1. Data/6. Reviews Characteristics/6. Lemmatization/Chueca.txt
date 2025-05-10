@@ -1,4 +1,4 @@
-estacion: (parada, 9)(comunicado, 1)(famoso, 14)(vibrante, 1)(señalizado, 1)(antiguo, 2)(cuidado, 2)(accesible, 2)(ordenado, 2)(limpio, 7)(lindo, 4)(tribunal, 1)(liberal, 1)(turistificado, 1)(decorado, 2)(malrehabilitado, 1)(novedoso, 3)(inadaptado, 1)(disgustar, 1)(bellisimo, 1)(central, 1)(diferente, 1)(vulgar, 1)
+estacion: (parado, 9)(comunicado, 1)(famoso, 14)(vibrante, 1)(señalizar, 1)(antiguo, 2)(cuidado, 2)(accesible, 2)(ordenado, 2)(limpio, 7)(lindo, 4)(tribunal, 1)(liberal, 1)(turistificado, 1)(decorado, 2)(malrehabilitado, 1)(novedoso, 3)(inadaptado, 1)(disgustar, 1)(bellisimo, 1)(central, 1)(diferente, 1)(vulgar, 1)
 movilidad: (reducido, 2)
 conexion: (buen, 2)(diferente, 1)
 limpieza: (adecuado, 2)

@@ -1,5 +1,5 @@
-escalera: (mecánico, 2)(lleno, 1)(romper, 1)
-estacion: (proximo, 1)(buen, 10)(renovar, 1)(normal, 3)(eficiente, 1)(intransitado, 2)(interesante, 1)
+escalera: (mecánico, 2)(lleno, 1)(roto, 1)
+estacion: (proxima, 1)(buen, 10)(renovar, 1)(normal, 3)(eficiente, 1)(intransitado, 2)(interesante, 1)
 cobertura: (móvil, 1)
 linea: (concurrido, 1)(amarillo, 1)(renovado, 1)
 persona: (mayor, 1)(aromatico, 1)

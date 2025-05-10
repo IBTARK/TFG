@@ -1,0 +1,3 @@
+estacion: (pequeño, 2)(importante, 3)(parado, 1)(normal, 1)(feo, 2)(servicio, 1)(bonito, 1)
+metro: (ligero, 2)(mal, 1)
+servicio: (mal, 1)

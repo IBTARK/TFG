@@ -1,0 +1,5 @@
+frecuencia: (nuevo, 1)(pequeño, 1)
+estacion: (bien, 7)(nuevo, 2)(comodo, 1)(limpio, 1)
+gente: (grande, 1)
+acceso: 
+tren: 

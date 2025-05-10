@@ -1,0 +1,5 @@
+metro: (cerca, 2)(amable, 1)
+estacion: (normal, 2)(grande, 6)(limpio, 6)(bien, 1)(estropeado, 3)(transitado, 1)
+personal: (atento, 4)
+frecuencia: (grande, 2)
+escalera: (mecanico, 3)(estropeado, 1)

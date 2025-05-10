@@ -1,0 +1,5 @@
+estacion: (parado, 3)(accesible, 2)(importante, 1)(nuevo, 2)(bien, 3)
+escalera: (mecanico, 2)(mal, 2)(grande, 1)
+movilidad: (pequeño, 1)
+gente: (grande, 1)
+metro: (centrado, 1)(ubicado, 1)

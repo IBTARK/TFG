@@ -1,0 +1,7 @@
+instalacion: (bien, 2)(transitado, 1)
+estacion: (mal, 1)(grande, 1)(limpio, 1)(bien, 3)
+cobertura: (movil, 1)
+linea: (accesible, 1)
+tren: (cerca, 1)
+acceso: (cerrado, 1)
+escalera: (mecanico, 1)(ascensor, 1)

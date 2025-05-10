@@ -1,0 +1,5 @@
+transporte: (publico, 2)
+limpieza: (bien, 1)
+acceso: (facil, 2)
+conexion: (bien, 1)
+ascensor: (cerca, 1)

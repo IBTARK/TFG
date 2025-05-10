@@ -1,4 +1,4 @@
-estacion: (reseña, 2)(situado, 6)(conexión, 1)(importante, 3)(utilizado, 1)(amigable, 1)(genial, 2)
+estacion: (reseñar, 2)(situado, 6)(conexión, 1)(importante, 3)(utilizado, 1)(amigable, 1)(genial, 2)
 escalera: (mecánico, 1)
 movilidad: (reducido, 2)
 maquina: (expendedor, 1)

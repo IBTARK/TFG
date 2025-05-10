@@ -1,4 +1,4 @@
-estacion: (venir, 5)(pagar, 1)(perder, 3)(personal, 2)(mal, 5)(inutil, 1)(moderno, 5)(concurrido, 5)(ordenado, 5)(grande, 20)(funcional, 3)(ene-24, 1)(insignio, 1)(tranquilo, 12)(asustado, 1)(facil, 2)(diseño, 2)(línea, 1)(accesible, 1)(señalizado, 5)(comunicar, 4)(lejos, 1)(normal, 1)(pasar, 1)(necesario, 1)(conectado, 1)(wifi, 1)(patético, 1)(precio, 1)(rápido, 1)(zona, 1)(perfecto, 1)(vacio, 1)(limpio, 1)(terminal, 2)(civilizado, 1)(filtro, 1)(asunto, 1)(aeropuerto, 1)(ruidoso, 1)(infantil, 1)
+estacion: (venir, 5)(pagar, 1)(perder, 3)(personal, 2)(mal, 5)(inutil, 1)(moderno, 5)(concurrido, 5)(ordenado, 5)(grande, 20)(funcional, 3)(ene-24, 1)(insignio, 1)(tranquilo, 12)(asustado, 1)(facil, 2)(diseño, 2)(línea, 1)(accesible, 1)(señalizar, 5)(comunicado, 4)(lejos, 1)(normal, 1)(pasar, 1)(necesario, 1)(conectado, 1)(wifi, 1)(patético, 1)(precio, 1)(rápido, 1)(zona, 1)(perfecto, 1)(vacio, 1)(limpio, 1)(terminal, 2)(civilizado, 1)(filtro, 1)(asuntos, 1)(aeropuerto, 1)(ruidoso, 1)(infantil, 1)
 metro: (excelente, 3)(rápido, 2)(suburbano, 1)
 personal: (amable, 5)(mejor, 2)(abierto, 1)(nervioso, 1)(desarrollado, 2)
 informacion: (claro, 1)(suficiente, 1)

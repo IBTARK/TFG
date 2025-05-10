@@ -1,0 +1,8 @@
+escalera: (pequeño, 1)(bien, 1)(mecanico, 1)
+linea: (unico, 1)
+estacion: (inadaptado, 1)(tranquilo, 2)(normal, 1)(bien, 3)
+movilidad: (pequeño, 2)
+zona: (mal, 1)(intransitado, 1)(bien, 2)
+servicio: (mal, 1)(bien, 1)
+conexion: (bien, 1)
+metro: (normal, 2)

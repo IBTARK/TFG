@@ -1,6 +1,6 @@
 experiencia: (inolvidable, 1)(agradable, 1)
 personal: (oficial, 1)(atento, 1)(cordial, 1)
-metro: (intercambiador, 2)(moderno, 1)(práctico, 2)(accesible, 1)(comunicar, 2)(total, 1)(cuadrado, 3)(increible, 1)(diferente, 1)
+metro: (intercambiador, 2)(moderno, 1)(práctico, 2)(accesible, 1)(comunicado, 2)(total, 1)(cuadrado, 3)(increible, 1)(diferente, 1)
 linea: (azul, 1)(oscuro, 1)(situado, 1)(barrio, 1)
 acceso: (situado, 3)(múltiple, 2)(excelente, 1)(fácil, 1)
 conexion: (comodo, 1)(múltiple, 1)(buen, 1)

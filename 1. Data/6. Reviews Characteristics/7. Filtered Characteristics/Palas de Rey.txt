@@ -1,0 +1,4 @@
+metro: (ligero, 2)(grande, 1)(siguiente, 1)
+acceso: (comodo, 1)(bien, 1)
+frecuencia: (transitado, 1)
+transporte: (publico, 1)

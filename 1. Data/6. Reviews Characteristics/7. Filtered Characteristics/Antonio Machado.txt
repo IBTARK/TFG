@@ -1,0 +1,6 @@
+estacion: (nuevo, 3)(limpio, 4)(rapido, 1)(necesario, 1)(grande, 1)(bien, 1)
+acceso: (facil, 1)(bien, 1)
+movilidad: (pequeño, 1)
+linea: (nuevo, 1)
+servicio: (bien, 2)
+estado: (bien, 2)

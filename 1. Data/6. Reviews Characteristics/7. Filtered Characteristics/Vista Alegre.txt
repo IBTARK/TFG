@@ -1,0 +1,8 @@
+estacion: (diseño, 1)(acceso, 1)(ubicado, 5)(profundo, 1)(escalera, 1)(bien, 5)(limpio, 1)(transitado, 1)
+movilidad: (pequeño, 2)
+experiencia: (bien, 1)
+senalizacion: (claro, 1)
+maquina: (accesible, 1)
+escalera: (mal, 1)(inseguro, 1)
+servicio: (bien, 1)
+estado: (bien, 1)

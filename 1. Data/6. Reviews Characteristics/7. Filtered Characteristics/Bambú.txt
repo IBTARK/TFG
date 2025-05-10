@@ -1,0 +1,4 @@
+escalera: (mecanico, 2)
+estacion: (nuevo, 4)(accesible, 1)(mal, 2)(siguiente, 1)(acceso, 1)(grande, 5)(dificil, 1)(comunicado, 2)(limpio, 1)(parado, 1)(pequeño, 1)
+informacion: 
+acceso: (universal, 1)

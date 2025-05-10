@@ -1,0 +1,11 @@
+estacion: (limpio, 10)(accesible, 7)(nuevo, 2)(bien, 37)(grande, 19)(transbordo, 1)(importante, 4)(centrado, 1)(señalizar, 1)(primero, 3)(cerca, 2)(intercambiador, 1)(normal, 3)
+escalera: (mecanico, 6)(electrico, 1)(automatico, 1)(grande, 1)
+linea: (importante, 2)(pequeño, 1)(facil, 1)(puntual, 1)
+servicio: (bien, 4)(mal, 2)
+informacion: (claro, 2)
+limpieza: (bien, 1)
+senalizacion: (bien, 2)
+frecuencia: (bien, 2)
+acceso: (bien, 3)(rapido, 2)
+movilidad: 
+instalacion: (bien, 1)

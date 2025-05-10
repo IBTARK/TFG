@@ -1,0 +1,6 @@
+persona: (siguiente, 1)
+escalera: (mecanico, 2)(grande, 1)(conectado, 1)(unico, 1)(bien, 1)
+metro: (bien, 1)(normal, 1)(antiguo, 1)
+experiencia: (grande, 2)
+movilidad: (pequeño, 1)
+linea: (verde, 1)(grande, 1)

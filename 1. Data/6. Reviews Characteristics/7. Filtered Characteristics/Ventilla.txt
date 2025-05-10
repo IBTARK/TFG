@@ -1,0 +1,4 @@
+estacion: (limpio, 6)(correspondiente, 5)(bonito, 9)(bien, 1)
+escalera: (mecanico, 2)
+movilidad: (pequeño, 1)
+metro: (bien, 1)(personal, 1)

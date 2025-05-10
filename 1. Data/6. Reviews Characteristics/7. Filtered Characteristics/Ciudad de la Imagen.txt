@@ -1,0 +1,2 @@
+metro: (ligero, 2)
+estacion: (enfrentar, 2)(normal, 1)(bonito, 2)(bien, 1)

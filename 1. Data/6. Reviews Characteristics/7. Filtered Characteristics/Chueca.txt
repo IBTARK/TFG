@@ -1,0 +1,8 @@
+estacion: (parado, 9)(comunicado, 1)(famoso, 14)(señalizar, 1)(antiguo, 2)(bien, 2)(accesible, 2)(ordenado, 2)(limpio, 7)(bonito, 6)(inadaptado, 1)(centrado, 1)(diferente, 1)
+movilidad: (pequeño, 2)
+conexion: (bien, 2)(diferente, 1)
+limpieza: (bien, 2)
+senalizacion: (claro, 1)
+maquina: (accesible, 1)
+persona: (grande, 1)(pequeño, 1)
+metro: (unico, 1)(ubicado, 1)

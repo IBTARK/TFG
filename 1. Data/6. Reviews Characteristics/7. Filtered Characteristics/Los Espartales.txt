@@ -1,0 +1,3 @@
+estacion: (simple, 3)(diferente, 1)(seguro, 12)(bien, 4)(grande, 1)(cerca, 1)(normal, 1)(limpio, 1)(puntual, 1)
+maquina: 
+conexion: (bien, 1)

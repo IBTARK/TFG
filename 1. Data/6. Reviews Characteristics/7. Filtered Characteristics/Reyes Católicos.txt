@@ -1,0 +1,6 @@
+acceso: (bien, 1)(facil, 1)
+movilidad: (pequeño, 1)
+estacion: (limpio, 3)(mal, 2)(nuevo, 3)(ubicado, 1)
+linea: 
+salida: (cerca, 1)
+metro: (bonito, 1)

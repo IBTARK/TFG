@@ -1,4 +1,4 @@
-estacion: (espaciós, 2)(accesible, 4)(limpio, 4)(ascensor, 1)(bulliciós, 1)(señalizado, 1)(buen, 3)(pasar, 1)(servicio, 1)(normal, 2)(total, 1)(comunicar, 1)(antiguo, 1)(sencillo, 1)(ver, 1)(animado, 1)
+estacion: (espaciós, 2)(accesible, 4)(limpio, 4)(ascensor, 1)(bulliciós, 1)(señalizar, 1)(buen, 3)(pasar, 1)(servicio, 1)(normal, 2)(total, 1)(comunicado, 1)(antiguo, 1)(sencillo, 1)(ver, 1)(animado, 1)
 ascensor: (mecánico, 3)(malo, 1)(difícil, 1)
 movilidad: (reducido, 3)
 linea: (fácil, 1)

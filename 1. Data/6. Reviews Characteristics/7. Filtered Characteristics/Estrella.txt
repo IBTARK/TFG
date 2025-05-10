@@ -1,0 +1,4 @@
+estacion: (accesible, 1)(bien, 3)(escalera, 1)(zona, 1)
+cobertura: (movil, 1)
+movilidad: (pequeño, 1)
+metro: (accesible, 2)

@@ -1,4 +1,4 @@
-estacion: (simple, 4)(limpio, 1)(grande, 8)(cómodo, 1)(parada, 2)(cerca, 1)(inagurar, 1)
+estacion: (simple, 4)(limpio, 1)(grande, 8)(cómodo, 1)(parado, 2)(cerca, 1)(inagurar, 1)
 salida: (único, 1)
 ascensor: (móvil, 1)
 acceso: (bien, 1)

@@ -1,0 +1,4 @@
+estacion: (antiguo, 1)(transitado, 2)(cerca, 1)(sucio, 2)(mal, 1)(ubicado, 2)(tener, 3)(bien, 1)(unico, 1)
+persona: (mal, 1)(lleno, 1)
+escalera: 
+acceso: (mal, 1)

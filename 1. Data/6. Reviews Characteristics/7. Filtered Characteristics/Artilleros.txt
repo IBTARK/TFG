@@ -1,0 +1,5 @@
+escalera: (estropeado, 4)(mecanico, 5)
+estacion: (profundo, 1)(abierto, 3)(encima, 1)(bien, 6)(parado, 1)
+salida: (cerrado, 1)
+movilidad: (pequeño, 1)
+metro: (bonito, 2)

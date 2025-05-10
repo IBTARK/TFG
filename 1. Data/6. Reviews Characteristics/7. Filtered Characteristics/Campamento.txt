@@ -1,0 +1,9 @@
+zona: (residencial, 2)(importante, 1)(comercial, 1)(divertido, 1)
+escalera: (mecanico, 4)
+movilidad: (pequeño, 1)
+servicio: (local, 2)(bien, 1)
+limpieza: 
+senalizacion: (claro, 1)
+maquina: (expendedor, 1)(disponible, 1)
+metro: (pequeño, 2)
+acceso: (facil, 1)

@@ -1,0 +1,9 @@
+estacion: (ubicado, 3)(bien, 10)(luminoso, 2)(grande, 3)(nuevo, 5)(limpio, 3)(personal, 1)(oscuro, 1)(unico, 1)
+movilidad: (pequeño, 2)
+persona: (grande, 1)(amable, 1)
+escalera: (mecanico, 1)
+estado: (bien, 1)
+salida: (unico, 2)(bien, 1)(discapacitado, 1)
+cobertura: (movil, 1)
+metro: 
+maquina: (mal, 1)

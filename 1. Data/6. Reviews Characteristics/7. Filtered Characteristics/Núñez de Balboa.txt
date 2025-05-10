@@ -1,0 +1,13 @@
+estacion: (grande, 8)(cerca, 11)(bien, 6)(residencial, 2)(normal, 3)(completo, 5)(luminoso, 1)(limpio, 2)(metro, 2)(facil, 1)(ubicado, 2)(confuso, 1)(antiguo, 1)(pequeño, 1)
+metro: (normal, 3)(grande, 1)
+movilidad: (pequeño, 3)
+zona: (residencial, 1)(transitado, 2)(grande, 1)(seguro, 1)
+conexion: (bien, 1)(mal, 1)
+limpieza: (bien, 1)
+senalizacion: (claro, 1)(mal, 1)
+maquina: (accesible, 1)
+ascensor: (cerca, 1)
+linea: (verde, 2)(line, 1)
+gente: (grande, 1)(atento, 1)
+frecuencia: 
+salida: 

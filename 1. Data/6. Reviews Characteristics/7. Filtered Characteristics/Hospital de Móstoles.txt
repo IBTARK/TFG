@@ -1,0 +1,7 @@
+salida: (unico, 1)(ascensor, 1)(mal, 1)
+cobertura: (movil, 1)
+estacion: (cerca, 5)(comunicado, 3)(bien, 1)(luminoso, 1)(grande, 1)
+escalera: (mecanico, 1)(mal, 1)
+metro: (nuevo, 1)(bien, 1)
+zona: (sur, 1)(residencial, 1)(cerca, 1)
+movilidad: (pequeño, 1)(señalizar, 1)

@@ -1,0 +1,11 @@
+estacion: (ubicado, 11)(conectado, 1)(servicio, 2)(bien, 7)(limpio, 11)(interesante, 2)(adaptado, 1)(mal, 1)
+linea: 
+movilidad: (pequeño, 3)(discapacitado, 1)
+conexion: (bien, 4)(limpio, 1)
+zona: (residencial, 1)(centrado, 1)(seguro, 1)
+limpieza: (bien, 2)
+senalizacion: (claro, 1)
+maquina: (accesible, 1)
+metro: (bien, 1)(lleno, 1)
+personal: (amable, 3)
+escalera: (mecanico, 1)(mal, 1)

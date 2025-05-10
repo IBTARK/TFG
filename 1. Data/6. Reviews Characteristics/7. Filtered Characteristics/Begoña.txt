@@ -1,0 +1,7 @@
+estacion: (bien, 9)(accesible, 2)(limpio, 2)
+servicio: (mal, 1)
+escalera: (mal, 1)(mecanico, 1)
+movilidad: (pequeño, 1)
+tren: 
+conexion: (bien, 1)
+personal: (bien, 1)

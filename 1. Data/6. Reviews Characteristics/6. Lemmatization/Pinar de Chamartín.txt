@@ -1,4 +1,4 @@
-estacion: (amplio, 19)(limpio, 31)(reseña, 2)(conexión, 1)(importante, 8)(percibido, 4)(moderno, 6)(exposición, 1)(personal, 1)(máquina, 1)(metro, 1)(nuevo, 2)(comodo, 2)(mejor, 2)(espaciós, 2)(luminoso, 3)(parada, 3)(cabecero, 3)(accesible, 2)(fotomaton, 1)(decorado, 1)(gustar, 1)(dinámico, 1)(discapacitado, 1)(ideal, 1)(venir, 1)(terminal, 1)(experiencia, 1)(estratégico, 2)
+estacion: (amplio, 19)(limpio, 31)(reseñar, 2)(conexión, 1)(importante, 8)(percibido, 4)(moderno, 6)(exposición, 1)(personal, 1)(máquina, 1)(metro, 1)(nuevo, 2)(comodo, 2)(mejor, 2)(espaciós, 2)(luminoso, 3)(parado, 3)(cabecero, 3)(accesible, 2)(fotomaton, 1)(decorado, 1)(gustar, 1)(dinámico, 1)(discapacitado, 1)(ideal, 1)(venir, 1)(terminal, 1)(experiencia, 1)(estratégico, 2)
 metro: (ligero, 12)(mejor, 1)(subterráneo, 1)(cómodo, 1)(limpio, 1)(normal, 2)(profundo, 1)(bonito, 2)(cuidado, 1)(nuevo, 1)(adaptado, 1)(siguiente, 1)(abarrotado, 1)
 escalera: (mecánico, 5)(despejado, 2)(urbanizado, 1)
 movilidad: (reducido, 4)(público, 1)(eficiente, 1)

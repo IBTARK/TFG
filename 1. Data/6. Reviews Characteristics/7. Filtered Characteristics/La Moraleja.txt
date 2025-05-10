@@ -1,0 +1,4 @@
+estacion: (tener, 4)(bien, 9)(nuevo, 1)(grande, 2)(facil, 1)
+informacion: (inutil, 1)(bien, 1)
+escalera: (electrico, 1)
+metro: (normal, 2)

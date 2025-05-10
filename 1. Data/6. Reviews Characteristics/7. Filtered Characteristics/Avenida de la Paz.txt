@@ -1,0 +1,8 @@
+estacion: (reseñar, 2)(ubicado, 7)(importante, 3)(desconectado, 1)(inaccesible, 1)(nuevo, 1)
+escalera: (mecanico, 1)(automatico, 1)
+movilidad: (pequeño, 2)(gratuito, 1)
+maquina: (expendedor, 1)
+servicio: (adicional, 1)(disponible, 1)
+conexion: (adicional, 1)(util, 2)
+metro: (cerca, 1)
+experiencia: 

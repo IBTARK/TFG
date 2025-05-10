@@ -1,4 +1,4 @@
-estacion: (grande, 12)(accesible, 1)(primero, 1)(señalizado, 1)(limpio, 2)(cercanía, 3)(sucio, 1)(gracias, 3)(dais, 2)(insuficiente, 1)(lamentable, 1)(mejor, 3)(único, 2)(cobrar, 1)(cuidado, 1)(dificil, 3)(conectado, 1)(train, 1)(efectuado, 3)(moderno, 4)(luminoso, 1)(centrico, 3)(conclusión, 2)(concurrido, 2)(perdí, 1)(incompetent, 1)(impuntual, 1)(normal, 1)(parar, 1)(linea, 1)(turístico, 1)
+estacion: (grande, 12)(accesible, 1)(primero, 1)(señalizar, 1)(limpio, 2)(cercanía, 3)(sucio, 1)(gracia, 3)(dais, 2)(insuficiente, 1)(lamentable, 1)(mejor, 3)(único, 2)(cobrar, 1)(cuidado, 1)(dificil, 3)(conectado, 1)(train, 1)(efectuado, 3)(moderno, 4)(luminoso, 1)(centrico, 3)(conclusión, 2)(concurrido, 2)(perder, 1)(incompetent, 1)(impuntual, 1)(normal, 1)(parar, 1)(linea, 1)(turístico, 1)
 limpieza: (buen, 1)
 escalera: (ascensor, 1)(averiado, 2)(mecánico, 1)
 servicio: (mejorable, 5)(lamentable, 2)(peor, 1)(correcto, 1)(impresentable, 1)(gran, 1)(nuevo, 2)(rubio, 1)(atento, 1)

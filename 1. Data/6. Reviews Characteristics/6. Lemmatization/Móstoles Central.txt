@@ -1,5 +1,5 @@
 servicio: (buen, 1)
-estacion: (adaptado, 6)(tercermundista, 1)(señalizado, 5)(complicado, 1)(mal, 1)(limpio, 4)(central, 1)(concurrido, 1)(destino, 1)(primavera, 1)(posible, 1)(amplio, 1)
+estacion: (adaptado, 6)(tercermundista, 1)(señalizar, 5)(complicado, 1)(mal, 1)(limpio, 4)(central, 1)(concurrido, 1)(destino, 1)(primavera, 1)(posible, 1)(amplio, 1)
 maquina: (expendedor, 1)
 movilidad: (reducido, 3)(incomodar, 1)(público, 1)
 acceso: (aceptable, 1)(buen, 1)

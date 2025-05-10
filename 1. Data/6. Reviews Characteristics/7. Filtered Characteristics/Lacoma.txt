@@ -1,0 +1,3 @@
+estacion: (limpio, 4)(nuevo, 2)(bien, 3)(tranquilo, 1)(accesible, 1)
+persona: (bien, 1)
+escalera: (mecanico, 2)

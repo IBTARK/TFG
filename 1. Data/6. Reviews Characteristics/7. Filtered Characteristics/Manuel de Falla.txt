@@ -1,0 +1,8 @@
+maquina: (sucio, 2)(mal, 1)
+estacion: (bien, 4)
+informacion: 
+tren: (parado, 1)(norte, 1)
+escalera: (electrico, 1)
+persona: (discapacitado, 1)
+servicio: (bien, 2)
+linea: (azul, 1)(oscuro, 1)

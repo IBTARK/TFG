@@ -1,0 +1,4 @@
+acceso: (facil, 1)
+movilidad: (pequeño, 1)
+estacion: (nuevo, 2)(grande, 4)(bien, 1)
+experiencia: (bonito, 1)

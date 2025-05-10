@@ -1,0 +1,8 @@
+metro: (bien, 1)(abierto, 1)(limpio, 1)(ultimo, 1)
+estacion: (simple, 1)(vestibulo, 1)(nuevo, 2)(bien, 9)(normal, 1)(puntual, 1)(atencion, 1)
+escalera: (mecanico, 1)
+servicio: (disponible, 1)(bien, 1)
+linea: (ubicado, 1)
+acceso: (bien, 1)(bonito, 1)
+movilidad: (pequeño, 1)
+experiencia: (bien, 1)

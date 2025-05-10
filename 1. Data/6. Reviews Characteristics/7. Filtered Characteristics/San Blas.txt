@@ -1,0 +1,4 @@
+estacion: (parado, 1)(inadaptado, 1)(sucio, 1)(bonito, 3)
+escalera: (ultimo, 1)
+metro: (comodo, 1)(puntual, 1)
+cobertura: (pequeño, 1)

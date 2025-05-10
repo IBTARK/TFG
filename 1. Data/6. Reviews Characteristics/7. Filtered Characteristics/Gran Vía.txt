@@ -1,0 +1,8 @@
+estacion: (grande, 34)(nuevo, 17)(bonito, 25)(conectado, 4)(accesible, 3)(bien, 4)(cerrado, 8)(limpio, 2)(seguro, 2)(siempre, 2)(centrado, 3)(luminoso, 2)(dificil, 1)(transitado, 1)
+linea: (ubicado, 1)(grande, 1)
+escalera: (mecanico, 1)(principal, 1)(antiguo, 1)
+senalizacion: (unico, 1)
+estado: (mal, 1)
+metro: (bien, 3)(centrado, 3)(transitado, 1)(grande, 1)
+movilidad: (pequeño, 1)
+conexion: 

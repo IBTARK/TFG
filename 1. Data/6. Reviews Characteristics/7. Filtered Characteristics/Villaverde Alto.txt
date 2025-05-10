@@ -1,0 +1,8 @@
+gente: (igual, 3)(mal, 1)
+servicio: (mal, 3)
+escalera: (mecanico, 2)(electrico, 1)
+estacion: (facil, 12)(bonito, 11)(nuevo, 1)(bien, 3)(accesible, 2)(mal, 3)(conectado, 3)(señalizar, 1)(puntual, 1)(seguro, 1)
+transporte: (publico, 3)(bien, 1)(pequeño, 1)
+tren: (primero, 1)
+senalizacion: (bien, 1)(claro, 1)
+experiencia: (bien, 1)

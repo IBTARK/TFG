@@ -1,0 +1,6 @@
+estacion: (bien, 5)(dotado, 4)(nuevo, 4)(limpio, 2)(tranquilo, 1)(accesible, 1)
+linea: (unico, 1)
+escalera: (mecanico, 1)
+acceso: (pequeño, 1)
+zona: (bonito, 1)(intransitado, 1)
+metro: (limpio, 2)

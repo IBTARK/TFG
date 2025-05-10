@@ -1,0 +1,4 @@
+servicio: (mal, 3)(publico, 1)(bien, 6)
+estacion: (despues, 4)(importante, 3)(bien, 2)(accesible, 2)(nuevo, 2)(mal, 1)(, 1)(atencion, 1)
+gente: (bien, 1)
+instalacion: (bien, 1)

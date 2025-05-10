@@ -1,0 +1,6 @@
+estacion: (nuevo, 3)(limpio, 1)(bien, 2)(instalacion, 1)(atencion, 1)(mal, 1)
+servicio: (directo, 1)(bien, 1)
+acceso: 
+senalizacion: (mal, 1)
+personal: (atento, 2)(mal, 1)
+zona: (grande, 1)

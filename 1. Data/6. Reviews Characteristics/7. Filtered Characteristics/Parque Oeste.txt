@@ -1,0 +1,4 @@
+escalera: (mecanico, 3)
+estacion: (limpio, 8)(bien, 3)(cerca, 1)(bonito, 2)(grande, 1)
+acceso: (bien, 1)
+zona: (comercial, 1)

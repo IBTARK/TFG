@@ -1,0 +1,6 @@
+metro: (ligero, 2)(local, 1)
+informacion: (perder, 1)(bien, 1)
+estacion: (bien, 5)(ligero, 1)(conectado, 1)(grande, 1)
+frecuencia: (bien, 2)(mal, 1)
+maquina: (bien, 1)
+transporte: (mal, 1)

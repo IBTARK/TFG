@@ -1,0 +1,4 @@
+estacion: (ubicado, 3)(antiguo, 3)(comunicado, 3)(bien, 4)
+cobertura: (movil, 1)
+tren: (cerca, 1)
+linea: 

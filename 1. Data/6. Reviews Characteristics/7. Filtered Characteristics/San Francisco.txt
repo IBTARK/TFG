@@ -1,0 +1,6 @@
+estacion: (nuevo, 1)(completo, 2)(bien, 5)(parado, 1)(limpio, 1)(ordenado, 1)(grande, 1)
+escalera: (mecanico, 3)(nuevo, 1)
+movilidad: (pequeño, 1)
+frecuencia: (bien, 1)
+personal: (mal, 1)
+linea: (nuevo, 1)

@@ -1,3 +1,3 @@
-estacion: (viejo, 1)(bonito, 6)(situado, 4)(clasico, 1)(inaccesible, 2)(normal, 1)(sencillo, 1)(centrico, 2)(limpio, 2)(comunicar, 1)
+estacion: (viejo, 1)(bonito, 6)(situado, 4)(clasico, 1)(inaccesible, 2)(normal, 1)(sencillo, 1)(centrico, 2)(limpio, 2)(comunicado, 1)
 personal: (agradable, 1)
 estado: (puro, 1)

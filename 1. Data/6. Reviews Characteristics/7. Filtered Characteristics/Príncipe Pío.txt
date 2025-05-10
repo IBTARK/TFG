@@ -1,0 +1,7 @@
+estacion: (cerrado, 6)(grande, 13)(bien, 24)(organizado, 2)(metro, 1)(intercambiador, 2)(antiguo, 1)(mal, 1)(abierto, 1)(divertido, 1)(sucio, 1)(rapido, 1)(personal, 1)(normal, 1)(confuso, 1)
+salida: (bien, 1)
+metro: (bonito, 2)(ligero, 1)(grande, 1)(intercambiador, 1)
+instalacion: (bien, 1)
+acceso: (facil, 2)
+personal: (amable, 1)
+informacion: 

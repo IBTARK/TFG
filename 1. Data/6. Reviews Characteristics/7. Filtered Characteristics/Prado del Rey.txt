@@ -1,0 +1,2 @@
+estacion: (comunicado, 1)
+metro: (ligero, 1)

@@ -1,0 +1,10 @@
+estacion: (normal, 6)(bien, 32)(ubicado, 9)(nuevo, 4)(tener, 1)(dejar, 1)(limpio, 5)(linea, 2)(transitado, 2)(comodo, 1)(antiguo, 1)(igual, 1)(metro, 1)(transbordo, 1)(bonito, 1)(grande, 1)
+escalera: 
+linea: (principal, 1)(primero, 1)
+frecuencia: (bien, 1)
+transporte: (publico, 1)
+acceso: (facil, 1)
+limpieza: (bien, 1)
+metro: (antiguo, 2)(adaptado, 2)(mal, 1)
+experiencia: (bien, 1)
+personal: 

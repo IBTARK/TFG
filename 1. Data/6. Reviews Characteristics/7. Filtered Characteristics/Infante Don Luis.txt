@@ -1,0 +1,3 @@
+estacion: (metro, 1)(bien, 2)
+metro: (ligero, 1)
+frecuencia: 

@@ -1,0 +1,6 @@
+estacion: (nuevo, 4)(grande, 6)(ultimo, 1)(abierto, 2)(parado, 1)(limpio, 2)(transitado, 1)(completo, 2)(accesible, 1)(cerca, 1)
+metro: (nuevo, 1)
+zona: (bonito, 2)(cerca, 1)(comercial, 4)(nuevo, 1)
+cobertura: (movil, 1)
+servicio: (bien, 1)(ascensor, 1)
+instalacion: (bien, 1)

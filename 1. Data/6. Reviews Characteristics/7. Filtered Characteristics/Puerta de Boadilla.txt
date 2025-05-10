@@ -1,0 +1,5 @@
+estacion: (mal, 1)(lento, 1)(servicio, 1)(seguro, 3)(, 1)(siguiente, 1)
+gente: (mal, 1)(total, 1)
+conexion: (cerca, 1)
+transporte: (publico, 2)(conectado, 1)(electrico, 1)(posible, 1)
+servicio: (mal, 1)

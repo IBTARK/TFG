@@ -1,0 +1,7 @@
+personal: (vigilado, 1)(bien, 1)
+maquina: 
+estacion: (bien, 3)(correspondiente, 3)(accesible, 1)(nuevo, 1)(cerca, 1)(normal, 1)
+zona: (tarifario, 1)(bien, 1)
+movilidad: (pequeño, 1)
+escalera: (mecanico, 1)
+experiencia: (mal, 1)

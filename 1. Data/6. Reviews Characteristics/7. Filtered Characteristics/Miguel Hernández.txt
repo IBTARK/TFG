@@ -1,0 +1,7 @@
+movilidad: (pequeño, 2)(grande, 1)
+escalera: (mecanico, 2)(electrico, 1)
+zona: (tarifario, 1)(intransitado, 1)(comunicado, 2)
+cobertura: (movil, 1)
+metro: (normal, 2)
+instalacion: (bien, 2)
+acceso: (bien, 1)

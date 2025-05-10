@@ -1,0 +1,13 @@
+estacion: (importante, 24)(conocer, 13)(servicio, 1)(antiguo, 2)(nuevo, 2)(transitado, 1)(bien, 12)(ascensor, 1)(ordenado, 2)(bonito, 6)(conectado, 1)(señalizar, 3)(sucio, 2)(mal, 1)(centrado, 2)(dificil, 2)(publico, 1)
+linea: (siguiente, 2)(nuevo, 1)(grande, 1)(ubicado, 1)(comunicado, 1)(facil, 1)
+zona: (centrado, 2)(cerca, 1)(comercial, 5)(azul, 1)(conectado, 1)
+escalera: (mecanico, 3)(electrico, 1)(ascensor, 1)
+movilidad: (pequeño, 2)
+acceso: (importante, 1)(multiple, 1)(facil, 2)
+informacion: (adicional, 1)(bien, 1)
+servicio: (disponible, 1)(bien, 2)
+salida: (ubicado, 3)(principal, 1)
+conexion: (bien, 1)
+gente: (centrado, 1)
+cobertura: 
+metro: (centrado, 1)(comodo, 2)(rapido, 1)

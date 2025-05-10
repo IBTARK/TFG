@@ -1,0 +1,8 @@
+ascensor: (bien, 1)(mecanico, 2)
+acceso: (facil, 1)
+movilidad: (pequeño, 1)
+estacion: (nuevo, 7)(bien, 21)(ubicado, 4)(antiguo, 1)(pequeño, 1)(accesible, 2)(util, 1)
+salida: (dejar, 1)(ubicado, 1)
+zona: (transitado, 1)
+linea: (nuevo, 1)
+metro: (nuevo, 1)

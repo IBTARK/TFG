@@ -1,0 +1,8 @@
+conexion: (debido, 1)
+linea: (servir, 1)(transitado, 1)(bien, 1)
+escalera: (mecanico, 7)
+movilidad: (pequeño, 3)
+estacion: (importante, 5)(ubicado, 1)(profundo, 3)(comunicado, 2)(bien, 2)(accesible, 1)(grande, 1)
+acceso: (bien, 2)
+informacion: (adicional, 1)
+servicio: (disponible, 1)

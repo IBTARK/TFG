@@ -1,0 +1,6 @@
+estacion: (correspondiente, 2)(parado, 1)(grande, 3)(luminoso, 1)(señalizar, 1)(nuevo, 1)(limpio, 1)
+escalera: (mecanico, 1)
+movilidad: (pequeño, 1)
+frecuencia: (bien, 1)
+instalacion: 
+metro: (amable, 1)

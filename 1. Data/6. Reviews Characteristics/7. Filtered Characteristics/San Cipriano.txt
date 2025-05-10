@@ -1,0 +1,5 @@
+movilidad: (pequeño, 2)
+escalera: (mecanico, 1)(ascensor, 1)
+estacion: (mal, 2)(facil, 3)(bonito, 3)(bien, 1)
+persona: 
+acceso: (facil, 1)

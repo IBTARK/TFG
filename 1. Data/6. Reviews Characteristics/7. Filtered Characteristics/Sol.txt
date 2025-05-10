@@ -1,0 +1,12 @@
+estacion: (grande, 12)(accesible, 1)(primero, 1)(señalizar, 1)(limpio, 2)(sucio, 1)(divertido, 3)(mal, 1)(bien, 4)(unico, 2)(dificil, 3)(conectado, 1)(nuevo, 4)(luminoso, 1)(centrado, 3)(transitado, 3)(perder, 1)(normal, 1)
+limpieza: (bien, 1)
+escalera: (ascensor, 1)(mal, 2)(mecanico, 1)
+servicio: (mal, 8)(bien, 1)(grande, 1)(nuevo, 2)(atento, 1)
+transporte: (publico, 3)(pequeño, 1)
+informacion: (transitado, 1)
+maquina: (unico, 1)(expendedor, 5)
+metro: (pequeño, 1)(antiguo, 1)(centrado, 1)
+frecuencia: (mal, 1)
+acceso: (bien, 1)(facil, 1)
+linea: 
+personal: 

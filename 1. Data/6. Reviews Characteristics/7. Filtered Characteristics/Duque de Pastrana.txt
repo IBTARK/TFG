@@ -1,0 +1,7 @@
+estacion: (bonito, 3)(accesible, 1)(enfrentar, 1)(linea, 1)(pequeño, 1)(antiguo, 1)(sucio, 3)(zona, 1)(lleno, 2)(nuevo, 1)(bien, 1)
+ascensor: (automatico, 1)(disponible, 1)
+persona: (igual, 2)
+movilidad: (pequeño, 1)(publico, 1)
+cobertura: (movil, 1)
+linea: (conectado, 1)
+zona: (importante, 1)(feo, 1)(sucio, 1)(lleno, 1)

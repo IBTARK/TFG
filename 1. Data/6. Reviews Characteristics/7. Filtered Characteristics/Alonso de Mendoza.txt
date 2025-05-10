@@ -1,0 +1,6 @@
+escalera: (mecanico, 1)(ascensor, 1)(vigilado, 1)
+estacion: (transitado, 1)(lleno, 2)(bien, 7)(ultimo, 1)(nuevo, 2)(limpio, 1)
+transporte: (publico, 1)
+cobertura: (movil, 1)
+acceso: (facil, 1)(bien, 1)
+metro: (normal, 1)

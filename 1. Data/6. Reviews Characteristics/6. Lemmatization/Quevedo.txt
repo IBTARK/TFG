@@ -1,4 +1,4 @@
-estacion: (inadaptado, 1)(impracticable, 1)(parada, 3)(plaza, 1)(transitado, 2)(bullicioso, 1)(demasiado, 1)(cuidado, 4)(céntrico, 1)(discapacitado, 1)(viejo, 2)(bonito, 2)(ubicado, 2)(simple, 1)(facil, 1)
+estacion: (inadaptado, 1)(impracticable, 1)(parado, 3)(plaza, 1)(transitado, 2)(bullicioso, 1)(demasiada, 1)(cuidado, 4)(céntrico, 1)(discapacitado, 1)(viejo, 2)(bonito, 2)(ubicado, 2)(simple, 1)(facil, 1)
 salida: (inaccesible, 1)(penúltimo, 1)(mejor, 1)
 zona: (comercial, 1)(acessible, 1)(discapacitado, 1)(bueno, 1)
 escalera: (mecanico, 3)(electrico, 1)(ascensor, 2)(recta, 1)

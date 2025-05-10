@@ -1,0 +1,6 @@
+transporte: (publico, 1)
+estacion: (cerrado, 3)(antiguo, 4)(oscuro, 1)(util, 1)(cerca, 2)(conectado, 1)(mal, 2)(escalera, 1)(bien, 11)(limpio, 1)(facil, 2)
+cobertura: (movil, 1)
+ascensor: (bien, 1)
+tren: (siguiente, 1)(bien, 1)(facil, 1)
+linea: (unico, 1)

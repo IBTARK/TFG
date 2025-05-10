@@ -1,7 +1,7 @@
 metro: (único, 1)(interesante, 1)(próximo, 1)
 acceso: (discapacitado, 1)
 escalera: (extenso, 1)(importante, 1)
-estacion: (espacioso, 1)(nuevo, 1)(mejorable, 2)(comunicar, 1)(rápido, 1)(precioso, 1)(importante, 1)
+estacion: (espacioso, 1)(nuevo, 1)(mejorable, 2)(comunicado, 1)(rápido, 1)(precioso, 1)(importante, 1)
 linea: (rapido, 1)
 gente: (mayor, 2)
 movilidad: (reducido, 1)

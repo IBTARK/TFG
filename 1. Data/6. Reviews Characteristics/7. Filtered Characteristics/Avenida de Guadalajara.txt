@@ -1,0 +1,7 @@
+salida: (unico, 1)
+estacion: (grande, 3)(bien, 9)(nuevo, 4)(accesible, 1)(ordenado, 2)(limpio, 1)(ascensor, 1)(personal, 1)
+acceso: (discapacitado, 1)(unico, 1)(bien, 1)
+movilidad: (pequeño, 1)
+instalacion: (nuevo, 1)(bien, 2)
+escalera: (ascensor, 1)(mecanico, 1)(estropeado, 1)(inaccesible, 1)
+cobertura: (ascensor, 1)

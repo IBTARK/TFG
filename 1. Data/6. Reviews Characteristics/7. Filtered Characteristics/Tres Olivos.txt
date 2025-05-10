@@ -1,0 +1,7 @@
+estacion: (mal, 12)(organizado, 3)(imposible, 5)(dificil, 2)(habilitado, 4)(nuevo, 3)(grande, 4)(limpio, 11)(transbordo, 3)(posible, 1)(señalizar, 2)(rapido, 3)(lento, 2)(comodo, 1)
+metro: (bien, 2)(siguiente, 3)(imposible, 1)(pequeño, 2)
+gente: (bien, 1)(grande, 1)(transitado, 2)
+servicio: (mal, 1)
+transporte: (publico, 1)(bien, 1)(pequeño, 1)
+linea: (unico, 1)
+instalacion: (bien, 1)

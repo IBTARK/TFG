@@ -1,4 +1,4 @@
-estacion: (comunicar, 1)(casa, 1)(especial, 1)
+estacion: (comunicado, 1)(casa, 1)(especial, 1)
 experiencia: (cercano, 1)
 zona: (verde, 1)
-escalera: (romper, 1)
+escalera: (roto, 1)

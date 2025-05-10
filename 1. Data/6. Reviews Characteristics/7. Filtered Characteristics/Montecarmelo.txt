@@ -1,0 +1,4 @@
+estacion: (recomendable, 1)(bien, 4)(dificil, 1)(grande, 1)
+metro: (simple, 1)
+personal: (amable, 2)(bien, 1)
+salida: (nuevo, 1)(facil, 2)

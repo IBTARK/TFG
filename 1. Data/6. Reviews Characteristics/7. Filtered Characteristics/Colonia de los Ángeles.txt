@@ -1,0 +1,1 @@
+estacion: (rapido, 1)(limpio, 1)

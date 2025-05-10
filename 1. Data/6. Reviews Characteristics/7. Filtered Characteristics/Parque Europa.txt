@@ -1,0 +1,6 @@
+estacion: (simple, 4)(limpio, 1)(grande, 8)(comodo, 1)(parado, 2)(cerca, 1)(nuevo, 1)
+salida: (unico, 1)
+ascensor: (movil, 1)
+acceso: (bien, 1)
+metro: (normal, 1)(sur, 1)
+zona: (bonito, 1)(cerrado, 1)

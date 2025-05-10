@@ -1,0 +1,13 @@
+linea: (ubicado, 1)(lento, 1)(bonito, 1)
+estacion: (algo, 7)(comunicado, 8)(proporcionar, 5)(parado, 1)(antiguo, 4)(mal, 2)(lento, 1)(acceso, 1)(ascensor, 1)(bien, 2)(sucio, 1)(normal, 1)
+movilidad: (pequeño, 1)
+experiencia: (bien, 1)
+senalizacion: (claro, 1)
+maquina: (accesible, 1)(bien, 1)
+escalera: (mecanico, 6)(electrico, 1)(imposible, 1)
+informacion: 
+frecuencia: (grande, 1)
+persona: (discapacitado, 3)(grande, 1)
+salida: (dotado, 1)
+metro: (normal, 1)(nuevo, 1)
+acceso: (imposible, 2)(discapacitado, 3)(antiguo, 1)(bien, 1)

@@ -1,0 +1,5 @@
+estacion: (nuevo, 6)(completo, 10)(ascensor, 1)(ubicado, 3)(accesible, 2)(limpio, 2)(grande, 1)(bien, 2)(bonito, 1)
+ascensor: (estropeado, 1)(mecanico, 2)(ascensor, 1)(bien, 1)
+movilidad: (pequeño, 1)
+cobertura: (movil, 1)
+servicio: (bien, 1)

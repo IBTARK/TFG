@@ -1,0 +1,6 @@
+metro: (limpio, 1)(nuevo, 1)(grande, 2)
+escalera: (mecanico, 2)(ascensor, 1)
+acceso: (unico, 1)(facil, 2)(discapacitado, 1)
+instalacion: (bien, 1)
+cobertura: (telefonico, 1)
+estado: (bien, 1)

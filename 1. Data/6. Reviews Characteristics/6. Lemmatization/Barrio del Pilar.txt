@@ -1,4 +1,4 @@
-estacion: (antiguo, 1)(transitado, 2)(deteriorado, 1)(cerca, 1)(sucio, 2)(descuidado, 1)(salida, 1)(tren, 1)(ubicado, 2)(tener, 3)(mejor, 1)(unico, 1)
+estacion: (antiguo, 1)(transitado, 2)(deteriorado, 1)(cerca, 1)(sucio, 2)(descuidado, 1)(salido, 1)(tren, 1)(ubicado, 2)(tener, 3)(mejor, 1)(unico, 1)
 persona: (malo, 1)(atrapo, 1)(lleno, 1)
 escalera: (plagado, 1)
 acceso: (incompleto, 1)

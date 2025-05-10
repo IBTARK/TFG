@@ -1,0 +1,8 @@
+zona: (residencial, 1)(tranquilo, 2)(bien, 1)
+acceso: (facil, 2)(principal, 1)
+estacion: (parado, 2)(ascensor, 1)(amable, 2)(personal, 1)(limpio, 5)(grande, 1)(bien, 5)(comodo, 1)
+metro: (accesible, 1)(bien, 1)
+movilidad: (pequeño, 1)
+persona: 
+escalera: (bonito, 1)
+cobertura: (movil, 1)

@@ -1,0 +1,3 @@
+estacion: (bien, 2)(mal, 1)
+personal: (mal, 1)
+acceso: (bien, 1)

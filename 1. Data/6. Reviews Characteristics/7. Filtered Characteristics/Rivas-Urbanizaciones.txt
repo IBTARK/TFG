@@ -1,0 +1,8 @@
+estacion: (grande, 10)(primero, 1)(mal, 4)(metro, 1)(equipado, 2)(bien, 1)(interesante, 1)
+transporte: (publico, 1)(siguiente, 1)
+servicio: (mal, 4)
+gente: 
+frecuencia: (pequeño, 1)
+metro: (pequeño, 1)
+escalera: (mecanico, 1)
+ascensor: (cerca, 1)

@@ -1,4 +1,4 @@
-estacion: (buen, 8)(moderno, 1)(limpio, 1)(línea, 1)(cómodo, 2)(muchisima, 1)(increíble, 1)(inseguro, 1)
+estacion: (buen, 8)(moderno, 1)(limpio, 1)(línea, 1)(cómodo, 2)(muchisimas, 1)(increíble, 1)(inseguro, 1)
 senalizacion: (claro, 2)
 transporte: (suburbano, 2)(buen, 1)
 escalera: (mecánico, 2)(interminable, 1)

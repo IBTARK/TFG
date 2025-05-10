@@ -1,0 +1,7 @@
+estacion: (nuevo, 1)(equipado, 7)(bien, 1)(bonito, 8)(servicio, 1)(normal, 2)
+escalera: (mecanico, 1)(electrico, 1)
+metro: (nuevo, 1)(profundo, 1)
+linea: (util, 1)
+personal: (atento, 1)
+movilidad: (pequeño, 1)(bien, 1)
+servicio: (bien, 2)

@@ -1,0 +1,4 @@
+estacion: (nuevo, 7)(grande, 7)(bonito, 2)(señalizar, 2)(sucio, 1)
+zona: (residencial, 1)
+metro: (cuadrado, 1)(limpio, 1)(bien, 1)
+salida: (bien, 1)

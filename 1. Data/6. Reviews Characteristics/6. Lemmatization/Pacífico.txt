@@ -1,5 +1,5 @@
-estacion: (importante, 10)(lugar, 3)(equipado, 15)(ascensor, 1)(estupendamente, 4)(intransitado, 2)(tranquilo, 1)(arreglado, 1)(posible, 3)(antiguo, 2)(conde, 1)(concurrido, 4)(glorieta, 1)(abierto, 1)(renovar, 2)(precaución, 1)(intercambiador, 1)(difícil, 1)(señalizado, 1)(vestíbulo, 1)(consejo, 1)(normal, 2)(popular, 1)(grande, 1)
-zona: (comercial, 1)(residencial, 2)(comunicar, 1)(importante, 2)(ideal, 1)(histórico, 1)(científico, 1)(situado, 1)(turístico, 1)
+estacion: (importante, 10)(lugar, 3)(equipado, 15)(ascensor, 1)(estupendamente, 4)(intransitado, 2)(tranquilo, 1)(arreglado, 1)(posible, 3)(antiguo, 2)(conde, 1)(concurrido, 4)(glorieta, 1)(abierto, 1)(renovar, 2)(precaución, 1)(intercambiador, 1)(difícil, 1)(señalizar, 1)(vestíbulo, 1)(consejo, 1)(normal, 2)(popular, 1)(grande, 1)
+zona: (comercial, 1)(residencial, 2)(comunicado, 1)(importante, 2)(ideal, 1)(histórico, 1)(científico, 1)(situado, 1)(turístico, 1)
 escalera: (mecánico, 1)(ascensor, 1)(eléctrico, 1)
 movilidad: (reducido, 1)
 informacion: (adicional, 1)

@@ -1,0 +1,5 @@
+estacion: (nuevo, 2)(grande, 1)(cerca, 1)(directo, 1)(mal, 1)(bien, 2)(pequeño, 1)
+cobertura: (movil, 1)
+ascensor: (mal, 1)(mecanico, 1)
+movilidad: (pequeño, 1)
+metro: 

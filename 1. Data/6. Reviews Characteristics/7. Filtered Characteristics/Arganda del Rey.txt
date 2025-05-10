@@ -1,0 +1,9 @@
+estacion: (lento, 1)(mal, 6)(antiguo, 1)(personal, 1)(servicio, 2)(accesible, 1)(cerca, 1)(inseguro, 1)
+linea: (mal, 1)
+frecuencia: (lleno, 1)(mal, 2)
+personal: 
+metro: (primero, 1)(centrado, 1)(bien, 1)(unico, 1)(mal, 2)
+ascensor: (cerca, 1)
+servicio: 
+conexion: (bien, 2)
+informacion: (bien, 1)

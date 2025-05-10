@@ -1,0 +1,5 @@
+estacion: (vestibulo, 1)(nuevo, 3)(cerca, 2)(linea, 1)(bien, 7)(grande, 3)(tranquilo, 2)
+acceso: (bien, 1)(facil, 1)
+movilidad: (pequeño, 2)
+escalera: (mecanico, 1)(ascensor, 1)
+tren: (cerca, 1)

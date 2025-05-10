@@ -1,0 +1,6 @@
+tren: (cerca, 1)(limpio, 1)(ordenado, 2)(lento, 1)
+estacion: (puntual, 1)(bien, 13)(mal, 4)(importante, 6)(sucio, 1)(dejar, 4)(inseguro, 2)(oscuro, 1)(imposible, 2)(nuevo, 3)(grande, 5)(tranquilo, 8)(comodo, 2)(antiguo, 1)(normal, 1)(transitado, 1)
+escalera: (mecanico, 7)
+movilidad: (pequeño, 1)(bien, 1)(publico, 2)
+informacion: (bien, 2)(adicional, 1)
+acceso: (oscuro, 1)(discapacitado, 1)

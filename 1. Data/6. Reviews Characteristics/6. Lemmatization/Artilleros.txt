@@ -1,5 +1,5 @@
 escalera: (estropeado, 4)(mecánico, 5)(dañado, 1)
-estacion: (profundo, 1)(abierto, 3)(encima, 1)(increíble, 2)(buen, 4)(parada, 1)
-salida: (cerrar, 1)
+estacion: (profundo, 1)(abierto, 3)(encima, 1)(increíble, 2)(buen, 4)(parado, 1)
+salida: (cerrado, 1)
 movilidad: (reducido, 1)
 metro: (insoportable, 1)(bonito, 2)

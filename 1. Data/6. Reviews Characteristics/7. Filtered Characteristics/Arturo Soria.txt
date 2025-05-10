@@ -1,0 +1,7 @@
+estacion: (reseñar, 2)(equipado, 4)(considerado, 1)(tranquilo, 1)(antiguo, 2)(mal, 1)(principal, 3)(bien, 1)(limpio, 4)(normal, 1)
+salida: (rapido, 1)(bien, 2)(abierto, 1)
+escalera: (mecanico, 2)(bien, 1)
+movilidad: (pequeño, 3)(publico, 1)(cerca, 1)
+servicio: (normal, 1)(bien, 1)
+maquina: (expendedor, 1)
+cobertura: (bien, 1)(movil, 1)

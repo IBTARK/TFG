@@ -1,0 +1,5 @@
+estacion: (grande, 6)(nuevo, 2)(bien, 16)(limpio, 4)(equipado, 2)(normal, 1)
+zona: (sur, 1)
+escalera: (mecanico, 4)(exterior, 1)
+metro: (comodo, 1)(grande, 1)(mal, 1)(bien, 1)
+servicio: (bonito, 1)

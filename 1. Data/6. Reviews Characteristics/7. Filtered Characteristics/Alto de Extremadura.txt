@@ -1,0 +1,4 @@
+estacion: (comunicado, 1)(bonito, 1)
+experiencia: (cerca, 1)
+zona: (verde, 1)
+escalera: (mal, 1)

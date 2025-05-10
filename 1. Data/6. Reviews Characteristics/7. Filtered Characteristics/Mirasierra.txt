@@ -1,0 +1,7 @@
+estacion: (nuevo, 3)(limpio, 1)(bonito, 1)
+transporte: (publico, 1)
+servicio: (bien, 1)(mal, 1)
+acceso: (comodo, 1)
+tren: (antiguo, 1)(bien, 2)
+zona: (norte, 1)(azul, 1)
+cobertura: (movil, 1)

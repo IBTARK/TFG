@@ -1,0 +1,8 @@
+experiencia: (bonito, 1)(bien, 1)
+personal: (atento, 1)
+metro: (intercambiador, 2)(nuevo, 1)(bien, 2)(accesible, 1)(comunicado, 2)(total, 1)(cuadrado, 3)(diferente, 1)
+linea: (azul, 1)(oscuro, 1)(ubicado, 1)
+acceso: (ubicado, 3)(multiple, 2)(bien, 1)(facil, 1)
+conexion: (comodo, 1)(multiple, 1)(bien, 1)
+salida: (inaccesible, 1)
+ascensor: (cerca, 1)

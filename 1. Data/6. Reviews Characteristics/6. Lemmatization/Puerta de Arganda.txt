@@ -1,6 +1,6 @@
 tren: (frecuente, 1)(inaceptable, 1)(nuevo, 1)(ligero, 6)(siguiente, 3)
 frecuencia: (malo, 1)
-zona: (normal, 1)(inferior, 1)(claro, 4)(comunicar, 1)
+zona: (normal, 1)(inferior, 1)(claro, 4)(comunicado, 1)
 conexion: (buen, 1)
 estacion: (rico, 1)(copiado, 2)(cercano, 1)(mejor, 2)(fantástico, 2)(antiguo, 1)(conectado, 1)
 servicio: (peor, 1)

@@ -1,0 +1,8 @@
+estacion: (importante, 2)(antiguo, 2)(mal, 1)(bonito, 1)(inaccesible, 1)(señalizar, 1)(bien, 1)
+escalera: (mecanico, 3)
+movilidad: (pequeño, 2)
+linea: (transitado, 1)
+informacion: (adicional, 1)
+servicio: (disponible, 1)(bien, 1)
+metro: (simple, 1)(igual, 1)
+acceso: (habilitado, 1)

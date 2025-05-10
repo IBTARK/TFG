@@ -1,0 +1,4 @@
+estacion: (nuevo, 7)(grande, 3)(bien, 12)(transitado, 2)(parado, 1)(señalizar, 3)(rapido, 1)(limpio, 2)(ordenado, 1)
+metro: (ligero, 4)(nuevo, 1)(comodo, 1)(bien, 1)(lento, 1)(cerca, 1)
+instalacion: (nuevo, 1)
+cobertura: (movil, 1)

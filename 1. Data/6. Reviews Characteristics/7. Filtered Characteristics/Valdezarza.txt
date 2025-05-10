@@ -1,0 +1,9 @@
+escalera: 
+estacion: (grande, 8)(limpio, 1)(comodo, 1)(nuevo, 1)(transitado, 1)
+acceso: (facil, 2)(adaptado, 1)
+senalizacion: (bien, 1)
+movilidad: (pequeño, 2)
+metro: (grande, 1)(bien, 1)(limpio, 1)(nuevo, 1)
+zona: (tranquilo, 2)
+instalacion: (bien, 1)
+linea: (grande, 1)

@@ -1,0 +1,4 @@
+estacion: (posible, 1)(nuevo, 2)(cerca, 1)(bien, 4)(lejos, 1)
+escalera: (mecanico, 1)
+persona: (mal, 1)
+zona: (centrado, 1)

@@ -1,0 +1,6 @@
+estacion: (nuevo, 3)(grande, 2)(bien, 20)(simple, 1)(mal, 1)(tranquilo, 2)
+salida: (unico, 1)(bien, 1)
+servicio: (bien, 3)
+zona: (bien, 2)
+tren: (confuso, 1)(limpio, 2)(facil, 1)(comodo, 1)(bien, 1)(normal, 2)
+personal: (pequeño, 1)(amable, 2)

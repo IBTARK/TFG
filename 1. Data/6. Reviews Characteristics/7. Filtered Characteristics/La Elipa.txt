@@ -1,0 +1,7 @@
+estacion: (bien, 10)(nuevo, 1)(grande, 4)(rapido, 2)(comodo, 1)(accesible, 1)(limpio, 1)(ordenado, 1)(ascensor, 1)(servicio, 1)
+acceso: (facil, 1)
+movilidad: (pequeño, 1)(publico, 1)
+ascensor: (grande, 1)(disponible, 1)(nuevo, 1)
+cobertura: (movil, 1)
+metro: (nuevo, 1)(puntual, 1)(pequeño, 1)
+servicio: (bien, 2)

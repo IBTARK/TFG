@@ -1,0 +1,7 @@
+estacion: (mal, 1)(bien, 3)(amable, 2)(completo, 1)(sucio, 2)(transitado, 3)(antiguo, 1)(comunicado, 2)(inseguro, 1)(normal, 1)(bonito, 2)
+cobertura: (movil, 2)
+servicio: (bien, 2)
+salida: 
+metro: (antiguo, 1)
+acceso: (bien, 1)
+movilidad: (bien, 1)

@@ -1,0 +1,5 @@
+estacion: (bien, 5)(sucio, 2)(util, 1)
+gente: (bien, 1)
+metro: (amable, 1)(ayudar, 1)
+acceso: (unico, 1)(bien, 1)
+ascensor: (estropeado, 1)

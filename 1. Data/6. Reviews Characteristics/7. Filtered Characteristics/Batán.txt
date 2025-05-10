@@ -1,0 +1,5 @@
+servicio: 
+estacion: (cerca, 5)(pequeño, 1)(bien, 5)(antiguo, 1)(mal, 1)(comodo, 1)
+tren: (suburbano, 1)
+salida: (bien, 1)(cerca, 1)
+linea: 

@@ -1,0 +1,8 @@
+estacion: (antiguo, 2)(metro, 1)(ubicado, 8)(bonito, 1)(pequeño, 2)(accesible, 2)(interesante, 17)(inaccesible, 5)(nuevo, 4)(verde, 1)(bien, 14)(transitado, 1)(limpio, 1)(siempre, 1)(principal, 1)
+servicio: (grande, 1)
+metro: (centrado, 2)(feo, 1)(pequeño, 1)(antiguo, 1)(bonito, 2)(nuevo, 1)(limpio, 1)(grande, 1)
+movilidad: (pequeño, 1)(publico, 1)
+estado: (bien, 1)
+conexion: (bien, 1)
+maquina: (expendedor, 1)
+personal: 

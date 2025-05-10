@@ -1,0 +1,5 @@
+metro: (pequeño, 1)
+salida: (directo, 1)
+escalera: (mecanico, 3)
+frecuencia: 
+estacion: (bien, 10)(parado, 2)(adaptado, 4)(limpio, 1)

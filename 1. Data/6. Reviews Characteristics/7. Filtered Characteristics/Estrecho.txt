@@ -1,0 +1,7 @@
+movilidad: (pequeño, 5)
+linea: (mal, 1)(nuevo, 1)
+estacion: (inadaptado, 6)(normal, 1)(igual, 6)(facil, 3)(parado, 1)(nuevo, 2)(feo, 1)
+escalera: (electrico, 1)
+metro: (antiguo, 2)
+servicio: (bien, 1)
+estado: (bien, 1)

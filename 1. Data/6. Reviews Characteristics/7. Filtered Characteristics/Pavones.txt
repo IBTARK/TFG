@@ -1,0 +1,4 @@
+zona: (seguro, 3)
+ascensor: (bien, 1)(mecanico, 1)(ascensor, 1)(automatico, 1)
+acceso: (bien, 1)(limpio, 1)(accesible, 1)
+servicio: (bien, 1)

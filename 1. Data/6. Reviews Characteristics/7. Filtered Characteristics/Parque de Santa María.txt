@@ -1,0 +1,7 @@
+linea: (nuevo, 1)
+estacion: (nuevo, 2)(primero, 1)(accesible, 1)(limpio, 2)(igual, 2)(bien, 2)
+personal: (bien, 1)(pequeño, 1)
+escalera: (mecanico, 1)(lento, 1)
+movilidad: (pequeño, 1)
+metro: (profundo, 1)(rapido, 1)
+acceso: (rapido, 1)

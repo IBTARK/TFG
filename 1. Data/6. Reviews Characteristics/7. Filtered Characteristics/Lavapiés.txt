@@ -1,0 +1,7 @@
+ascensor: (igual, 1)(electrico, 2)(mal, 1)(mecanico, 1)
+frecuencia: (transitado, 1)
+metro: (primero, 1)(grande, 1)
+estacion: (grande, 6)(pequeño, 2)(bien, 11)(amarillo, 1)(cerca, 1)(parado, 1)(vestibulo, 1)(limpio, 1)(comodo, 1)(bonito, 1)(mal, 1)(transitado, 1)(interesante, 1)
+salida: (unico, 1)
+cobertura: (movil, 1)
+movilidad: (pequeño, 1)

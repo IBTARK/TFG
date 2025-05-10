@@ -1,6 +1,6 @@
 tren: (próximo, 1)(limpio, 1)(ordenado, 2)(lento, 1)(inaceptable, 1)
 estacion: (puntual, 1)(correcto, 12)(indignante, 3)(importante, 6)(sucio, 1)(dejar, 4)(inseguro, 2)(doble, 1)(oscuro, 1)(enlace, 1)(imposible, 2)(moderno, 3)(grande, 3)(tranquilo, 8)(comodo, 2)(espacioso, 2)(viejo, 1)(malo, 1)(impecable, 1)(normal, 1)(popular, 1)
-escalera: (mecánico, 7)(apagado, 1)(estacion, 1)
+escalera: (mecánico, 7)(apagar, 1)(estacion, 1)
 movilidad: (reducido, 1)(buen, 1)(público, 2)
 informacion: (específico, 1)(encantado, 2)(adicional, 1)
 acceso: (oscuro, 1)(discapacitado, 1)

@@ -1,0 +1,6 @@
+estacion: (bien, 6)(limpio, 4)(grande, 5)(personal, 1)(subterraneo, 1)(luminoso, 1)
+metro: (nuevo, 1)(grande, 2)(bien, 2)(cerca, 1)
+escalera: (bonito, 1)(electrico, 2)
+gente: (feo, 2)
+estado: (bien, 1)
+servicio: (bien, 1)

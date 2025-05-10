@@ -1,0 +1,8 @@
+servicio: (bien, 2)
+tren: (grande, 1)(publico, 1)(nuevo, 1)
+escalera: (mecanico, 4)(grande, 1)
+estado: (centrado, 1)
+estacion: (ordenado, 1)(limpio, 6)(nuevo, 4)(ascensor, 1)(grande, 1)(accesible, 1)
+transporte: (publico, 2)(pequeño, 2)
+linea: (antiguo, 1)(limpio, 1)
+cobertura: (movil, 2)

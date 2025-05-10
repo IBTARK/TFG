@@ -1,0 +1,5 @@
+salida: 
+escalera: (mecanico, 2)
+estacion: (grande, 1)(limpio, 2)(nuevo, 1)(bien, 4)(cerca, 2)
+acceso: (facil, 1)
+metro: (bien, 1)(nuevo, 1)

@@ -1,0 +1,6 @@
+estacion: (limpio, 1)(grande, 2)(mal, 1)(pequeño, 1)(cerrado, 1)(nuevo, 2)(tranquilo, 2)(centrado, 1)
+cobertura: (movil, 1)
+tren: (cerca, 1)
+movilidad: (pequeño, 1)
+frecuencia: (bien, 1)
+escalera: (mal, 1)

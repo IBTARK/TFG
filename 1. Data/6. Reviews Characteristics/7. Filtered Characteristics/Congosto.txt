@@ -1,0 +1,2 @@
+estacion: (ubicado, 2)(nuevo, 2)(bien, 1)(publico, 1)(tranquilo, 2)(accesible, 2)(limpio, 2)(bonito, 2)(normal, 1)
+cobertura: (movil, 1)

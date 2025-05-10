@@ -1,0 +1,7 @@
+servicio: (bien, 1)
+estacion: (adaptado, 6)(mal, 2)(señalizar, 5)(dificil, 1)(limpio, 4)(centrado, 1)(transitado, 1)(posible, 1)(grande, 1)
+maquina: (expendedor, 1)
+movilidad: (pequeño, 3)(publico, 1)
+acceso: (bien, 2)
+tren: (organizado, 1)(sur, 1)
+frecuencia: (grande, 1)

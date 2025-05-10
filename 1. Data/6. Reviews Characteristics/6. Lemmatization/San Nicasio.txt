@@ -1,4 +1,4 @@
-estacion: (moderno, 1)(luminoso, 1)(amplio, 1)(limpio, 2)(bueno, 1)(normal, 1)(intransitado, 1)(impecable, 1)(señalizado, 2)
+estacion: (moderno, 1)(luminoso, 1)(amplio, 1)(limpio, 2)(bueno, 1)(normal, 1)(intransitado, 1)(impecable, 1)(señalizar, 2)
 acceso: (buen, 2)(fácil, 1)
 movilidad: (reducido, 1)
 escalera: (mecánico, 1)

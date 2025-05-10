@@ -1,0 +1,13 @@
+escalera: (mecanico, 5)(ascensor, 2)(centrado, 1)(cerca, 1)
+estacion: (intercambiador, 9)(comodo, 13)(comunicado, 34)(personal, 1)(bien, 9)(limpio, 3)(grande, 6)(vigilado, 1)(dificil, 3)(mal, 7)(pequeño, 1)(unico, 2)(estropeado, 2)(normal, 1)(calor, 1)(rapido, 1)(confuso, 1)(publico, 1)
+metro: (bien, 1)(intercambiador, 2)(grande, 1)
+linea: (diferente, 2)(estacion, 1)(conectado, 1)(, 1)(marron, 2)(verde, 1)(organizado, 1)
+gente: (grande, 1)(perder, 1)(bien, 3)(cerrado, 2)(amable, 2)(mal, 1)
+acceso: (posible, 1)
+instalacion: (bien, 2)(nuevo, 1)(claro, 1)
+movilidad: (pequeño, 3)(publico, 3)(local, 1)
+maquina: (expendedor, 2)
+conexion: 
+estado: (bien, 1)
+limpieza: (bien, 1)
+informacion: (mal, 1)

@@ -1,0 +1,5 @@
+estacion: (comodo, 2)(rapido, 2)(cerca, 1)(pasar, 2)(bien, 6)(bonito, 1)(nuevo, 1)
+acceso: (unico, 1)
+cobertura: (movil, 1)
+salida: (enfrentar, 1)
+linea: 

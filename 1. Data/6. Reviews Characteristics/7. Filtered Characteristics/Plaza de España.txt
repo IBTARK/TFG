@@ -1,0 +1,7 @@
+estacion: (principal, 1)(lograr, 10)(bien, 39)(zona, 5)(adaptado, 4)(limpio, 3)(dificil, 4)(transitado, 2)(conectado, 1)(lleno, 2)(profundo, 1)(escalera, 1)(bonito, 5)(grande, 2)(inutil, 3)
+escalera: (mecanico, 3)(mal, 1)(unico, 1)(nuevo, 1)
+conexion: (bien, 1)(grande, 1)
+movilidad: (pequeño, 1)
+metro: (bien, 1)(interesante, 1)(rapido, 1)
+maquina: 
+senalizacion: (bien, 1)

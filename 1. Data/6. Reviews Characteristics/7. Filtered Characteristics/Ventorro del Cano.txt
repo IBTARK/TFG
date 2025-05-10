@@ -1,0 +1,1 @@
+estacion: (limpio, 2)(lejos, 1)(tranquilo, 1)

@@ -1,0 +1,8 @@
+metro: (bien, 2)
+acceso: (unico, 1)(salir, 2)(bien, 5)
+movilidad: (pequeño, 1)
+zona: (residencial, 1)(tranquilo, 1)(bonito, 2)
+servicio: (bien, 1)
+escalera: (ascensor, 1)
+informacion: (necesario, 1)
+instalacion: (bien, 1)

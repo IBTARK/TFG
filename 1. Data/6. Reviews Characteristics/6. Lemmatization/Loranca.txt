@@ -1,6 +1,6 @@
-estacion: (limpio, 1)(grande, 2)(raro, 1)(pequeño, 1)(cerrar, 1)(inagurar, 1)(tranquilo, 2)(moderno, 1)(centro, 1)(gotera, 1)(desplazado, 1)
+estacion: (limpio, 1)(grande, 2)(raro, 1)(pequeño, 1)(cerrado, 1)(inagurar, 1)(tranquilo, 2)(moderno, 1)(centro, 1)(gotera, 1)(desplazado, 1)
 cobertura: (móvil, 1)
 tren: (próximo, 1)
 movilidad: (reducido, 1)
 frecuencia: (aceptable, 1)
-escalera: (romper, 1)
+escalera: (roto, 1)

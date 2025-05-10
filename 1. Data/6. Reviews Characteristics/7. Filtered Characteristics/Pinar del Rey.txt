@@ -1,0 +1,5 @@
+estacion: (grande, 5)(nuevo, 6)(bien, 2)(linea, 2)(bonito, 6)(normal, 3)(limpio, 2)(accesible, 1)
+escalera: (mecanico, 3)(ascensor, 1)(ubicado, 1)
+gente: (inutil, 1)
+movilidad: (pequeño, 1)
+metro: (normal, 1)

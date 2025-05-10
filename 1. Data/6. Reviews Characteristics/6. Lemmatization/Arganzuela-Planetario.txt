@@ -1,4 +1,4 @@
-estacion: (lindo, 16)(imperdible, 3)(grato, 2)(moderno, 4)(lugar, 1)(grande, 8)(nuevo, 2)(seguro, 2)(recomendable, 1)(preparado, 1)(favorito, 1)(diseño, 1)(original, 1)(desconocido, 2)(gaviota, 1)(próximo, 1)(limpio, 3)(cómodo, 1)(acordir, 1)(ideal, 1)(urbano, 1)
+estacion: (lindo, 16)(imperdible, 3)(grato, 2)(moderno, 4)(lugar, 1)(grande, 8)(nuevo, 2)(seguro, 2)(recomendable, 1)(preparado, 1)(favorito, 1)(diseño, 1)(original, 1)(desconocido, 2)(gaviota, 1)(próximo, 1)(limpio, 3)(cómodo, 1)(acorde, 1)(ideal, 1)(urbano, 1)
 linea: (servir, 1)(situado, 1)
 escalera: (mecánico, 2)(escalera, 1)(largo, 1)(alto, 1)
 movilidad: (reducido, 2)

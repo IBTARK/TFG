@@ -1,0 +1,5 @@
+estacion: (limpio, 6)(adaptado, 6)(transitado, 1)(pasar, 1)(ayudar, 1)(nuevo, 1)(cerca, 1)(luminoso, 4)(ubicado, 1)(bien, 7)
+personal: (ayudar, 1)
+metro: (centrado, 2)(grande, 2)(puntual, 1)
+escalera: (mecanico, 2)(sucio, 1)
+estado: (mal, 1)

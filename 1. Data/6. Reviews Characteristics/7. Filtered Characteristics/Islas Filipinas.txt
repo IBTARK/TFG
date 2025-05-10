@@ -1,0 +1,10 @@
+estacion: (grande, 11)(cerca, 1)(nuevo, 2)(limpio, 17)(ascensor, 1)(recomendable, 1)(conectado, 1)(centrado, 1)(normal, 1)
+salida: (accesible, 1)(diferente, 1)(recomendable, 1)
+movilidad: (pequeño, 1)(publico, 1)
+servicio: (bien, 2)
+escalera: (mecanico, 5)(electrico, 2)(grande, 2)(accesible, 1)
+metro: (grande, 1)(dificil, 1)(nuevo, 1)(lento, 1)
+limpieza: (bien, 1)(grande, 2)(nuevo, 1)
+cobertura: (movil, 1)(util, 1)
+maquina: 
+linea: (ubicado, 1)

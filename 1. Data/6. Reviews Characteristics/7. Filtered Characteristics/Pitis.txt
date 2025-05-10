@@ -1,0 +1,10 @@
+estacion: (facil, 3)(pequeño, 2)(bien, 12)(sucio, 1)(unico, 2)(inadaptado, 1)(imposible, 1)(mal, 1)
+maquina: (expendedor, 1)
+servicio: (publico, 1)(mal, 1)(bien, 2)
+transporte: (publico, 1)(mal, 1)
+tren: (bien, 1)(pasar, 1)(accesible, 1)(normal, 1)
+zona: (nuevo, 2)
+acceso: (directo, 1)(dificil, 1)
+linea: 
+persona: (mal, 1)(igual, 1)
+frecuencia: (bien, 1)

@@ -1,0 +1,10 @@
+conexion: (bien, 1)(directo, 1)(intercambiador, 2)
+linea: (siguiente, 1)(unico, 1)(conectado, 1)(pequeño, 1)
+escalera: (mecanico, 1)(bien, 1)
+movilidad: (pequeño, 4)(normal, 1)(bien, 3)(transitado, 1)(ordenado, 1)(publico, 2)(facil, 1)
+acceso: (bien, 1)(facil, 1)
+experiencia: (bien, 1)
+frecuencia: 
+limpieza: (tranquilo, 1)
+gente: (comunicado, 3)(mal, 1)(multiple, 1)
+metro: (adaptado, 1)

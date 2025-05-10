@@ -2,7 +2,7 @@ estacion: (bien, 32)(limpio, 3)(ubicado, 2)(abandonar, 1)(olvidado, 1)(normal, 1
 servicio: (estación, 1)(buen, 4)(mejor, 1)(demorado, 1)(incapaz, 2)(recibir, 1)
 maquina: (expendedor, 1)
 transporte: (público, 2)(reducido, 1)
-escalera: (malo, 1)(mecanico, 2)(romper, 1)
+escalera: (malo, 1)(mecanico, 2)(roto, 1)
 personal: (amable, 1)
 tren: (raro, 1)(ir, 2)(tren, 1)
 limpieza: (buen, 2)

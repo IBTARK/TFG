@@ -1,0 +1,5 @@
+estacion: (grande, 2)(accesible, 4)(limpio, 4)(ascensor, 1)(señalizar, 1)(bien, 4)(pasar, 1)(servicio, 1)(normal, 2)(total, 1)(comunicado, 1)(antiguo, 1)(facil, 1)(ver, 1)
+ascensor: (mecanico, 3)(mal, 1)(dificil, 1)
+movilidad: (pequeño, 3)
+linea: (facil, 1)
+servicio: 

@@ -1,0 +1,2 @@
+estacion: (bien, 1)
+tren: (primero, 1)

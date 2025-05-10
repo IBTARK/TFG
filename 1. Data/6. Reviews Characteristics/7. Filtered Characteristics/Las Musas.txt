@@ -1,0 +1,7 @@
+estacion: (bien, 11)(inadaptado, 4)(normal, 1)
+ascensor: (bien, 1)(mecanico, 3)
+movilidad: (pequeño, 3)(publico, 1)
+zona: (tarifario, 1)(bien, 1)
+acceso: (mal, 1)
+metro: (limpio, 2)(antiguo, 1)
+personal: 

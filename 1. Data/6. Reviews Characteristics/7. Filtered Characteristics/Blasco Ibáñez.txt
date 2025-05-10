@@ -1,0 +1,6 @@
+estacion: (recomendable, 2)(subterraneo, 1)
+frecuencia: (pequeño, 2)
+metro: (ligero, 3)(subterraneo, 1)(pequeño, 1)
+zona: (exterior, 1)(sucio, 1)
+escalera: (mecanico, 1)
+acceso: (mecanico, 1)(bien, 1)

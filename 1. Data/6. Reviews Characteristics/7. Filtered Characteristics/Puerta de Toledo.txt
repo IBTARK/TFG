@@ -1,0 +1,11 @@
+estacion: (ubicado, 8)(servicio, 1)(cerca, 2)(inaccesible, 2)(transitado, 2)(bonito, 9)(bien, 3)(normal, 1)(comodo, 1)
+movilidad: (pequeño, 1)(publico, 1)
+linea: 
+salida: (unico, 1)(vigilado, 1)(bonito, 1)
+conexion: (bien, 1)
+limpieza: (bien, 1)
+senalizacion: (claro, 1)
+maquina: (accesible, 1)
+metro: (bien, 1)(normal, 1)
+escalera: (grande, 1)(mecanico, 2)(ascensor, 2)
+gente: (minusvalido, 1)(grande, 1)

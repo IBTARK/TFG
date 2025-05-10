@@ -1,0 +1,7 @@
+estacion: (bonito, 3)(parado, 1)(mal, 4)(rapido, 1)(limpio, 2)(señalizar, 2)(tranquilo, 3)
+estado: (bien, 1)
+acceso: (dificil, 1)(discapacitado, 1)
+zona: (bien, 1)
+servicio: (bien, 1)
+movilidad: (pequeño, 1)
+metro: (normal, 1)

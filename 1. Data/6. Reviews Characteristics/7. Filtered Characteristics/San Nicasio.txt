@@ -1,0 +1,6 @@
+estacion: (nuevo, 1)(luminoso, 1)(grande, 1)(limpio, 2)(bien, 2)(normal, 1)(intransitado, 1)(señalizar, 2)
+acceso: (bien, 2)(facil, 1)
+movilidad: (pequeño, 1)
+escalera: (mecanico, 1)
+personal: (amable, 1)
+metro: (limpio, 1)(grande, 1)

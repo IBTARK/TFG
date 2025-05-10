@@ -1,0 +1,8 @@
+estacion: (inadaptado, 1)(parado, 3)(plaza, 1)(transitado, 2)(bien, 4)(centrado, 1)(discapacitado, 1)(antiguo, 2)(bonito, 2)(ubicado, 2)(simple, 1)(facil, 1)
+salida: (inaccesible, 1)(bien, 1)
+zona: (comercial, 1)(discapacitado, 1)(bien, 1)
+escalera: (mecanico, 3)(ascensor, 2)
+servicio: (bien, 3)
+movilidad: (pequeño, 2)
+acceso: (comodo, 1)(bien, 1)
+linea: (amarillo, 1)

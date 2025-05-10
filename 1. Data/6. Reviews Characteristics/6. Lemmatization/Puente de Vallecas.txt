@@ -1,4 +1,4 @@
-estacion: (abandonar, 1)(mejor, 3)(obviamente, 2)(enfadado, 2)(agradecido, 2)(completo, 1)(sucio, 2)(concurrido, 3)(antiguo, 1)(comunicar, 2)(peligroso, 1)(buenisimo, 1)(normal, 1)(bonito, 1)(pasable, 1)(especial, 1)
+estacion: (abandonar, 1)(mejor, 3)(obviamente, 2)(enfadado, 2)(agradecido, 2)(completo, 1)(sucio, 2)(concurrido, 3)(antiguo, 1)(comunicado, 2)(peligroso, 1)(buenisima, 1)(normal, 1)(bonito, 1)(pasable, 1)(especial, 1)
 cobertura: (móvil, 2)
 servicio: (excepcional, 2)
 salida: (manual, 1)

@@ -1,0 +1,10 @@
+estacion: (bien, 32)(limpio, 3)(ubicado, 2)(mal, 2)(normal, 1)(atencion, 2)(comodo, 1)(grande, 4)(instalacion, 1)(intercambiador, 2)(centrado, 1)(accesible, 2)(nuevo, 1)
+servicio: (estacion, 1)(bien, 5)
+maquina: (expendedor, 1)
+transporte: (publico, 2)(pequeño, 1)
+escalera: (mal, 2)(mecanico, 2)
+personal: (amable, 1)
+tren: (mal, 1)
+limpieza: (bien, 2)
+conexion: 
+estado: (bien, 2)

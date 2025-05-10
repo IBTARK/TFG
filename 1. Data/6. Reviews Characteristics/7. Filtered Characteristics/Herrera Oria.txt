@@ -1,0 +1,6 @@
+estacion: (cerca, 3)(inaccesible, 2)(limpio, 2)(bien, 1)(profundo, 1)
+movilidad: (pequeño, 2)
+escalera: (mecanico, 3)
+acceso: (dificil, 1)(bien, 1)
+metro: (accesible, 1)
+servicio: (bien, 1)

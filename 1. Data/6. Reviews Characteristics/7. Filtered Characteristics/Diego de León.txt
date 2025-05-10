@@ -1,0 +1,8 @@
+movilidad: (pequeño, 2)
+estado: 
+escalera: (unico, 1)(mecanico, 3)(adaptado, 1)(grande, 2)
+metro: (conectado, 1)(mal, 1)(bien, 1)
+gente: (minusvalido, 2)
+cobertura: (movil, 1)
+salida: (confuso, 1)(diferente, 1)(bien, 1)
+zona: 
