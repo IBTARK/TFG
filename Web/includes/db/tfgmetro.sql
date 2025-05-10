@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-05-2025 a las 10:28:40
+-- Tiempo de generación: 10-05-2025 a las 17:37:08
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.0.30
 
@@ -22,6 +22,18 @@ SET time_zone = "+00:00";
 --
 CREATE DATABASE IF NOT EXISTS `tfgmetro` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `tfgmetro`;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `caracteristicas`
+--
+
+DROP TABLE IF EXISTS `caracteristicas`;
+CREATE TABLE `caracteristicas` (
+  `id` int(11) NOT NULL,
+  `descripcion` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -55,6 +67,19 @@ CREATE TABLE `estaciones` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `estaciones_caracteristicas`
+--
+
+DROP TABLE IF EXISTS `estaciones_caracteristicas`;
+CREATE TABLE `estaciones_caracteristicas` (
+  `caracteristica_id` int(11) NOT NULL,
+  `estacion_id` int(11) NOT NULL,
+  `valor` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `estaciones_lineas`
 --
 
@@ -75,7 +100,8 @@ DROP TABLE IF EXISTS `lineas`;
 CREATE TABLE `lineas` (
   `id` int(11) NOT NULL,
   `nombre` varchar(50) NOT NULL,
-  `siglas` varchar(10) NOT NULL
+  `siglas` varchar(10) NOT NULL,
+  `color` varchar(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -96,6 +122,12 @@ CREATE TABLE `transbordos` (
 --
 
 --
+-- Indices de la tabla `caracteristicas`
+--
+ALTER TABLE `caracteristicas`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `conexiones`
 --
 ALTER TABLE `conexiones`
@@ -108,6 +140,13 @@ ALTER TABLE `conexiones`
 --
 ALTER TABLE `estaciones`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `estaciones_caracteristicas`
+--
+ALTER TABLE `estaciones_caracteristicas`
+  ADD KEY `estaciones_caracteristicas_ibfk_1` (`caracteristica_id`),
+  ADD KEY `estaciones_caracteristicas_ibfk_2` (`estacion_id`);
 
 --
 -- Indices de la tabla `estaciones_lineas`
@@ -132,6 +171,12 @@ ALTER TABLE `transbordos`
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
+
+--
+-- AUTO_INCREMENT de la tabla `caracteristicas`
+--
+ALTER TABLE `caracteristicas`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `conexiones`
@@ -167,6 +212,13 @@ ALTER TABLE `transbordos`
 ALTER TABLE `conexiones`
   ADD CONSTRAINT `conexiones_ibfk_1` FOREIGN KEY (`estacion_origen`) REFERENCES `estaciones` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `conexiones_ibfk_2` FOREIGN KEY (`estacion_destino`) REFERENCES `estaciones` (`id`) ON DELETE CASCADE;
+
+--
+-- Filtros para la tabla `estaciones_caracteristicas`
+--
+ALTER TABLE `estaciones_caracteristicas`
+  ADD CONSTRAINT `estaciones_caracteristicas_ibfk_1` FOREIGN KEY (`caracteristica_id`) REFERENCES `caracteristicas` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `estaciones_caracteristicas_ibfk_2` FOREIGN KEY (`estacion_id`) REFERENCES `estaciones` (`id`) ON DELETE CASCADE;
 
 --
 -- Filtros para la tabla `estaciones_lineas`
