@@ -1,5 +1,5 @@
 estacion: (mal, 11)(señalizar, 6)(importante, 18)(antiguo, 5)(nuevo, 4)(limpio, 10)(accesible, 7)(instalacion, 1)(organizado, 4)(bien, 22)(conectado, 1)(profundo, 2)(transitado, 4)(seguro, 1)(grande, 1)(simple, 1)
-zona: (norte, 1)(transitado, 2)(anitguo, 1)(comunicado, 1)(seguro, 1)(limpio, 1)(comercial, 1)(bonito, 3)(mal, 1)(lleno, 1)(confuso, 1)
+zona: (norte, 1)(transitado, 2)(antiguo, 1)(comunicado, 1)(seguro, 1)(limpio, 1)(comercial, 1)(bonito, 3)(mal, 1)(lleno, 1)(confuso, 1)
 linea: (siguiente, 3)(rojo, 1)(inaccesible, 1)(transitado, 1)(profundo, 1)(diferente, 1)
 escalera: (mecanico, 12)(electrico, 1)(mal, 4)(unico, 1)(transitado, 1)(bien, 1)
 movilidad: (pequeño, 3)(publico, 4)(bien, 2)

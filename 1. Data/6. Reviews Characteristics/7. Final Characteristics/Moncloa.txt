@@ -1,5 +1,5 @@
 estacion: (bien, 57)(conectado, 1)(intercambiador, 13)(ordenado, 12)(grande, 2)(comodo, 5)(antiguo, 4)(necesario, 2)(nuevo, 2)(transitado, 4)(escalera, 1)(limpio, 1)(accesible, 1)(señalizar, 1)(cerrado, 2)(subterraneo, 2)(normal, 1)(comercial, 1)(interesante, 1)
-zona: (norte, 2)(cerrado, 7)(centrado, 1)(comercial, 3)(grande, 2)(amable, 1)(importante, 1)(limpio, 3)(pequeño, 1)(sucio, 1)(primero, 2)(anitguo, 1)(transitado, 1)
+zona: (norte, 2)(cerrado, 7)(centrado, 1)(comercial, 3)(grande, 2)(amable, 1)(importante, 1)(limpio, 3)(pequeño, 1)(sucio, 1)(primero, 2)(antiguo, 1)(transitado, 1)
 linea: (profundo, 1)(interurbano, 2)(mal, 2)
 acceso: (nuevo, 1)(facil, 2)(disponible, 3)(intercambiador, 1)(mal, 1)
 servicio: (bien, 3)(publico, 1)

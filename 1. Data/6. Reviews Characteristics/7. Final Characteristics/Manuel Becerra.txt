@@ -1,6 +1,6 @@
 movilidad: (pequeño, 5)
 escalera: (electrico, 1)(mecanico, 5)(mal, 1)
-estacion: (inseguro, 1)(completo, 2)(ubicado, 5)(bien, 13)(anitguo, 1)(comunicado, 2)(mal, 2)(antiguo, 1)(limpio, 2)(centrado, 1)(normal, 2)(siempre, 1)(rapido, 1)
+estacion: (inseguro, 1)(completo, 2)(ubicado, 5)(bien, 13)(antiguo, 2)(comunicado, 2)(mal, 2)(limpio, 2)(centrado, 1)(normal, 2)(siempre, 1)(rapido, 1)
 conexion: (bien, 2)
 linea: (gris, 2)(rojo, 1)
 zona: (seguro, 3)(personal, 1)

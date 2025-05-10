@@ -241,7 +241,7 @@ después: despues
 conocido: transitado
 algo: algo
 clásico: antiguo
-terminal: 
+terminal: terminal
 innecesario: mal
 atencion: atencion
 espaciós: grande
@@ -343,7 +343,7 @@ positivo: bien
 instalación: instalacion
 line: line
 disuasorio: mal
-mítico: anitguo
+mítico: antiguo
 usar: transitado
 impresionante: bien 
 actual: nuevo

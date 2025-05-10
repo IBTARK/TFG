@@ -1,4 +1,4 @@
-estacion: (saber, 12)(antiguo, 8)(bien, 36)(cerca, 19)(importante, 5)(nuevo, 2)(zona, 4)(organizado, 7)(bonito, 3)(limpio, 7)(centrado, 4)(parado, 1)(servicio, 2)(mal, 1)(transitado, 3)(anitguo, 1)(dificil, 2)(gratuito, 1)
+estacion: (saber, 12)(antiguo, 9)(bien, 36)(cerca, 19)(importante, 5)(nuevo, 2)(zona, 4)(organizado, 7)(bonito, 3)(limpio, 7)(centrado, 4)(parado, 1)(servicio, 2)(mal, 1)(transitado, 3)(dificil, 2)(gratuito, 1)
 transporte: (publico, 1)
 ascensor: (unico, 1)(bien, 1)
 tren: (nuevo, 1)(cerca, 1)(bonito, 1)(pequeño, 1)(dificil, 1)
