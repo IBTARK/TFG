@@ -1,2 +1,2 @@
 metro: (siguiente, 1)
-estacion: (felicidad, 1)(nuevo, 1)(limpio, 3)(accesible, 3)(señalizar, 4)(parado, 1)(abajo, 1)(grande, 2)(imposible, 1)
+estacion: (felicidad, 1)(nuevo, 1)(limpio, 3)(accesible, 3)(señalizado, 4)(parada, 1)(abajo, 1)(grande, 2)(imposible, 1)

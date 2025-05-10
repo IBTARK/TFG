@@ -1,6 +1,6 @@
 escalera: (eléctrico, 1)(mecánico, 1)
 maquina: (solo, 1)(dispensadoro, 1)
 servicio: (mal, 1)
-salida: (equivocado, 1)
+salida: (equivocar, 1)
 experiencia: (agradable, 1)
 informacion: (util, 1)

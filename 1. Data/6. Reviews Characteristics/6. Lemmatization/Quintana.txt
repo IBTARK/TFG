@@ -1,4 +1,4 @@
-estacion: (parado, 3)(conectado, 2)(servicio, 1)(práctico, 1)(inadaptado, 3)(buen, 5)(amplio, 1)(descuidado, 2)(siempre, 1)(inmejorable, 1)(pequeño, 1)
+estacion: (parada, 3)(conectado, 2)(servicio, 1)(práctico, 1)(inadaptado, 3)(buen, 5)(amplio, 1)(descuidado, 2)(siempre, 1)(inmejorable, 1)(pequeño, 1)
 movilidad: (reducido, 3)(gran, 1)
 conexion: (buen, 3)
 limpieza: (adecuado, 1)

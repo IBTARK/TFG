@@ -1,4 +1,4 @@
-estacion: (moderno, 6)(amplio, 7)(inagurar, 1)(bonito, 2)(señalizar, 2)(sucio, 1)
+estacion: (moderno, 6)(amplio, 7)(inagurar, 1)(bonito, 2)(señalizado, 2)(sucio, 1)
 zona: (residencial, 1)
 metro: (cuadrado, 1)(limpio, 1)(funcional, 1)
 salida: (buen, 1)

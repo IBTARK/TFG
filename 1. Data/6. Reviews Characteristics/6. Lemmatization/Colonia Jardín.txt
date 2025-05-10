@@ -1,5 +1,5 @@
-estacion: (junto, 16)(zona, 1)(metro, 3)(bien, 13)(conectado, 2)(vestíbulo, 1)(ideal, 1)(parking, 1)(intercambiador, 4)(cómodo, 4)(moderno, 2)(confuso, 1)(limpio, 3)(adaptado, 1)(ligero, 1)(normalidad, 2)(disuasorio, 2)(gratuito, 2)(exterior, 2)(ascensor, 1)(público, 1)(pequeño, 1)(arriba, 1)(asfaltado, 1)
-metro: (ligero, 13)(sur, 1)(comunicado, 1)(eficiente, 1)(moderno, 1)
+estacion: (junto, 16)(zona, 1)(metro, 3)(bien, 13)(conectado, 2)(vestíbulo, 1)(ideal, 1)(parking, 1)(intercambiador, 4)(cómodo, 4)(moderno, 2)(confuso, 1)(limpio, 3)(adaptado, 1)(ligero, 1)(normalidad, 2)(disuasoriir, 2)(gratuito, 2)(exterior, 2)(ascensor, 1)(público, 1)(pequeño, 1)(arriba, 1)(asfaltado, 1)
+metro: (ligero, 13)(sur, 1)(comunicar, 1)(eficiente, 1)(moderno, 1)
 conexion: (único, 2)(buen, 2)
 servicio: (comodo, 1)(publico, 1)(excelente, 2)
 transporte: (publico, 1)(rápido, 1)(vacio, 1)(reducido, 1)

@@ -1,4 +1,4 @@
-estacion: (acogedor, 3)(parado, 1)(malo, 2)(anterior, 2)(peor, 2)(rápido, 1)(limpio, 2)(señalizar, 2)(tranquilo, 3)
+estacion: (acogedor, 3)(parada, 1)(malo, 2)(anterior, 2)(peor, 2)(rápido, 1)(limpio, 2)(señalizado, 2)(tranquilo, 3)
 estado: (buen, 1)
 acceso: (difícil, 1)(discapacitado, 1)
 zona: (buen, 1)

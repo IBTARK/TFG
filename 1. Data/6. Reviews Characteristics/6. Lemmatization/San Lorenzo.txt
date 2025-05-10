@@ -1,4 +1,4 @@
-estacion: (situado, 2)(equipado, 3)(conexión, 1)(considerar, 4)(amplio, 1)(sucio, 2)(cerrado, 1)(bonito, 2)
+estacion: (situado, 2)(equipado, 3)(conexión, 1)(considerado, 4)(amplio, 1)(sucio, 2)(cerrar, 1)(bonito, 2)
 zona: (residencial, 2)(comercial, 1)(seguro, 1)(cómodo, 1)(importante, 1)(eterno, 1)
 escalera: (mecánico, 2)(sucio, 1)
 movilidad: (reducido, 3)

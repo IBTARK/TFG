@@ -1,6 +1,6 @@
 movilidad: (reducido, 5)
-escalera: (eléctrico, 1)(mecánico, 5)(descolocado, 1)(segundo, 1)(averiado, 1)
-estacion: (inseguro, 1)(completo, 2)(situado, 5)(maravilloso, 11)(mítico, 1)(recomemdable, 1)(bien, 1)(comunicado, 2)(vergüenza, 1)(cuidado, 1)(manuel, 2)(vida, 1)(viejo, 1)(limpio, 2)(centrico, 1)(normal, 2)(ruidoso, 1)(siempre, 1)(rapido, 1)
+escalera: (eléctrico, 1)(mecánico, 5)(descolocar, 1)(segundo, 1)(averiado, 1)
+estacion: (inseguro, 1)(completo, 2)(situado, 5)(maravilloso, 11)(mítico, 1)(recomemdable, 1)(bien, 1)(comunicar, 2)(vergüenza, 1)(cuidado, 1)(manuel, 2)(vida, 1)(viejo, 1)(limpio, 2)(centrico, 1)(normal, 2)(ruidoso, 1)(siempre, 1)(rapido, 1)
 conexion: (buen, 2)
 linea: (gris, 2)(rojo, 1)
 zona: (seguro, 3)(personal, 1)

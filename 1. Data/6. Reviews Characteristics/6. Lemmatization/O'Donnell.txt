@@ -1,5 +1,5 @@
 tren: (primero, 1)(modesto, 1)(limpio, 1)(genial, 1)
-estacion: (vergüenza, 1)(adema, 1)(corriente, 1)(normal, 1)(estar, 3)(interesante, 1)(zona, 1)(concurrido, 2)(genial, 1)(mejor, 1)
+estacion: (vergüenza, 1)(ademar, 1)(corriente, 1)(normal, 1)(estar, 3)(interesante, 1)(zona, 1)(concurrido, 2)(genial, 1)(mejor, 1)
 ascensor: (único, 1)(buen, 1)(eléctrico, 1)
 cobertura: (movil, 1)
 instalacion: (antiguo, 1)(desfasado, 1)

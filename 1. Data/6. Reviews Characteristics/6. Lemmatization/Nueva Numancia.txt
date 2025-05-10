@@ -1,4 +1,4 @@
-estacion: (comunicado, 11)(céntrico, 2)(limpio, 3)(ordenado, 1)(antiguo, 1)(bonito, 4)(cambiar, 1)(inadaptado, 2)(lleno, 1)(ascensor, 1)(comercial, 1)
+estacion: (comunicar, 11)(céntrico, 2)(limpio, 3)(ordenado, 1)(antiguo, 1)(bonito, 4)(cambiar, 1)(inadaptado, 2)(lleno, 1)(ascensor, 1)(comercial, 1)
 salida: (superior, 2)(único, 1)
 escalera: (mecánico, 2)
 movilidad: (reducido, 2)(difícil, 1)

@@ -1,4 +1,4 @@
-estacion: (cubierto, 6)(amplio, 13)(buen, 17)(organizado, 2)(cuidado, 1)(metro, 1)(intercambiador, 2)(tradicional, 1)(horrible, 1)(abierto, 1)(gracia, 1)(sucio, 1)(practico, 2)(amplitud, 1)(cómoda, 2)(agradable, 1)(eficiente, 1)(información, 1)(degradado, 1)(rapido, 1)(conectividad, 2)(personal, 1)(normal, 1)(confuso, 1)
+estacion: (cubierto, 6)(amplio, 13)(buen, 17)(organizado, 2)(cuidado, 1)(metro, 1)(intercambiador, 2)(tradicional, 1)(horrible, 1)(abierto, 1)(gracias, 1)(sucio, 1)(practico, 2)(amplitud, 1)(cómodo, 2)(agradable, 1)(eficiente, 1)(información, 1)(degradado, 1)(rapido, 1)(conectividad, 2)(personal, 1)(normal, 1)(confuso, 1)
 salida: (posterior, 1)(buen, 1)
 metro: (bonito, 2)(ligero, 1)(príncipe, 1)(resolutivo, 1)(grande, 1)(intercambiador, 1)
 instalacion: (bien, 1)

@@ -1,4 +1,4 @@
-estacion: (normal, 2)(parado, 3)(conectado, 1)(servicio, 1)(área, 3)(práctico, 1)(residencial, 1)(buen, 19)(único, 2)(antiguo, 1)(inadaptado, 1)(importante, 1)(limitación, 1)(cobertura, 1)
+estacion: (normal, 2)(parada, 3)(conectado, 1)(servicio, 1)(área, 3)(práctico, 1)(residencial, 1)(buen, 19)(único, 2)(antiguo, 1)(inadaptado, 1)(importante, 1)(limitación, 1)(cobertura, 1)
 escalera: (mecánico, 5)(estropeado, 1)
 movilidad: (reducido, 6)
 conexion: (buen, 3)

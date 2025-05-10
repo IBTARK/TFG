@@ -1,4 +1,4 @@
-estacion: (parado, 6)(acceso, 1)(conectado, 1)(vigilado, 5)(práctico, 3)(ubicado, 2)(grande, 10)(organizado, 1)(limpio, 3)(moderno, 1)(nuevo, 1)(mejor, 1)(eficiente, 1)(encantador, 1)(tranquilo, 2)(diferente, 1)(pequeño, 1)
+estacion: (parada, 6)(acceso, 1)(conectado, 1)(vigilado, 5)(práctico, 3)(ubicado, 2)(grande, 10)(organizado, 1)(limpio, 3)(moderno, 1)(nuevo, 1)(mejor, 1)(eficiente, 1)(encantador, 1)(tranquilo, 2)(diferente, 1)(pequeño, 1)
 movilidad: (reducido, 1)
 conexion: (buen, 3)
 limpieza: (adecuado, 1)

@@ -1,4 +1,4 @@
-estacion: (parado, 6)(conectado, 1)(servicio, 1)(área, 1)(práctico, 2)(residencial, 1)(ascensor, 1)(genial, 18)(limpio, 5)(reformado, 1)(aparcamiento, 1)(rico, 1)(inaccesible, 1)(supertascado, 1)(ventilado, 1)(atasco, 2)(luminoso, 1)(gratuito, 1)
+estacion: (parada, 6)(conectado, 1)(servicio, 1)(área, 1)(práctico, 2)(residencial, 1)(ascensor, 1)(genial, 18)(limpio, 5)(reformado, 1)(aparcamiento, 1)(rico, 1)(inaccesible, 1)(supertascado, 1)(ventilado, 1)(atasco, 2)(luminoso, 1)(gratuito, 1)
 movilidad: (reducido, 1)(público, 1)(fluido, 1)
 conexion: (buen, 3)
 zona: (residencial, 1)(concurrido, 1)(seguro, 1)(excelente, 1)

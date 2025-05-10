@@ -1,5 +1,5 @@
-escalera: (estropeado, 2)(largo, 1)(mecánico, 3)(cuidado, 1)(roto, 1)(nuevo, 1)
-estacion: (tranquilo, 4)(necesitar, 1)(limpio, 5)(mejorar, 1)(accesible, 1)(inadaptado, 3)(encantado, 1)
+escalera: (estropeado, 2)(largo, 1)(mecánico, 3)(cuidado, 1)(romper, 1)(nuevo, 1)
+estacion: (tranquilo, 4)(necesitar, 1)(limpio, 5)(mejorado, 1)(accesible, 1)(inadaptado, 3)(encantado, 1)
 movilidad: (condicionado, 1)
 zona: (concurrido, 1)(descuidado, 1)
 acceso: (discapacitado, 1)

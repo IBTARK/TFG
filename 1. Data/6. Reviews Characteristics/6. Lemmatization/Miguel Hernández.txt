@@ -1,6 +1,6 @@
 movilidad: (reducido, 2)(mayor, 1)(individual, 1)
 escalera: (mecánico, 2)(eléctrico, 1)
-zona: (tarifario, 1)(intransitado, 1)(comunicado, 2)
+zona: (tarifario, 1)(intransitado, 1)(comunicar, 2)
 cobertura: (móvil, 1)
 metro: (normal, 1)(corriente, 1)
 instalacion: (correcto, 1)(funcional, 1)

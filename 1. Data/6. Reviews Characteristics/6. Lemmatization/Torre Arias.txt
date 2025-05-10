@@ -1,5 +1,5 @@
 estado: (buen, 3)
-estacion: (conectado, 1)(práctico, 3)(buen, 16)(resbaloso, 1)(ideal, 1)(cerrado, 1)(reformado, 1)(frio, 2)(vestíbulo, 1)(circular, 1)(inaccesible, 1)(sucio, 1)(organizado, 1)
+estacion: (conectado, 1)(práctico, 3)(buen, 16)(resbaloso, 1)(ideal, 1)(cerrar, 1)(reformado, 1)(frio, 2)(vestíbulo, 1)(circular, 1)(inaccesible, 1)(sucio, 1)(organizado, 1)
 movilidad: (reducido, 3)(público, 1)
 conexion: (buen, 3)
 linea: (acceder, 1)(azul, 1)(situado, 1)

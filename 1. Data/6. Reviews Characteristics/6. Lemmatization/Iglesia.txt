@@ -1,4 +1,4 @@
-estacion: (bien, 11)(parado, 1)(accesible, 2)(inaugural, 1)(intransitado, 1)(ascensor, 1)(hermoso, 1)(antiguo, 1)
+estacion: (bien, 11)(parada, 1)(accesible, 2)(inaugural, 1)(intransitado, 1)(ascensor, 1)(hermoso, 1)(antiguo, 1)
 acceso: (fácil, 1)
 linea: (solo, 1)
 movilidad: (reducido, 2)

@@ -1,4 +1,4 @@
-persona: (desagradable, 2)(accesible, 3)(grosero, 1)(roto, 1)
+persona: (desagradable, 2)(accesible, 3)(grosero, 1)(romper, 1)
 servicio: (público, 1)(excelente, 1)(limpio, 2)(educado, 1)
 cobertura: (movil, 3)
 estacion: (concurrido, 4)(moderno, 2)(accesible, 1)(ascensor, 1)(bien, 5)(pequeño, 1)(conectar, 1)(fenomenal, 2)(cerca, 1)(limpio, 1)

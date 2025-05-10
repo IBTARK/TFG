@@ -1,5 +1,5 @@
 instalacion: (buen, 3)
-estacion: (grande, 10)(mejor, 1)(concluido, 1)(habilitar, 1)(reflejado, 1)(cerrado, 1)(oscuro, 1)(normal, 2)(comunicado, 4)(edificio, 1)(accesible, 1)(reformado, 1)(limpio, 2)(indescriptible, 1)
+estacion: (grande, 10)(mejor, 1)(concluido, 1)(habilitado, 1)(reflejado, 1)(cerrar, 1)(oscuro, 1)(normal, 2)(comunicar, 4)(edificio, 1)(accesible, 1)(reformado, 1)(limpio, 2)(indescriptible, 1)
 movilidad: (reducido, 2)
 linea: (rojo, 2)
 escalera: (automático, 1)(estropeado, 1)(mecánico, 2)(perteneciente, 1)

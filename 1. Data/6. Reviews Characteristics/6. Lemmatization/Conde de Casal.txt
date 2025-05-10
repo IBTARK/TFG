@@ -1,4 +1,4 @@
-estacion: (buen, 21)(comunicado, 4)(moderno, 2)(lugar, 3)(correspondiente, 1)(accesible, 2)(conde, 1)(cercano, 1)(oler, 2)(cuidado, 1)(feliz, 1)(trafico, 1)(practico, 1)(calor, 1)(normal, 2)(estratégico, 1)(popular, 1)(grande, 1)(limpio, 1)
+estacion: (buen, 21)(comunicar, 4)(moderno, 2)(lugar, 3)(correspondiente, 1)(accesible, 2)(conde, 1)(cercano, 1)(oler, 2)(cuidado, 1)(feliz, 1)(trafico, 1)(practico, 1)(calor, 1)(normal, 2)(estratégico, 1)(popular, 1)(grande, 1)(limpio, 1)
 acceso: (discapacitado, 1)(fácil, 2)(ascensor, 1)(buen, 1)
 zona: (comercial, 2)(residencial, 2)(tarifario, 1)(cercano, 3)(ideal, 2)(hospitalario, 1)(ajetreado, 1)(neurálgico, 1)
 conexion: (importante, 1)

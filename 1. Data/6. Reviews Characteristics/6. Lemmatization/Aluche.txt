@@ -1,4 +1,4 @@
-estacion: (importante, 13)(cerca, 9)(equipado, 17)(estratégico, 1)(antiguo, 2)(intermodal, 1)(economico, 1)(intercambiador, 6)(aluchir, 2)(limpio, 4)(ayudar, 1)(lleno, 1)(eficiente, 2)(comunicado, 1)(moderno, 2)(fatal, 1)(servicio, 1)(preferir, 4)(genial, 2)(normal, 3)(fácil, 1)(artesanal, 1)
+estacion: (importante, 13)(cerca, 9)(equipado, 17)(estratégico, 1)(antiguo, 2)(intermodal, 1)(economico, 1)(intercambiador, 6)(aluche, 2)(limpio, 4)(ayudar, 1)(lleno, 1)(eficiente, 2)(comunicar, 1)(moderno, 2)(fatal, 1)(servicio, 1)(preferido, 4)(genial, 2)(normal, 3)(fácil, 1)(artesanal, 1)
 transporte: (público, 6)(reducido, 3)(supuesto, 1)(sostenible, 1)
 escalera: (mecánico, 1)
 acceso: (fácil, 1)(buen, 3)(discapacitado, 2)

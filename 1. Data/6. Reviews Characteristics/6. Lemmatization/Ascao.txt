@@ -1,4 +1,4 @@
-estacion: (concurrido, 1)(metro, 1)(pequeño, 2)(ubicado, 5)(excelete, 3)(parado, 1)(limpio, 3)(bien, 1)(ayudar, 1)(antiguo, 1)(precio, 1)(desfasado, 1)(calor, 1)
+estacion: (concurrido, 1)(metro, 1)(pequeño, 2)(ubicado, 5)(excelete, 3)(parada, 1)(limpio, 3)(bien, 1)(ayudar, 1)(antiguo, 1)(precio, 1)(desfasado, 1)(calor, 1)
 linea: (rápido, 1)
 escalera: (automático, 1)
-acceso: (solo, 1)(salir, 1)(buen, 1)(limpio, 1)
+acceso: (solo, 1)(salido, 1)(buen, 1)(limpio, 1)

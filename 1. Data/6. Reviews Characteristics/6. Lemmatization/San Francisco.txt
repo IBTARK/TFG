@@ -1,4 +1,4 @@
-estacion: (nuevo, 1)(completo, 2)(fenomenal, 5)(parado, 1)(limpio, 1)(ordenado, 1)(espacioso, 1)
+estacion: (nuevo, 1)(completo, 2)(fenomenal, 5)(parada, 1)(limpio, 1)(ordenado, 1)(espacioso, 1)
 escalera: (mecánico, 3)(nuevo, 1)
 movilidad: (reducido, 1)
 frecuencia: (mejor, 1)

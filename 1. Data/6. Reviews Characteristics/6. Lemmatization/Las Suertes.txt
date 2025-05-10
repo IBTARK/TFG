@@ -1,4 +1,4 @@
-estacion: (nuevo, 4)(enorme, 6)(último, 1)(abierto, 2)(parado, 1)(limpio, 2)(concurrido, 1)(completo, 2)(accesible, 1)(proximo, 1)
+estacion: (nuevo, 4)(enorme, 6)(último, 1)(abierto, 2)(parada, 1)(limpio, 2)(concurrido, 1)(completo, 2)(accesible, 1)(proximo, 1)
 metro: (nuevo, 1)
 zona: (bonito, 2)(cercano, 1)(comercial, 4)(nuevo, 1)
 cobertura: (móvil, 1)

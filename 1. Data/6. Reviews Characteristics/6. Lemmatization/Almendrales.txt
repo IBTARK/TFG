@@ -1,4 +1,4 @@
-estacion: (inaugurado, 1)(completo, 10)(proxima, 1)(ascensor, 1)(andén, 1)(ubicado, 3)(accesible, 2)(inagurar, 1)(limpio, 2)(moderno, 4)(espaciós, 1)(ideal, 1)(ok, 1)(hermoso, 1)
+estacion: (inaugurado, 1)(completo, 10)(proximo, 1)(ascensor, 1)(andén, 1)(ubicado, 3)(accesible, 2)(inagurar, 1)(limpio, 2)(moderno, 4)(espaciós, 1)(ideal, 1)(ok, 1)(hermoso, 1)
 ascensor: (estropeado, 1)(mecánico, 2)(ascensor, 1)(funcional, 1)
 movilidad: (reducido, 1)
 cobertura: (movil, 1)

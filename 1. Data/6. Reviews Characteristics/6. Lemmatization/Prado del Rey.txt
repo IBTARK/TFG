@@ -1,2 +1,2 @@
-estacion: (comunicado, 1)(estudio, 1)
+estacion: (comunicar, 1)(estudio, 1)
 metro: (ligero, 1)

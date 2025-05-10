@@ -1,4 +1,4 @@
-estacion: (reseñar, 2)(equipado, 4)(considerar, 1)(tranquilo, 1)(antiguo, 2)(mejorar, 1)(prioritario, 3)(funcional, 1)(limpio, 4)(normal, 1)
+estacion: (reseña, 2)(equipado, 4)(considerado, 1)(tranquilo, 1)(antiguo, 2)(mejorar, 1)(prioritario, 3)(funcional, 1)(limpio, 4)(normal, 1)
 salida: (rápido, 1)(conveniente, 2)(abierto, 1)
 escalera: (mecánico, 2)(buen, 1)
 movilidad: (reducido, 3)(público, 1)(cercano, 1)

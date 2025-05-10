@@ -1,5 +1,5 @@
-estacion: (parado, 3)(accesible, 2)(importante, 1)(aprovechado, 2)(moderno, 2)(funcional, 1)(cuidado, 1)(super, 1)
-escalera: (mecánico, 2)(roto, 2)(grande, 1)
+estacion: (parar, 3)(accesible, 2)(importante, 1)(aprovechado, 2)(moderno, 2)(funcional, 1)(cuidado, 1)(super, 1)
+escalera: (mecánico, 2)(romper, 2)(grande, 1)
 movilidad: (reducido, 1)
 gente: (mayor, 1)
 metro: (céntrico, 1)(ubicado, 1)

@@ -1,4 +1,4 @@
-estacion: (amplio, 4)(nuevo, 4)(cuidado, 2)(línea, 2)(viva, 1)(lindo, 6)(lastimo, 2)(básico, 2)(normal, 1)(limpio, 2)(espacioso, 1)(accesible, 1)(moderno, 2)
+estacion: (amplio, 4)(nuevo, 4)(cuidado, 2)(línea, 2)(vivir, 1)(lindo, 6)(lastimo, 2)(básico, 2)(normal, 1)(limpio, 2)(espacioso, 1)(accesible, 1)(moderno, 2)
 escalera: (mecánico, 3)(ascensor, 1)(situado, 1)
 gente: (inutil, 1)
 movilidad: (reducido, 1)

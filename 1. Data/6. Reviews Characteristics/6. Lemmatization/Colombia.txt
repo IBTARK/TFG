@@ -1,4 +1,4 @@
-estacion: (buen, 33)(amplio, 13)(decorado, 3)(moderno, 4)(discapacitado, 1)(estacionado, 1)(accesible, 8)(personal, 1)(comodo, 4)(colorido, 1)(limpio, 1)(funcional, 1)(puntual, 1)(parado, 1)
+estacion: (buen, 33)(amplio, 13)(decorado, 3)(moderno, 4)(discapacitado, 1)(estacionado, 1)(accesible, 8)(personal, 1)(comodo, 4)(colorido, 1)(limpio, 1)(funcional, 1)(puntual, 1)(parada, 1)
 ascensor: (beber, 1)(mecánico, 1)(eléctrico, 1)
 movilidad: (reducido, 1)(público, 1)
 zona: (buen, 4)(cercano, 3)(comercial, 1)(cómodo, 1)(principal, 1)

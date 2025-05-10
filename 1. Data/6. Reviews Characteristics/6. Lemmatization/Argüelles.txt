@@ -1,5 +1,5 @@
-estacion: (importante, 24)(conocer, 13)(servicio, 1)(antiguo, 2)(inaugurado, 2)(ampliar, 2)(modernizar, 1)(transitado, 1)(staff, 1)(bien, 7)(cabezon, 2)(ascensor, 1)(cuidado, 2)(ordenado, 2)(bonito, 6)(conectado, 1)(sufrir, 1)(absurdo, 1)(señalizar, 3)(sucio, 2)(lioso, 1)(fatal, 1)(céntrico, 2)(caro, 1)(animado, 2)(lio, 1)(estratégico, 1)(complicado, 2)(público, 1)
-linea: (siguiente, 2)(nuevo, 1)(alto, 1)(ubicado, 1)(comunicado, 1)(inglés, 2)(sencillo, 1)
+estacion: (importante, 24)(conocer, 13)(servicio, 1)(antiguo, 2)(inaugurado, 2)(ampliar, 2)(modernizar, 1)(transitado, 1)(staff, 1)(bien, 7)(cabezon, 2)(ascensor, 1)(cuidado, 2)(ordenado, 2)(bonito, 6)(conectado, 1)(sufrir, 1)(absurdo, 1)(señalizado, 3)(sucio, 2)(lioso, 1)(fatal, 1)(céntrico, 2)(caro, 1)(animado, 2)(lio, 1)(estratégico, 1)(complicado, 2)(público, 1)
+linea: (siguiente, 2)(nuevo, 1)(alto, 1)(ubicado, 1)(comunicar, 1)(inglés, 2)(sencillo, 1)
 zona: (céntrico, 2)(cercano, 1)(comercial, 5)(estupendo, 2)(azul, 1)(estudiantil, 1)(social, 1)(conectado, 1)(salamanco, 1)(ingenuo, 1)
 escalera: (mecánico, 3)(eléctrico, 1)(ascensor, 1)
 movilidad: (reducido, 2)

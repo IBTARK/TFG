@@ -1,4 +1,4 @@
-estacion: (equipado, 2)(buen, 4)(intransitado, 1)(amplio, 2)(dañado, 1)(parado, 1)(señalizar, 2)(estratégico, 1)
+estacion: (equipado, 2)(buen, 4)(intransitado, 1)(amplio, 2)(dañado, 1)(parada, 1)(señalizado, 2)(estratégico, 1)
 linea: (importante, 1)
 escalera: (mecánico, 3)(estropeado, 1)(buen, 1)
 movilidad: (reducido, 1)(público, 1)
