@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-05-2025 a las 17:52:31
+-- Tiempo de generación: 10-05-2025 a las 23:33:58
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.0.30
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `tfgmetro`
 --
+CREATE DATABASE IF NOT EXISTS `tfgmetro` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `tfgmetro`;
 
 -- --------------------------------------------------------
 
@@ -69,6 +71,7 @@ CREATE TABLE `estaciones` (
 
 DROP TABLE IF EXISTS `estaciones_caracteristicas`;
 CREATE TABLE `estaciones_caracteristicas` (
+  `id` int(11) NOT NULL,
   `caracteristica_id` int(11) NOT NULL,
   `estacion_id` int(11) NOT NULL,
   `valor` int(11) NOT NULL
