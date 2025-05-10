@@ -1,0 +1,6 @@
+estacion: (normal, 2)(bonito, 11)(moderno, 2)(limpio, 4)(inagurar, 1)(cerca, 1)(amplio, 3)(mejor, 1)(extraordinario, 1)
+movilidad: (reducido, 2)(ascensor, 1)
+acceso: (fácil, 1)(adaptado, 1)
+persona: (discapacitado, 1)(amplio, 1)
+ascensor: (móvil, 1)(ascensor, 1)(mecanico, 1)
+metro: (accesible, 1)

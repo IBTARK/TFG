@@ -1,0 +1,6 @@
+estacion: (moderno, 4)(amplio, 7)(mejor, 7)(limpio, 7)(ordenado, 1)(ecológico, 1)(ubicado, 3)(accesible, 2)(comunicado, 1)(precioso, 2)(renovado, 1)(recreativo, 1)(tranquilo, 1)(solo, 1)
+cobertura: (móvil, 2)
+ascensor: (igual, 1)(móvil, 1)(eléctrico, 1)(mecánico, 2)(ascensor, 1)
+movilidad: (reducido, 2)
+linea: (buen, 1)
+metro: (nuevo, 1)

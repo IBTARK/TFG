@@ -1,0 +1,5 @@
+cobertura: (móvil, 1)
+estacion: (vestíbulo, 1)(buen, 11)(reluciente, 2)(limpio, 2)(tardar, 1)(rapido, 1)(dificil, 1)
+ascensor: (móvil, 1)
+metro: (centrico, 1)(enserio, 1)(buen, 1)(puntual, 1)
+instalacion: (excelente, 1)

@@ -1,0 +1,2 @@
+estacion: (estratégico, 1)
+tren: (primero, 1)

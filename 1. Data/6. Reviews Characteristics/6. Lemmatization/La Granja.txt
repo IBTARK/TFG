@@ -1,0 +1,5 @@
+salida: (pleno, 1)
+escalera: (mecanico, 2)
+estacion: (grande, 1)(limpio, 2)(moderno, 1)(cómoda, 1)(perteneciente, 2)(perfecto, 2)(funcionar, 1)
+acceso: (fácil, 1)
+metro: (conservar, 1)(moderno, 1)

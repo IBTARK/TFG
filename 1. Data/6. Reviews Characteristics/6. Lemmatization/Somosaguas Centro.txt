@@ -1,0 +1,2 @@
+estacion: (tranvía, 1)(comodo, 1)
+metro: (ligero, 1)

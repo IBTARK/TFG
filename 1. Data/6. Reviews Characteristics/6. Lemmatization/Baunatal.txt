@@ -1,0 +1,6 @@
+metro: (limpio, 1)(tranquilo, 1)(norte, 2)(amplio, 1)(moderno, 2)
+cobertura: (telefónico, 1)
+estacion: (limpio, 4)(bien, 3)(amplio, 2)
+gente: (majo, 2)
+acceso: (fácil, 1)
+movilidad: (reducido, 1)

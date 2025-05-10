@@ -1,0 +1,3 @@
+ascensor: (mejor, 1)
+tren: (pontual, 1)(hermoso, 1)
+estacion: (bonito, 1)

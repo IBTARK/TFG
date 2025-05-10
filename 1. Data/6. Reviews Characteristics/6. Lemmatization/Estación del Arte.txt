@@ -1,0 +1,7 @@
+estacion: (saber, 12)(antiguo, 8)(reconvertir, 2)(alegre, 31)(cerca, 19)(ferroviario, 1)(importante, 5)(nuevo, 2)(zona, 4)(d.e.p, 1)(lúgubre, 1)(organizado, 7)(decorado, 1)(indigno, 1)(limpio, 7)(central, 4)(parado, 1)(gigantesca, 3)(servicio, 2)(dinámico, 3)(bonito, 2)(mejorar, 1)(caótico, 3)(artistico, 1)(mítico, 1)(complicado, 2)(gratuito, 1)(impresionante, 1)(selva, 1)(increible, 1)(instrucción, 1)(conveniente, 1)
+transporte: (público, 1)
+ascensor: (único, 1)(buen, 1)
+tren: (pasante, 2)(moderno, 1)(próximo, 1)(bonito, 1)(pequeño, 1)(complicado, 1)
+servicio: (disponible, 2)(estandarizado, 1)(adicional, 1)(lento, 1)(amigable, 1)(eléctrico, 2)(grande, 1)
+salida: (confuso, 1)(separado, 1)(online, 1)
+experiencia: (fatal, 1)(mínimo, 1)

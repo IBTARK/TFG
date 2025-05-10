@@ -1,0 +1,4 @@
+escalera: (mecánico, 1)(exterior, 1)(comodo, 1)
+metro: (normal, 1)(fácil, 1)(limpio, 1)(moderno, 1)
+estacion: (buen, 2)(amplio, 2)(estacionado, 1)
+estado: (buen, 1)

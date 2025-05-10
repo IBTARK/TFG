@@ -1,0 +1,7 @@
+estacion: (impoluto, 1)(accesible, 4)(realizar, 3)(parado, 6)(correspondiente, 2)(antiguo, 4)(tranquilo, 4)(limpio, 6)(barrio, 1)(normal, 3)(renovado, 1)
+ascensor: (nuevo, 1)(poner, 1)
+movilidad: (reducido, 1)
+metro: (próximo, 1)(buen, 1)
+linea: (limpio, 1)(organizado, 1)(normal, 1)
+cobertura: (móvil, 1)
+acceso: (fácil, 1)

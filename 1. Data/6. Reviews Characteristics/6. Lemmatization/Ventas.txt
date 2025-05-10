@@ -1,0 +1,8 @@
+escalera: (mecánico, 7)(ascensor, 3)(eléctrico, 1)
+cobertura: (móvil, 2)
+estacion: (bien, 21)(fresco, 1)(diseño, 2)(popular, 2)(situado, 5)(sencillo, 1)(iluminado, 1)(inaccesible, 1)(pintoresco, 8)(comodidad, 1)(edificación, 1)(eficientemente, 1)(emblematico, 1)(restringido, 1)
+metro: (turistico, 1)(único, 1)
+gente: (mayor, 1)
+movilidad: (reducido, 1)
+linea: (rojo, 2)(verde, 1)(renovado, 1)
+informacion: (encantado, 1)

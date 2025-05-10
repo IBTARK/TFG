@@ -1,0 +1,8 @@
+estacion: (situado, 3)(inaugurar, 1)(moderno, 3)(grande, 2)(limpio, 7)(luminoso, 2)(personal, 1)(acostumbrado, 1)(bello, 1)(venta, 1)
+movilidad: (reducido, 2)
+persona: (mayor, 1)(malo, 1)
+escalera: (mecanico, 2)(exterior, 1)
+estado: (buen, 1)
+salida: (unico, 1)
+metro: (limpio, 2)(grande, 1)
+zona: (verde, 1)(excelente, 3)(personal, 1)(ordenado, 1)

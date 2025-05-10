@@ -1,0 +1,7 @@
+estacion: (correspondiente, 3)(accesible, 2)(contento, 4)(cuidado, 3)(tranquilo, 3)(seguro, 1)(moderno, 1)(limpio, 1)
+movilidad: (reducido, 2)
+escalera: (mecánico, 2)
+zona: (tarifario, 1)(buen, 1)
+acceso: (fácil, 1)
+salida: (diferenciado, 1)
+cobertura: (móvil, 1)

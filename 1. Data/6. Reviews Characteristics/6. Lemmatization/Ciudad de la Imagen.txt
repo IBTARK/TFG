@@ -1,0 +1,2 @@
+metro: (ligero, 2)
+estacion: (enfrentar, 2)(normal, 1)(usado, 1)(curioso, 2)(justo, 1)

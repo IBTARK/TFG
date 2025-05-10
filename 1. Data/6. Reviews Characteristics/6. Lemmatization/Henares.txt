@@ -1,0 +1,1 @@
+estacion: (pequeño, 1)(desequipado, 1)(encantar, 1)

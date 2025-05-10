@@ -1,0 +1,6 @@
+estacion: (parado, 1)(interesante, 1)(faltar, 1)(servicio, 1)(buen, 1)(centrico, 1)(inaccesible, 1)(sencillo, 1)(viejo, 1)(normal, 1)
+metro: (espectacular, 1)
+ascensor: (tido, 1)
+movilidad: (reducido, 1)
+salida: (estrecho, 1)
+acceso: (fácil, 1)

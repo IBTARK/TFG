@@ -1,0 +1,4 @@
+estacion: (situado, 3)(clásico, 3)(ilustre, 1)(comunicado, 3)(funcionar, 1)(espectacular, 1)(conveniente, 2)
+cobertura: (móvil, 1)
+tren: (próximo, 1)
+linea: (artistico, 1)

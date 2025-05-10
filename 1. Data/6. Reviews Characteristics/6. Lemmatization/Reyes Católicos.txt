@@ -1,0 +1,6 @@
+acceso: (buen, 1)(fácil, 1)
+movilidad: (reducido, 1)
+estacion: (vistoso, 2)(limpio, 3)(menudo, 1)(impresentable, 1)(vergonzoso, 1)(mal, 1)(nuevo, 2)(ubicado, 1)(moderno, 1)
+linea: (construido, 1)
+salida: (cercano, 1)
+metro: (decorado, 1)

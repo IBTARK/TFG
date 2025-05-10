@@ -1,0 +1,8 @@
+metro: (funcional, 1)(abierto, 1)(limpio, 1)(último, 1)
+estacion: (similar, 1)(simple, 1)(vestíbulo, 1)(inagurar, 2)(excelente, 6)(practico, 2)(eficiente, 1)(normal, 1)(puntual, 1)(atención, 1)
+escalera: (mecánico, 1)
+servicio: (disponible, 1)(pesimo, 1)(municipal, 1)(correcto, 1)
+linea: (situado, 1)
+acceso: (buen, 1)(especial, 1)
+movilidad: (reducido, 1)
+experiencia: (buen, 1)

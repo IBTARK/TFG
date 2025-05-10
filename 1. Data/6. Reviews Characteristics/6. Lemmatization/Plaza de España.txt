@@ -1,0 +1,7 @@
+estacion: (principal, 1)(lograr, 10)(fascinar, 9)(zona, 5)(adaptado, 4)(limpio, 3)(bien, 30)(estancado, 1)(complicado, 4)(superbien, 3)(fluido, 1)(conectado, 1)(inmutable, 1)(rehabilitado, 1)(peatonal, 1)(habrio, 1)(lleno, 2)(profundo, 1)(escalera, 1)(situación, 1)(precioso, 2)(monumental, 2)(inutil, 3)(icónico, 2)(popular, 1)(favorito, 1)(acogedor, 1)
+escalera: (mecánico, 3)(electrico, 1)(malo, 1)(único, 1)(moderno, 1)(alfombrado, 1)
+conexion: (buen, 1)(amplio, 1)
+movilidad: (reducido, 1)
+metro: (imprescindible, 1)(interesante, 1)(magnífico, 1)(frecuente, 1)
+maquina: (navegable, 1)
+senalizacion: (buen, 1)

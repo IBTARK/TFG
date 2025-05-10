@@ -1,0 +1,6 @@
+estacion: (soterrado, 1)(recomendable, 2)(subterráneo, 1)
+frecuencia: (escaso, 2)
+metro: (ligero, 3)(subterráneo, 1)(pequeño, 1)(techado, 1)
+zona: (exterior, 1)(sucio, 1)
+escalera: (mecánico, 1)
+acceso: (mecanico, 1)(buen, 1)

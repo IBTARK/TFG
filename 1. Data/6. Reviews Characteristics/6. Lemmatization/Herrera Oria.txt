@@ -1,0 +1,6 @@
+estacion: (perteneciente, 3)(inaccesible, 2)(fiable, 1)(limpio, 2)(cuidado, 1)(via, 1)(profundo, 1)
+movilidad: (reducido, 2)
+escalera: (mecánico, 3)
+acceso: (difícil, 1)(conveniente, 1)
+metro: (accesible, 1)
+servicio: (genial, 1)

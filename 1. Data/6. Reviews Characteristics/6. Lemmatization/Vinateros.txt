@@ -1,0 +1,6 @@
+estacion: (moderno, 1)(buen, 4)(lento, 1)(solitario, 1)(tranquilo, 1)(lejos, 1)
+escalera: (limpio, 2)(automático, 1)
+movilidad: (reducido, 2)
+cobertura: (telefónico, 2)
+maquina: (autoventa, 1)
+frecuencia: (profundo, 1)

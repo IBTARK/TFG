@@ -1,0 +1,6 @@
+escalera: (mecánico, 2)(único, 1)(buen, 1)
+movilidad: (reducido, 1)(público, 1)
+estacion: (antiguo, 3)(adaptado, 8)(limpio, 11)(grande, 2)(céntrico, 1)(genial, 1)(pequeño, 1)(único, 1)(practico, 1)(emblemático, 1)
+metro: (puntual, 1)(rapido, 2)(tranquilo, 1)(fabuloso, 1)
+instalacion: (limpio, 1)(buen, 1)
+salida: (bonito, 1)

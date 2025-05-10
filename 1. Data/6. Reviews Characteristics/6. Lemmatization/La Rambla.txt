@@ -1,0 +1,5 @@
+estacion: (limpio, 6)(nuevo, 1)(cuidado, 3)(metro, 1)(llamativo, 1)(organizado, 1)
+ascensor: (estropeado, 1)(apoyar, 1)(sucio, 1)(normal, 1)
+tren: (último, 1)(limpio, 1)
+zona: (acondicionado, 1)
+linea: (amplio, 1)(limpio, 1)

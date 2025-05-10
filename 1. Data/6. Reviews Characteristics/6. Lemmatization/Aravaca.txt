@@ -1,0 +1,6 @@
+estacion: (moderno, 2)(desconectado, 1)(retrasado, 1)(justo, 1)(genial, 2)(cómodo, 2)(practico, 1)(comunicado, 1)(exterior, 1)(gratuito, 1)(escaso, 1)
+instalacion: (necesario, 1)(elegante, 1)(público, 1)(confuso, 1)
+metro: (ligero, 4)
+acceso: (facil, 1)(conecto, 1)
+experiencia: (bonito, 1)
+linea: (peor, 1)

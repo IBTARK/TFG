@@ -1,0 +1,5 @@
+servicio: (suspender, 1)(infame, 1)
+estacion: (junto, 5)(pequeño, 1)(emilio, 1)(cuidado, 1)(antiguo, 1)(agradable, 4)(regular, 1)(comodo, 1)
+tren: (suburbano, 1)(despreciable, 1)
+salida: (justo, 1)(proximo, 1)
+linea: (suspendido, 1)

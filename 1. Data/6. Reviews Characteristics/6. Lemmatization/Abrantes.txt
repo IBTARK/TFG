@@ -1,0 +1,4 @@
+acceso: (fácil, 1)
+movilidad: (reducido, 1)
+cobertura: (móvil, 1)
+estacion: (tranquilo, 1)(excelente, 2)

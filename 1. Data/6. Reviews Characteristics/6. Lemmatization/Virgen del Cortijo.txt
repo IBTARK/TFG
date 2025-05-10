@@ -1,0 +1,2 @@
+metro: (subterráneo, 1)(normal, 1)(ligero, 1)(pequeño, 1)
+estacion: (bonito, 1)(útil, 1)

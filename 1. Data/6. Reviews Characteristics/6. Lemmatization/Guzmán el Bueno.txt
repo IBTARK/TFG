@@ -1,0 +1,7 @@
+estacion: (buen, 8)(moderno, 1)(limpio, 1)(línea, 1)(cómodo, 2)(muchisimas, 1)(increíble, 1)(inseguro, 1)
+senalizacion: (claro, 2)
+transporte: (suburbano, 2)(buen, 1)
+escalera: (mecánico, 2)(interminable, 1)
+linea: (estación, 1)
+zona: (concurrido, 1)(gran, 1)
+metro: (cómodo, 1)

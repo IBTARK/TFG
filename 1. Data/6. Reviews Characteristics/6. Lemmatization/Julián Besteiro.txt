@@ -1,0 +1,5 @@
+metro: (perteneciente, 2)(amable, 1)
+estacion: (general, 2)(grande, 6)(limpio, 6)(cuidado, 1)(estropeado, 3)(saturado, 1)
+personal: (atento, 4)
+frecuencia: (alto, 2)
+escalera: (mecánico, 3)(estropeado, 1)

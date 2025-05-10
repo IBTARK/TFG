@@ -1,0 +1,8 @@
+gente: (igual, 3)(horrible, 1)
+servicio: (pésimo, 3)
+escalera: (mecánico, 2)(eléctrico, 1)
+estacion: (facil, 12)(bonito, 10)(nuevo, 1)(cuidadoso, 3)(accesible, 2)(desagradable, 2)(indignante, 1)(conectado, 3)(incompetente, 1)(señalizar, 1)(puntual, 1)(acogedor, 1)(seguro, 1)
+transporte: (público, 3)(aceptable, 1)(reducido, 1)
+tren: (tardar, 1)(primero, 1)
+senalizacion: (buen, 1)(detallado, 1)(claro, 1)
+experiencia: (buen, 1)

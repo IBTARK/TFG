@@ -1,0 +1,8 @@
+estacion: (grande, 10)(primero, 1)(penoso, 2)(bagones, 1)(deberiar, 3)(peor, 2)(metro, 1)(equipado, 2)(incalculable, 1)(bien, 1)(interesante, 1)(horario, 1)
+transporte: (dedicar, 1)(público, 1)(siguiente, 1)
+servicio: (penoso, 2)(cutre, 1)(ofrecido, 1)(pésimo, 2)
+gente: (apiñado, 2)(valiosir, 1)
+frecuencia: (bajo, 1)
+metro: (corto, 1)
+escalera: (empinadisimir, 1)(mecanico, 1)
+ascensor: (perteneciente, 1)

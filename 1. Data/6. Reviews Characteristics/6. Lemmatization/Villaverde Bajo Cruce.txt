@@ -1,0 +1,7 @@
+estacion: (grande, 12)(accesible, 1)(cuidado, 3)(nuevo, 1)(señalizar, 3)(intercambiador, 1)(tranquilo, 1)(facil, 2)(riquisima, 1)(barrio, 1)(perfecto, 1)(normal, 1)(incluido, 1)
+movilidad: (reducido, 2)(interurbano, 1)(público, 1)
+zona: (sur, 1)(tranquilo, 2)(cuidado, 1)
+metro: (adoptar, 1)
+escalera: (mecánico, 1)(guardias, 1)(necesario, 1)(limpio, 1)(rapido, 1)
+persona: (discapacitado, 1)
+conexion: (buen, 1)

@@ -1,0 +1,6 @@
+estacion: (impecable, 1)(funcional, 1)(bueno, 4)(limpio, 4)(enorme, 5)(personal, 1)(subterráneo, 1)(sitio, 1)(luminoso, 1)
+metro: (aparcar, 1)(moderno, 1)(espacioso, 2)(cuidado, 1)(eficaz, 1)(perteneciente, 1)
+escalera: (metálico, 1)(eléctrico, 2)
+gente: (feo, 2)
+estado: (buen, 1)
+servicio: (buen, 1)

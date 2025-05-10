@@ -1,3 +1,5 @@
 tfg-env/
 
 .ipynb_checkpoints/
+
+.env
