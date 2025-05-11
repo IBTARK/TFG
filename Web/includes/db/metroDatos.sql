@@ -27,17 +27,17 @@ SET time_zone = "+00:00";
 
 INSERT INTO `caracteristicas` (`id`, `descripcion`) VALUES
 (1, 'limpio'),
-(2, 'nuevo'),
-(3, 'bonito'),
-(4, 'importante'),
-(5, 'accesible'),
-(6, 'transitado'),
-(7, 'tranquilo'),
+(2, 'grande'),
+(3, 'nuevo'),
+(4, 'bonito'),
+(5, 'importante'),
+(6, 'accesible'),
+(7, 'transitado'),
+(8, 'tranquilo'),
 (9, 'seguro'),
 (10, 'luminoso'),
 (11, 'profundo'),
-(12, 'famoso'),
-(13, 'vigilado');
+(12, 'vigilado');
 
 --
 -- Volcado de datos para la tabla `conexiones`
