@@ -32,20 +32,6 @@ class Characteristic(Base):
     id = mapped_column("id", Integer, primary_key = True)
     description = mapped_column("descripcion", String)
 
-class Transfer(Base):
-    __tablename__ = "transbordos"
-
-    id = mapped_column("id", Integer, primary_key = True)
-    station_id = mapped_column("id_estacion", Integer, ForeignKey("lineas.id", ondelete="CASCADE"))
-    lines_transfers = mapped_column("lineas_transbordos", String)
-
-class StationLines(Base):
-    __tablename__ = "estaciones_lineas"
-
-    station_id = mapped_column("estacion_id", Integer, ForeignKey("estaciones.id", ondelete="CASCADE"), primary_key = True)
-    line_id = mapped_column("linea_id", Integer, ForeignKey("lineas.id", ondelete="CASCADE"), primary_key = True)
-    order = mapped_column("orden", Integer)
-
 class StationCharacteristics(Base):
     __tablename__ = "estaciones_caracteristicas"
 
@@ -53,12 +39,19 @@ class StationCharacteristics(Base):
     characteristic_id = mapped_column("caracteristica_id", Integer, ForeignKey("caracteristicas.id", ondelete="CASCADE"), primary_key = True)
     value = mapped_column("valor", Integer)
 
+class StationsLines(Base):
+    __tablename__ = "estaciones_lineas"
+
+    station_id = mapped_column("estacion_id", Integer, ForeignKey("estaciones.id", ondelete="CASCADE"), primary_key = True)
+    line_id = mapped_column("linea_id", Integer, ForeignKey("linea.id", ondelete="CASCADE"), primary_key = True)
+
 class Connection(Base):
     __tablename__ = "conexiones"
-    id               = mapped_column(Integer, primary_key = True)
-    estacion_origen  = mapped_column(Integer, ForeignKey("estaciones.id", ondelete="CASCADE"))
-    estacion_destino = mapped_column(Integer, ForeignKey("estaciones.id", ondelete="CASCADE"))
-    tiempo           = mapped_column(Float)
+
+    station_source  = mapped_column("estacion_origen", Integer, ForeignKey("estaciones.id", ondelete="CASCADE"),  primary_key = True)
+    station_destination = mapped_column("estacion_destino", Integer, ForeignKey("estaciones.id", ondelete="CASCADE"), primary_key = True)
+    line = mapped_column("linea", Integer, ForeignKey("lineas.id", ondelete="CASCADE"),  primary_key = True)
+    time = mapped_column(Float)
 
 
 inspector = inspect(engine)
