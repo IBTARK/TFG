@@ -33,15 +33,11 @@ INSERT INTO `caracteristicas` (`id`, `descripcion`) VALUES
 (5, 'accesible'),
 (6, 'transitado'),
 (7, 'tranquilo'),
-(8, 'amable'),
 (9, 'seguro'),
-(10, 'disponible'),
-(11, 'interesante'),
-(12, 'luminoso'),
-(13, 'profundo'),
-(14, 'famoso'),
-(15, 'vigilado'),
-(16, 'atento');
+(10, 'luminoso'),
+(11, 'profundo'),
+(12, 'famoso'),
+(13, 'vigilado');
 
 --
 -- Volcado de datos para la tabla `conexiones`

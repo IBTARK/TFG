@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-05-2025 a las 18:32:20
+-- Tiempo de generación: 11-05-2025 a las 18:57:53
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.0.30
 
@@ -105,8 +105,8 @@ ALTER TABLE `caracteristicas`
 --
 ALTER TABLE `conexiones`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `estacion_origen_id` (`estacion_origen`),
-  ADD KEY `estacion_destino_id` (`estacion_destino`);
+  ADD KEY `estacion_origen` (`estacion_origen`),
+  ADD KEY `estacion_destino` (`estacion_destino`);
 
 --
 -- Indices de la tabla `estaciones`
@@ -118,8 +118,8 @@ ALTER TABLE `estaciones`
 -- Indices de la tabla `estaciones_caracteristicas`
 --
 ALTER TABLE `estaciones_caracteristicas`
-  ADD KEY `estaciones_caracteristicas_ibfk_1` (`caracteristica_id`),
-  ADD KEY `estaciones_caracteristicas_ibfk_2` (`estacion_id`);
+  ADD PRIMARY KEY (`caracteristica_id`,`estacion_id`),
+  ADD KEY `estacion_id` (`estacion_id`);
 
 --
 -- Indices de la tabla `lineas`
