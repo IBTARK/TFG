@@ -1,179 +1,62 @@
--- phpMyAdmin SQL Dump
--- version 5.2.1
--- https://www.phpmyadmin.net/
---
--- Servidor: 127.0.0.1
--- Tiempo de generación: 11-05-2025 a las 18:57:53
--- Versión del servidor: 10.4.32-MariaDB
--- Versión de PHP: 8.0.30
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
+CREATE DATABASE IF NOT EXISTS tfgmetro;
+USE tfgmetro;
 
+DROP TABLE IF EXISTS estaciones_caracteristicas;
+DROP TABLE IF EXISTS conexiones;
+DROP TABLE IF EXISTS estaciones;
+DROP TABLE IF EXISTS caracteristicas;
+DROP TABLE IF EXISTS lineas;
+DROP TABLE IF EXISTS estaciones_lineas;
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Base de datos: `tfgmetro`
---
-CREATE DATABASE IF NOT EXISTS `tfgmetro` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `tfgmetro`;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `caracteristicas`
---
-
-DROP TABLE IF EXISTS `caracteristicas`;
-CREATE TABLE `caracteristicas` (
-  `id` int(11) NOT NULL,
-  `descripcion` varchar(100) NOT NULL
+CREATE TABLE caracteristicas (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  descripcion VARCHAR(100) NOT NULL,
+  PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `conexiones`
---
-
-DROP TABLE IF EXISTS `conexiones`;
-CREATE TABLE `conexiones` (
-  `id` int(11) NOT NULL,
-  `estacion_origen` int(11) NOT NULL,
-  `estacion_destino` int(11) NOT NULL,
-  `tiempo` int(11) NOT NULL
+CREATE TABLE estaciones (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  nombre VARCHAR(100) NOT NULL,
+  direccion VARCHAR(255) DEFAULT NULL,
+  descripcion TEXT DEFAULT NULL,
+  PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `estaciones`
---
-
-DROP TABLE IF EXISTS `estaciones`;
-CREATE TABLE `estaciones` (
-  `id` int(11) NOT NULL,
-  `nombre` varchar(100) NOT NULL,
-  `direccion` varchar(255) DEFAULT NULL,
-  `descripcion` text DEFAULT NULL
+CREATE TABLE estaciones_caracteristicas (
+  caracteristica_id INT(11) NOT NULL,
+  estacion_id INT(11) NOT NULL,
+  valor INT(11) NOT NULL,
+  PRIMARY KEY (caracteristica_id, estacion_id),
+  FOREIGN KEY (caracteristica_id) REFERENCES caracteristicas(id) ON DELETE CASCADE,
+  FOREIGN KEY (estacion_id) REFERENCES estaciones(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `estaciones_caracteristicas`
---
-
-DROP TABLE IF EXISTS `estaciones_caracteristicas`;
-CREATE TABLE `estaciones_caracteristicas` (
-  `caracteristica_id` int(11) NOT NULL,
-  `estacion_id` int(11) NOT NULL,
-  `valor` int(11) NOT NULL
+CREATE TABLE conexiones (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  estacion_origen INT(11) NOT NULL,
+  estacion_destino INT(11) NOT NULL,
+  linea INT(11) NOT NULL,
+  tiempo INT(11) NOT NULL,
+  PRIMARY KEY (id),
+  FOREIGN KEY (estacion_origen) REFERENCES estaciones(id) ON DELETE CASCADE,
+  FOREIGN KEY (estacion_destino) REFERENCES estaciones(id) ON DELETE CASCADE,
+  FOREIGN KEY (linea) REFERENCES lineas(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `lineas`
---
-
-DROP TABLE IF EXISTS `lineas`;
-CREATE TABLE `lineas` (
-  `id` int(11) NOT NULL,
-  `nombre` varchar(50) NOT NULL,
-  `siglas` varchar(10) NOT NULL,
-  `color` varchar(6) NOT NULL
+CREATE TABLE lineas (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  nombre VARCHAR(50) NOT NULL,
+  siglas VARCHAR(10) NOT NULL,
+  color VARCHAR(6) NOT NULL,
+  PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Índices para tablas volcadas
---
-
---
--- Indices de la tabla `caracteristicas`
---
-ALTER TABLE `caracteristicas`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `conexiones`
---
-ALTER TABLE `conexiones`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `estacion_origen` (`estacion_origen`),
-  ADD KEY `estacion_destino` (`estacion_destino`);
-
---
--- Indices de la tabla `estaciones`
---
-ALTER TABLE `estaciones`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `estaciones_caracteristicas`
---
-ALTER TABLE `estaciones_caracteristicas`
-  ADD PRIMARY KEY (`caracteristica_id`,`estacion_id`),
-  ADD KEY `estacion_id` (`estacion_id`);
-
---
--- Indices de la tabla `lineas`
---
-ALTER TABLE `lineas`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT de las tablas volcadas
---
-
---
--- AUTO_INCREMENT de la tabla `caracteristicas`
---
-ALTER TABLE `caracteristicas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `conexiones`
---
-ALTER TABLE `conexiones`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `estaciones`
---
-ALTER TABLE `estaciones`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `lineas`
---
-ALTER TABLE `lineas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- Restricciones para tablas volcadas
---
-
---
--- Filtros para la tabla `conexiones`
---
-ALTER TABLE `conexiones`
-  ADD CONSTRAINT `conexiones_ibfk_1` FOREIGN KEY (`estacion_origen`) REFERENCES `estaciones` (`id`) ON DELETE CASCADE,
-  ADD CONSTRAINT `conexiones_ibfk_2` FOREIGN KEY (`estacion_destino`) REFERENCES `estaciones` (`id`) ON DELETE CASCADE;
-
---
--- Filtros para la tabla `estaciones_caracteristicas`
---
-ALTER TABLE `estaciones_caracteristicas`
-  ADD CONSTRAINT `estaciones_caracteristicas_ibfk_1` FOREIGN KEY (`caracteristica_id`) REFERENCES `caracteristicas` (`id`) ON DELETE CASCADE,
-  ADD CONSTRAINT `estaciones_caracteristicas_ibfk_2` FOREIGN KEY (`estacion_id`) REFERENCES `estaciones` (`id`) ON DELETE CASCADE;
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+CREATE TABLE estaciones_lineas (
+  estacion_id int(11) NOT NULL,
+  linea_id int(11) NOT NULL,
+  orden int(11) NOT NULL,
+  PRIMARY KEY (estacion_id, linea_id),
+  FOREIGN KEY (estacion_id) REFERENCES estaciones(id) ON DELETE CASCADE,
+  FOREIGN KEY (linea_id) REFERENCES lineas(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
