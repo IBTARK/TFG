@@ -97,14 +97,14 @@ def pruneGraph(subway, source, destination, filters):
 
 
 # Remove the nodes that are transfer station and breach any of the filters (except for the source and destination)
-def pruneTranferStationsGraph(subway, source, destination, filters):
+def pruneTranferStationsGraph(subway, source, destination, filters, transferStations):
 
     # Deep copy of the subway
     subwayCpy = deepcopy(subway)
 
     # Detect all the nodes that breach any of the filters
     badNodes = [
-        station for station in subwayCpy.transferStations if station not in (source, destination) and not stationOk(subwayCpy, station, filters)
+        station for station in transferStations if station not in (source, destination) and not stationOk(subwayCpy, station, filters)
     ]
 
     subwayCpy.remove_nodes_from(badNodes)
@@ -112,31 +112,39 @@ def pruneTranferStationsGraph(subway, source, destination, filters):
 
 
 # Modify the weight of the transfer stations based on the filters
-def modifyTransferStationsWeiths(subway, source, destination, filters):
+def modifyTransferStationsWeights(subway, source, destination, filters, transferStations):
 
     # Deep copy of the subway
     subwayCpy = deepcopy(subway)
 
-    for u, v, keys, data in subwayCpy.edges(keys=True, data=True):
+    for u, v, data in subwayCpy.edges(data=True):
         penalty = 0
+        
+        # Solo necesitamos ver que una de los dos nodos de la arista sea transbordo
+        if (u in transferStations and (u != source and u != destination)): # Si lo es la primera:
+            u_characteristics = subwayCpy.nodes[u].get("characteristics", {}) #Obtenemos sus caracteristicas
+            penalty = calculatePenalty(u_characteristics, filters)  # Calculamos su penalizacion
 
-        if (u in subwayCpy.transferStations and (u != source and u != destination)):
-            u_characteristics = subwayCpy.nodes[u].get("characteristics", {})
-            penalty = calcualtePenalty(u_characteristics, filters) 
-
-        elif (v in subwayCpy.transferStationsand and (v != source and v != destination)):
+        elif (v in transferStations and (v != source and v != destination)): # Si lo es la segunda repetimos lo anterior con este nodo
             v_characteristics = subwayCpy.nodes[v].get("characteristics", {})
-            penalty = calcualteNewWeigth(v_characteristics, filters)
+            penalty = calculatePenalty(v_characteristics, filters)
 
-        data["weight"] += penalty
+        data["weight"] = max(data["weight"] += penalty, 0) # Añadimos la penalizacion al peso poniendo el limite a 0 para no ser negativo
 
     return subwayCpy
 
+# Esta fucion esta por determinar debido a que no hemos aclarado bien como se iba a implementar del todo
+# Calculate new weight of the edge (u, v) based on filters 
+def calculatePenalty(characteristics, filters):
+    penalty = 0
 
-# Calculate new wiegth of the edge (u, v) based on filters 
-def calcualteNewWeigth(u, v, keys, data, u_characteristics, filters):
-    weigth = 0
-    return weigth
+    for f in filters:
+        if characteristics.get(f):  # Solo entra si el valor es  1
+            penalty += 0.25  # premio 
+        else:
+            penalty -= 0.25  # penalización
+
+    return penalty
 
 def display():
     subway = buildBaseSubwayNetwork()
