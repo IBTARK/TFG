@@ -20,6 +20,7 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `tfgmetro`
 --
+USE `tfgmetro`;
 
 --
 -- Truncar tablas antes de insertar `caracteristicas`
@@ -30,19 +31,17 @@ TRUNCATE TABLE `caracteristicas`;
 -- Volcado de datos para la tabla `caracteristicas`
 --
 
-INSERT INTO `caracteristicas` (`id`, `descripcion`) VALUES
-(1, 'limpio'),
-(2, 'grande'),
-(3, 'nuevo'),
-(4, 'bonito'),
-(5, 'importante'),
-(6, 'accesible'),
-(7, 'transitado'),
-(8, 'tranquilo'),
-(9, 'seguro'),
-(10, 'luminoso'),
-(11, 'profundo'),
-(12, 'mecanico');
+INSERT INTO `caracteristicas` (`id`, `nombre`, `descripcion`) VALUES
+(1, 'limpio', 'Limpia'),
+(2, 'grande', 'Grande'),
+(3, 'nuevo', 'Nueva'),
+(4, 'bonito', 'Bonita'),
+(5, 'accesible', 'Accesible para discapacitados'),
+(6, 'intransitado', 'Poco transitadoa'),
+(7, 'tranquilo', 'Tranquila'),
+(8, 'seguro', 'Segura'),
+(9, 'luminoso', 'Luminosa'),
+(10, 'mecanico', 'Con escaleras mecánicas');
 
 --
 -- Truncar tablas antes de insertar `conexiones`
