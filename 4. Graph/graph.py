@@ -9,6 +9,7 @@ from copy import deepcopy
 def buildBaseSubwayNetwork():
 
     subway = nx.MultiGraph()
+    linesPerStation = {}
     transferStations = []
 
     with Session() as s:
@@ -54,9 +55,26 @@ def buildBaseSubwayNetwork():
                 lineName = lineName,
                 lineAcronym = lineAcronym,
                 lineColor = lineColor,
+
             )
+
+        # Calculate how many lines does a station belong
+        stationLinesSelect = (
+            select(StationsLines.station_id, func.count(StationsLines.line_id)
+            )
+            .group_by(StationsLines.station_id)
+        )
+
+        result = s.execute(stationLinesSelect)
+
+        # Convert into a dict
+        linesPerStation = {station_id: count for station_id, count in result}
+        
+        for station in linesPerStation:
+            if (linesPerStation[station] > 1):
+                transferStations.add(station)
     
-    return subway
+    return subway, transferStations
 
 # Check if a station sitisfies all the filters
 def stationOk(subway, station, filters):
@@ -78,6 +96,47 @@ def pruneGraph(subway, source, destination, filters):
     return subwayCpy
 
 
+# Remove the nodes that are transfer station and breach any of the filters (except for the source and destination)
+def pruneTranferStationsGraph(subway, source, destination, filters):
+
+    # Deep copy of the subway
+    subwayCpy = deepcopy(subway)
+
+    # Detect all the nodes that breach any of the filters
+    badNodes = [
+        station for station in subwayCpy.transferStations if station not in (source, destination) and not stationOk(subwayCpy, station, filters)
+    ]
+
+    subwayCpy.remove_nodes_from(badNodes)
+    return subwayCpy
+
+
+# Modify the weight of the transfer stations based on the filters
+def modifyTransferStationsWeiths(subway, source, destination, filters):
+
+    # Deep copy of the subway
+    subwayCpy = deepcopy(subway)
+
+    for u, v, keys, data in subwayCpy.edges(keys=True, data=True):
+        penalty = 0
+
+        if (u in subwayCpy.transferStations and (u != source and u != destination)):
+            u_characteristics = subwayCpy.nodes[u].get("characteristics", {})
+            penalty = calcualtePenalty(u_characteristics, filters) 
+
+        elif (v in subwayCpy.transferStationsand and (v != source and v != destination)):
+            v_characteristics = subwayCpy.nodes[v].get("characteristics", {})
+            penalty = calcualteNewWeigth(v_characteristics, filters)
+
+        data["weight"] += penalty
+
+    return subwayCpy
+
+
+# Calculate new wiegth of the edge (u, v) based on filters 
+def calcualteNewWeigth(u, v, keys, data, u_characteristics, filters):
+    weigth = 0
+    return weigth
 
 def display():
     subway = buildBaseSubwayNetwork()
