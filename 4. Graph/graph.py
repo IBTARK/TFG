@@ -166,11 +166,30 @@ def calculatePenalty(characteristics, filters, filtersRanking, rewards, penaltie
 
     for filter in filters:
         if filter in characteristics:
-            penalty *=  rewards[filtersRanking[filter]]
-        else:
-            penalty *= penalties[filtersRanking[filter]]
+            if characteristics[filter] == 1:
+                penalty *=  rewards[filtersRanking[filter]]
+            else:
+                penalty *= penalties[filtersRanking[filter]]
 
     return penalty
+
+def getRute(source, destination, filters):
+    (subway, tranferStations) = buildBaseSubwayNetwork()
+
+    elimatedNodesGraph = pruneGraph(subway, source, destination, filters)
+    eliminateTranferStationsGraph = pruneTranferStationsGraph(subway, source, destination, filters, tranferStations)
+    reevalutedEdgesGraph = modifyTransferStationsWeights(subway, source, destination, filters, tranferStations)
+
+    djistra1path = nx.dijkstra_path(elimatedNodesGraph, source, destination, weight='weight')
+    djistra1length = nx.dijkstra_path_length(elimatedNodesGraph, source, destination, weight='weight')
+    djistra2path = nx.dijkstra_path(eliminateTranferStationsGraph, source, destination, weight='weight')
+    djistra2length = nx.dijkstra_path_length(elimatedNodesGraph, source, destination, weight='weight')
+    djistra3path = nx.dijkstra_path(reevalutedEdgesGraph, source, destination, weight='weight')
+    djistra3length = nx.dijkstra_path_length(elimatedNodesGraph, source, destination, weight='weight')
+
+
+
+
 
 def display():
     subway = buildBaseSubwayNetwork()
