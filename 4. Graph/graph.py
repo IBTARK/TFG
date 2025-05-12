@@ -6,12 +6,14 @@ import networkx as nx
 from collections import defaultdict
 from copy import deepcopy
 import json
+import itertools
+
+from configuration import TRANSFER_TIME, FILTERS_RANKING, REWARDS, PENALTIES
 
 def buildBaseSubwayNetwork():
 
-    subway = nx.MultiGraph()
-    linesPerStation = {}
-    transferStations = set()
+    subway = nx.Graph()
+    linesPerStation = defaultdict(set)
 
     with Session() as s:
 
@@ -28,170 +30,132 @@ def buildBaseSubwayNetwork():
         for station_id, value, description in s.execute(characteristicsSelect):
             stations_characteristics[station_id][description] = value
 
-        # Nodes
-        for station in s.execute(Station):
-            subway.add_node(
-                station.id,
-                # Information to save in the node
-                name = getattr(station, "nombre", None),
-                address = getattr(station, "direccion", None),
-                description = getattr(station, "descripcion", None),
-                characteristics = stations_characteristics.get(station.id, {})
+        # Nodes (station, line)
+        stationsSelect = (
+            select(
+                Station.id,
+                Station.name,
+                Station.address,
+                Station.description,
+                StationsLines.line_id
             )
+            .join(StationsLines, Station.id == StationsLines.station_id)
+        )
+        for stationId, stationName, stationAddress, stationDescription, lineId in s.execute(stationsSelect):
+            subway.add_node(
+                (stationId, lineId),
+                # Information to save in the node
+                name = stationName,
+                address = stationAddress,
+                description = stationDescription,
+                characteristics = stations_characteristics.get(stationId, {})
+            )
+            
+            linesPerStation[stationId].add(lineId)
         
-        # Edges
-        conectionsSelect = (
+        # Normal edges (the ones in the same line)
+        connectionsSelect = (
             select(
                 Connection.station_source,
                 Connection.station_destination,
                 Connection.line,
-                Connection.time,
-                Line.name,
-                Line.acronym,
-                Line.color,
+                Connection.time
             )
-            .join(Line, Connection.line == Line.id)
         )
-        for (source, destination, lineId, time, lineName, lineAcronym, lineColor) in s.execute(conectionsSelect):
+
+        for source, destination, lineId, time in s.execute(connectionsSelect):
             subway.add_edge(
-                source,
-                destination,
-                key = lineId,
+                (source, lineId),
+                (destination, lineId),
                 # Information to save in the edge
                 time = time,
                 weight = time, # This will be modified with the filters in real time
-                lineId = lineId,
-                lineName = lineName,
-                lineAcronym = lineAcronym,
-                lineColor = lineColor,
+                lineId = lineId
             )
-
-        # Calculate how many lines does a station belong
-        stationLinesSelect = (
-            select(StationsLines.station_id, func.count(StationsLines.line_id)
-            )
-            .group_by(StationsLines.station_id)
-        )
-
-        result = s.execute(stationLinesSelect)
-
-        # Convert into a dict
-        linesPerStation = {station_id: count for station_id, count in result}
         
-        for station in linesPerStation:
-            if (linesPerStation[station] > 1):
-                transferStations.add(station)
-    
-    return subway, transferStations
+        # Transfer edges (inside the same station if they have more than one line)
+        for station, lines in linesPerStation.items():
+            if len(lines) > 1:
+                for line1, line2 in itertools.combinations(lines, 2):
+                    subway.add_edge(
+                        (station, line1),
+                        (station, line2),
+                        time = TRANSFER_TIME,
+                        weight = TRANSFER_TIME,
+                        lineId = None
+                    )
+
+    return subway, linesPerStation
 
 # Check if a station sitisfies all the filters
-def stationOk(subway, station, filters):
-    characteristics = subway.nodes[station]["characteristics"]
+def stationOk(subway, stationLine, filters):
+    characteristics = subway.nodes[(stationLine[0], stationLine[1])]["characteristics"]
     return all(characteristics.get(filter, None) == 1 for filter in filters)
 
 # Remove the nodes that breach any of the filters (except for the source and destination)
-def pruneGraph(subway, source, destination, filters):
-
-    # Deep copy of the subway
-    subwayCpy = deepcopy(subway)
+def pruneGraph(subway, sourceNode, destinationNode, filters):
 
     # Detect all the nodes that breach any of the filters
     badNodes = [
-        station for station in subwayCpy.nodes if station not in (source, destination) and not stationOk(subwayCpy, station, filters)
+        (station, line) for station, line in subway.nodes if station not in (sourceNode[0], destinationNode[0]) and not stationOk(subway, (station, line), filters)
     ]
 
-    subwayCpy.remove_nodes_from(badNodes)
-    return subwayCpy
+    subway.remove_nodes_from(badNodes)
+    return subway
 
 
 # Remove the nodes that are transfer station and breach any of the filters (except for the source and destination)
-def pruneTranferStationsGraph(subway, source, destination, filters, transferStations):
-
-    # Deep copy of the subway
-    subwayCpy = deepcopy(subway)
-
+def pruneTranferStationsGraph(subway, sourceNode, destinationNode, filters, linesPerStation):
     # Detect all the nodes that breach any of the filters
     badNodes = [
-        station for station in transferStations if station not in (source, destination) and not stationOk(subwayCpy, station, filters)
+        (station, line) for station, line in subway.nodes if len(linesPerStation[station]) > 1 and station not in (sourceNode[0], destinationNode[0]) and not stationOk(subway, station, filters)
     ]
 
-    subwayCpy.remove_nodes_from(badNodes)
-    return subwayCpy
+    subway.remove_nodes_from(badNodes)
+    return subway
 
 
 # Modify the weight of the transfer stations based on the filters
-def modifyTransferStationsWeights(subway, source, destination, filters, transferStations):
+def modifyTransferStationsWeights(subway, sourceNode, destinationNode, filters, linesPerStation):
 
-    # Generate the rewards, penalizations and filter classification
-    filtersRanking = {
-        "limpio": "medium",
-        "grande": "soft",
-        "nuevo": "soft",
-        "bonito": "soft",
-        "accesible": "hard",
-        "intransitado": "medium",
-        "tranquilo": "medium",
-        "seguro": "hard",
-        "luminoso": "medium",
-        "mecanico": "medium",
-        "ascensor": "hard"
-    }
-
-    rewards = {
-        "hard": 0.6,
-        "medium": 0.75,
-        "soft": 0.88
-    }
-
-    penalties = {
-        "hard": 1.5,
-        "medium": 1.25,
-        "soft": 1.1
-    }
-
-    # Deep copy of the subway
-    subwayCpy = deepcopy(subway)
-
-    for u, v, k, data in subwayCpy.edges(key = True, data = True):
+    for firstNode, secondNode, k, data in subway.edges(key = True, data = True):
         penalty = 1
         
         # Check if any of the nodes are a transfer station
-        if (u in transferStations and (u != source and u != destination)):
-            u_characteristics = subwayCpy.nodes[u].get("characteristics", {}) 
-            penalty *= calculatePenalty(u_characteristics, filters, filtersRanking, rewards, penalties)  
-
-        if (v in transferStations and (v != source and v != destination)): # Si lo es la segunda repetimos lo anterior con este nodo
-            v_characteristics = subwayCpy.nodes[v].get("characteristics", {})
-            penalty *= calculatePenalty(v_characteristics, filters, filtersRanking, rewards, penalties)
+        if data["lineId"] == None: # Transfer edge
+            if (firstNode[0] != sourceNode[0] and firstNode[0] != destinationNode[0]):
+                u_characteristics = subway.nodes[firstNode].get("characteristics", {}) 
+                penalty *= calculatePenalty(u_characteristics, filters)  
 
         data["weight"] = data["weight"] * penalty 
 
-    return subwayCpy
+    return subway
 
 # Calculate new weight of the edge (u, v) based on filters 
-def calculatePenalty(characteristics, filters, filtersRanking, rewards, penalties):
+def calculatePenalty(characteristics, filters):
     penalty = 1
 
     for filter in filters:
         if filter in characteristics and characteristics[filter] == 1:
-            penalty *=  rewards[filtersRanking[filter]]
+            penalty *=  REWARDS[FILTERS_RANKING[filter]]
         else:
-            penalty *=  penalties[filtersRanking[filter]]
+            penalty *=  PENALTIES[FILTERS_RANKING[filter]]
 
     return penalty
 
 # Given the graph, a path and the stations that are transfer stations, return the name of the stattions in the path, the names of the stations that are transfer stations in the path
 # the time of the route and a description. The output is a dictionary with the listed values
-def getStationsNamesInPath(subway, path, transferStations, time, description):
+def getStationsNamesInPath(subway, path, linesPerStation, time, description):
     pathNames = []
     transferStationsInPath = []
     linesIndPath = []
 
-    for stationId in path:
-        stationName = subway.nodes[stationId]["name"]
-        pathNames.append(stationName)
-        if stationId in transferStations:
-            transferStationsInPath.append(stationName)
+    for stationNode in path:
+        if stationNode["lineId"]:
+            stationName = subway.nodes[stationNode]["name"]
+            pathNames.append(stationName)
+            if len(linesPerStation[stationId]) > 1:
+                transferStationsInPath.append(stationName)
 
     return {
                 "path": pathNames,
@@ -200,28 +164,73 @@ def getStationsNamesInPath(subway, path, transferStations, time, description):
                 "description": description
             }
 
+# Add virtual nodes and edges if source and/or destination are transfer stations
+def addVirtualNodes(subway, sourceId, destinationId, linesPerStation):
+
+    # Deep copy of the subway
+    subwayCpy = deepcopy(subway)
+
+    def createVirtualNode(stationId):
+        if len(linesPerStation[stationId]) > 1:
+            # Add the virtual node
+            subwayCpy.add_node(
+                (stationId, None),
+                # Information to save in the node
+                name = None,
+                address = None,
+                description = None,
+                characteristics = None
+            )
+
+            # Add the virtual edges
+            for line in linesPerStation[stationId]:
+                subwayCpy.add_edge(
+                    (stationId, None),
+                    (stationId, line),
+                    time = 0,
+                    weight = 0,
+                    lineId = None
+                )
+
+            return (stationId, None)
+
+        return (stationId, next(iter(linesPerStation[stationId])))
+
+
+    sourceNode = createVirtualNode(sourceId)
+    destinationNode = createVirtualNode(destinationId)
+        
+
+    return subwayCpy, sourceNode, destinationNode
 
 
 def getRoutes(source, destination, filters):
-    subway, transferStations = buildBaseSubwayNetwork()
+    subway, linesPerStation = buildBaseSubwayNetwork()
 
-    elimatedNodesGraph = pruneGraph(subway, source, destination, filters)
-    eliminateTranferStationsGraph = pruneTranferStationsGraph(subway, source, destination, filters, transferStations)
-    reevalutedEdgesGraph = modifyTransferStationsWeights(subway, source, destination, filters, transferStations)
+    # Create the duplicates of the subway and get the source and destination nodes (virtual or real)
+    subwayVar1, sourceNode, destinationNode = addVirtualNodes(subway, source, destination, linesPerStation)
+    subwayVar2 = deepcopy(subwayVar1)
+    subwayVar3 = deepcopy(subwayVar1)
 
+    # Modify or reevaluate the graphs (subway)
+    elimatedNodesGraph = pruneGraph(subwayVar1, sourceNode, destinationNode, filters)
+    eliminateTranferStationsGraph = pruneTranferStationsGraph(subwayVar2, sourceNode, destinationNode, filters, linesPerStation)
+    reevalutedEdgesGraph = modifyTransferStationsWeights(subwayVar3, sourceNode, destinationNode, filters, linesPerStation)
+
+    # For each graph find the optimar path
     try:
-        dijkstra1path, dijkstra1Cost= nx.single_source_dijkstra(elimatedNodesGraph, source, target = destination, weight = "weight")
+        dijkstra1path, dijkstra1Cost= nx.single_source_dijkstra(elimatedNodesGraph, sourceNode, target = destinationNode, weight = "weight")
         dijkstra1Time = nx.path_weight(elimatedNodesGraph, dijkstra1path, weight = "time")
     except nx.NetworkXNoPath:
         dijkstra1path = None
 
     try:
-        dijkstra2path, dijkstra2Cost = nx.single_source_dijkstra(eliminateTranferStationsGraph, source, target = destination, weight = "weight")
+        dijkstra2path, dijkstra2Cost = nx.single_source_dijkstra(eliminateTranferStationsGraph, sourceNode, target = destinationNode, weight = "weight")
         dijkstra2Time = nx.path_weight(eliminateTranferStationsGraph, dijkstra2path, weight = "time")
     except nx.NetworkXNoPath:
         dijkstra2path = None
 
-    dijkstra3path, dijkstra3Cost = nx.single_source_dijkstra(reevalutedEdgesGraph, source, target = destination, weight = "weight")
+    dijkstra3path, dijkstra3Cost = nx.single_source_dijkstra(reevalutedEdgesGraph, sourceNode, target = destinationNode, weight = "weight")
     dijkstra3Time = nx.path_weight(reevalutedEdgesGraph, dijkstra3path, weight = "time")
 
     # Generate result
