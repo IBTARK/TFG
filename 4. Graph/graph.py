@@ -1,26 +1,35 @@
 import networkx as nx
 from sqlalchemy import select, func
-from db import Session, Station, Connection, Line, StationCharacteristics, StationsLines
+from db import Session, Station, Connection, Line, StationCharacteristics, StationsLines, Characteristic
 import matplotlib.pyplot as plt
 import networkx as nx
 from collections import defaultdict
 from copy import deepcopy
+import json
 
 def buildBaseSubwayNetwork():
 
     subway = nx.MultiGraph()
     linesPerStation = {}
-    transferStations = []
+    transferStations = set()
 
     with Session() as s:
 
         # Save the characteristics by station
+        characteristicsSelect = (
+            select(
+                StationCharacteristics.station_id,
+                StationCharacteristics.value,
+                Characteristic.description
+            )
+            .join(Characteristic, StationCharacteristics.characteristic_id == Characteristic.id)
+        )
         stations_characteristics = defaultdict(dict)
-        for characteristic in s.scalars(select(StationCharacteristics)):
-            stations_characteristics[characteristic.station_id][characteristic.characteristic_id] = characteristic.value
+        for station_id, value, description in s.execute(characteristicsSelect):
+            stations_characteristics[station_id][description] = value
 
         # Nodes
-        for station in s.scalars(select(Station)):
+        for station in s.execute(Station):
             subway.add_node(
                 station.id,
                 # Information to save in the node
@@ -143,53 +152,106 @@ def modifyTransferStationsWeights(subway, source, destination, filters, transfer
     # Deep copy of the subway
     subwayCpy = deepcopy(subway)
 
-    for u, v, data in subwayCpy.edges(data = True):
+    for u, v, k, data in subwayCpy.edges(key = True, data = True):
         penalty = 1
         
         # Check if any of the nodes are a transfer station
         if (u in transferStations and (u != source and u != destination)):
             u_characteristics = subwayCpy.nodes[u].get("characteristics", {}) 
-            penalty *= calculatePenalty(u_characteristics, filters)  
+            penalty *= calculatePenalty(u_characteristics, filters, filtersRanking, rewards, penalties)  
 
         if (v in transferStations and (v != source and v != destination)): # Si lo es la segunda repetimos lo anterior con este nodo
             v_characteristics = subwayCpy.nodes[v].get("characteristics", {})
-            penalty *= calculatePenalty(v_characteristics, filters)
+            penalty *= calculatePenalty(v_characteristics, filters, filtersRanking, rewards, penalties)
 
         data["weight"] = data["weight"] * penalty 
 
     return subwayCpy
 
-# Esta fucion esta por determinar debido a que no hemos aclarado bien como se iba a implementar del todo
 # Calculate new weight of the edge (u, v) based on filters 
 def calculatePenalty(characteristics, filters, filtersRanking, rewards, penalties):
     penalty = 1
 
     for filter in filters:
-        if filter in characteristics:
-            if characteristics[filter] == 1:
-                penalty *=  rewards[filtersRanking[filter]]
-            else:
-                penalty *= penalties[filtersRanking[filter]]
+        if filter in characteristics and characteristics[filter] == 1:
+            penalty *=  rewards[filtersRanking[filter]]
+        else:
+            penalty *=  penalties[filtersRanking[filter]]
 
     return penalty
 
-def getRute(source, destination, filters):
-    (subway, tranferStations) = buildBaseSubwayNetwork()
+# Given the graph, a path and the stations that are transfer stations, return the name of the stattions in the path, the names of the stations that are transfer stations in the path
+# the time of the route and a description. The output is a dictionary with the listed values
+def getStationsNamesInPath(subway, path, transferStations, time, description):
+    pathNames = []
+    transferStationsInPath = []
+    linesIndPath = []
+
+    for stationId in path:
+        stationName = subway.nodes[stationId]["name"]
+        pathNames.append(stationName)
+        if stationId in transferStations:
+            transferStationsInPath.append(stationName)
+
+    return {
+                "path": pathNames,
+                "transferStations": transferStationsInPath,
+                "time": time,
+                "description": description
+            }
+
+
+
+def getRoutes(source, destination, filters):
+    subway, transferStations = buildBaseSubwayNetwork()
 
     elimatedNodesGraph = pruneGraph(subway, source, destination, filters)
-    eliminateTranferStationsGraph = pruneTranferStationsGraph(subway, source, destination, filters, tranferStations)
-    reevalutedEdgesGraph = modifyTransferStationsWeights(subway, source, destination, filters, tranferStations)
+    eliminateTranferStationsGraph = pruneTranferStationsGraph(subway, source, destination, filters, transferStations)
+    reevalutedEdgesGraph = modifyTransferStationsWeights(subway, source, destination, filters, transferStations)
 
-    djistra1path = nx.dijkstra_path(elimatedNodesGraph, source, destination, weight='weight')
-    djistra1length = nx.dijkstra_path_length(elimatedNodesGraph, source, destination, weight='weight')
-    djistra2path = nx.dijkstra_path(eliminateTranferStationsGraph, source, destination, weight='weight')
-    djistra2length = nx.dijkstra_path_length(elimatedNodesGraph, source, destination, weight='weight')
-    djistra3path = nx.dijkstra_path(reevalutedEdgesGraph, source, destination, weight='weight')
-    djistra3length = nx.dijkstra_path_length(elimatedNodesGraph, source, destination, weight='weight')
+    try:
+        dijkstra1path, dijkstra1Cost= nx.single_source_dijkstra(elimatedNodesGraph, source, target = destination, weight = "weight")
+        dijkstra1Time = nx.path_weight(elimatedNodesGraph, dijkstra1path, weight = "time")
+    except nx.NetworkXNoPath:
+        dijkstra1path = None
 
+    try:
+        dijkstra2path, dijkstra2Cost = nx.single_source_dijkstra(eliminateTranferStationsGraph, source, target = destination, weight = "weight")
+        dijkstra2Time = nx.path_weight(eliminateTranferStationsGraph, dijkstra2path, weight = "time")
+    except nx.NetworkXNoPath:
+        dijkstra2path = None
 
+    dijkstra3path, dijkstra3Cost = nx.single_source_dijkstra(reevalutedEdgesGraph, source, target = destination, weight = "weight")
+    dijkstra3Time = nx.path_weight(reevalutedEdgesGraph, dijkstra3path, weight = "time")
 
+    # Generate result
+    alternativePaths = []
 
+    # 1 Possible route
+    if not dijkstra1path and not dijkstra2path:
+        alternativePaths.append(getStationsNamesInPath(subway, dijkstra3path, transferStations, dijkstra3Time, "Mejor ruta posible"))
+    
+    # 2 possible routes (dijkstra2 and dijkstra3)
+    elif not dijkstra1path:
+
+        alternativePaths.append(getStationsNamesInPath(subway, dijkstra2path, transferStations, dijkstra2Time, "Ruta en la que todas las estaciones de transbordo cumplen con todos los filtros"))
+        alternativePaths.append(getStationsNamesInPath(subway, dijkstra3path, transferStations, dijkstra3Time, "Ruta alternativa (no todos los filtros deben cumplirse)"))
+    
+    # 2 possible routes (dijkstra1 and dijkstra3)
+    elif not dijkstra2path:
+
+        alternativePaths.append(getStationsNamesInPath(subway, dijkstra1path, transferStations, dijkstra1Time, "Ruta en la que todas las estaciones cumplen con todos los filtros"))
+        alternativePaths.append(getStationsNamesInPath(subway, dijkstra3path, transferStations, dijkstra3Time, "Ruta alternativa (no todos los filtros deben cumplirse)"))
+
+    # 3 possible routes (dijkstra1, dijkstra2 and dijkstra3)
+    else:
+
+        alternativePaths.append(getStationsNamesInPath(subway, dijkstra1path, transferStations, dijkstra1Time, "Ruta en la que todas las estaciones cumplen con todos los filtros"))
+        alternativePaths.append(getStationsNamesInPath(subway, dijkstra2path, transferStations, dijkstra2Time, "Ruta en la que todas las estaciones de transbordo cumplen con todos los filtros"))
+        alternativePaths.append(getStationsNamesInPath(subway, dijkstra3path, transferStations, dijkstra3Time, "Ruta alternativa (no todos los filtros deben cumplirse)"))
+
+    return json.dumps(alternativePaths, ensure_ascii = False)
+    
 
 def display():
     subway = buildBaseSubwayNetwork()
