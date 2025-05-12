@@ -1,6 +1,6 @@
 import networkx as nx
-from sqlalchemy import select
-from db import Session, Station, Connection, Line, StationCharacteristics
+from sqlalchemy import select, func
+from db import Session, Station, Connection, Line, StationCharacteristics, StationsLines
 import matplotlib.pyplot as plt
 import networkx as nx
 from collections import defaultdict
@@ -55,7 +55,6 @@ def buildBaseSubwayNetwork():
                 lineName = lineName,
                 lineAcronym = lineAcronym,
                 lineColor = lineColor,
-
             )
 
         # Calculate how many lines does a station belong
@@ -78,7 +77,7 @@ def buildBaseSubwayNetwork():
 
 # Check if a station sitisfies all the filters
 def stationOk(subway, station, filters):
-    characteristics = subway.nodes[station][characteristics]
+    characteristics = subway.nodes[station]["characteristics"]
     return all(characteristics.get(filter, None) == 1 for filter in filters)
 
 # Remove the nodes that breach any of the filters (except for the source and destination)
@@ -114,35 +113,62 @@ def pruneTranferStationsGraph(subway, source, destination, filters, transferStat
 # Modify the weight of the transfer stations based on the filters
 def modifyTransferStationsWeights(subway, source, destination, filters, transferStations):
 
+    # Generate the rewards, penalizations and filter classification
+    filtersRanking = {
+        "limpio": "medium",
+        "grande": "soft",
+        "nuevo": "soft",
+        "bonito": "soft",
+        "accesible": "hard",
+        "intransitado": "medium",
+        "tranquilo": "medium",
+        "seguro": "hard",
+        "luminoso": "medium",
+        "mecanico": "medium",
+        "ascensor": "hard"
+    }
+
+    rewards = {
+        "hard": 0.6,
+        "medium": 0.75,
+        "soft": 0.88
+    }
+
+    penalties = {
+        "hard": 1.5,
+        "medium": 1.25,
+        "soft": 1.1
+    }
+
     # Deep copy of the subway
     subwayCpy = deepcopy(subway)
 
-    for u, v, data in subwayCpy.edges(data=True):
-        penalty = 0
+    for u, v, data in subwayCpy.edges(data = True):
+        penalty = 1
         
-        # Solo necesitamos ver que una de los dos nodos de la arista sea transbordo
-        if (u in transferStations and (u != source and u != destination)): # Si lo es la primera:
-            u_characteristics = subwayCpy.nodes[u].get("characteristics", {}) #Obtenemos sus caracteristicas
-            penalty = calculatePenalty(u_characteristics, filters)  # Calculamos su penalizacion
+        # Check if any of the nodes are a transfer station
+        if (u in transferStations and (u != source and u != destination)):
+            u_characteristics = subwayCpy.nodes[u].get("characteristics", {}) 
+            penalty *= calculatePenalty(u_characteristics, filters)  
 
-        elif (v in transferStations and (v != source and v != destination)): # Si lo es la segunda repetimos lo anterior con este nodo
+        if (v in transferStations and (v != source and v != destination)): # Si lo es la segunda repetimos lo anterior con este nodo
             v_characteristics = subwayCpy.nodes[v].get("characteristics", {})
-            penalty = calculatePenalty(v_characteristics, filters)
+            penalty *= calculatePenalty(v_characteristics, filters)
 
-        data["weight"] = max(data["weight"] += penalty, 0) # Añadimos la penalizacion al peso poniendo el limite a 0 para no ser negativo
+        data["weight"] = data["weight"] * penalty 
 
     return subwayCpy
 
 # Esta fucion esta por determinar debido a que no hemos aclarado bien como se iba a implementar del todo
 # Calculate new weight of the edge (u, v) based on filters 
-def calculatePenalty(characteristics, filters):
-    penalty = 0
+def calculatePenalty(characteristics, filters, filtersRanking, rewards, penalties):
+    penalty = 1
 
-    for f in filters:
-        if characteristics.get(f):  # Solo entra si el valor es  1
-            penalty += 0.25  # premio 
+    for filter in filters:
+        if filter in characteristics:
+            penalty *=  rewards[filtersRanking[filter]]
         else:
-            penalty -= 0.25  # penalización
+            penalty *= penalties[filtersRanking[filter]]
 
     return penalty
 
