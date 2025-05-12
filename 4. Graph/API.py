@@ -15,12 +15,12 @@ app.add_middleware(
 )
 
 # Modelo esperado desde el frontend
-class RouteRequest(BaseModel):
+class RutaRequest(BaseModel):
     source: int
     destination: int
     filters: list[int]
 
 @app.post("/ruta")
-async def sendRoutes(request: RouteRequest):
+async def calcularRuta(request: RutaRequest):
     result = getRoutes(request.source, request.destination, request.filters)
     return result
