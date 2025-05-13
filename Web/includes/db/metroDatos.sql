@@ -1644,6 +1644,7 @@ INSERT INTO `estaciones_lineas` (`estacion_id`, `linea_id`, `orden`) VALUES
 (9, 2, 20),
 (9, 6, 19),
 (10, 1, 10),
+(11, 1, 11),
 (12, 1, 12),
 (12, 4, 3),
 (13, 1, 13),
