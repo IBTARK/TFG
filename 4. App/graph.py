@@ -14,8 +14,26 @@ def buildBaseSubwayNetwork():
 
     subway = nx.Graph()
     linesPerStation = defaultdict(set)
+    stations = {}
 
     with Session() as s:
+
+        # Save the information of the stations
+        stationsSelect = (
+            select(
+                Station.id,
+                Station.name,
+                Station.address,
+                Station.description
+            )
+        )
+
+        for id, name, address, description in s.execute(stationsSelect):
+            stations[id] = {
+                "name": name,
+                "address": address,
+                "description": description
+            }
 
         # Save the characteristics by station
         characteristicsSelect = (
@@ -85,7 +103,7 @@ def buildBaseSubwayNetwork():
                         lineId = None
                     )
 
-    return subway, linesPerStation
+    return subway, linesPerStation, stations
 
 # Check if a station sitisfies all the filters
 def stationOk(subway, stationLine, filters):
@@ -108,7 +126,7 @@ def pruneGraph(subway, sourceNode, destinationNode, filters):
 def pruneTranferStationsGraph(subway, sourceNode, destinationNode, filters, linesPerStation):
     # Detect all the nodes that breach any of the filters
     badNodes = [
-        (station, line) for station, line in subway.nodes if len(linesPerStation[station]) > 1 and station not in (sourceNode[0], destinationNode[0]) and not stationOk(subway, station, filters)
+        (station, line) for station, line in subway.nodes if len(linesPerStation[station]) > 1 and station not in (sourceNode[0], destinationNode[0]) and not stationOk(subway, (station, line), filters)
     ]
 
     subway.remove_nodes_from(badNodes)
@@ -118,7 +136,7 @@ def pruneTranferStationsGraph(subway, sourceNode, destinationNode, filters, line
 # Modify the weight of the transfer stations based on the filters
 def modifyTransferStationsWeights(subway, sourceNode, destinationNode, filters, linesPerStation):
 
-    for firstNode, secondNode, k, data in subway.edges(key = True, data = True):
+    for firstNode, secondNode, data in subway.edges(data = True):
         penalty = 1
         
         # Check if any of the nodes are a transfer station
@@ -145,21 +163,21 @@ def calculatePenalty(characteristics, filters):
 
 # Given the graph, a path and the stations that are transfer stations, return the name of the stattions in the path, the names of the stations that are transfer stations in the path
 # the time of the route and a description. The output is a dictionary with the listed values
-def getStationsNamesInPath(subway, path, linesPerStation, time, description):
+def getStationsNamesInPath(path, stations, time, description):
     pathNames = []
-    transferStationsInPath = []
-    linesIndPath = []
 
-    for stationNode in path:
-        if stationNode["lineId"]:
-            stationName = subway.nodes[stationNode]["name"]
-            pathNames.append(stationName)
-            if len(linesPerStation[stationId]) > 1:
-                transferStationsInPath.append(stationName)
+    for idx in range(len(path)):
+        if idx != 0 and idx != len(path) -1 or ((idx == 0 or idx == len(path) -1) and path[idx][1] != None):
+            pathNames.append(
+                {
+                    "station_id": path[idx][0],
+                    "station_name": stations[path[idx][0]]["name"],
+                    "line": path[idx][1],
+                }
+            )
 
     return {
                 "path": pathNames,
-                "transferStations": transferStationsInPath,
                 "time": time,
                 "description": description
             }
@@ -205,7 +223,7 @@ def addVirtualNodes(subway, sourceId, destinationId, linesPerStation):
 
 
 def getRoutes(source, destination, filters):
-    subway, linesPerStation = buildBaseSubwayNetwork()
+    subway, linesPerStation, stations = buildBaseSubwayNetwork()
 
     # Create the duplicates of the subway and get the source and destination nodes (virtual or real)
     subwayVar1, sourceNode, destinationNode = addVirtualNodes(subway, source, destination, linesPerStation)
@@ -238,26 +256,26 @@ def getRoutes(source, destination, filters):
 
     # 1 Possible route
     if not dijkstra1path and not dijkstra2path:
-        alternativePaths.append(getStationsNamesInPath(subway, dijkstra3path, transferStations, dijkstra3Time, "Mejor ruta posible"))
+        alternativePaths.append(getStationsNamesInPath(dijkstra3path, stations, dijkstra3Time, "Mejor ruta posible"))
     
     # 2 possible routes (dijkstra2 and dijkstra3)
     elif not dijkstra1path:
 
-        alternativePaths.append(getStationsNamesInPath(subway, dijkstra2path, transferStations, dijkstra2Time, "Ruta en la que todas las estaciones de transbordo cumplen con todos los filtros"))
-        alternativePaths.append(getStationsNamesInPath(subway, dijkstra3path, transferStations, dijkstra3Time, "Ruta alternativa (no todos los filtros deben cumplirse)"))
+        alternativePaths.append(getStationsNamesInPath(dijkstra2path, stations, dijkstra2Time, "Ruta en la que todas las estaciones de transbordo cumplen con todos los filtros"))
+        alternativePaths.append(getStationsNamesInPath(dijkstra3path, stations, dijkstra3Time, "Ruta alternativa (no todos los filtros deben cumplirse)"))
     
     # 2 possible routes (dijkstra1 and dijkstra3)
     elif not dijkstra2path:
 
-        alternativePaths.append(getStationsNamesInPath(subway, dijkstra1path, transferStations, dijkstra1Time, "Ruta en la que todas las estaciones cumplen con todos los filtros"))
-        alternativePaths.append(getStationsNamesInPath(subway, dijkstra3path, transferStations, dijkstra3Time, "Ruta alternativa (no todos los filtros deben cumplirse)"))
+        alternativePaths.append(getStationsNamesInPath(dijkstra1path, stations, dijkstra1Time, "Ruta en la que todas las estaciones cumplen con todos los filtros"))
+        alternativePaths.append(getStationsNamesInPath(dijkstra3path, stations, dijkstra3Time, "Ruta alternativa (no todos los filtros deben cumplirse)"))
 
     # 3 possible routes (dijkstra1, dijkstra2 and dijkstra3)
     else:
 
-        alternativePaths.append(getStationsNamesInPath(subway, dijkstra1path, transferStations, dijkstra1Time, "Ruta en la que todas las estaciones cumplen con todos los filtros"))
-        alternativePaths.append(getStationsNamesInPath(subway, dijkstra2path, transferStations, dijkstra2Time, "Ruta en la que todas las estaciones de transbordo cumplen con todos los filtros"))
-        alternativePaths.append(getStationsNamesInPath(subway, dijkstra3path, transferStations, dijkstra3Time, "Ruta alternativa (no todos los filtros deben cumplirse)"))
+        alternativePaths.append(getStationsNamesInPath(dijkstra1path, stations, dijkstra1Time, "Ruta en la que todas las estaciones cumplen con todos los filtros"))
+        alternativePaths.append(getStationsNamesInPath(dijkstra2path, stations, dijkstra2Time, "Ruta en la que todas las estaciones de transbordo cumplen con todos los filtros"))
+        alternativePaths.append(getStationsNamesInPath(dijkstra3path, stations, dijkstra3Time, "Ruta alternativa (no todos los filtros deben cumplirse)"))
 
     return json.dumps(alternativePaths, ensure_ascii = False)
     
