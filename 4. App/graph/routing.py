@@ -1,114 +1,24 @@
 import networkx as nx
-from sqlalchemy import select, func
-from db import Session, Station, Connection, Line, StationCharacteristics, StationsLines, Characteristic
 import matplotlib.pyplot as plt
-import networkx as nx
-from collections import defaultdict
 from copy import deepcopy
 import json
-import itertools
 
-from configuration import TRANSFER_TIME, FILTERS_RANKING, REWARDS, PENALTIES
-
-def buildBaseSubwayNetwork():
-
-    subway = nx.Graph()
-    linesPerStation = defaultdict(set)
-    stations = {}
-
-    with Session() as s:
-
-        # Save the information of the stations
-        stationsSelect = (
-            select(
-                Station.id,
-                Station.name,
-                Station.address,
-                Station.description
-            )
-        )
-
-        for id, name, address, description in s.execute(stationsSelect):
-            stations[id] = {
-                "name": name,
-                "address": address,
-                "description": description
-            }
-
-        # Save the characteristics by station
-        characteristicsSelect = (
-            select(
-                StationCharacteristics.station_id,
-                StationCharacteristics.value,
-                Characteristic.description
-            )
-            .join(Characteristic, StationCharacteristics.characteristic_id == Characteristic.id)
-        )
-        stations_characteristics = defaultdict(dict)
-        for station_id, value, description in s.execute(characteristicsSelect):
-            stations_characteristics[station_id][description] = value
-
-        # Nodes (station, line)
-        stationsSelect = (
-            select(
-                Station.id,
-                Station.name,
-                Station.address,
-                Station.description,
-                StationsLines.line_id
-            )
-            .join(StationsLines, Station.id == StationsLines.station_id)
-        )
-        for stationId, stationName, stationAddress, stationDescription, lineId in s.execute(stationsSelect):
-            subway.add_node(
-                (stationId, lineId),
-                # Information to save in the node
-                name = stationName,
-                address = stationAddress,
-                description = stationDescription,
-                characteristics = stations_characteristics.get(stationId, {})
-            )
-            
-            linesPerStation[stationId].add(lineId)
-        
-        # Normal edges (the ones in the same line)
-        connectionsSelect = (
-            select(
-                Connection.station_source,
-                Connection.station_destination,
-                Connection.line,
-                Connection.time
-            )
-        )
-
-        for source, destination, lineId, time in s.execute(connectionsSelect):
-            subway.add_edge(
-                (source, lineId),
-                (destination, lineId),
-                # Information to save in the edge
-                time = time,
-                weight = time, # This will be modified with the filters in real time
-                lineId = lineId
-            )
-        
-        # Transfer edges (inside the same station if they have more than one line)
-        for station, lines in linesPerStation.items():
-            if len(lines) > 1:
-                for line1, line2 in itertools.combinations(lines, 2):
-                    subway.add_edge(
-                        (station, line1),
-                        (station, line2),
-                        time = TRANSFER_TIME,
-                        weight = TRANSFER_TIME,
-                        lineId = None
-                    )
-
-    return subway, linesPerStation, stations
+from config import TRANSFER_TIME, FILTERS_RANKING, REWARDS, PENALTIES
 
 # Check if a station sitisfies all the filters
 def stationOk(subway, stationLine, filters):
-    characteristics = subway.nodes[(stationLine[0], stationLine[1])]["characteristics"]
-    return all(characteristics.get(filter, None) == 1 for filter in filters)
+    
+    try:
+        characteristics = subway.nodes[(stationLine[0], stationLine[1])]["characteristics"]
+    except KeyError:
+        # El nodo no tiene 'characteristics'
+        print("Sin characteristics:", stationLine)
+        raise
+    except TypeError:
+        # characteristics == None  →  .get() fallará
+        print("characteristics == None:", stationLine)
+        raise
+    return all(characteristics.get(filterChar, None) == 1 for filterChar in filters)
 
 # Remove the nodes that breach any of the filters (except for the source and destination)
 def pruneGraph(subway, sourceNode, destinationNode, filters):
@@ -117,6 +27,7 @@ def pruneGraph(subway, sourceNode, destinationNode, filters):
     badNodes = [
         (station, line) for station, line in subway.nodes if station not in (sourceNode[0], destinationNode[0]) and not stationOk(subway, (station, line), filters)
     ]
+    print("ajajjaja")
 
     subway.remove_nodes_from(badNodes)
     return subway
@@ -145,7 +56,7 @@ def modifyTransferStationsWeights(subway, sourceNode, destinationNode, filters, 
                 u_characteristics = subway.nodes[firstNode].get("characteristics", {}) 
                 penalty *= calculatePenalty(u_characteristics, filters)  
 
-        data["weight"] = data["weight"] * penalty 
+        data["weight"] = data["time"] * penalty 
 
     return subway
 
@@ -153,11 +64,11 @@ def modifyTransferStationsWeights(subway, sourceNode, destinationNode, filters, 
 def calculatePenalty(characteristics, filters):
     penalty = 1
 
-    for filter in filters:
-        if filter in characteristics and characteristics[filter] == 1:
-            penalty *=  REWARDS[FILTERS_RANKING[filter]]
+    for filterChar in filters:
+        if filterChar in characteristics and characteristics[filterChar] == 1:
+            penalty *=  REWARDS[FILTERS_RANKING[filterChar]]
         else:
-            penalty *=  PENALTIES[FILTERS_RANKING[filter]]
+            penalty *=  PENALTIES[FILTERS_RANKING[filterChar]]
 
     return penalty
 
@@ -197,7 +108,7 @@ def addVirtualNodes(subway, sourceId, destinationId, linesPerStation):
                 name = None,
                 address = None,
                 description = None,
-                characteristics = None
+                characteristics = {}
             )
 
             # Add the virtual edges
@@ -222,18 +133,27 @@ def addVirtualNodes(subway, sourceId, destinationId, linesPerStation):
     return subwayCpy, sourceNode, destinationNode
 
 
-def getRoutes(source, destination, filters):
-    subway, linesPerStation, stations = buildBaseSubwayNetwork()
+def getRoutes(subway, linesPerStation, stations, source, destination, filters):
+
+    print("Hola 1")
 
     # Create the duplicates of the subway and get the source and destination nodes (virtual or real)
     subwayVar1, sourceNode, destinationNode = addVirtualNodes(subway, source, destination, linesPerStation)
     subwayVar2 = deepcopy(subwayVar1)
     subwayVar3 = deepcopy(subwayVar1)
 
+    print("Hola 2")
+    print(sourceNode)
+    print(destinationNode)
+    print(filters)
+
     # Modify or reevaluate the graphs (subway)
     elimatedNodesGraph = pruneGraph(subwayVar1, sourceNode, destinationNode, filters)
+    print("Hola 3")
     eliminateTranferStationsGraph = pruneTranferStationsGraph(subwayVar2, sourceNode, destinationNode, filters, linesPerStation)
+    print("Hola 4")
     reevalutedEdgesGraph = modifyTransferStationsWeights(subwayVar3, sourceNode, destinationNode, filters, linesPerStation)
+    print("Hola 5")
 
     # For each graph find the optimar path
     try:
@@ -277,12 +197,10 @@ def getRoutes(source, destination, filters):
         alternativePaths.append(getStationsNamesInPath(dijkstra2path, stations, dijkstra2Time, "Ruta en la que todas las estaciones de transbordo cumplen con todos los filtros"))
         alternativePaths.append(getStationsNamesInPath(dijkstra3path, stations, dijkstra3Time, "Ruta alternativa (no todos los filtros deben cumplirse)"))
 
-    return json.dumps(alternativePaths, ensure_ascii = False)
+    return alternativePaths
     
 
-def display():
-    subway = buildBaseSubwayNetwork()
-
+def display(subway):
     # Si 'subway' ya está en tu namespace, basta con:
     pos = nx.spring_layout(subway)    # calcula una disposición “orgánica”
     plt.figure(figsize=(10, 10))

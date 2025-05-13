@@ -1,14 +1,19 @@
 from sqlalchemy import create_engine, inspect, select
-from sqlalchemy.orm import sessionmaker, DeclarativeBase, mapped_column
+from sqlalchemy.orm import scoped_session, sessionmaker, DeclarativeBase, mapped_column
 from sqlalchemy import Integer, String, ForeignKey, Float
+from config import ENGINE_URI
 
-ENGINE_URI = "mysql+pymysql://root@localhost:3306/tfgmetro?charset=utf8mb4"
 engine = create_engine(ENGINE_URI, echo = True, pool_pre_ping = True)
-Session = sessionmaker(bind = engine, autoflush = False, expire_on_commit = False)
+
+Session: scoped_session = scoped_session(
+    sessionmaker(bind=engine, autoflush=False, expire_on_commit=False)
+)
 
 class Base(DeclarativeBase):
     pass
 
+
+# Models
 
 class Station(Base):
     __tablename__ = "estaciones"
@@ -43,7 +48,7 @@ class StationsLines(Base):
     __tablename__ = "estaciones_lineas"
 
     station_id = mapped_column("estacion_id", Integer, ForeignKey("estaciones.id", ondelete="CASCADE"), primary_key = True)
-    line_id = mapped_column("linea_id", Integer, ForeignKey("linea.id", ondelete="CASCADE"), primary_key = True)
+    line_id = mapped_column("linea_id", Integer, ForeignKey("lineas.id", ondelete="CASCADE"), primary_key = True)
 
 class Connection(Base):
     __tablename__ = "conexiones"
@@ -51,7 +56,7 @@ class Connection(Base):
     station_source  = mapped_column("estacion_origen", Integer, ForeignKey("estaciones.id", ondelete="CASCADE"),  primary_key = True)
     station_destination = mapped_column("estacion_destino", Integer, ForeignKey("estaciones.id", ondelete="CASCADE"), primary_key = True)
     line = mapped_column("linea", Integer, ForeignKey("lineas.id", ondelete="CASCADE"),  primary_key = True)
-    time = mapped_column(Float)
+    time = mapped_column("tiempo", Integer)
 
 
 inspector = inspect(engine)
