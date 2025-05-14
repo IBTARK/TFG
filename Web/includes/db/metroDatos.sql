@@ -1660,7 +1660,7 @@ INSERT INTO `estaciones_lineas` (`estacion_id`, `linea_id`, `orden`) VALUES
 (30, 1, 30),
 (31, 1, 31),
 (32, 1, 32),
-(33, 1, 33), -- Línea 1 revisada
+(33, 1, 33),
 (9, 2, 1),
 (34, 2, 2),
 (35, 2, 3),
@@ -1680,7 +1680,7 @@ INSERT INTO `estaciones_lineas` (`estacion_id`, `linea_id`, `orden`) VALUES
 (48, 2, 17),
 (49, 2, 18),
 (50, 2, 19),
-(51, 2, 20), -- Linea 2 revisada
+(51, 2, 20),
 (52, 3, 1),
 (53, 3, 2),
 (54, 3, 3),
@@ -1699,7 +1699,7 @@ INSERT INTO `estaciones_lineas` (`estacion_id`, `linea_id`, `orden`) VALUES
 (66, 3, 16),
 (67, 3, 17),
 (68, 3, 18),
-(69, 3, 19), -- Linea 3 revisada
+(69, 3, 19),
 (53, 4, 1),
 (36, 4, 2),
 (12, 4, 3),
@@ -1722,7 +1722,7 @@ INSERT INTO `estaciones_lineas` (`estacion_id`, `linea_id`, `orden`) VALUES
 (85, 4, 20),
 (86, 4, 21),
 (87, 4, 22),
-(1, 4, 23), -- Linea 4 revisada
+(1, 4, 23),
 (88, 5, 1),
 (89, 5, 2),
 (90, 5, 3),
@@ -1754,7 +1754,7 @@ INSERT INTO `estaciones_lineas` (`estacion_id`, `linea_id`, `orden`) VALUES
 (109, 5, 29),
 (110, 5, 30),
 (111, 5, 31),
-(112, 5, 32), -- Linea 5 revisada
+(112, 5, 32),
 (113, 6, 1),
 (114, 6, 2),
 (105, 6, 3),
@@ -1782,7 +1782,7 @@ INSERT INTO `estaciones_lineas` (`estacion_id`, `linea_id`, `orden`) VALUES
 (128, 6, 25),
 (129, 6, 26),
 (130, 6, 27),
-(131, 6, 28), -- Linea 6 revisada
+(131, 6, 28),
 (132, 7, 1),
 (133, 7, 2),
 (134, 7, 3),
@@ -1813,7 +1813,7 @@ INSERT INTO `estaciones_lineas` (`estacion_id`, `linea_id`, `orden`) VALUES
 (155, 7, 28),
 (156, 7, 29),
 (157, 7, 30),
-(158, 7, 31), -- Linea 7 revisada
+(158, 7, 31),
 (124, 8, 1),
 (159, 8, 2),
 (160, 8, 3),
@@ -1821,7 +1821,7 @@ INSERT INTO `estaciones_lineas` (`estacion_id`, `linea_id`, `orden`) VALUES
 (161, 8, 5),
 (162, 8, 6),
 (163, 8, 7),
-(164, 8, 8), -- Linea 8 revisada
+(164, 8, 8),
 (165, 9, 1),
 (166, 9, 2),
 (167, 9, 3),
@@ -1850,7 +1850,7 @@ INSERT INTO `estaciones_lineas` (`estacion_id`, `linea_id`, `orden`) VALUES
 (184, 9, 26),
 (185, 9, 27),
 (186, 9, 28),
-(187, 9, 29), -- Linea 9 revisada 
+(187, 9, 29),
 (188, 10, 1),
 (189, 10, 2),
 (190, 10, 3),
@@ -1881,14 +1881,14 @@ INSERT INTO `estaciones_lineas` (`estacion_id`, `linea_id`, `orden`) VALUES
 (206, 10, 28),
 (207, 10, 29),
 (208, 10, 30),
-(209, 10, 31), -- Linea 10 revisada
+(209, 10, 31),
 (116, 11, 1),
 (210, 11, 2), 
 (211, 11, 3),
 (212, 11, 4),
 (213, 11, 5),
 (214, 11, 6),
-(215, 11, 7), -- Linea 11 revisada
+(215, 11, 7),
 (209, 12, 1),
 (216, 12, 2),
 (217, 12, 3),
@@ -1916,9 +1916,9 @@ INSERT INTO `estaciones_lineas` (`estacion_id`, `linea_id`, `orden`) VALUES
 (238, 12, 25),
 (239, 12, 26),
 (240, 12, 27),
-(241, 12, 28), -- Linea 12 revisada
+(241, 12, 28),
 (39, 13, 1),
-(128, 13, 2), -- Ramal Revisado
+(128, 13, 2),
 (1, 14, 1),
 (242, 14, 2),
 (243, 14, 3),
@@ -1927,7 +1927,7 @@ INSERT INTO `estaciones_lineas` (`estacion_id`, `linea_id`, `orden`) VALUES
 (246, 14, 6),
 (247, 14, 7),
 (248, 14, 8),
-(196, 14, 9), -- ML1 revisado
+(196, 14, 9),
 (205, 15, 1),
 (249, 15, 2),
 (250, 15, 3),
@@ -1940,7 +1940,7 @@ INSERT INTO `estaciones_lineas` (`estacion_id`, `linea_id`, `orden`) VALUES
 (257, 15, 10),
 (258, 15, 11),
 (259, 15, 12),
-(260, 15, 13), -- ML2 revisado
+(260, 15, 13),
 (205, 16, 1),
 (261, 16, 2),
 (262, 16, 3),
@@ -1956,7 +1956,7 @@ INSERT INTO `estaciones_lineas` (`estacion_id`, `linea_id`, `orden`) VALUES
 (272, 16, 13),
 (273, 16, 14),
 (274, 16, 15),
-(275, 16, 16); -- ML3 revisado
+(275, 16, 16);
 
 
 --
