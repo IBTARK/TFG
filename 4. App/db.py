@@ -64,6 +64,17 @@ print(inspector.get_table_names())
 
 
 with Session() as session:
-    stmt = select(Station).limit(5)
-    for estacion in session.scalars(stmt):
-        print(estacion.id, estacion.name, estacion.address)
+    # TODO delete
+    stationsSelect = (
+        select(
+            Station.id,
+            Station.name,
+            StationsLines.line_id
+        )
+        .join(StationsLines, Station.id == StationsLines.station_id)
+        .where(StationsLines.line_id == 6)
+    )
+    print("Consulta\n\n\n")
+    for id, name, line_id in session.execute(stationsSelect):
+        print(id, name, line_id)
+    print("\n\n\n")

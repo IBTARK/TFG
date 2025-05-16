@@ -8,7 +8,7 @@ def main():
         "source": 12,
         "destination": 47,
         # Ahora enviamos varios parámetros `filters=`
-        "filters": [11, 8]   # 11 → ascensor, 8 → seguro
+        "filters": [11,8]   # 11 → ascensor, 8 → seguro
     }
 
     # requests transformará automáticamente list → query multiple:

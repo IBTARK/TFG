@@ -3,21 +3,14 @@ import matplotlib.pyplot as plt
 from copy import deepcopy
 import json
 
+from display_graph.display_graph import printSimpleGraph
+
 from config import TRANSFER_TIME, FILTERS_RANKING, REWARDS, PENALTIES
 
 # Check if a station sitisfies all the filters
 def stationOk(subway, stationLine, filters):
     
-    try:
-        characteristics = subway.nodes[(stationLine[0], stationLine[1])]["characteristics"]
-    except KeyError:
-        # El nodo no tiene 'characteristics'
-        print("Sin characteristics:", stationLine)
-        raise
-    except TypeError:
-        # characteristics == None  →  .get() fallará
-        print("characteristics == None:", stationLine)
-        raise
+    characteristics = subway.nodes[(stationLine[0], stationLine[1])]["characteristics"]
     return all(characteristics.get(filterChar, None) == 1 for filterChar in filters)
 
 # Remove the nodes that breach any of the filters (except for the source and destination)
@@ -27,7 +20,6 @@ def pruneGraph(subway, sourceNode, destinationNode, filters):
     badNodes = [
         (station, line) for station, line in subway.nodes if station not in (sourceNode[0], destinationNode[0]) and not stationOk(subway, (station, line), filters)
     ]
-    print("ajajjaja")
 
     subway.remove_nodes_from(badNodes)
     return subway
@@ -46,7 +38,7 @@ def pruneTranferStationsGraph(subway, sourceNode, destinationNode, filters, line
 
 # Modify the weight of the transfer stations based on the filters
 def modifyTransferStationsWeights(subway, sourceNode, destinationNode, filters, linesPerStation):
-
+    cont = 0
     for firstNode, secondNode, data in subway.edges(data = True):
         penalty = 1
         
@@ -54,9 +46,11 @@ def modifyTransferStationsWeights(subway, sourceNode, destinationNode, filters, 
         if data["lineId"] == None: # Transfer edge
             if (firstNode[0] != sourceNode[0] and firstNode[0] != destinationNode[0]):
                 u_characteristics = subway.nodes[firstNode].get("characteristics", {}) 
-                penalty *= calculatePenalty(u_characteristics, filters)  
+                penalty *= calculatePenalty(u_characteristics, filters)
+            cont +=1  
 
         data["weight"] = data["time"] * penalty 
+    print(cont)
 
     return subway
 
@@ -103,7 +97,7 @@ def addVirtualNodes(subway, sourceId, destinationId, linesPerStation):
         if len(linesPerStation[stationId]) > 1:
             # Add the virtual node
             subwayCpy.add_node(
-                (stationId, None),
+                (stationId, -1),
                 # Information to save in the node
                 name = None,
                 address = None,
@@ -114,14 +108,14 @@ def addVirtualNodes(subway, sourceId, destinationId, linesPerStation):
             # Add the virtual edges
             for line in linesPerStation[stationId]:
                 subwayCpy.add_edge(
-                    (stationId, None),
+                    (stationId, -1),
                     (stationId, line),
                     time = 0,
                     weight = 0,
                     lineId = None
                 )
 
-            return (stationId, None)
+            return (stationId, -1)
 
         return (stationId, next(iter(linesPerStation[stationId])))
 
@@ -134,42 +128,53 @@ def addVirtualNodes(subway, sourceId, destinationId, linesPerStation):
 
 
 def getRoutes(subway, linesPerStation, stations, source, destination, filters):
-
-    print("Hola 1")
-
     # Create the duplicates of the subway and get the source and destination nodes (virtual or real)
     subwayVar1, sourceNode, destinationNode = addVirtualNodes(subway, source, destination, linesPerStation)
     subwayVar2 = deepcopy(subwayVar1)
     subwayVar3 = deepcopy(subwayVar1)
 
-    print("Hola 2")
+    print(len(list(nx.connected_components(subwayVar1))))
+
+    print(len(subway.nodes))
+    print(len(subway.edges))
+    print(len(subwayVar1.nodes))
+    print(len(subwayVar1.edges))
+
     print(sourceNode)
     print(destinationNode)
     print(filters)
+    # TODO delete
+    #printSimpleGraph(subwayVar3, align_lines = True, show_labels = False, show_transfers = True, nodes_size=20)
 
     # Modify or reevaluate the graphs (subway)
     elimatedNodesGraph = pruneGraph(subwayVar1, sourceNode, destinationNode, filters)
-    print("Hola 3")
     eliminateTranferStationsGraph = pruneTranferStationsGraph(subwayVar2, sourceNode, destinationNode, filters, linesPerStation)
-    print("Hola 4")
     reevalutedEdgesGraph = modifyTransferStationsWeights(subwayVar3, sourceNode, destinationNode, filters, linesPerStation)
-    print("Hola 5")
+
+    print(len(list(nx.connected_components(reevalutedEdgesGraph))))
 
     # For each graph find the optimar path
     try:
-        dijkstra1path, dijkstra1Cost= nx.single_source_dijkstra(elimatedNodesGraph, sourceNode, target = destinationNode, weight = "weight")
+        dijkstra1Cost, dijkstra1path= nx.single_source_dijkstra(elimatedNodesGraph, sourceNode, target = destinationNode, weight = "weight")
         dijkstra1Time = nx.path_weight(elimatedNodesGraph, dijkstra1path, weight = "time")
     except nx.NetworkXNoPath:
         dijkstra1path = None
 
     try:
-        dijkstra2path, dijkstra2Cost = nx.single_source_dijkstra(eliminateTranferStationsGraph, sourceNode, target = destinationNode, weight = "weight")
+        dijkstra2Cost, dijkstra2path = nx.single_source_dijkstra(eliminateTranferStationsGraph, sourceNode, target = destinationNode, weight = "weight")
         dijkstra2Time = nx.path_weight(eliminateTranferStationsGraph, dijkstra2path, weight = "time")
     except nx.NetworkXNoPath:
         dijkstra2path = None
 
-    dijkstra3path, dijkstra3Cost = nx.single_source_dijkstra(reevalutedEdgesGraph, sourceNode, target = destinationNode, weight = "weight")
-    dijkstra3Time = nx.path_weight(reevalutedEdgesGraph, dijkstra3path, weight = "time")
+    try:
+        print(reevalutedEdgesGraph.has_node(sourceNode))
+        print(reevalutedEdgesGraph.has_node(destinationNode))
+        print(nx.has_path(reevalutedEdgesGraph, sourceNode, destinationNode))
+        dijkstra3Cost, dijkstra3path = nx.single_source_dijkstra(reevalutedEdgesGraph, sourceNode, target = destinationNode, weight = "weight")
+        dijkstra3Time = nx.path_weight(reevalutedEdgesGraph, dijkstra3path, weight = "time")
+    except nx.NetworkXNoPath:
+        print("No encontrado")
+        raise
 
     # Generate result
     alternativePaths = []
@@ -196,6 +201,8 @@ def getRoutes(subway, linesPerStation, stations, source, destination, filters):
         alternativePaths.append(getStationsNamesInPath(dijkstra1path, stations, dijkstra1Time, "Ruta en la que todas las estaciones cumplen con todos los filtros"))
         alternativePaths.append(getStationsNamesInPath(dijkstra2path, stations, dijkstra2Time, "Ruta en la que todas las estaciones de transbordo cumplen con todos los filtros"))
         alternativePaths.append(getStationsNamesInPath(dijkstra3path, stations, dijkstra3Time, "Ruta alternativa (no todos los filtros deben cumplirse)"))
+    
+    print(alternativePaths)
 
     return alternativePaths
     
