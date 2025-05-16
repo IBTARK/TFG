@@ -1,0 +1,25 @@
+[project]
+name = "tfg-metro"
+version = "0.1.0"
+description = "API de rutas de metro usando grafos y FastAPI"
+readme = "README.md"
+authors = [ { name = "Tu Nombre", email = "tu@correo.com" } ]
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi>=0.95.0",
+  "uvicorn[standard]>=0.22.0",
+  "networkx>=3.1",
+  "sqlalchemy>=2.0",
+  "pymysql>=1.0.2",
+  "matplotlib>=3.7",
+  "requests>=2.31.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.2.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
