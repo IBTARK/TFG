@@ -1,0 +1,180 @@
+[
+    {
+        "path": [
+            {
+                "station_id": 12,
+                "station_name": "Bilbao",
+                "line": 4
+            },
+            {
+                "station_id": 70,
+                "station_name": "Alonso Martínez",
+                "line": 4
+            },
+            {
+                "station_id": 70,
+                "station_name": "Alonso Martínez",
+                "line": 10
+            },
+            {
+                "station_id": 148,
+                "station_name": "Gregorio Marañón",
+                "line": 10
+            },
+            {
+                "station_id": 148,
+                "station_name": "Gregorio Marañón",
+                "line": 7
+            },
+            {
+                "station_id": 76,
+                "station_name": "Avenida de América",
+                "line": 7
+            },
+            {
+                "station_id": 76,
+                "station_name": "Avenida de América",
+                "line": 6
+            },
+            {
+                "station_id": 75,
+                "station_name": "Diego de León",
+                "line": 6
+            },
+            {
+                "station_id": 45,
+                "station_name": "Manuel Becerra",
+                "line": 6
+            },
+            {
+                "station_id": 45,
+                "station_name": "Manuel Becerra",
+                "line": 2
+            },
+            {
+                "station_id": 46,
+                "station_name": "Ventas",
+                "line": 2
+            },
+            {
+                "station_id": 47,
+                "station_name": "La Elipa",
+                "line": 2
+            }
+        ],
+        "time": 32,
+        "description": "Ruta en la que todas las estaciones cumplen con todos los filtros"
+    },
+    {
+        "path": [
+            {
+                "station_id": 12,
+                "station_name": "Bilbao",
+                "line": 4
+            },
+            {
+                "station_id": 70,
+                "station_name": "Alonso Martínez",
+                "line": 4
+            },
+            {
+                "station_id": 71,
+                "station_name": "Colón",
+                "line": 4
+            },
+            {
+                "station_id": 72,
+                "station_name": "Serrano",
+                "line": 4
+            },
+            {
+                "station_id": 73,
+                "station_name": "Velázquez",
+                "line": 4
+            },
+            {
+                "station_id": 44,
+                "station_name": "Goya",
+                "line": 4
+            },
+            {
+                "station_id": 44,
+                "station_name": "Goya",
+                "line": 2
+            },
+            {
+                "station_id": 45,
+                "station_name": "Manuel Becerra",
+                "line": 2
+            },
+            {
+                "station_id": 46,
+                "station_name": "Ventas",
+                "line": 2
+            },
+            {
+                "station_id": 47,
+                "station_name": "La Elipa",
+                "line": 2
+            }
+        ],
+        "time": 17,
+        "description": "Ruta en la que todas las estaciones de transbordo cumplen con todos los filtros"
+    },
+    {
+        "path": [
+            {
+                "station_id": 12,
+                "station_name": "Bilbao",
+                "line": 4
+            },
+            {
+                "station_id": 70,
+                "station_name": "Alonso Martínez",
+                "line": 4
+            },
+            {
+                "station_id": 71,
+                "station_name": "Colón",
+                "line": 4
+            },
+            {
+                "station_id": 72,
+                "station_name": "Serrano",
+                "line": 4
+            },
+            {
+                "station_id": 73,
+                "station_name": "Velázquez",
+                "line": 4
+            },
+            {
+                "station_id": 44,
+                "station_name": "Goya",
+                "line": 4
+            },
+            {
+                "station_id": 44,
+                "station_name": "Goya",
+                "line": 2
+            },
+            {
+                "station_id": 45,
+                "station_name": "Manuel Becerra",
+                "line": 2
+            },
+            {
+                "station_id": 46,
+                "station_name": "Ventas",
+                "line": 2
+            },
+            {
+                "station_id": 47,
+                "station_name": "La Elipa",
+                "line": 2
+            }
+        ],
+        "time": 17,
+        "description": "Ruta alternativa (no todos los filtros deben cumplirse)"
+    }
+]

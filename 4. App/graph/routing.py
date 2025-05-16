@@ -72,7 +72,7 @@ def getStationsNamesInPath(path, stations, time, description):
     pathNames = []
 
     for idx in range(len(path)):
-        if idx != 0 and idx != len(path) -1 or ((idx == 0 or idx == len(path) -1) and path[idx][1] != None):
+        if idx != 0 and idx != len(path) -1 or ((idx == 0 or idx == len(path) -1) and path[idx][1] != -1):
             pathNames.append(
                 {
                     "station_id": path[idx][0],

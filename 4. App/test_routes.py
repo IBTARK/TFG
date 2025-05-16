@@ -8,12 +8,13 @@ def main():
         "source": 12,
         "destination": 47,
         # Ahora enviamos varios parámetros `filters=`
-        "filters": [11,8]   # 11 → ascensor, 8 → seguro
+        "filters": [10]   # 11 → ascensor, 8 → seguro
     }
 
     # requests transformará automáticamente list → query multiple:
     # ?filters=11&filters=8
     resp = requests.get(url, params=params, timeout=5)
+
     print("STATUS:", resp.status_code)
     try:
         resp.raise_for_status()
