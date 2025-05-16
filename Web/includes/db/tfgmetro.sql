@@ -34,16 +34,16 @@ CREATE TABLE estaciones_caracteristicas (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 CREATE TABLE conexiones (
-  id INT(11) NOT NULL AUTO_INCREMENT,
   estacion_origen INT(11) NOT NULL,
   estacion_destino INT(11) NOT NULL,
   linea INT(11) NOT NULL,
   tiempo INT(11) NOT NULL,
-  PRIMARY KEY (id),
+  PRIMARY KEY (estacion_origen, estacion_destino, linea),
   FOREIGN KEY (estacion_origen) REFERENCES estaciones(id) ON DELETE CASCADE,
   FOREIGN KEY (estacion_destino) REFERENCES estaciones(id) ON DELETE CASCADE,
   FOREIGN KEY (linea) REFERENCES lineas(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 
 CREATE TABLE lineas (
   id INT(11) NOT NULL AUTO_INCREMENT,
