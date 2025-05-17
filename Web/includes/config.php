@@ -28,7 +28,7 @@ define('BD_PASS', 'metromadrid');
 define('BD_NAME', 'tfgmetro');
 
 define('RAIZ_APP', __DIR__);
-define('RUTA_APP', '/WebProv');
+define('RUTA_APP', '/TFG/Web');
 define('RUTA_IMGS', RUTA_APP.'/images');
 define('RUTA_CSS', RUTA_APP.'/css');
 define('RUTA_JS', RUTA_APP.'/js');
