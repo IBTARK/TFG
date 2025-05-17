@@ -1,4 +1,21 @@
 /* Estilos generales */
+
+/* 1. Que html y body llenen completamente la ventana */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* 2. El contenedor principal a pantalla completa */
+#contenedor {
+    width: 100vw;     /* ocupa todo el viewport horizontal */
+    max-width: none;  /* eliminamos el tope de 1200 px */
+    margin: 0;        /* ya no lo queremos centrado con auto */
+    min-height: 100vh;/* se extiende a toda la altura visible */
+    box-shadow: none; /* opcional: quita la sombra para que parezca “flush” */
+}
+
+
 * {
     margin: 0;
     padding: 0;
