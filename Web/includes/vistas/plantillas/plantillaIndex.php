@@ -9,7 +9,7 @@
 <body>
     <div id="contenedor">
     <?php
-	require(RAIZ_APP.'/vistas/comun/cabecera.php');
+	require(RAIZ_APP.'/vistas/comun/cabeceraIndex.php');
 	?>
     <main>
         <article>

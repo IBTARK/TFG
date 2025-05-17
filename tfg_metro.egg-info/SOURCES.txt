@@ -1,0 +1,6 @@
+pyproject.toml
+tfg_metro.egg-info/PKG-INFO
+tfg_metro.egg-info/SOURCES.txt
+tfg_metro.egg-info/dependency_links.txt
+tfg_metro.egg-info/requires.txt
+tfg_metro.egg-info/top_level.txt

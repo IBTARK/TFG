@@ -1,27 +1,18 @@
 <?php
 namespace tfg\src;
 require_once __DIR__.'/includes/config.php';
-?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>TFG</title>
-    <link rel="stylesheet" type="text/css" href="<?= RUTA_CSS ?>/estiloIndex.css">
-    <link rel="icon" type="image/x-icon" href="<?= RUTA_IMGS ?>/MetroMadridLogo.png" />
-</head>
-<body>
-    <header>
-        <div class="header-container">
-            <img src="./images/EmblemaCAM.png" alt="LogoCam" id="logo-cam-index">
-            <h1>Good Stations</h1>
-        </div>
-    </header>
-    
-    <img src="./images/MetroMadridLogo.png" alt="LogoMetro" id="logo-index">
-    
-    <form id="botonEntrar" action="elegirRuta.php" method="POST">
-        <button type="submit">Entrar</button>
-    </form>
-</body>
-</html>
+$tituloPagina = 'Metro de Madrid - Inicio';
+$contenidoPrincipal = <<<EOS
+<div class="contenedor-inicio">
+    <div class="logo-principal">
+        <img src="./images/MetroMadridLogo.png" alt="Logo Metro de Madrid" id="logoMetroPrincipal">
+    </div>
+    <div class="contenedor-boton">
+        <a href="buscarRuta.php" class="boton-entrar">Entrar</a>
+    </div>
+</div>
+EOS;
+
+require __DIR__.'/includes/vistas/plantillas/plantillaIndex.php';
+?>

@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: tfg-metro
+Version: 0.1.0
+Summary: API de rutas de metro usando grafos y FastAPI
+Author-email: Tu Nombre <tu@correo.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi>=0.95.0
+Requires-Dist: uvicorn[standard]>=0.22.0
+Requires-Dist: networkx>=3.1
+Requires-Dist: sqlalchemy>=2.0
+Requires-Dist: pymysql>=1.0.2
+Requires-Dist: matplotlib>=3.7
+Requires-Dist: requests>=2.31.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.2.0; extra == "dev"
