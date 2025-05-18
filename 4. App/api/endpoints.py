@@ -16,7 +16,7 @@ def routes(
     )
 ):
     # 2) Grab the graph (already built by lifespan handler)
-    subway, linesPerStation, stationsInfo = getSubway()
+    subway, linesPerStation, stationsInfo, connections = getSubway()
 
     # 3) Execute the routing algorithm
     try:
@@ -26,7 +26,8 @@ def routes(
             stationsInfo,
             source,
             destination,
-            filters
+            filters,
+            connections
         )
     except Exception as exc:
         # Convert internal errors into a 400 so the front-end gets a clear signal

@@ -11,6 +11,7 @@ def buildBaseSubwayNetwork():
     subway = nx.Graph()
     linesPerStation = defaultdict(set)
     stations = {}
+    connections = defaultdict(lambda: defaultdict(dict))
 
     with Session() as s:
 
@@ -85,6 +86,10 @@ def buildBaseSubwayNetwork():
                 weight = time, # This will be modified with the filters in real time
                 lineId = lineId
             )
+
+            # Save the data
+            connections[source][destination][lineId] = time
+            connections[destination][source][lineId] = time
         
         # Transfer edges (inside the same station if they have more than one line)
         for station, lines in linesPerStation.items():
@@ -98,4 +103,4 @@ def buildBaseSubwayNetwork():
                         lineId = None
                     )
 
-    return subway, linesPerStation, stations
+    return subway, linesPerStation, stations, connections

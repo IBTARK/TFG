@@ -38,19 +38,16 @@ def pruneTranferStationsGraph(subway, sourceNode, destinationNode, filters, line
 
 # Modify the weight of the transfer stations based on the filters
 def modifyTransferStationsWeights(subway, sourceNode, destinationNode, filters, linesPerStation):
-    cont = 0
     for firstNode, secondNode, data in subway.edges(data = True):
         penalty = 1
         
-        # Check if any of the nodes are a transfer station
+        # Check if any of the nodes are a transfer stations
         if data["lineId"] == None: # Transfer edge
             if (firstNode[0] != sourceNode[0] and firstNode[0] != destinationNode[0]):
-                u_characteristics = subway.nodes[firstNode].get("characteristics", {}) 
-                penalty *= calculatePenalty(u_characteristics, filters)
-            cont +=1  
+                characteristics = subway.nodes[firstNode].get("characteristics", {}) 
+                penalty *= calculatePenalty(characteristics, filters) 
 
         data["weight"] = data["time"] * penalty 
-    print(cont)
 
     return subway
 
@@ -68,8 +65,11 @@ def calculatePenalty(characteristics, filters):
 
 # Given the graph, a path and the stations that are transfer stations, return the name of the stattions in the path, the names of the stations that are transfer stations in the path
 # the time of the route and a description. The output is a dictionary with the listed values
-def getStationsNamesInPath(path, stations, time, description):
+def getStationsNamesInPath(path, stations, time, description, connections):
     pathNames = []
+    pathTimes = []
+
+    firstRealNodeDetected = False
 
     for idx in range(len(path)):
         if idx != 0 and idx != len(path) -1 or ((idx == 0 or idx == len(path) -1) and path[idx][1] != -1):
@@ -80,9 +80,22 @@ def getStationsNamesInPath(path, stations, time, description):
                     "line": path[idx][1],
                 }
             )
+        
+            if firstRealNodeDetected:
+                station1 = path[idx - 1][0]
+                station2 = path[idx][0]
+                line = path[idx][1]
+                
+                if line != -1:
+                    pathTimes.append(connections[station1][station2][line])
+                else:
+                    pathTimes.append(TRANSFER_TIME)
+            
+            firstRealNodeDetected = True
 
     return {
                 "path": pathNames,
+                "path_times": pathTimes,
                 "time": time,
                 "description": description
             }
@@ -127,7 +140,7 @@ def addVirtualNodes(subway, sourceId, destinationId, linesPerStation):
     return subwayCpy, sourceNode, destinationNode
 
 
-def getRoutes(subway, linesPerStation, stations, source, destination, filters):
+def getRoutes(subway, linesPerStation, stations, source, destination, filters, connections):
     # Create the duplicates of the subway and get the source and destination nodes (virtual or real)
     subwayVar1, sourceNode, destinationNode = addVirtualNodes(subway, source, destination, linesPerStation)
     subwayVar2 = deepcopy(subwayVar1)
@@ -181,28 +194,26 @@ def getRoutes(subway, linesPerStation, stations, source, destination, filters):
 
     # 1 Possible route
     if not dijkstra1path and not dijkstra2path:
-        alternativePaths.append(getStationsNamesInPath(dijkstra3path, stations, dijkstra3Time, "Mejor ruta posible"))
+        alternativePaths.append(getStationsNamesInPath(dijkstra3path, stations, dijkstra3Time, "Mejor ruta posible", connections))
     
     # 2 possible routes (dijkstra2 and dijkstra3)
     elif not dijkstra1path:
 
-        alternativePaths.append(getStationsNamesInPath(dijkstra2path, stations, dijkstra2Time, "Ruta en la que todas las estaciones de transbordo cumplen con todos los filtros"))
-        alternativePaths.append(getStationsNamesInPath(dijkstra3path, stations, dijkstra3Time, "Ruta alternativa (no todos los filtros deben cumplirse)"))
+        alternativePaths.append(getStationsNamesInPath(dijkstra2path, stations, dijkstra2Time, "Ruta en la que todas las estaciones de transbordo cumplen con todos los filtros", connections))
+        alternativePaths.append(getStationsNamesInPath(dijkstra3path, stations, dijkstra3Time, "Ruta alternativa (no todos los filtros deben cumplirse)", connections))
     
     # 2 possible routes (dijkstra1 and dijkstra3)
     elif not dijkstra2path:
 
-        alternativePaths.append(getStationsNamesInPath(dijkstra1path, stations, dijkstra1Time, "Ruta en la que todas las estaciones cumplen con todos los filtros"))
-        alternativePaths.append(getStationsNamesInPath(dijkstra3path, stations, dijkstra3Time, "Ruta alternativa (no todos los filtros deben cumplirse)"))
+        alternativePaths.append(getStationsNamesInPath(dijkstra1path, stations, dijkstra1Time, "Ruta en la que todas las estaciones cumplen con todos los filtros", connections))
+        alternativePaths.append(getStationsNamesInPath(dijkstra3path, stations, dijkstra3Time, "Ruta alternativa (no todos los filtros deben cumplirse)", connections))
 
     # 3 possible routes (dijkstra1, dijkstra2 and dijkstra3)
     else:
 
-        alternativePaths.append(getStationsNamesInPath(dijkstra1path, stations, dijkstra1Time, "Ruta en la que todas las estaciones cumplen con todos los filtros"))
-        alternativePaths.append(getStationsNamesInPath(dijkstra2path, stations, dijkstra2Time, "Ruta en la que todas las estaciones de transbordo cumplen con todos los filtros"))
-        alternativePaths.append(getStationsNamesInPath(dijkstra3path, stations, dijkstra3Time, "Ruta alternativa (no todos los filtros deben cumplirse)"))
-    
-    print(alternativePaths)
+        alternativePaths.append(getStationsNamesInPath(dijkstra1path, stations, dijkstra1Time, "Ruta en la que todas las estaciones cumplen con todos los filtros", connections))
+        alternativePaths.append(getStationsNamesInPath(dijkstra2path, stations, dijkstra2Time, "Ruta en la que todas las estaciones de transbordo cumplen con todos los filtros", connections))
+        alternativePaths.append(getStationsNamesInPath(dijkstra3path, stations, dijkstra3Time, "Ruta alternativa (no todos los filtros deben cumplirse)", connections))
 
     return alternativePaths
     
