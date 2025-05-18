@@ -10,7 +10,15 @@ $contenidoPrincipal = <<<EOS
     <div class="descripcion-proyecto">
         <h3>Good Stations - Metro de Madrid</h3>
         <p>
-            Este proyecto tiene como objetivo desarrollar una aplicación web que personalice las rutas de transporte público en el Metro de Madrid utilizando opiniones y valoraciones de usuarios. Ejemplos de estos criterios son solicitar que los trasbordos se realicen en estaciones con una valoración superior a 4 sobre 5, evitar estaciones mencionadas frecuentemente por problemas como “mal olor”, preferir líneas con valoraciones positivas y evitar aquellas con valoraciones negativas, minimizar el tiempo en estaciones con alta percepción de inseguridad o priorizar rutas que pasen por estaciones destacadas por su accesibilidad para personas con movilidad reducida.
+            Este proyecto tiene como objetivo desarrollar una aplicación web que persona-
+            lice las rutas de transporte público en el Metro de Madrid utilizando opiniones y
+            valoraciones de usuarios. Se usarán técnicas de Procesamiento de Lenguaje Natural
+            para analizar y clasificar las reseñas de los usuarios para optimizar el trayecto según
+            diversas preferencias y criterios específicos. Ejemplos de estos criterios son solicitar
+            que los trasbordos se realicen en estaciones, preferir líneas con valoraciones positivas
+            y evitar aquellas con valoraciones negativas, minimizar el tiempo en estaciones con
+            alta percepción de inseguridad o priorizar rutas que pasen por estaciones destacadas
+            por su accesibilidad para personas con movilidad reducida.
         </p>
         
         <h3>Características principales</h3>
@@ -36,7 +44,7 @@ $contenidoPrincipal = <<<EOS
             <div class="miembro">
                 <h4>Nombre del Estudiante</h4>
                     <p>José María Martín Dasilva (GII)</p>
-                    <p> Daniel Pérez García (GII)</p>
+                    <p>Daniel Pérez García (GII)</p>
                     <p>Francisco Prieto Gallego (GII)</p>
                     <p>Ibon Malles Altolaguirre (GII)</p>
             </div>

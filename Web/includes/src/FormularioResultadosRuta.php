@@ -109,8 +109,6 @@ class FormularioResultadosRuta extends Formulario {
             error_log("JSON inválido de /routes: ".json_last_error_msg());
             return null;
         }
-
-        */
         return $this->transformaRutas($data, $filters);
     }
 
