@@ -1968,22 +1968,22 @@ TRUNCATE TABLE `lineas`;
 --
 
 INSERT INTO `lineas` (`id`, `nombre`, `siglas`, `color`) VALUES
-(1, 'Línea 1', 'L1', 'AEC9E0'),
-(2, 'Línea 2', 'L2', 'FF0000'),
-(3, 'Línea 3', 'L3', 'FFFF00'),
-(4, 'Línea 4', 'L4', '8F5E36'),
-(5, 'Línea 5', 'L5', '95CF32'),
-(6, 'Línea 6', 'L6', 'B3B3B3'),
-(7, 'Línea 7', 'L7', 'FF9933'),
-(8, 'Línea 8', 'L8', 'FF69B4'),
-(9, 'Línea 9', 'L9', '660066'),
-(10, 'Línea 10', 'L10', '1E3E95'),
-(11, 'Línea 11', 'L11', '006633'),
-(12, 'Línea 12', 'L12', '964B00'),
-(13, 'Ramal', 'R', '72D7FF'),
-(14, 'Metro Ligero 1', 'ML1', '00A0B0'),
-(15, 'Metro Ligero 2', 'ML2', '6B0772'),
-(16, 'Metro Ligero 3', 'ML3', 'FF6633');
+(1, 'Línea 1', '1', '3cb4e6'),
+(2, 'Línea 2', '2', 'e1251a'),
+(3, 'Línea 3', '3', 'ffcd00'),
+(4, 'Línea 4', '4', 'a65a29'),
+(5, 'Línea 5', '5', '80bd00'),
+(6, 'Línea 6', '6', '7b868c'),
+(7, 'Línea 7', '7', 'ff8202'),
+(8, 'Línea 8', '8', 'ee6fbc'),
+(9, 'Línea 9', '9', 'b11cab'),
+(10, 'Línea 10', '10', '003da7'),
+(11, 'Línea 11', '11', '00953b'),
+(12, 'Línea 12', '12', 'a19300'),
+(13, 'Ramal', 'R', '0042a5'),
+(14, 'Metro Ligero 1', 'L1', '5f87c0'),
+(15, 'Metro Ligero 2', 'L2', '9e2f8a'),
+(16, 'Metro Ligero 3', 'L3', 'e34a3a');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
