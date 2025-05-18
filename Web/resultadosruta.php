@@ -10,7 +10,7 @@ $formulario->procesaFormulario($_POST);
 $resultados = $formulario->generaCamposFormulario($_POST);
 
 $contenidoPrincipal = <<<EOS
-    $resultados;
+    $resultados
     EOS;
 
 require __DIR__.'/includes/vistas/plantillas/plantilla.php';

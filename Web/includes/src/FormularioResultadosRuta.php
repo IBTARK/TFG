@@ -10,6 +10,7 @@ class FormularioResultadosRuta extends Formulario {
     private $destinoId;
     private $opciones;
     private $opcionesIds = [];
+    private $siglasLinea = []; 
 
     private $rutas = [];
     private $estacionOrigen;
@@ -49,27 +50,15 @@ class FormularioResultadosRuta extends Formulario {
             $stmtDestino->execute();
             $this->estacionDestino = $stmtDestino->fetch(PDO::FETCH_ASSOC);
 
+            $stmtSiglas = $conn->query("SELECT id, siglas FROM lineas");
+            $this->siglasLinea = $stmtSiglas->fetchAll(PDO::FETCH_KEY_PAIR);
+
             if ($this->opcionesIds) {
                 $placeholders = implode(',', array_fill(0, count($this->opcionesIds), '?'));
                 $stmt = $conn->prepare("SELECT descripcion FROM caracteristicas WHERE id IN ($placeholders)");
                 $stmt->execute($this->opcionesIds);
                 $this->opciones = $stmt->fetchAll(PDO::FETCH_COLUMN);
             }
-
-             // Obtener información de características
-             //if (!empty($this->opciones)) {
-                // Crear placeholders ?, ?, ?...
-               // $placeholders = implode(',', array_fill(0, count($this->opciones), '?'));
-            
-                // Preparar la consulta con IN (...)
-                //$stmtOpciones = $conn->prepare("SELECT descripcion FROM caracteristicas WHERE id IN ($placeholders)");
-                //$stmtOpciones->execute($this->opciones);
-            
-                // Obtener array de descripciones
-                //$this->opciones = $stmtOpciones->fetchAll(PDO::FETCH_COLUMN); // array de descripciones (strings)
-            //} else {
-              //  $this->opciones = [];
-            //}
 
      // Simular las rutas (puedes aquí integrar el algoritmo real de rutas)
             $this->rutas = $this->llamaApiRutas(
@@ -146,184 +135,240 @@ class FormularioResultadosRuta extends Formulario {
  * Convierte el array crudo de la API al formato interno que
  * espera la capa de presentación.
  */
-private function transformaRutas(array $data, array $filters) : array
-{
-    $wantAccessible = in_array(10, $filters);   // filtro “ascensor”
+       /* $wantAccessible = in_array(10, $filters);  
 
-    $out = [];
-    foreach ($data as $idx => $r) {
+        $out = [];
+        foreach ($data as $idx => $r) {
 
-        // ---------- 1. Calcular transbordos y líneas ----------
-        $transfers = 0;
-        $lines     = [];
-        $prevLine  = null;
+            $transfers = 0;
+            $lines     = [];
+            $prevLine  = null;
 
-        foreach ($r['path'] as $stop) {
-            $line = (int)$stop['line'];
-            if ($prevLine !== null && $line !== $prevLine) {
-                $transfers++;
+            foreach ($r['path'] as $stop) {
+                $line = (int)$stop['line'];
+                if ($prevLine !== null && $line !== $prevLine) {
+                    $transfers++;
+                }
+                if (!in_array($line, $lines, true)) {
+                    $lines[] = $line;
+                }
+                $prevLine = $line;
             }
-            if (!in_array($line, $lines, true)) {
-                $lines[] = $line;
-            }
-            $prevLine = $line;
+
+            // ---------- 2. Construir el array “ruta” ----------
+            $out[] = [
+                'id'            => $idx + 1,              // o $r['id'] si lo trae
+                'tiempo'        => $r['time'],
+                'transbordos'   => $transfers,
+                'accesibilidad' => $wantAccessible,
+                'lineas'        => $lines,
+                'descripcion'   => $r['description'],
+                'trayecto'      => $r['path'],            // lo usaremos en el acordeón
+            ];
         }
 
-        // ---------- 2. Construir el array “ruta” ----------
-        $out[] = [
-            'id'            => $idx + 1,              // o $r['id'] si lo trae
-            'tiempo'        => $r['time'],
-            'transbordos'   => $transfers,
-            'accesibilidad' => $wantAccessible,
-            'lineas'        => $lines,
-            'descripcion'   => $r['description'],
-            'trayecto'      => $r['path'],            // lo usaremos en el acordeón
-        ];
+        return $out;
+
+        */
+        private function transformaRutas(array $data, array $filters): array
+        {
+        $out = [];
+        $wantAcc = in_array(10, $filters);
+
+        foreach ($data as $idx => $r) {
+
+            $lines   = [];
+            $trans   = 0;
+            $prevLn  = null;
+            $segTime = [];
+
+            $path = $r['path'];
+            $last = count($path) - 1;
+
+            for ($i = 0; $i <= $last; $i++) {
+                $ln = (int)$path[$i]['line'];
+
+                if (!in_array($ln, $lines, true)) $lines[] = $ln;
+                if ($prevLn !== null && $ln !== $prevLn) $trans++;
+                $prevLn = $ln;
+
+                // minutos hasta la siguiente parada
+                if ($i < $last) {
+                    $segTime[] = $this->tiempoEntre(
+                        $path[$i]['station_id'],
+                        $path[$i+1]['station_id'],
+                        $ln
+                    );          // puede ser null
+                }
+            }
+
+            $out[] = [
+                'id'            => $idx + 1,
+                'tiempo'        => $r['time'],
+                'transbordos'   => $trans,
+                'accesibilidad' => $wantAcc,
+                'lineas'        => $lines,
+                'descripcion'   => $r['description'],
+                'trayecto'      => $path,
+                'segment_times' => $segTime          // ← necesario para el HTML
+            ];
+        }
+    return $out;
     }
 
-    return $out;
-}
+    private function sigla(int $id): string
+    {
+    return $this->siglasLinea[$id]  ?? (string)$id;          
+    }
 
     public function generaCamposFormulario(&$datos)
     {
-        /* ---------- 1. Errores globales ---------- */
-    $htmlErroresGlobales = !empty($this->errores)
-        ? self::generaListaErroresGlobales($this->errores)
-        : '';
+            
+        /* ---------- 1 · Errores globales ---------- */
+            $htmlErrores = !empty($this->errores)
+                ? self::generaListaErroresGlobales($this->errores)
+                : '';
 
-    /* ---------- 2. Cabecera ---------- */
-    $origen  = htmlspecialchars($this->estacionOrigen['nombre'] ?? '');
-    $destino = htmlspecialchars($this->estacionDestino['nombre'] ?? '');
+            /* ---------- 2 · Cabecera Origen / Destino ---------- */
+            $origen  = htmlspecialchars($this->estacionOrigen['nombre']  ?? '');
+            $destino = htmlspecialchars($this->estacionDestino['nombre'] ?? '');
 
-    $html = <<<HTML
-    {$htmlErroresGlobales}
-    <div class="contenedor-resultados">
-        <h2>Resultados de Ruta</h2>
-        <div class="info-busqueda">
-            <p><strong>Origen:</strong> {$origen}</p>
-            <p><strong>Destino:</strong> {$destino}</p>
-        </div>
-    HTML;
+            $html = <<<HTML
+        {$htmlErrores}
+        <section class="card contenedor-busqueda">
+        <div class="contenedor-resultados">
+            <h2>Resultados de Ruta</h2>
+            <div class="info-busqueda">
+                <p><strong>Origen:</strong> {$origen}</p>
+                <p><strong>Destino:</strong> {$destino}</p>
+            </div>
+        HTML;
 
-    /* ---------- 3. Preferencias seleccionadas ---------- */
-    $opcionesTexto = !empty($this->opciones)
-        ? implode(', ', array_map('htmlspecialchars', $this->opciones))
-        : 'Sin preferencias';
+            /* ---------- 3 · Texto de preferencias ---------- */
+            $opcTexto = !empty($this->opciones)
+                ? implode(', ', array_map('htmlspecialchars', $this->opciones))
+                : 'Sin preferencias';
 
-    /* ---------- 4. Tarjetas de rutas ---------- */
-    foreach ($this->rutas as $ruta) {
+            /* ---------- 4 · Tarjeta por cada ruta ---------- */
+            foreach ($this->rutas as $ruta) {
 
-        // 4.1 Icono accesibilidad
-        $iconoAcc = $ruta['accesibilidad']
-            ? '<span class="accesible" title="Ruta totalmente accesible">♿</span>'
-            : '';
+                /* 4.1 · Chips de líneas ----------------------------------------- */
+                $chips = '';
+                foreach ($ruta['lineas'] as $l) {
+                    $num   = (int)$l;
+                    $chips .= '<span class="linea-icono linea-'.$num.'">'.$this->sigla($num).'</span>';
+                }
 
-        // 4.2 Chips de líneas
-        $lineaIconos = '';
-        foreach ($ruta['lineas'] as $l) {
-            $num = (int)$l;
-            $lineaIconos .= "<span class=\"linea-icono linea-{$num}\">{$num}</span>";
-        }
+                /* 4.2 · Icono accesibilidad ------------------------------------- */
+                $icoAcc = $ruta['accesibilidad']
+                    ? '<span class="accesible" title="Ruta totalmente accesible">♿</span>'
+                    : '';
 
-        // 4.3 Bloque detalles (recorrido)
-        $detalles  = "<div class=\"ruta-detalles\" id=\"detalles-ruta-{$ruta['id']}\">\n";
-        $detalles .= "    <div class=\"detalle-descripcion\"><p>".
-                     htmlspecialchars($ruta['descripcion'])."</p></div>\n";
-        $detalles .= "    <ol class=\"lista-trayecto\">\n";
+                /* 4.3 · Bloque detalles (recorrido) ----------------------------- */
+                $det  = "<div class=\"ruta-detalles\" id=\"detalles-ruta-{$ruta['id']}\">\n";
+                $det .= "  <div class=\"detalle-descripcion\"><p>" .
+                        htmlspecialchars($ruta['descripcion']) . "</p></div>\n";
 
-        foreach ($ruta['trayecto'] as $stop) {
-            $ln   = (int)$stop['line'];
-            $name = htmlspecialchars($stop['station_name']);
-            $detalles .= "        <li><span class=\"linea-icono linea-{$ln}\">{$ln}</span> ".
-                         "<span class=\"nombre-estacion\">{$name}</span></li>\n";
-        }
+                // Lista de paradas con tiempo al siguiente
+                $det .= "  <ul class=\"lista-trayecto\">\n";
+                $path    = $ruta['trayecto'];
+                $times   = $ruta['segment_times'];
+                $lastIdx = count($path) - 1;
 
-        $detalles .= "    </ol>\n";
-        $detalles .= "    <div class=\"mapa-ruta\">\n";
-        $detalles .= "        <div id=\"mapa-{$ruta['id']}\" class=\"mapa-container\">\n";
-        $detalles .= "            <img src=\"./images/mapa-placeholder.png\" ".
-                     "alt=\"Mapa de ruta\" class=\"mapa-placeholder\">\n";
-        $detalles .= "        </div>\n    </div>\n</div>\n";
+                foreach ($path as $i => $stop) {
+                    $ln   = (int)$stop['line'];
+                    $name = htmlspecialchars($stop['station_name']);
 
-        // 4.4 Tarjeta principal
-        $html .= <<<HTML
-        <div class="ruta-item" data-ruta-id="{$ruta['id']}">
-            <div class="ruta-principal">
-                <div class="ruta-tiempo">{$ruta['tiempo']} min</div>
-                <div class="ruta-info">
-                    <p><strong>Preferencias seleccionadas:</strong> {$opcionesTexto}</p>
-                    <div class="ruta-lineas">{$lineaIconos}</div>
-                    <div class="ruta-transbordos">
-                        {$ruta['transbordos']} transbordos {$iconoAcc}
+                    $extra = '';
+                    if ($i < $lastIdx) {
+                        $min   = $times[$i];
+                        $label = $min !== null ? $min . ' min' : '?';
+                        $extra = "<span class=\"tiempo-tramo\">({$label})</span>";
+                    }
+
+                    $det .= '<li><span class="linea-icono linea-'.$ln.'">' . $this->sigla($ln) .
+                            '</span> <span class="nombre-estacion">'.$name.'</span>'.$extra."</li>\n";
+                }
+                $det .= "  </ul>\n";
+                $det .= "</div>\n";  
+
+                // aqui implementaremos el mapa
+            
+                $html .= <<<HTML
+            <div class="ruta-item" data-ruta-id="{$ruta['id']}">
+                <div class="ruta-principal">
+                    <div class="ruta-tiempo">{$ruta['tiempo']} min</div>
+                    <div class="ruta-info">
+                        <p><strong>Preferencias seleccionadas:</strong> {$opcTexto}</p>
+                        <div class="ruta-lineas">{$chips}</div>
+                        <div class="ruta-transbordos">
+                            {$ruta['transbordos']} transbordos {$icoAcc}
+                        </div>
+                    </div>
+                    <div class="ruta-accion">
+                        <button class="boton-ver-detalles"
+                                data-ruta-id="{$ruta['id']}">Ver detalles</button>
                     </div>
                 </div>
-                <div class="ruta-accion">
-                    <button class="boton-ver-detalles"
-                            data-ruta-id="{$ruta['id']}">Ver detalles</button>
-                </div>
+            {$det}
+        </div>
+        HTML;
+            } 
+
+            /* ---------- 5 · Botón “Nueva búsqueda” y JS ---------- */
+            $html .= <<<HTML
+            </div>          
+        </section>       
+
+            <div class="acciones-resultados">
+            <a href="index.php" class="boton-volver btn btn-primary" id="btnVolver"><i class="fa-solid fa-route"></i> Nueva búsqueda </a>
             </div>
-            {$detalles}
-        </div>
-HTML;
-    }
 
-    /* ---------- 5. Botón volver ---------- */
-    $html .= <<<HTML
-        <div class="acciones-resultados">
-            <a href="buscarRuta.php" class="boton-volver">Nueva búsqueda</a>
-        </div>
-    </div>
-
-    <script src="./js/resultadosRuta.js"></script>
-HTML;
+                <script src="./js/resultadosRuta.js"></script>
+        HTML;
 
     return $html;
     }
 
+    
     private function tiempoEntre(int $id1, int $id2, int $linea): ?int
-{
-    /*  --- cache en memoria para no repetir la misma consulta ---
-        Clave única =  id1:id2:linea  ó  id2:id1:linea
-    */
-    $key = $id1 < $id2 ? "$id1:$id2:$linea" : "$id2:$id1:$linea";
-    static $cache = [];
-    if (isset($cache[$key])) return $cache[$key];
+    {
+        $key = $id1 < $id2 ? "$id1:$id2:$linea" : "$id2:$id1:$linea";
+        static $cache = [];
+        if (isset($cache[$key])) return $cache[$key];
 
-    try {
-        $pdo = new PDO(
-            "mysql:host=" . BD_HOST . ";dbname=" . BD_NAME,
-            BD_USER,
-            BD_PASS,
-            [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
-        );
+        try {
+            $pdo = new PDO(
+                "mysql:host=" . BD_HOST . ";dbname=" . BD_NAME,
+                BD_USER,
+                BD_PASS,
+                [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
+            );
 
-        /*  Nota: buscamos en las dos direcciones porque tu ruta
-            puede llegar en orden inverso al guardado en BD */
-        $sql = "
-            SELECT tiempo
-              FROM conexiones
-             WHERE linea = :linea
-               AND (
-                     (estacion_origen = :o1 AND estacion_destino = :d1)
-                  OR (estacion_origen = :d1 AND estacion_destino = :o1)
-               )
-             LIMIT 1";
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute([
-            ':linea' => $linea,
-            ':o1'    => $id1,
-            ':d1'    => $id2,
-        ]);
+            $sql = "
+                SELECT tiempo
+                FROM conexiones
+                WHERE linea = :linea
+                AND (
+                        (estacion_origen = :o1 AND estacion_destino = :d1)
+                    OR (estacion_origen = :d1 AND estacion_destino = :o1)
+                )
+                LIMIT 1";
+            $stmt = $pdo->prepare($sql);
+            $stmt->execute([
+                ':linea' => $linea,
+                ':o1'    => $id1,
+                ':d1'    => $id2,
+            ]);
 
-        $min = $stmt->fetchColumn();
-        $cache[$key] = $min !== false ? (int)$min : null;
-        return $cache[$key];
+            $min = $stmt->fetchColumn();
+            $cache[$key] = $min !== false ? (int)$min : null;
+            return $cache[$key];
 
-    } catch (Exception $e) {
-        error_log("tiempoEntre() error: " . $e->getMessage());
-        return null;
+        } catch (Exception $e) {
+            error_log("tiempoEntre() error: " . $e->getMessage());
+            return null;
+        }
     }
-}
-
 }
 ?>

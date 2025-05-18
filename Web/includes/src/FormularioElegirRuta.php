@@ -51,14 +51,30 @@ class FormularioElegirRuta extends Formulario {
     }
 
     private function generarOpcionesCaracteristicas() {
+
+        $iconos = [
+            1 => 'fa-broom', 
+            2 => 'fa-expand',
+            3 => 'fa-people-roof', 
+            4 => 'fa-circle', 
+            5 => 'fa-wheelchair', 
+            6 => 'fa-building',
+            7 => 'fa-angles-up', 
+            8 => 'fa-shield',
+            9 => 'fa-lightbulb', 
+            10 => 'fa-face-smile', 
+            11 => 'fa-elevator', 
+        ];
+
         $html = '';
         foreach ($this->caracteristicas as $caracteristica) {
-            $id = htmlspecialchars($caracteristica['id']);
-            $descripcion = htmlspecialchars($caracteristica['descripcion']);
+            $id   = (int)$caracteristica['id'];
+            $desc = htmlspecialchars($caracteristica['descripcion']);
+            $icon = $iconos[$id] ?? 'fa-circle';
             $html .= <<<HTML
                 <div class="opcion">
                     <input type="checkbox" id="opcion-$id" name="opciones[]" value="$id">
-                    <label for="opcion-$id">$descripcion</label>
+                    <label for="opcion-$id"><i class="fa-solid $icon"></i> $desc</label>
                 </div>
             HTML;
         }
@@ -67,7 +83,7 @@ class FormularioElegirRuta extends Formulario {
 
 
     public function generar() {
-        $opcionesOrigen = $this->generarOpcionesEstaciones();
+       /* $opcionesOrigen = $this->generarOpcionesEstaciones();
         $opcionesDestino = $opcionesOrigen;
         $opcionesCaracteristicas = $this->generarOpcionesCaracteristicas();
 
@@ -108,16 +124,59 @@ class FormularioElegirRuta extends Formulario {
         EOF;
 
         return $html;
+        */
+        $opcionesEstaciones    = $this->generarOpcionesEstaciones();
+        $opcionesCaracteristicas = $this->generarOpcionesCaracteristicas();
+
+        return <<<HTML
+
+        <section class="card contenedor-busqueda">
+            <h2>Calcula tu trayecto</h2>
+
+            <form id="formRuta" action="resultadosRuta.php" method="post">
+
+                <div class="selector-estaciones">
+                    <div class="grupo-select">
+                        <label for="origen">Estación de Origen:</label>
+                        <select id="origen" name="origen" required>
+                            $opcionesEstaciones
+                        </select>
+                    </div>
+
+                    <div class="grupo-select">
+                        <label for="destino">Estación de Destino:</label>
+                        <select id="destino" name="destino" required>
+                            $opcionesEstaciones
+                        </select>
+                    </div>
+                </div>
+
+                <div class="menu-opciones">
+                    <h3>Preferencias</h3>
+                    <div class="opciones-viaje">
+                        $opcionesCaracteristicas
+                    </div>
+                </div>
+
+                <div class="boton-buscar">
+                    <button type="submit" class="btn btn-primary" id="btnBuscar">
+                        <i class="fa-solid fa-route"></i> Buscar Ruta
+                    </button>
+                </div>
+
+            </form>
+        </section>
+
+        <script src="./js/buscaRuta.js"></script>
+        HTML;
     }
 
     protected function procesaFormulario(&$datos) {
-        // Este formulario probablemente redirige, pero aquí se pueden validar entradas si lo necesitas.
         $this->errores = [];
 
         if (empty($datos['origen']) || empty($datos['destino'])) {
             $this->errores[] = "Debe seleccionar ambas estaciones.";
         }
-        // Validaciones adicionales si lo ves necesario.
     }
 }
 ?>

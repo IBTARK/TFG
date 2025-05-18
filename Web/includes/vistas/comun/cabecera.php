@@ -10,7 +10,7 @@ $ocultaMenu = ["index.php"];
     <div class = "menu">
         <img src="./images/EmblemaCAM.png" alt="LogoMetro" id="logoMetro">
         <nav>
-            <a href="./index.php">Inicio</a>
+            <a href="./index.php">Trayecto</a>
             <a href="./lineasMetro.php">Estaciones</a>
             <a href="./acerca.php">Acerca</a>
         </nav>

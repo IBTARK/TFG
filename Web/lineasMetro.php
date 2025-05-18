@@ -8,7 +8,7 @@ $lineas = new Lineas();
 $generaLineas = $lineas->generar();
 
 $contenidoPrincipal = <<<EOS
-    $generaLineas;
+    $generaLineas
 EOS;
 
 require __DIR__.'/includes/vistas/plantillas/plantilla.php';
