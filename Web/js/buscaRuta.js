@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const formulario = document.querySelector("form"); // asume que solo hay un form en la página
+    const formulario = document.querySelector("form"); 
     const origen = document.getElementById("origen");
     const destino = document.getElementById("destino");
 
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             if (errores.length > 0) {
-                e.preventDefault(); // Detiene el envío del formulario
+                e.preventDefault(); 
                 alert(errores.join("\n"));
             }
         });
