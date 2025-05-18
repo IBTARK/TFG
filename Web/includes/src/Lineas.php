@@ -71,7 +71,8 @@ class Lineas {
     }
 
     public function generar() {
-        $html = <<<EOS
+        /*$html = <<<EOS
+        <section class="card contenedor-busqueda">
         <div class="contenedor-lineas">
             <h2>Líneas del Metro de Madrid</h2>
             <div class="selector-lineas">
@@ -129,16 +130,64 @@ class Lineas {
                         </div>
                     </div>
                 </div>
+                </section>
             EOS;
         }
 
         $html .= <<<EOS
             </div>
         </div>
-        <script src="./js/lineasMetro.js"></script>
+        
         EOS;
 
         return $html;
+        */
+            $html = <<<HTML
+        <section class="card lineas-page">
+        <h2>Líneas del Metro de Madrid</h2>
+
+        <!-- Barra de chips ————————————————————————-->
+        <div class="chips-lineas">
+HTML;
+
+    foreach ($this->lineas as $l) {
+        $activa = $this->lineaSeleccionada == $l['id'] ? 'chip-activo' : '';
+        $html  .= '<a href="?linea='.$l['id'].'" '
+               .  'class="chip-linea '.$activa.'" '
+               .  'style="--clr:#'.$l['color'].'">'.$l['nombre'].'</a>';
+    }
+
+    $html .= '</div><div class="zona-estaciones">';
+
+    if ($this->estaciones) {
+        //$html .= '<ul class="lista-estaciones-scroll">';
+        $html .= '<ul class="lista-estaciones-scroll esquema">';
+        foreach ($this->estaciones as $e) {
+            $activa = $this->estacionSeleccionada == $e['id'] ? 'est-activa' : '';
+            $html  .= '<li><a class="'.$activa.'" '
+                   .  'href="?linea='.$this->lineaSeleccionada.'&estacion='.$e['id'].'">'
+                   .  $e['nombre'].'</a></li>';
+        }
+        $html .= '</ul>';
+    }
+
+    if ($this->infoEstacion) {
+        $inf = $this->infoEstacion;            
+        $html .= <<<HTML
+        <div class="detalle-estacion-card">
+            <h3>{$inf['nombre']}</h3>
+            <dl>
+                <dt>Líneas</dt><dd>{$inf['lineas']}</dd>
+                <dt>Dirección</dt><dd>{$inf['direccion']}</dd>
+            </dl>
+            <hr>
+            <p>{$inf['descripcion']}</p>
+        </div>
+HTML;
+    }
+
+    $html .= '</div></section>';
+    return $html;
     }
 }
 ?>

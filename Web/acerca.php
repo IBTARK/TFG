@@ -3,6 +3,7 @@ require_once __DIR__.'/includes/config.php';
 
 $tituloPagina = 'Acerca del Proyecto';
 $contenidoPrincipal = <<<EOS
+<section class="card contenedor-busqueda">
 <div class="contenedor-acerca">
     <h2>Acerca del Proyecto</h2>
     
@@ -26,7 +27,6 @@ $contenidoPrincipal = <<<EOS
             <li>PHP para el desarrollo del backend</li>
             <li>MySQL para la base de datos</li>
             <li>HTML5, CSS3 y JavaScript para el frontend</li>
-            <li>AJAX para la carga dinámica de contenido</li>
         </ul>
     </div>
     
@@ -55,6 +55,7 @@ $contenidoPrincipal = <<<EOS
         <p><strong>Email:</strong> <li>josema09@ucm.es</li> <li>ibmalles@ucm.es </li> <li>fpriet01@ucm.es</li> <li>danper09@ucm.es</li></p>
     </div>
 </div>
+</section>
 EOS;
 
 require __DIR__.'/includes/vistas/plantillas/plantilla.php';

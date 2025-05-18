@@ -1,6 +1,7 @@
 html, body {
     width: 100%;
     height: 100%;
+    scrollbar-gutter: stable; 
 }
 
 * {
@@ -10,8 +11,6 @@ html, body {
     font-family:'-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
 }
 
-
-
 header {
     background-color: #003399;
     color: white;
@@ -20,8 +19,6 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
-
 
 .logo-metro img, .menu img {
     max-height: 80px;
@@ -468,11 +465,102 @@ main {
     color: #cc0000;
 }
 
+.chips-lineas{
+    display:flex; flex-wrap:wrap; gap:.5rem; justify-content:center;
+    margin-bottom:1.5rem;
+}
+.chip-linea{
+    padding:.4rem 1rem;
+    border-radius:20px;
+    background:var(--clr, #777);
+    color:#fff;
+    font-weight:600;
+    font-size:.875rem;
+    text-decoration:none;
+    transition:transform .15s;
+}
+
+.chip-linea:hover{
+    transform:scale(1.08);
+}
+.chip-activo{
+    box-shadow:0 0 0 3px #fff, 0 0 0 6px var(--clr);
+}
+
+.zona-estaciones{
+    display:grid;
+    gap:2rem;
+    grid-template-columns:minmax(220px,280px) 1fr;
+}
+@media(max-width:880px){
+    .zona-estaciones{grid-template-columns:1fr;}
+}
+
+
+.lista-estaciones-scroll{
+    list-style:none; margin:0; padding:0;
+    max-height:480px; overflow-y:auto;
+    border:1px solid #ddd; border-radius:6px;
+}
+.lista-estaciones-scroll li + li a{
+    border-top:1px solid #eee;
+}
+
+.lista-estaciones-scroll a{
+    display:block; padding:.55rem 1rem;
+    color:#333; text-decoration:none;
+}
+
+.lista-estaciones-scroll a:hover{
+    background:#f5f7fa;
+}
+
+.est-activa{
+    background:#e9ecef; font-weight:700;
+}
+
+
+.detalle-estacion-card{
+    border:1px solid #ddd; border-radius:6px; padding:1.25rem;
+    background:#fafafa;
+}
+
+.detalle-estacion-card h3{
+    margin-top:0; color:var(--primary);
+}
+.detalle-estacion-card dl{
+    display:grid; grid-template-columns:80px 1fr;
+    margin:0 0 1rem;
+    row-gap:.4rem;
+}
+.detalle-estacion-card dt{
+    font-weight:600;
+}
+.detalle-estacion-card hr{
+    border:none; border-top:1px solid #e1e1e1; margin:1rem 0;
+}
+
+.lista-estaciones-scroll::-webkit-scrollbar{
+    width:6px;
+}
+
+.lista-estaciones-scroll::-webkit-scrollbar-thumb{
+    background:#bbb; border-radius:10px;
+}
+
+
+.lineas-page > h2{
+    color: var(--primary);    
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
 /* Página de acerca del proyecto */
 .contenedor-acerca {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 .contenedor-acerca h2 {
@@ -540,7 +628,7 @@ main {
     padding-bottom: 5px;
 }
 
-/* Estilos responsivos generales */
+/* Estilos generales */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -569,7 +657,6 @@ main {
 }
 
 
-
 :root{
   --primary:#003399;
   --primary-dark:#002266;
@@ -585,8 +672,6 @@ main {
   --sp-4:2.5rem;
 }
 
-*{margin:0;padding:0;box-sizing:border-box;}
-
 .card{
   background:var(--card-bg);
   border-radius:var(--radius);
@@ -596,7 +681,9 @@ main {
   margin:var(--sp-4) auto;
 }
 
-.btn.loading{pointer-events:none;opacity:.6;}
+.btn.loading{
+    pointer-events:none;opacity:.6;
+}
 
 .menu-opciones{
   background:#003399;
@@ -628,7 +715,9 @@ main {
   transition:.25s;
 }
 
-.opcion input{display:none;}
+.opcion input{
+    display:none;
+}
 .opcion input:checked+label{
   background:var(--accent);
   color:var(--primary);
@@ -670,8 +759,10 @@ input[type=checkbox]{display:none;}
   white-space:nowrap;
 }
 
-input[type=checkbox]:checked + label{background:var(--accent);
-                                    color:var(--primary);}
+input[type=checkbox]:checked + label{
+    background:var(--accent);
+    color:var(--primary);
+}
 
 .selector-estaciones{
   display:flex;
@@ -690,7 +781,6 @@ input[type=checkbox]:checked + label{background:var(--accent);
   gap:var(--sp-2) var(--sp-2);  
   justify-content:center;
 }
-
 
 .opcion{
   flex:0 1 200px;               
@@ -753,3 +843,4 @@ input[type=checkbox]:checked + label{background:var(--accent);
     border-radius:50%;
     background:#003399;
 }
+

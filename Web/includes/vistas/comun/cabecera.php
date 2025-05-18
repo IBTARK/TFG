@@ -5,10 +5,10 @@ $ocultaMenu = ["index.php"];
 <header>
     <div class = "logo-metro">
         <img src="./images/MetroMadridLogo.png" alt="LogoMetro" id="logoMetro">
+        <img src="./images/EmblemaCAM.png" alt="LogoMetro" id="logoMetro">
     </div>
     <h1 class = "titulo">Good Stations</h1>
     <div class = "menu">
-        <img src="./images/EmblemaCAM.png" alt="LogoMetro" id="logoMetro">
         <nav>
             <a href="./index.php">Trayecto</a>
             <a href="./lineasMetro.php">Estaciones</a>

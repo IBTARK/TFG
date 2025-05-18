@@ -158,15 +158,16 @@ class FormularioElegirRuta extends Formulario {
                     </div>
                 </div>
 
-                <div class="boton-buscar">
+                
+
+           
+        </section>
+        <div class="boton-buscar">
                     <button type="submit" class="btn btn-primary" id="btnBuscar">
                         <i class="fa-solid fa-route"></i> Buscar Ruta
                     </button>
                 </div>
-
-            </form>
-        </section>
-
+                 </form>
         <script src="./js/buscaRuta.js"></script>
         HTML;
     }
