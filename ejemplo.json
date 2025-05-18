@@ -62,6 +62,7 @@
                 "line": 2
             }
         ],
+        "path_times": [1,2,3,5,1,2,3,4,1,2,1,1],
         "time": 32,
         "description": "Ruta en la que todas las estaciones cumplen con todos los filtros"
     },
@@ -118,6 +119,7 @@
                 "line": 2
             }
         ],
+        "path_times": [1,2,3,5,1,2,3,4,1,2],
         "time": 17,
         "description": "Ruta en la que todas las estaciones de transbordo cumplen con todos los filtros"
     },
@@ -174,6 +176,7 @@
                 "line": 2
             }
         ],
+        "path_times": [1,2,3,5,1,2,3,4,1,2],
         "time": 17,
         "description": "Ruta alternativa (no todos los filtros deben cumplirse)"
     }
