@@ -83,48 +83,6 @@ class FormularioElegirRuta extends Formulario {
 
 
     public function generar() {
-       /* $opcionesOrigen = $this->generarOpcionesEstaciones();
-        $opcionesDestino = $opcionesOrigen;
-        $opcionesCaracteristicas = $this->generarOpcionesCaracteristicas();
-
-        $html = <<<EOF
-        <div class="contenedor-busqueda">
-            <h2>Calcula tu trayecto</h2>
-            <div class="formulario-busqueda">
-                <form id="formRuta" action="resultadosRuta.php" method="post">
-                <div class="selector-estaciones">
-                    <div class="grupo-select">
-                        <label for="origen">Estación de Origen:</label>
-                        <select id="origen" name="origen" required>
-                            $opcionesOrigen
-                        </select>
-                    </div>
-                    <div class="grupo-select">
-                        <label for="destino">Estación de Destino:</label>
-                        <select id="destino" name="destino" required>
-                            $opcionesDestino
-                        </select>
-                    </div>
-                </div>
-
-                <div class="menu-opciones">
-                    <h3>Preferencias</h3>
-                    <div class="opciones-viaje">
-                        $opcionesCaracteristicas
-                    </div>
-                </div>
-
-                <div class="boton-buscar">
-                    <button type="submit">Buscar Ruta</button>
-                </div>
-                </form>
-            </div>
-        </div>
-        <script src="./js/buscaRuta.js"></script>
-        EOF;
-
-        return $html;
-        */
         $opcionesEstaciones    = $this->generarOpcionesEstaciones();
         $opcionesCaracteristicas = $this->generarOpcionesCaracteristicas();
 
@@ -157,10 +115,6 @@ class FormularioElegirRuta extends Formulario {
                         $opcionesCaracteristicas
                     </div>
                 </div>
-
-                
-
-           
         </section>
         <div class="boton-buscar">
                     <button type="submit" class="btn btn-primary" id="btnBuscar">

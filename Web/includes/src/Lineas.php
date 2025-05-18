@@ -71,84 +71,12 @@ class Lineas {
     }
 
     public function generar() {
-        /*$html = <<<EOS
-        <section class="card contenedor-busqueda">
-        <div class="contenedor-lineas">
-            <h2>Líneas del Metro de Madrid</h2>
-            <div class="selector-lineas">
-        EOS;
-
-        foreach ($this->lineas as $linea) {
-            $activa = ($this->lineaSeleccionada == $linea['id']) ? 'linea-activa' : '';
-            $html .= <<<EOS
-                <a href="?linea={$linea['id']}" class="boton-linea {$activa}" style="background-color: #{$linea['color']}">
-                    {$linea['nombre']}
-                </a>
-            EOS;
-        }
-
-        $html .= <<<EOS
-            </div>
-            <div class="contenedor-estaciones">
-        EOS;
-
-        if (!empty($this->estaciones)) {
-            $html .= '<div class="lista-estaciones">';
-            foreach ($this->estaciones as $estacion) {
-                //$icono = $estacion['accesibilidad'] ? '<span class="accesible" title="Estación accesible">♿</span>' : '';
-                $activa = ($this->estacionSeleccionada == $estacion['id']) ? 'estacion-activa' : '';
-                $html .= <<<EOS
-                    <a href="?linea={$this->lineaSeleccionada}&estacion={$estacion['id']}" class="estacion-item {$activa}">
-                        <span class="nombre-estacion">{$estacion['nombre']}</span>
-                    <!--aqui iria el icono-->
-                    </a>
-                    
-                EOS;
-            }
-            $html .= '</div>';
-        }
-
-        if ($this->infoEstacion) {
-            //$accesoTexto = $this->infoEstacion['accesibilidad'] ? 'Accesible' : 'No completamente accesible';
-            //$accesoClass = $this->infoEsstacion['accesibilidad'] ? 'accesible' : 'no-accesible';
-
-            $html .= <<<EOS
-                <div class="detalle-estacion">
-                    <h3>{$this->infoEstacion['nombre']}</h3>
-                    <div class="info-estacion">
-                        <div class="dato-estacion">
-                            <span class="etiqueta">Líneas:</span>
-                            <span class="valor">{$this->infoEstacion['lineas']}</span>
-                        </div>
-                        <div class="dato-estacion">
-                            <span class="etiqueta">Dirección:</span>
-                            <span class="valor">{$this->infoEstacion['direccion']}</span>
-                        </div>
-                        <div class="dato-estacion descripcion">
-                            <span class="etiqueta">Descripción:</span>
-                            <p class="valor">{$this->infoEstacion['descripcion']}</p>
-                        </div>
-                    </div>
-                </div>
-                </section>
-            EOS;
-        }
-
-        $html .= <<<EOS
-            </div>
-        </div>
-        
-        EOS;
-
-        return $html;
-        */
             $html = <<<HTML
         <section class="card lineas-page">
         <h2>Líneas del Metro de Madrid</h2>
 
-        <!-- Barra de chips ————————————————————————-->
         <div class="chips-lineas">
-HTML;
+        HTML;
 
     foreach ($this->lineas as $l) {
         $activa = $this->lineaSeleccionada == $l['id'] ? 'chip-activo' : '';
@@ -160,7 +88,6 @@ HTML;
     $html .= '</div><div class="zona-estaciones">';
 
     if ($this->estaciones) {
-        //$html .= '<ul class="lista-estaciones-scroll">';
         $html .= '<ul class="lista-estaciones-scroll esquema">';
         foreach ($this->estaciones as $e) {
             $activa = $this->estacionSeleccionada == $e['id'] ? 'est-activa' : '';
