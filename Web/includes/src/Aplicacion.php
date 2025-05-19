@@ -5,6 +5,9 @@ use mysqli;
 
 class Aplicacion
 {
+	private function __construct()
+	{}
+
 	private static $instancia;
 
 	public static function getInstance() {
@@ -16,24 +19,19 @@ class Aplicacion
 
 
 	private $bdDatosConexion;
-
-	private $inicializada = false;
+	private $isInicializada = false;
+	private $conn;	
 	
-
-	private $conn;
-
-	private function __construct()
-	{
-	}
-	
+	/*Inicializar la conexión*/
 	public function init($bdDatosConexion)
 	{
-        if ( ! $this->inicializada ) {
+        if (!$this->isInicializada) {
     	    $this->bdDatosConexion = $bdDatosConexion;
-    		$this->inicializada = true;
+    		$this->isInicializada = true;
         }
 	}
 	
+	/*Apagar la conexion*/
 	public function shutdown()
 	{
 	    $this->compruebaInstanciaInicializada();
@@ -42,19 +40,21 @@ class Aplicacion
 	    }
 	}
 
+	/*Comprobar si se ha inicializado bien*/
 	private function compruebaInstanciaInicializada()
 	{
-	    if (! $this->inicializada ) {
-	        echo "Aplicacion no inicializa";
+	    if (!$this->isInicializada) {
+	        echo "Aplicacion no inicializada";
 	        exit();
 	    }
 	}
 	
-
+	/*Conectarse a la base de datos*/
 	public function getConexionBd()
 	{
 	    $this->compruebaInstanciaInicializada();
-		if (! $this->conn ) {
+		if (!$this->conn ) {
+			/*Datos de la conexión*/
 			$bdHost = $this->bdDatosConexion['host'];
 			$bdUser = $this->bdDatosConexion['user'];
 			$bdPass = $this->bdDatosConexion['pass'];
@@ -65,7 +65,7 @@ class Aplicacion
 				echo "Error de conexión a la BD ({$conn->connect_errno}):  {$conn->connect_error}";
 				exit();
 			}
-			if ( ! $conn->set_charset("utf8mb4")) {
+			if (!$conn->set_charset("utf8mb4")) {
 				echo "Error al configurar la BD ({$conn->errno}):  {$conn->error}";
 				exit();
 			}
