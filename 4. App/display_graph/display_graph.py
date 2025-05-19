@@ -5,11 +5,8 @@ from collections import defaultdict
 import numpy as np
 import textwrap
 from sqlalchemy import select, func
-#from db import Session, Station, Connection, Line, StationCharacteristics, StationsLines, Characteristic
 from collections import defaultdict
 import itertools
-
-from config import TRANSFER_TIME
 
 def printSimpleGraph(G, align_lines = False, show_labels = True, show_transfers = True, nodes_size = 300):
     # line colors
