@@ -58,23 +58,3 @@ class Connection(Base):
     line = mapped_column("linea", Integer, ForeignKey("lineas.id", ondelete="CASCADE"),  primary_key = True)
     time = mapped_column("tiempo", Integer)
 
-
-inspector = inspect(engine)
-print(inspector.get_table_names())
-
-
-with Session() as session:
-    # TODO delete
-    stationsSelect = (
-        select(
-            Station.id,
-            Station.name,
-            StationsLines.line_id
-        )
-        .join(StationsLines, Station.id == StationsLines.station_id)
-        .where(StationsLines.line_id == 6)
-    )
-    print("Consulta\n\n\n")
-    for id, name, line_id in session.execute(stationsSelect):
-        print(id, name, line_id)
-    print("\n\n\n")
