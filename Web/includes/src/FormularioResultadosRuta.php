@@ -112,50 +112,39 @@ class FormularioResultadosRuta extends Formulario {
         return $this->transformaRutas($data, $filters);
     }
 
-    private function transformaRutas(array $data, array $filters): array
+  private function transformaRutas(array $data, array $filters): array
     {
-        $out = [];
-        $wantAcc = in_array(10, $filters);
+    $out      = [];
+    $wantAcc  = in_array(10, $filters);
 
-        foreach ($data as $idx => $r) {
+    foreach ($data as $idx => $r) {
+        $lines   = [];
+        $trans   = 0;
+        $prevLn  = null;
 
-            $lines   = [];
-            $trans   = 0;
-            $prevLn  = null;
-            $segTime = [];
-
-            $path = $r['path'];
-            $last = count($path) - 1;
-
-            for ($i = 0; $i <= $last; $i++) {
-                $ln = (int)$path[$i]['line'];
-
-                if (!in_array($ln, $lines, true)) $lines[] = $ln;
-                if ($prevLn !== null && $ln !== $prevLn) $trans++;
-                $prevLn = $ln;
-
-                if ($i < $last) {
-                    $segTime[] = $this->tiempoEntre(
-                        $path[$i]['station_id'],
-                        $path[$i+1]['station_id'],
-                        $ln
-                    );         
-                }
-            }
-
-            $out[] = [
-                'id'            => $idx + 1,
-                'tiempo'        => $r['time'],
-                'transbordos'   => $trans,
-                'accesibilidad' => $wantAcc,
-                'lineas'        => $lines,
-                'descripcion'   => $r['description'],
-                'trayecto'      => $path,
-                'segment_times' => $segTime       
-            ];
+        foreach ($r['path'] as $p) {
+            $ln = (int)$p['line'];
+            if (!in_array($ln, $lines, true)) $lines[] = $ln;
+            if ($prevLn !== null && $ln !== $prevLn) $trans++;
+            $prevLn = $ln;
         }
+
+        $segTime = $r['path_times']; 
+
+        $out[] = [
+            'id'            => $idx + 1,
+            'tiempo'        => $r['time'],
+            'transbordos'   => $trans,
+            'accesibilidad' => $wantAcc,
+            'lineas'        => $lines,
+            'descripcion'   => $r['description'],
+            'trayecto'      => $r['path'],
+            'segment_times' => $segTime,
+        ];
+    }
     return $out;
     }
+
 
     private function sigla(int $id): string
     {
@@ -164,14 +153,15 @@ class FormularioResultadosRuta extends Formulario {
 
     public function generaCamposFormulario(&$datos)
     {
-            $htmlErrores = !empty($this->errores)
-                ? self::generaListaErroresGlobales($this->errores)
-                : '';
 
-            $origen  = htmlspecialchars($this->estacionOrigen['nombre']  ?? '');
-            $destino = htmlspecialchars($this->estacionDestino['nombre'] ?? '');
+        $htmlErrores = !empty($this->errores)
+            ? self::generaListaErroresGlobales($this->errores)
+            : '';
 
-            $html = <<<HTML
+        $origen  = htmlspecialchars($this->estacionOrigen['nombre']  ?? '');
+        $destino = htmlspecialchars($this->estacionDestino['nombre'] ?? '');
+
+        $html = <<<HTML
         {$htmlErrores}
         <section class="card contenedor-busqueda">
         <div class="contenedor-resultados">
@@ -180,124 +170,93 @@ class FormularioResultadosRuta extends Formulario {
                 <p><strong>Origen:</strong> {$origen}</p>
                 <p><strong>Destino:</strong> {$destino}</p>
             </div>
-        HTML;
+    HTML;
 
-            $opcTexto = !empty($this->opciones)
-                ? implode(', ', array_map('htmlspecialchars', $this->opciones))
-                : 'Sin preferencias';
+        $opcTexto = !empty($this->opciones)
+            ? implode(', ', array_map('htmlspecialchars', $this->opciones))
+            : 'Sin preferencias';
 
-            foreach ($this->rutas as $ruta) {
-                $chips = '';
-                foreach ($ruta['lineas'] as $l) {
-                    $num   = (int)$l;
-                    $chips .= '<span class="linea-icono linea-'.$num.'">'.$this->sigla($num).'</span>';
+        foreach ($this->rutas as $ruta) {
+
+            $chips = '';
+            foreach ($ruta['lineas'] as $l) {
+                $num   = (int)$l;
+                $chips .= '<span class="linea-icono linea-'.$num.'">'.
+                        $this->sigla($num).'</span>';
+            }
+
+            $descr = htmlspecialchars($ruta['descripcion']);
+
+            $path     = $ruta['trayecto'];
+            $times    = $ruta['segment_times'];
+            $lastId  = count($path) - 1;
+            $listHtml = "<ul class=\"lista-trayecto\">\n";
+
+            for ($i = 0; $i <= $lastId; $i++) {
+
+                $ln   = (int)$path[$i]['line'];
+                $name = htmlspecialchars($path[$i]['station_name']);
+
+                $prevDiff = ($i > 0      && (int)$path[$i-1]['line'] !== $ln);
+                $nextDiff = ($i < $lastId && (int)$path[$i+1]['line'] !== $ln);
+                $showIcon = ($i === 0) || ($i === $lastId) || $prevDiff || $nextDiff;
+
+                $icon = $showIcon
+                    ? '<span class="linea-icono linea-'.$ln.'">'.$this->sigla($ln).'</span>'
+                    : '<span class="linea-placeholder"></span>';
+
+                $listHtml .= '<li>'.$icon.
+                            '<span class="nombre-estacion">'.$name.'</span></li>'."\n";
+
+                if ($i < $lastId) {
+                    $min = $times[$i] ?? '?';
+                    $listHtml .= '<li class="segmento"><span class="tiempo-arista">'.
+                                $min.'&nbsp;min</span></li>'."\n";
                 }
+            }
+            $listHtml .= "</ul>\n";
 
-                $icoAcc = $ruta['accesibilidad']
-                    ? '<span class="accesible" title="Ruta totalmente accesible">♿</span>'
-                    : '';
-                $det  = "<div class=\"ruta-detalles\" id=\"detalles-ruta-{$ruta['id']}\">\n";
-                $det .= "  <div class=\"detalle-descripcion\"><p>" .
-                        htmlspecialchars($ruta['descripcion']) . "</p></div>\n";
+            $detalles = '<div class="ruta-detalles" id="detalles-ruta-'.$ruta['id'].'">'.
+                        $listHtml.
+                        '</div>';
 
-                $det .= "  <ul class=\"lista-trayecto\">\n";
-                $path    = $ruta['trayecto'];
-                $times   = $ruta['segment_times'];
-                $lastIdx = count($path) - 1;
-
-                foreach ($path as $i => $stop) {
-                    $ln   = (int)$stop['line'];
-                    $name = htmlspecialchars($stop['station_name']);
-
-                    $extra = '';
-                    if ($i < $lastIdx) {
-                        $min   = $times[$i];
-                        $label = $min !== null ? $min . ' min' : '?';
-                        $extra = "<span class=\"tiempo-tramo\">({$label})</span>";
-                    }
-
-                    $det .= '<li><span class="linea-icono linea-'.$ln.'">' . $this->sigla($ln) .
-                            '</span> <span class="nombre-estacion">'.$name.'</span>'.$extra."</li>\n";
-                }
-                $det .= "  </ul>\n";
-                $det .= "</div>\n";  
-
-                // aqui implementaremos el mapa
-            
-                $html .= <<<HTML
+            $html .= <<<HTML
             <div class="ruta-item" data-ruta-id="{$ruta['id']}">
                 <div class="ruta-principal">
                     <div class="ruta-tiempo">{$ruta['tiempo']} min</div>
                     <div class="ruta-info">
+                        <p class="descripcion-ruta">{$descr}</p>
                         <p><strong>Preferencias seleccionadas:</strong> {$opcTexto}</p>
                         <div class="ruta-lineas">{$chips}</div>
-                        <div class="ruta-transbordos">
-                            {$ruta['transbordos']} transbordos {$icoAcc}
-                        </div>
+                        <div class="ruta-transbordos">{$ruta['transbordos']} transbordos</div>
                     </div>
                     <div class="ruta-accion">
                         <button class="boton-ver-detalles"
                                 data-ruta-id="{$ruta['id']}">Ver detalles</button>
                     </div>
                 </div>
-            {$det}
-        </div>
-        HTML;
-            } 
-
-            $html .= <<<HTML
-            </div>          
-        </section>       
-
-            <div class="acciones-resultados">
-            <a href="index.php" class="boton-volver btn btn-primary" id="btnVolver"><i class="fa-solid fa-route"></i> Nueva búsqueda </a>
+                {$detalles}
             </div>
-
-                <script src="./js/resultadosRuta.js"></script>
-        HTML;
-
-    return $html;
-    }
-
-    
-    private function tiempoEntre(int $id1, int $id2, int $linea): ?int
-    {
-        $key = $id1 < $id2 ? "$id1:$id2:$linea" : "$id2:$id1:$linea";
-        static $cache = [];
-        if (isset($cache[$key])) return $cache[$key];
-
-        try {
-            $pdo = new PDO(
-                "mysql:host=" . BD_HOST . ";dbname=" . BD_NAME,
-                BD_USER,
-                BD_PASS,
-                [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
-            );
-
-            $sql = "
-                SELECT tiempo
-                FROM conexiones
-                WHERE linea = :linea
-                AND (
-                        (estacion_origen = :o1 AND estacion_destino = :d1)
-                    OR (estacion_origen = :d1 AND estacion_destino = :o1)
-                )
-                LIMIT 1";
-            $stmt = $pdo->prepare($sql);
-            $stmt->execute([
-                ':linea' => $linea,
-                ':o1'    => $id1,
-                ':d1'    => $id2,
-            ]);
-
-            $min = $stmt->fetchColumn();
-            $cache[$key] = $min !== false ? (int)$min : null;
-            return $cache[$key];
-
-        } catch (Exception $e) {
-            error_log("tiempoEntre() error: " . $e->getMessage());
-            return null;
+    HTML;
         }
+
+
+        $html .= <<<HTML
+            </div>
+        </section>
+
+        <div class="acciones-resultados">
+            <a href="index.php" class="boton-volver btn btn-primary" id="btnVolver">
+                <i class="fa-solid fa-route"></i> Nueva búsqueda
+            </a>
+        </div>
+
+        <script src="./js/resultadosRuta.js"></script>
+    HTML;
+
+        return $html;
     }
+
+
 }
 ?>
