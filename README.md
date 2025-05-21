@@ -40,4 +40,4 @@ Al acceder a esa URL nos encontraremos con el panel para poder elegir la ruta qu
 
 Además, utilizando la barra de navegación podemos llegar a la página de [Estaciones](http://localhost/TFG/Web/lineasMetro.php), donde se puede consultar información sobre una estación en concreto. Para ello, seleccionamos primero la línea en la que se encuentra dicha estación y acto seguido, la estación correspondiente.
 
-Por último, gracias otra vez a la barra de navegación podemos ir a la página de [Acerca](http://localhost/TFG/Web/acerca.php)
+Por último, gracias otra vez a la barra de navegación podemos ir a la página de [Acerca](http://localhost/TFG/Web/acerca.php), donde se puede ver información sobre el proyecto.
